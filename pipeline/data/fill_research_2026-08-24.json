@@ -1,0 +1,972 @@
+{
+  "_meta": {
+    "date": "2026-08-24",
+    "note": "Long-horizon research fills. Primary: issuer pages/disclosures (CIBC rates PDF 11995-2026/08; amex.ca pages incl. all-cards listing; TD card pages). Secondary cross-checks: frugalflyer.ca fees blocks, milesopedia.com. Charge cards carry no purchase APR by design."
+  },
+  "cibc-adapta-mastercard": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "earn_rates",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ],
+    "rates_replace": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "1 pt/$1 all other purchases; PLUS automatically earns 1.5 pts/$1 in your top 3 spend categories each month (dynamic categorization across ~12 categories incl grocery+drug stores, dining, gas+EV, transit+parking, entertainment, subscriptions) - not modeled per-category"
+      },
+      {
+        "category_slug": "travel_other",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "eligible travel booked through CIBC by Expedia"
+      }
+    ]
+  },
+  "cibc-adapta-mastercard-for-students": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "earn_rates",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ],
+    "rates_replace": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "1 pt/$1 all other purchases; PLUS automatically earns 1.5 pts/$1 in your top 3 spend categories each month (dynamic categorization across ~12 categories incl grocery+drug stores, dining, gas+EV, transit+parking, entertainment, subscriptions) - not modeled per-category"
+      },
+      {
+        "category_slug": "travel_other",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "eligible travel booked through CIBC by Expedia"
+      }
+    ]
+  },
+  "cibc-aeroplan-visa-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aeroplan-visa-for-students": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aeroplan-visa-infinite-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aeroplan-visa-infinite-privilege-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aventura-gold-visa-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aventura-visa-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aventura-visa-for-students": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aventura-visa-infinite-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aventura-visa-infinite-privilege-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-classic-visa-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ],
+    "program_slug": "none"
+  },
+  "cibc-classic-visa-for-students": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ],
+    "program_slug": "none"
+  },
+  "cibc-dividend-visa-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "offers",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      },
+      {
+        "field": "offers",
+        "reason": "confirmed: no standing public welcome bonus as of 2026-08-24 (issuer page + frugalflyer cross-check); occasional limited-time promos only - not a churn target"
+      }
+    ]
+  },
+  "cibc-dividend-visa-infinite-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-dividend-visa-platinum-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-us-dollar-aventura-gold-visa-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 22.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-costco-mastercard": {
+    "version_patch": {
+      "purchase_apr": 21.75,
+      "cash_apr": 22.49
+    },
+    "review_resolve": [
+      "cash_apr",
+      "offers",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.75%/22.49% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      },
+      {
+        "field": "offers",
+        "reason": "confirmed: no standing public welcome bonus as of 2026-08-24 (issuer page + frugalflyer cross-check); occasional limited-time promos only - not a churn target"
+      }
+    ]
+  },
+  "cibc-costco-mastercard-business": {
+    "version_patch": {
+      "purchase_apr": 21.75,
+      "cash_apr": 22.49
+    },
+    "review_resolve": [
+      "cash_apr",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.75%/22.49% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      }
+    ]
+  },
+  "cibc-select-visa-card": {
+    "version_patch": {
+      "purchase_apr": 13.99,
+      "cash_apr": 13.99
+    },
+    "review_resolve": [
+      "cash_apr",
+      "earn_rates",
+      "offers",
+      "program_slug",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "13.99% low-rate card - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+      },
+      {
+        "field": "program_slug",
+        "reason": "no rewards: Select is a low-rate card (13.99%) - milesopedia page shows rates only with no earn section; CIBC taxonomy files it under low-interest"
+      }
+    ],
+    "offers_add": [
+      {
+        "headline": "Balance transfer offer: 0% interest for up to 10 months + annual fee rebate",
+        "min_spend_minor": null,
+        "deadline_days": null,
+        "reward_points": null,
+        "reward_cashback_minor": null,
+        "eligibility_notes": "[2026-08-24] Financing-style offer, not a points/cash bonus: transfer a balance of $100+ -> 0% interest up to 10 months (1% transfer fee) + annual fee rebate. Per user-approved policy: modeled with null rewards; sorts to bottom of churn rankings by expected value."
+      }
+    ]
+  },
+  "td-first-class-travel-visa-infinite-card": {
+    "rates_replace": [
+      {
+        "category_slug": null,
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "Base Earn Rate: 2 pts/$1 on all other purchases"
+      },
+      {
+        "category_slug": "grocery",
+        "rate": 6.0,
+        "kind": "points",
+        "notes": "first $25,000 annual net purchases"
+      },
+      {
+        "category_slug": "dining",
+        "rate": 6.0,
+        "kind": "points",
+        "notes": "first $25,000 annual net purchases"
+      },
+      {
+        "category_slug": "transit_rideshare",
+        "rate": 6.0,
+        "kind": "points",
+        "notes": "public transit incl ferries (MCC 4111); first $25k annual net purchases"
+      },
+      {
+        "category_slug": "recurring_bills",
+        "rate": 4.0,
+        "kind": "points",
+        "notes": "recurring bill payments; first $25k annual net purchases"
+      },
+      {
+        "category_slug": "streaming_subs",
+        "rate": 4.0,
+        "kind": "points",
+        "notes": "streaming, digital gaming & media; first $25k annual net purchases"
+      },
+      {
+        "category_slug": "travel_other",
+        "rate": 8.0,
+        "kind": "points",
+        "notes": "bookings through Expedia For TD"
+      }
+    ],
+    "offer_patch": {
+      "headline": "Earn up to $1,300 in value including up to 146,000 TD Rewards Points",
+      "reward_points": 146000,
+      "min_spend_minor": 750000,
+      "deadline_days": 180,
+      "eligibility_notes_append": "Components: 20,000 pts first Purchase; additional 126,000 pts when $7,500 spent within 180 days of Account opening"
+    },
+    "review_resolve": [
+      "earn_rates"
+    ]
+  },
+  "simplii-cash-back-visa": {
+    "rates_replace": [
+      {
+        "category_slug": "dining",
+        "rate": 0.04,
+        "kind": "cashback",
+        "notes": "eligible restaurants and bars"
+      },
+      {
+        "category_slug": "gas",
+        "rate": 0.015,
+        "kind": "cashback",
+        "notes": "up to $15,000/year combined across gas/groceries/drugstore/pre-authorized"
+      },
+      {
+        "category_slug": "grocery",
+        "rate": 0.015,
+        "kind": "cashback"
+      },
+      {
+        "category_slug": "drugstore",
+        "rate": 0.015,
+        "kind": "cashback"
+      },
+      {
+        "category_slug": "recurring_bills",
+        "rate": 0.015,
+        "kind": "cashback",
+        "notes": "pre-authorized payments"
+      },
+      {
+        "category_slug": null,
+        "rate": 0.005,
+        "kind": "cashback",
+        "notes": "all other purchases"
+      }
+    ],
+    "review_resolve": [
+      "base_rate"
+    ]
+  },
+  "amex-ca-small-business-gold-card": {
+    "rates_replace": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "1X the points on everything; +10,000 bonus points each calendar quarter with $20,000 spend"
+      }
+    ],
+    "version_patch": {
+      "annual_fee_minor": 19900
+    },
+    "review_resolve": [
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "annual_fee_minor",
+        "reason": "$199 VERIFIED on amex.ca page (\"Annual Fees $199\"); was mis-parsed as $0"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "charge card - no purchase APR (pay-in-full product)"
+      }
+    ]
+  },
+  "tangerine-world-elite-mastercard": {
+    "rates_replace": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "1 Scene+ pt/$1 everywhere; 1.5x Scene+ points on 3 accelerator categories of choice (from 13 incl grocery, entertainment, dining, travel)"
+      }
+    ],
+    "review_resolve": [
+      "earn_rates"
+    ]
+  },
+  "amex-ca-small-business-platinum-card": {
+    "version_patch": {
+      "annual_fee_minor": 79900
+    },
+    "review_resolve": [
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "annual_fee_minor",
+        "reason": "$799 VERIFIED on amex.ca page; was mis-parsed as $0"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "charge card - no purchase APR (pay-in-full product)"
+      }
+    ]
+  },
+  "amex-ca-the-platinum-card": {
+    "review_resolve": [],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "charge card - no purchase APR (pay-in-full product) ($799 fee confirmed on page)"
+      }
+    ]
+  },
+  "amex-ca-aeroplan-card": {
+    "review_resolve": [
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "charge card: balance must be paid in full each month; 30% annual interest applies only to balances not paid in full (amex.ca / Air Canada Aeroplan page footnote)"
+      }
+    ]
+  },
+  "amex-ca-marriott-bonvoy-business-card": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 21.99
+    },
+    "review_resolve": [
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99% purchases & cash advances - frugalflyer.ca american-express-marriott-bonvoy-business [cross-check]"
+      }
+    ]
+  },
+  "amex-ca-essential-credit-card": {
+    "version_patch": {
+      "purchase_apr": 12.99,
+      "cash_apr": 12.99
+    },
+    "review_resolve": [
+      "earn_rates",
+      "offers",
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "earn_rates",
+        "reason": "no rewards earning - low-rate card (amex.ca all-cards listing: \"$25, 12.99% on purchases and funds advances\"; no earn structure on card page)"
+      }
+    ],
+    "program_slug": "none"
+  },
+  "amex-ca-aeroplan-reserve": {
+    "version_patch": {
+      "purchase_apr": 21.99,
+      "cash_apr": 21.99
+    },
+    "review_resolve": [
+      "purchase_apr"
+    ],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99% purchases & funds advances - VERIFIED on amex.ca page (\"Card Type Credit Card ... Annual Interest Rate 21.99%\")"
+      }
+    ]
+  },
+  "cibc-aventura-plus-visa": {
+    "version_patch": {
+      "annual_fee_minor": 12000
+    },
+    "review_resolve": [
+      "annual_fee",
+      "earn_rates:points-per-dollar context not matched"
+    ],
+    "review_add": [
+      {
+        "field": "annual_fee_minor",
+        "reason": "$120 - frugalflyer.ca cibc-aventura-visa-business-plus [cross-check]"
+      }
+    ],
+    "rates_replace": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "all other purchases"
+      },
+      {
+        "category_slug": "gas",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "eligible gas + EV charging"
+      },
+      {
+        "category_slug": "transit_rideshare",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "commuter transport, ferries, railways, limos, cabs, parking and tolls"
+      },
+      {
+        "category_slug": "travel_air",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "airlines, cruise lines, tour operators"
+      },
+      {
+        "category_slug": "travel_hotel",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "hotels"
+      },
+      {
+        "category_slug": "travel_other",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "car rentals, vacation bookings; 2x when booked through CIBC Rewards Centre"
+      }
+    ]
+  },
+  "cibc-corporate-classic-plus-visa": {
+    "version_patch": {
+      "annual_fee_minor": 2000
+    },
+    "review_resolve": [
+      "annual_fee_minor"
+    ],
+    "review_add": [
+      {
+        "field": "annual_fee_minor",
+        "reason": "$20 VERIFIED on cibc.com corporate card page (\"Annual fee $20\")"
+      }
+    ],
+    "program_slug": "none"
+  },
+  "td-us-dollar-visa-card": {
+    "review_resolve": [
+      "earn_rates",
+      "offers",
+      "program_slug"
+    ],
+    "review_add": [
+      {
+        "field": "program_slug",
+        "reason": "no rewards program: TD page shows no earn structure anywhere; value prop is FX-free USD spending (0% FX fee verified on page)"
+      }
+    ]
+  },
+  "td-aeroplan-visa-infinite-card": {
+    "rates_add": [
+      {
+        "category_slug": "gas",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "eligible gas + electric vehicle charging"
+      },
+      {
+        "category_slug": "travel_air",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "direct through Air Canada purchases incl Air Canada Vacations"
+      },
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "1 pt/$1 on all other eligible purchases"
+      }
+    ],
+    "offer_patch": {
+      "headline": "Earn up to 40,000 Aeroplan points",
+      "reward_points": 40000,
+      "min_spend_minor": 300000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "Components: 10,000 pts first Purchase; 15,000 pts when $3,000 spent within 90 days of Account opening; one-time anniversary bonus of 15,000 pts when $12,000 spent within 12 months of Account opening"
+    },
+    "review_resolve": [
+      "base_rate"
+    ]
+  },
+  "cibc-aerogold-plus-visa": {
+    "rates_add": [
+      {
+        "category_slug": "travel_hotel",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "general travel spend (airlines, hotels, car rentals, cruise lines); Air Canada direct earns 2x"
+      }
+    ],
+    "review_resolve": [
+      "earn_rates:points-per-dollar context not matched",
+      "earn_rates:points-per-dollar context not matched: ' on travel such as"
+    ],
+    "rates_replace": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "all other purchases"
+      },
+      {
+        "category_slug": "travel_air",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "Air Canada direct incl Air Canada Vacations; other airlines 1.5"
+      },
+      {
+        "category_slug": "travel_hotel",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "Hyatt stays; other hotels 1.5"
+      },
+      {
+        "category_slug": "travel_other",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "general travel (car rentals, cruises, agencies); 2x via CIBC Rewards Centre"
+      },
+      {
+        "category_slug": "transit_rideshare",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "commuter transport, ferries, railways, cabs"
+      },
+      {
+        "category_slug": "dining",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "plus services such as shipping, internet, cable and phone"
+      }
+    ]
+  },
+  "cibc-aerogold-visa-card-business": {
+    "rates_add": [
+      {
+        "category_slug": "travel_hotel",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "general travel spend (airlines, hotels, car rentals, cruise lines); Air Canada direct earns 2x"
+      }
+    ],
+    "review_resolve": [
+      "earn_rates:points-per-dollar context not matched",
+      "earn_rates:points-per-dollar context not matched: ' on travel such as"
+    ],
+    "rates_replace": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "all other purchases"
+      },
+      {
+        "category_slug": "travel_air",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "Air Canada direct incl Air Canada Vacations; other airlines 1.5"
+      },
+      {
+        "category_slug": "travel_hotel",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "Hyatt stays; other hotels 1.5"
+      },
+      {
+        "category_slug": "travel_other",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "general travel (car rentals, cruises, agencies); 2x via CIBC Rewards Centre"
+      },
+      {
+        "category_slug": "transit_rideshare",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "commuter transport, ferries, railways, cabs"
+      },
+      {
+        "category_slug": "dining",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "plus services such as shipping, internet, cable and phone"
+      }
+    ]
+  },
+  "cibc-bizline-visa-card": {
+    "program_slug": "none"
+  },
+  "cibc-dividend-visa-for-students": {
+    "review_resolve": [
+      "offer.min_spend"
+    ]
+  },
+  "cibc-aventura-visa-card-business": {
+    "rates_replace": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "all other purchases"
+      },
+      {
+        "category_slug": "gas",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "eligible gas + EV charging"
+      },
+      {
+        "category_slug": "transit_rideshare",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "commuter transport, ferries, railways, limos, cabs, parking and tolls"
+      },
+      {
+        "category_slug": "travel_air",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "airlines, cruise lines, tour operators"
+      },
+      {
+        "category_slug": "travel_hotel",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "hotels"
+      },
+      {
+        "category_slug": "travel_other",
+        "rate": 1.5,
+        "kind": "points",
+        "notes": "car rentals, vacation bookings; 2x when booked through CIBC Rewards Centre"
+      }
+    ],
+    "review_resolve": [
+      "earn_rates:points-per-dollar context not matched"
+    ]
+  },
+  "tangerine-money-back-credit-card": {
+    "offer_patch": {
+      "headline": "Earn 10% cash back for your first 2 months (up to $100)",
+      "reward_cashback_minor": 10000,
+      "min_spend_minor": null,
+      "deadline_days": 60,
+      "eligibility_notes_append": "Issuer-stated cap stored as value per policy: 10% of all spend during first 2 months, up to $100; no minimum spend. Expected value is spend-dependent - ranking surfaces may personalize from trailing velocity, capped at $100."
+    },
+    "review_resolve": [
+      "offers"
+    ]
+  },
+  "tangerine-world-credit-card": {
+    "offer_patch": {
+      "headline": "Earn 10% cash back for your first 2 months (up to $100)",
+      "reward_cashback_minor": 10000,
+      "min_spend_minor": null,
+      "deadline_days": 60,
+      "eligibility_notes_append": "Issuer-stated cap stored as value per policy: 10% of all spend during first 2 months, up to $100; no minimum spend. Expected value is spend-dependent - ranking surfaces may personalize from trailing velocity, capped at $100."
+    },
+    "review_resolve": [
+      "offers"
+    ]
+  },
+  "scotiabank-scotiagold-passport-card": {
+    "offer_patch": {
+      "min_spend_minor": 200000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "VERIFIED against issuer qualification block: single tier - $2,000 in everyday eligible purchases within first 3 months of Account opening (accounts opened on/after Oct 29 2025); ~8 weeks for credit; first-year annual fee waived"
+    },
+    "review_resolve": [
+      "offer.min_spend"
+    ]
+  },
+  "amex-ca-simply-cash-preferred": {
+    "version_patch": {
+      "annual_fee_minor": 11988
+    },
+    "review_resolve": [
+      "annual_fee_minor"
+    ],
+    "review_add": [
+      {
+        "field": "annual_fee_minor",
+        "reason": "USER-VERIFIED vs amex.ca: Card Fee $9.99/month (= $119.88 annually, non-Quebec); $119/year Quebec residents"
+      }
+    ]
+  },
+  "amex-ca-gold-rewards-card": {
+    "rates_replace": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "1 pt/$1 if merchant code not in eligible category; also e-wallet and third-party purchases earn 1x"
+      },
+      {
+        "category_slug": "gas",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "stand-alone gasoline stations in Canada only"
+      },
+      {
+        "category_slug": "drugstore",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "stand-alone drugstores in Canada"
+      },
+      {
+        "category_slug": "grocery",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "stand-alone grocery stores; superstores/wholesale clubs excluded"
+      },
+      {
+        "category_slug": "travel_air",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "travel services incl air transport"
+      },
+      {
+        "category_slug": "travel_hotel",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "lodging"
+      },
+      {
+        "category_slug": "travel_other",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "water/rail/road transport, tour operators; local & commuter transport excluded"
+      }
+    ],
+    "review_resolve": [
+      "earn_rates"
+    ]
+  }
+}

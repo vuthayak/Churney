@@ -1,0 +1,46 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-select-visa-card",
+    "issuer_slug": "cibc",
+    "name": "CIBC Select Visa Card",
+    "network": "visa",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/select-visa-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 2900,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 13.99,
+    "cash_apr": 13.99,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/select-visa-card.html"
+  },
+  "earn_rates": [],
+  "offers": [
+    {
+      "headline": "Balance transfer offer: 0% interest for up to 10 months + annual fee rebate",
+      "eligibility_notes": "[2026-08-24] Financing-style offer, not a points/cash bonus: transfer a balance of $100+ -> 0% interest up to 10 months (1% transfer fee) + annual fee rebate. Per user-approved policy: modeled with null rewards; sorts to bottom of churn rankings by expected value.",
+      "alternate_offers": [],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/select-visa-card.html",
+      "verified_at": "2026-08-26T05:19:11.055131Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% CIBC standard [VERIFY]; not stated on cached card page"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "13.99% low-rate card - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+    },
+    {
+      "field": "program_slug",
+      "reason": "no rewards: Select is a low-rate card (13.99%) - milesopedia page shows rates only with no earn section; CIBC taxonomy files it under low-interest"
+    }
+  ],
+  "content_hash": "fb025d443d994c5fcc78e5dd7b6724263a5bbb17e4f2b9e67cd688a57e8c6481"
+}

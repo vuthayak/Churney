@@ -1,0 +1,1161 @@
+{
+  "_meta": {
+    "date": "2026-08-24",
+    "note": "LLM-assisted fill pass over cached issuer pages (scripts/llm_digest.py output). Every value cites page copy; values not stated on-page are marked [VERIFY] and carry a needs_manual_review entry.",
+    "fx_sources": {
+      "simplii": "https://www.simplii.com/en/rates/cash-back-visa-rates.html (official rates page: 'plus a fee of 2.5% of the converted amount')",
+      "tangerine": "tangerine.ca card pages ('foreign currency conversion fee of 2.x%')",
+      "cibc": "cibc.com USD Aventura Gold page comparison text ('you pay a foreign currency conversion fee of 2.x%')",
+      "scotiabank_gold_platinum": "card pages explicitly state No foreign transaction fees",
+      "amex_td": "[VERIFY] not stated on card pages or fetched disclosure pages; 2.5% is the widely published standard - confirm against Cardmember Agreement"
+    }
+  },
+  "amex-ca-aeroplan-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]; Amex card pages do not state FX fee"
+      }
+    ]
+  },
+  "amex-ca-cobalt-card": {
+    "offer_patch": {
+      "headline": "Earn up to 15,000 points",
+      "reward_points": 15000,
+      "eligibility_notes": "Monthly structure: 1,250 MR points per monthly billing period with $750 spend on Card, first year (page states no single MSR)"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]; Amex card pages do not state FX fee"
+      }
+    ]
+  },
+  "amex-ca-essential-credit-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]; Amex card pages do not state FX fee"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "earn structure not stated numerically anywhere on cached page; manual review needed"
+      }
+    ]
+  },
+  "amex-ca-gold-rewards-card": {
+    "offer_patch": {
+      "min_spend_minor": 100000,
+      "deadline_days": 365,
+      "eligibility_notes_append": "Structure: earn 5,000 MR points per monthly billing period in which $1,000 is spent, within first year"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]; Amex card pages do not state FX fee"
+      }
+    ]
+  },
+  "amex-ca-green-card": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "1X POINTS on everyday purchases"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]; Amex card pages do not state FX fee"
+      }
+    ]
+  },
+  "amex-ca-marriott-bonvoy-business-card": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "2X per $1 on everything else"
+      },
+      {
+        "category_slug": "gas",
+        "rate": 3.0,
+        "kind": "points",
+        "notes": "3X per $1 on eligible gas, dining & travel"
+      },
+      {
+        "category_slug": "dining",
+        "rate": 3.0,
+        "kind": "points"
+      },
+      {
+        "category_slug": "travel_air",
+        "rate": 3.0,
+        "kind": "points"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "charge card - no purchase APR applicable"
+      }
+    ]
+  },
+  "amex-ca-marriott-bonvoy-card": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "2X Points per $1 on everything else"
+      },
+      {
+        "category_slug": "travel_hotel",
+        "rate": 5.0,
+        "kind": "points",
+        "notes": "5X at participating Marriott Bonvoy hotels"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]"
+      }
+    ]
+  },
+  "amex-ca-simply-cash-preferred": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 0.02,
+        "kind": "cashback",
+        "notes": "2% cash back on everything else"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]"
+      }
+    ],
+    "offers_add": [
+      {
+        "headline": "Earn up to $200 in bonus cash back",
+        "min_spend_minor": 200000,
+        "deadline_days": 90,
+        "reward_points": null,
+        "reward_cashback_minor": 20000,
+        "first_year_free": null,
+        "eligibility_notes": "Bonus 10% cash back on all purchases, up to $2,000 in purchases, first 3 months"
+      }
+    ]
+  },
+  "amex-ca-simply-cash": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 0.0125,
+        "kind": "cashback",
+        "notes": "1.25% cash back on everything else"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]"
+      }
+    ],
+    "offers_add": [
+      {
+        "headline": "Earn up to $100 in bonus cash back",
+        "min_spend_minor": 200000,
+        "deadline_days": 90,
+        "reward_points": null,
+        "reward_cashback_minor": 10000,
+        "first_year_free": null,
+        "eligibility_notes": "Bonus 5% cash back on all purchases, up to $2,000 in purchases, first 3 months"
+      }
+    ]
+  },
+  "amex-ca-small-business-gold-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "charge card - no purchase APR applicable"
+      }
+    ]
+  },
+  "amex-ca-small-business-platinum-card": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 1.25,
+        "kind": "points",
+        "notes": "1.25 points for every $1 in Card purchases"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "charge card - no purchase APR applicable"
+      }
+    ]
+  },
+  "amex-ca-the-platinum-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% from external knowledge [VERIFY]"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "charge card - no purchase APR applicable"
+      }
+    ]
+  },
+  "cibc-adapta-mastercard-for-students": {
+    "program_slug": "adapta",
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "program_slug",
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "earn_rates",
+        "reason": "no per-dollar earn-rate copy on page; Adapta points earned via bonuses only (confirm)"
+      },
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% per CIBC standard [VERIFY]"
+      }
+    ]
+  },
+  "cibc-adapta-mastercard": {
+    "program_slug": "adapta",
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "program_slug",
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "earn_rates",
+        "reason": "no per-dollar earn-rate copy on page; Adapta points earned via bonuses only (confirm)"
+      },
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% per CIBC standard [VERIFY]"
+      }
+    ]
+  },
+  "cibc-aerogold-plus-visa": {
+    "offer_patch": {
+      "min_spend_minor": 750000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "Components: 10,000 pts first eligible purchase; 25,000 pts when $7,500+ spent in first 3 monthly statement periods; additional 40,000 pts anniversary bonus if $40,000+ net purchases posted in first 12 monthly statement periods"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-aerogold-visa-card-business": {
+    "offer_patch": {
+      "min_spend_minor": 750000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "Components: 10,000 pts first eligible purchase; 25,000 pts when $7,500+ spent in first 3 monthly statement periods; additional 40,000 pts anniversary bonus if $40,000+ net purchases posted in first 12 monthly statement periods"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-aeroplan-visa-card": {
+    "offer_patch": {
+      "min_spend_minor": 150000,
+      "deadline_days": 120,
+      "eligibility_notes_append": "Components: 2,500 pts first purchase; 2,500 pts when $1,500+ spent during first 4 monthly statement periods; remainder via other qualifying activities"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-aeroplan-visa-for-students": {
+    "offer_patch": {
+      "min_spend_minor": 150000,
+      "deadline_days": 120,
+      "eligibility_notes_append": "Components: 2,500 pts first purchase; 2,500 pts when $1,500+ spent during first 4 monthly statement periods; remainder via other qualifying activities"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-aeroplan-visa-infinite-card": {
+    "offer_patch": {
+      "min_spend_minor": 600000,
+      "deadline_days": 180,
+      "eligibility_notes_append": "Components: 10,000 pts first purchase; 15,000 pts when $6,000+ spent during first 6 monthly statement periods; 25,000 pts anniversary bonus if $12,000+ net purchases in first 12 monthly statement periods"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-aventura-plus-visa": {
+    "offer_patch": {
+      "min_spend_minor": 4000000,
+      "deadline_days": 360,
+      "eligibility_notes_append": "Components: welcome bonus 20,000 pts on first purchase; 50,000 pts when $40,000+ spent in first 12 monthly statement periods"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-aventura-visa-card-business": {
+    "offer_patch": {
+      "min_spend_minor": 4000000,
+      "deadline_days": 360,
+      "eligibility_notes_append": "Components: welcome bonus 20,000 pts on first purchase; 50,000 pts when $40,000+ spent in first 12 monthly statement periods"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-aventura-visa-card": {
+    "offer_patch": {
+      "eligibility_notes_append": "Activity-based offer: 2,500 pts per completed activity (five activities within 60 days of account approval), up to 12,500 pts total; no single MSR stated"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-aventura-visa-for-students": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 0.5,
+        "kind": "points",
+        "notes": "1 point for every $2 spent using your card"
+      }
+    ],
+    "offer_patch": {
+      "eligibility_notes_append": "Activity-based offer: 2,500 pts per completed activity (five activities within 60 days of account approval), up to 12,500 pts total; no single MSR stated"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "base_rate",
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-us-dollar-aventura-gold-visa-card": {
+    "offer_patch": {
+      "eligibility_notes_append": "Activity-based offer: 500 pts per completed activity (five activities within 60 days of account opening), up to 2,500 pts total; first-year annual fee rebate"
+    },
+    "version_patch": {
+      "fx_fee_pct": 0.0
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ],
+    "review_add": []
+  },
+  "cibc-costco-mastercard-business": {
+    "offers_add": [
+      {
+        "headline": "Exclusive $100 welcome bonus",
+        "reward_cashback_minor": 10000,
+        "eligibility_notes": "Welcome bonus amount stated without min-spend/deadline terms in page copy captured"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-dividend-visa-infinite-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "offers_add": [
+      {
+        "headline": "Join and earn up to $350 in value including annual fee rebate",
+        "min_spend_minor": 200000,
+        "deadline_days": 120,
+        "reward_points": null,
+        "reward_cashback_minor": 25000,
+        "first_year_free": true,
+        "eligibility_notes": "Components: 10% cash back welcome bonus up to $200 on net purchases up to $2,000 in first 4 statements; $50 CB bonus for setting up one pre-authorized payment in first 4 monthly statements; first-year annual fee rebate ($120)"
+      }
+    ]
+  },
+  "cibc-dividend-visa-platinum-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "offers_add": [
+      {
+        "headline": "Join and earn up to $300 in value including annual fee rebate",
+        "min_spend_minor": 200000,
+        "deadline_days": 120,
+        "reward_points": null,
+        "reward_cashback_minor": 20000,
+        "first_year_free": true,
+        "eligibility_notes": "Components: 10% cash back welcome bonus up to $200 on net purchases up to $2,000 in first 4 statements; first-year annual fee rebate ($99)"
+      }
+    ]
+  },
+  "cibc-dividend-visa-for-students": {
+    "offer_patch": {
+      "headline": "Get $25 cash back after your first purchase",
+      "reward_cashback_minor": 2500,
+      "min_spend_minor": null,
+      "deadline_days": null,
+      "eligibility_notes_append": "$25 CB after first purchase within first 4 monthly statements (page); prior $125 value appears to be a cross-sell figure"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-bizline-visa-card": {
+    "review_add": [
+      {
+        "field": "program_slug",
+        "reason": "basic business card; no rewards-program copy found on page - treat as no-rewards"
+      },
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% per CIBC standard [VERIFY]"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-classic-visa-card": {
+    "review_add": [
+      {
+        "field": "program_slug",
+        "reason": "basic card; insurance-focused, no rewards-program copy found on page - treat as no-rewards"
+      },
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% per CIBC standard [VERIFY]"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-classic-visa-for-students": {
+    "review_add": [
+      {
+        "field": "program_slug",
+        "reason": "basic student card; no rewards-program copy found on page - treat as no-rewards"
+      },
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% per CIBC standard [VERIFY]"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ]
+  },
+  "cibc-corporate-classic-plus-visa": {
+    "review_add": [
+      {
+        "field": "program_slug",
+        "reason": "corporate expense card; no consumer rewards program applies"
+      },
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% per CIBC standard [VERIFY]"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ]
+  },
+  "scotiabank-gold-card": {
+    "rates_add": [
+      {
+        "category_slug": "grocery",
+        "rate": 6.0,
+        "kind": "points",
+        "notes": "6 pts/$1 at Sobeys, Safeway, FreshCo, Foodland and more; 5 pts/$1 other eligible grocery"
+      },
+      {
+        "category_slug": "dining",
+        "rate": 5.0,
+        "kind": "points",
+        "notes": "incl food delivery, food subscriptions"
+      },
+      {
+        "category_slug": "entertainment",
+        "rate": 5.0,
+        "kind": "points"
+      },
+      {
+        "category_slug": "gas",
+        "rate": 3.0,
+        "kind": "points"
+      },
+      {
+        "category_slug": "transit_rideshare",
+        "rate": 3.0,
+        "kind": "points",
+        "notes": "incl rideshare, buses, taxis"
+      },
+      {
+        "category_slug": "streaming_subs",
+        "rate": 3.0,
+        "kind": "points"
+      },
+      {
+        "category_slug": "travel_air",
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "+ extra 3 pts/$1 CAD hotels & car rentals via Scene+ Travel (Expedia)"
+      },
+      {
+        "category_slug": "travel_hotel",
+        "rate": 1.0,
+        "kind": "points"
+      },
+      {
+        "category_slug": "travel_other",
+        "rate": 1.0,
+        "kind": "points"
+      },
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "1 pt/$1 CAD on eligible purchases in Canada"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 0.0
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": []
+  },
+  "scotiabank-no-fee-amex-card": {
+    "rates_add": [
+      {
+        "category_slug": "grocery",
+        "rate": 3.0,
+        "kind": "points",
+        "notes": "3 pts/$1 at Sobeys, Safeway, FreshCo, Foodland and more"
+      },
+      {
+        "category_slug": "dining",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "incl food delivery, food subscriptions"
+      },
+      {
+        "category_slug": "entertainment",
+        "rate": 2.0,
+        "kind": "points"
+      },
+      {
+        "category_slug": "travel_air",
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "+ extra 3 pts/$1 CAD hotels & car rentals via Scene+ Travel (Expedia)"
+      },
+      {
+        "category_slug": "travel_hotel",
+        "rate": 1.0,
+        "kind": "points"
+      },
+      {
+        "category_slug": "travel_other",
+        "rate": 1.0,
+        "kind": "points"
+      },
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "1 pt/$1 on eligible purchases"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "no FX waiver stated on this card's page; 2.5% Scotia standard assumed [VERIFY]"
+      }
+    ]
+  },
+  "scotiabank-platinum-card": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "2X Scene+ points on all eligible purchases"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 0.0
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": []
+  },
+  "scotiabank-scene-card": {
+    "rates_add": [
+      {
+        "category_slug": "entertainment",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "2 pts/$1 at Cineplex theatres, app and cineplex.com"
+      },
+      {
+        "category_slug": "retail_other",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "2 pts/$1 at Home Hardware locations"
+      },
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "one Scene+ Point for every $1"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "FX fee not stated on page; 2.5% Scotia standard assumed [VERIFY]"
+      }
+    ]
+  },
+  "scotiabank-scene-student-card": {
+    "rates_add": [
+      {
+        "category_slug": "entertainment",
+        "rate": 2.0,
+        "kind": "points",
+        "notes": "2 pts/$1 at Cineplex"
+      },
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "one Scene+ Point for every $1"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "FX fee not stated on page; 2.5% Scotia standard assumed [VERIFY]"
+      }
+    ]
+  },
+  "scotiabank-scotiagold-passport-card": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 1.0,
+        "kind": "points",
+        "notes": "1 Scene+ point per $1 spent; Casa rent-pay promo earns 1 pt/$1 on rent with $350+/mo everyday spend"
+      }
+    ],
+    "offer_patch": {
+      "min_spend_minor": 50000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "10,000 bonus Scene+ points within first 3 months ($250 tier + $1,000-spend top-up structure)"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "FX fee not stated on page; 2.5% Scotia standard assumed [VERIFY]"
+      },
+      {
+        "field": "offer.min_spend",
+        "reason": "bonus structure inferred from multi-tier copy ($250/3mo + extra at $1,000); verify exact tiers"
+      }
+    ]
+  },
+  "simplii-cash-back-visa": {
+    "offer_patch": {
+      "min_spend_minor": 50000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "Up to 20% CB promo: $100 CB in first 3 months when spending $500 on eligible purchases"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ],
+    "review_add": []
+  },
+  "tangerine-money-back-credit-card": {
+    "offer_patch": {
+      "eligibility_notes_append": "No minimum spend: 10% cash back promo for first 2 months, up to $100 total"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "min_spend",
+      "fx_fee_pct"
+    ]
+  },
+  "tangerine-world-credit-card": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 0.005,
+        "kind": "cashback",
+        "notes": "0.5% on all other purchases (2% in up to 3 chosen categories with savings account) [VERIFY]"
+      }
+    ],
+    "offer_patch": {
+      "eligibility_notes_append": "No minimum spend: 10% cash back promo for first 2 months, up to $100 total"
+    },
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "base_rate",
+      "min_spend",
+      "deadline",
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "page states foreign currency conversion fee of ~2.5%; exact figure truncated in capture [VERIFY]"
+      }
+    ]
+  },
+  "tangerine-world-elite-mastercard": {
+    "offers_add": [
+      {
+        "headline": "30,000 bonus Scene+ points",
+        "reward_points": 30000,
+        "min_spend_minor": 300000,
+        "deadline_days": 90,
+        "eligibility_notes": "For new clients who spend $3,000 in first 3 months; plus 10,000 bonus pts annually when $30,000 spent per year"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "page states foreign currency conversion fee of ~2.5%; exact figure truncated in capture [VERIFY]"
+      }
+    ]
+  },
+  "td-cash-back-visa-infinite-card": {
+    "offers_add": [
+      {
+        "headline": "10% Cash Back Dollars in the first 3 months",
+        "reward_cashback_minor": 35000,
+        "min_spend_minor": 350000,
+        "deadline_days": 90,
+        "first_year_free": true,
+        "eligibility_notes": "10% in Cash Back Dollars on Bonus Eligible Purchases up to total spend of $3,500 in first 3 months (replaces regular earn rates on those purchases); first-year annual fee rebate also offered"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "FX fee not stated on cached TD pages; 2.5% TD standard assumed [VERIFY]"
+      }
+    ]
+  },
+  "td-us-dollar-visa-card": {
+    "version_patch": {
+      "fx_fee_pct": 0.0
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "earn_rates",
+        "reason": "no earn/rewards copy on cached page; confirm whether card earns TD Rewards points"
+      }
+    ]
+  },
+  "amex-ca-aeroplan-business-reserve-card": {
+    "_source": "User-verified against Amex T&C 2026-08-24 (welcome bonus + month-13 bonus terms quoted verbatim)",
+    "offer_patch": {
+      "headline": "Earn up to 80,000 Aeroplan points",
+      "reward_points": 80000,
+      "min_spend_minor": 1050000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "T&C verified: $10,500 in net purchases posted on or before 3-month anniversary date; allow up to 8 weeks for award",
+      "alternate_offers": [
+        {
+          "headline": "Additional 40,000 Bonus Aeroplan points in month 13",
+          "channel": "later_spend",
+          "min_spend_minor": 350000,
+          "reward_points": 40000
+        }
+      ]
+    }
+  },
+  "amex-ca-aeroplan-reserve": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% Amex CA standard [VERIFY]; not stated on cached card page"
+      }
+    ]
+  },
+  "cibc-aeroplan-visa-infinite-privilege-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% CIBC standard [VERIFY]; not stated on cached card page"
+      }
+    ]
+  },
+  "cibc-aventura-gold-visa-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% CIBC standard [VERIFY]; not stated on cached card page"
+      }
+    ]
+  },
+  "cibc-aventura-visa-infinite-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% CIBC standard [VERIFY]; not stated on cached card page"
+      }
+    ]
+  },
+  "cibc-aventura-visa-infinite-privilege-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% CIBC standard [VERIFY]; not stated on cached card page"
+      }
+    ]
+  },
+  "cibc-costco-mastercard": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% CIBC standard [VERIFY]; not stated on cached card page"
+      }
+    ]
+  },
+  "cibc-dividend-visa-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% CIBC standard [VERIFY]; not stated on cached card page"
+      }
+    ]
+  },
+  "cibc-select-visa-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% CIBC standard [VERIFY]; not stated on cached card page"
+      }
+    ]
+  },
+  "td-aeroplan-visa-infinite-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% TD standard [VERIFY]; not stated on cached card page"
+      }
+    ]
+  },
+  "td-first-class-travel-visa-infinite-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "set 2.5% TD standard [VERIFY]; not stated on cached card page"
+      }
+    ]
+  },
+  "scotiabank-passport-infinite-card": {
+    "version_patch": {
+      "fx_fee_pct": 0.0
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ]
+  }
+}

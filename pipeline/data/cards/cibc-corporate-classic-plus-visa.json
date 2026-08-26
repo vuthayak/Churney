@@ -1,0 +1,37 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-corporate-classic-plus-visa",
+    "issuer_slug": "cibc",
+    "name": "CIBC Corporate ClassicPlusVisa Card",
+    "network": "visa",
+    "program_slug": "none",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/corporate-classic-plus-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 2000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/corporate-classic-plus-visa.html"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "program_slug",
+      "reason": "corporate expense card; no consumer rewards program applies"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% per CIBC standard [VERIFY]"
+    },
+    {
+      "field": "annual_fee_minor",
+      "reason": "$20 VERIFIED on cibc.com corporate card page (\"Annual fee $20\")"
+    }
+  ],
+  "content_hash": "9cf07f08f1c7f0dba8172fdfa05145d595e59b5ea41f3ff6a4bcea80b2032227"
+}

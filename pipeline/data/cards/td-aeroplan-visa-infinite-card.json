@@ -1,0 +1,90 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "td-aeroplan-visa-infinite-card",
+    "issuer_slug": "td",
+    "name": "TD Aeroplan Visa Infinite Card",
+    "network": "visa",
+    "program_slug": "aeroplan",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 13900,
+    "extra_card_fee_minor": 7500,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card"
+    },
+    {
+      "category_slug": "travel_hotel",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "eligible gas + electric vehicle charging",
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card"
+    },
+    {
+      "category_slug": "travel_air",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "direct through Air Canada purchases incl Air Canada Vacations",
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card"
+    },
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "1 pt/$1 on all other eligible purchases",
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn up to 40,000 Aeroplan points",
+      "min_spend_minor": 300000,
+      "deadline_days": 90,
+      "reward_points": 40000,
+      "eligibility_notes": "deadline stated as 90 days on page Account must be in good standing at the time the Welcome Bonus, Additional Bonus and Anniversary Bonus are issue [FILL fill_research_2026-08-24]: Components: 10,000 pts first Purchase; 15,000 pts when $3,000 spent within 90 days of Account opening; one-time anniversary bonus of 15,000 pts when $12,000 spent within 12 months of Account opening",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 15,000 points",
+          "channel": "later_spend",
+          "min_spend_minor": 300000,
+          "deadline_days": 90,
+          "reward_points": 15000,
+          "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card",
+          "seen_on": "2026-08-26"
+        }
+      ],
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-card",
+      "verified_at": "2026-08-26T05:19:09.188425Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% TD standard [VERIFY]; not stated on cached card page"
+    }
+  ],
+  "content_hash": "7d9d7d790c520aa697dcddf3fb3d0e4a51087c9a40b4eb9a552927eab378c5e6"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "scotiabank-platinum-card",
+    "issuer_slug": "scotiabank",
+    "name": "Scotiabank Platinum American Express Card",
+    "network": "visa",
+    "program_slug": "scene_plus",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/platinum-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 39900,
+    "extra_card_fee_minor": 9900,
+    "fx_fee_pct": 0.0,
+    "income_req_personal": 12000,
+    "purchase_apr": 9.99,
+    "cash_apr": 9.99,
+    "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/platinum-card.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "2X Scene+ points on all eligible purchases",
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/platinum-card.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 60,000 points",
+      "min_spend_minor": 1000000,
+      "deadline_days": 180,
+      "reward_points": 60000,
+      "eligibility_notes": "deadline stated as 6 months on page not eligible for this offer.",
+      "alternate_offers": [],
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/platinum-card.html",
+      "verified_at": "2026-08-26T05:19:08.302505Z"
+    }
+  ],
+  "needs_manual_review": [],
+  "content_hash": "c50cd8f0f215d774d5a952565adf74513e08aa149368093c093309ace8e2ed1f"
+}

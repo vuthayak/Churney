@@ -1,0 +1,75 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-dividend-visa-for-students",
+    "issuer_slug": "cibc",
+    "name": "CIBC Dividend Visa Card for Students",
+    "network": "visa",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-for-students.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 2.0,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-for-students.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.005,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-for-students.html"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-for-students.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-for-students.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-for-students.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-for-students.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-for-students.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Get $25 cash back after your first purchase",
+      "reward_cashback_minor": 2500,
+      "eligibility_notes": "[FILL fill_2026-08-24]: $25 CB after first purchase within first 4 monthly statements (page); prior $125 value appears to be a cross-sell figure",
+      "alternate_offers": [],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-for-students.html",
+      "verified_at": "2026-08-26T05:19:07.615907Z"
+    }
+  ],
+  "needs_manual_review": [],
+  "content_hash": "1714b26fe1b7a94d4ab2e240bc43f0a7eec4a5cf2a28e7ffc0042cd4cd45f08c"
+}

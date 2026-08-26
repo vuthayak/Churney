@@ -1,0 +1,63 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "scotiabank-passport-infinite-card",
+    "issuer_slug": "scotiabank",
+    "name": "Scotiabank Passport Visa Infinite + Card",
+    "network": "visa",
+    "program_slug": "scene_plus",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 15000,
+    "extra_card_fee_minor": 0,
+    "fx_fee_pct": 0.0,
+    "income_req_personal": 60000,
+    "income_req_household": 100000,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 25,000 points",
+      "min_spend_minor": 200000,
+      "deadline_days": 90,
+      "reward_points": 25000,
+      "eligibility_notes": "deadline stated as 3 months on page not eligible for the 25,000 bonus points offer.",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 10,000 points",
+          "channel": "later_spend",
+          "min_spend_minor": 200000,
+          "deadline_days": 90,
+          "reward_points": 10000,
+          "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html",
+          "seen_on": "2026-08-26"
+        },
+        {
+          "headline": "Additional earn component: 2,000 points",
+          "channel": "later_spend",
+          "reward_points": 2000,
+          "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html",
+          "seen_on": "2026-08-26"
+        }
+      ],
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html",
+      "verified_at": "2026-08-26T05:19:08.399640Z"
+    }
+  ],
+  "needs_manual_review": [],
+  "content_hash": "af6c9b716ef924481f44aec437b528c4f481e9ae79334fec26b3bd49dbe8e66c"
+}

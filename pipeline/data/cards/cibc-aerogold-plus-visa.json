@@ -1,0 +1,84 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-aerogold-plus-visa",
+    "issuer_slug": "cibc",
+    "name": "CIBC Aeroplan Visa BusinessPlusCard",
+    "network": "visa",
+    "program_slug": "aeroplan",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-plus-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 13900,
+    "extra_card_fee_minor": 30000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-plus-visa.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "all other purchases",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-plus-visa.html"
+    },
+    {
+      "category_slug": "travel_air",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "Air Canada direct incl Air Canada Vacations; other airlines 1.5",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-plus-visa.html"
+    },
+    {
+      "category_slug": "travel_hotel",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "Hyatt stays; other hotels 1.5",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-plus-visa.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "general travel (car rentals, cruises, agencies); 2x via CIBC Rewards Centre",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-plus-visa.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "commuter transport, ferries, railways, cabs",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-plus-visa.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "plus services such as shipping, internet, cable and phone",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-plus-visa.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 75,000 points",
+      "min_spend_minor": 750000,
+      "deadline_days": 90,
+      "reward_points": 75000,
+      "eligibility_notes": "[FILL fill_2026-08-24]: Components: 10,000 pts first eligible purchase; 25,000 pts when $7,500+ spent in first 3 monthly statement periods; additional 40,000 pts anniversary bonus if $40,000+ net purchases posted in first 12 monthly statement periods",
+      "alternate_offers": [],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-plus-visa.html",
+      "verified_at": "2026-08-26T05:19:05.219100Z"
+    }
+  ],
+  "needs_manual_review": [],
+  "content_hash": "4b8733de94583c8bef962dfff5af2a2e22f698c594bf7b6f6bd22536a66d6a41"
+}

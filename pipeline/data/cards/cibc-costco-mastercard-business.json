@@ -1,0 +1,53 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-costco-mastercard-business",
+    "issuer_slug": "cibc",
+    "name": "CIBC Costco Business Mastercard",
+    "network": "mastercard",
+    "program_slug": "costco",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/costco-mastercard-business.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.75,
+    "cash_apr": 22.49,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/costco-mastercard-business.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/costco-mastercard-business.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 0.03,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/costco-mastercard-business.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Exclusive $100 welcome bonus",
+      "reward_cashback_minor": 10000,
+      "eligibility_notes": "Welcome bonus amount stated without min-spend/deadline terms in page copy captured",
+      "alternate_offers": [],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/costco-mastercard-business.html",
+      "verified_at": "2026-08-26T05:19:09.815575Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "purchase_apr",
+      "reason": "21.75%/22.49% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+    }
+  ],
+  "content_hash": "d83d4b909ce8ec4b0bdc307bc5319d830cc1d77eb889bd3520a3bcd67991145a"
+}

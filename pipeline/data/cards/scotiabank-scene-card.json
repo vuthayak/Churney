@@ -1,0 +1,76 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "scotiabank-scene-card",
+    "issuer_slug": "scotiabank",
+    "name": "Scotiabank Scene+ Visa Card",
+    "network": "visa",
+    "program_slug": "scene_plus",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-card.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "entertainment",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "2 pts/$1 at Cineplex theatres, app and cineplex.com",
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-card.html"
+    },
+    {
+      "category_slug": "retail_other",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "2 pts/$1 at Home Hardware locations",
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-card.html"
+    },
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "one Scene+ Point for every $1",
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-card.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 5,000 points",
+      "min_spend_minor": 100000,
+      "deadline_days": 90,
+      "reward_points": 5000,
+      "eligibility_notes": "deadline stated as 3 months on page not eligible for this offer.",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 2,500 points",
+          "channel": "later_spend",
+          "min_spend_minor": 100000,
+          "deadline_days": 90,
+          "reward_points": 2500,
+          "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-card.html",
+          "seen_on": "2026-08-26"
+        }
+      ],
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-card.html",
+      "verified_at": "2026-08-26T05:19:08.476626Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "FX fee not stated on page; 2.5% Scotia standard assumed [VERIFY]"
+    }
+  ],
+  "content_hash": "9e418b100000ed0b306e4854fea53009c0f96aefa664ae64baf803e0ccce4b78"
+}

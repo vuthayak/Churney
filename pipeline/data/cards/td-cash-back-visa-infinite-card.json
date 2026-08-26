@@ -1,0 +1,78 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "td-cash-back-visa-infinite-card",
+    "issuer_slug": "td",
+    "name": "TD Cash Back Visa Infinite Card",
+    "network": "visa",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 13900,
+    "extra_card_fee_minor": 5000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 0.03,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card"
+    },
+    {
+      "category_slug": "streaming_subs",
+      "rate": 0.03,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 0.03,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 0.03,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "10% Cash Back Dollars in the first 3 months",
+      "min_spend_minor": 350000,
+      "deadline_days": 90,
+      "reward_cashback_minor": 35000,
+      "eligibility_notes": "10% in Cash Back Dollars on Bonus Eligible Purchases up to total spend of $3,500 in first 3 months (replaces regular earn rates on those purchases); first-year annual fee rebate also offered",
+      "first_year_free": true,
+      "alternate_offers": [],
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back/cash-back-visa-infinite-card",
+      "verified_at": "2026-08-26T05:19:09.815575Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "FX fee not stated on cached TD pages; 2.5% TD standard assumed [VERIFY]"
+    }
+  ],
+  "content_hash": "867f742544ea091e617b0eb6273272230923b7224498d749732bc695c60846b1"
+}

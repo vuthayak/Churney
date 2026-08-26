@@ -1,0 +1,2731 @@
+
+
+
+
+
+
+
+    
+    
+        
+        <!DOCTYPE html>
+        <html class="no-js" lang="en_CA" data-placeholder-focus="false">
+            
+
+
+            
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+
+
+
+
+    <script>
+        function getLanguage() {
+            let frRegex = /\/content\/(.*)\/fr\//;
+            let pagePath = "/content/bnc/en/accueil/error/404";
+
+            if(frRegex.test(pagePath)){
+                return "fr";
+            }
+            else{ //default is English
+                return "en";
+            }
+        }
+
+        /*
+        * AEM Page properties hierarchy function
+        * Sets the SDK parameters to be the same as the default parameters configured by the site
+        */
+        function setSiteConfig(){
+            
+            scriptUrl = "https://dam.bnc.ca/content/dam/tools/cmp/notice.js";
+            configDidomi = ("true" === "true");
+            activateDidomi = ("true" === "true");
+            applyDidomiToChildren = ("true" === "true");
+            showDidomi = ("true" === "true");
+            siteToken = "bFXc6fFy";
+            lang = getLanguage();
+        }
+
+
+        /*
+        * AEM Page properties hierarchy function
+        * Updates the SDK parameters if a configuration was set on a page or on a parent page
+        */
+        function setChildParentConfig(){
+            
+            configDidomi = ("true" === "true");
+            activateDidomi = ("true" === "true");
+            applyDidomiToChildren = ("true" === "true");
+            showDidomi = ("true" === "true");
+            childToken = "null";
+            if(childToken === "null"){
+                configDidomi = false;
+            }else{
+                configDidomi = true;
+                foundParentConfig = true;
+            }
+            
+        }
+
+
+        /*
+        * AEM Page properties hierarchy function
+        * Sets the notice token based on the page hierarchy
+        */
+        function setToken(){
+            if(configDidomi){
+                //child on
+                if(foundParentConfig  && applyDidomiToChildren && activateDidomi){
+                    bannerToken = childToken;
+                }
+                //parent on
+                if(!foundParentConfig  && activateDidomi){
+                    bannerToken = childToken;
+                }
+                //parent on, child on with default
+                if(foundParentConfig && !applyDidomiToChildren){
+                    bannerToken = siteToken;
+                }
+            } else{ // default
+                bannerToken = siteToken;
+            }
+        }
+
+
+        /*
+        * Loads Didomi script (notice.js) with correct parameters
+        */
+        function loadJS(FILE_URL, async = true, language, token, enableDidomi) {
+            let scriptEle = document.createElement("script");
+
+            scriptEle.setAttribute("src", FILE_URL);
+            scriptEle.setAttribute("type", "text/javascript");
+            scriptEle.setAttribute("async", async);
+            scriptEle.setAttribute("language", language);
+            scriptEle.setAttribute("token", token);
+            scriptEle.setAttribute("enableDidomi", enableDidomi);
+
+            document.head.appendChild(scriptEle);
+
+            // error event
+            scriptEle.addEventListener("error", (ev) => {
+                console.log("Error on loading file", ev);
+            });
+        }
+
+        /*
+        * The AEM parameters retrieved earlier from the page properties are set in the Didomi SDK
+        * language: the language the banner appears in
+        * notice.enable: wether the notice is visible on the page or not
+        */
+        function setSDKConfigs(language, enableDidomi){
+            //default Didomi config
+            window.didomiConfig = {
+                languages: {
+                    enabled: ['en', 'fr'],
+                    default: ''
+                },
+                notice: {
+                    enable: true
+                }
+            };
+
+            //set banner visibility
+            if(!enableDidomi){
+                window.didomiConfig.notice.enable = enableDidomi;
+            }
+
+            //set language
+            if("fr" === language){
+                window.didomiConfig.languages.enabled = ['fr']
+                window.didomiConfig.languages.default = 'fr'
+            } else{
+                window.didomiConfig.languages.enabled = ['en']
+                window.didomiConfig.languages.default = 'en'
+            }
+        }
+
+
+        /*
+        * Given the banner token, loads Didomi SDK
+        * Config Parameters must always be set before the SDK is loaded
+        */
+        function loadSDK(token) {
+
+            window.gdprAppliesGlobally = true;
+            (function() {
+                (function(e, r) {
+                    var t = document.createElement("link");
+                    t.rel = "preconnect";
+                    t.as = "script";
+
+                    var n = document.createElement("link");
+                    n.rel = "dns-prefetch";
+                    n.as = "script";
+
+                    var i = document.createElement("link");
+                    i.rel = "preload";
+                    i.as = "script";
+
+                    var o = document.createElement("script");
+                    o.id = "spcloader";
+                    o.type = "text/javascript";
+                    o.async = true;
+                    o.charset = "utf-8";
+
+                    var a = "https://sdk.privacy-center.org/" + e + "/loader.js?target_type=notice&target=" + r;
+                    if (window.didomiConfig && window.didomiConfig.user) {
+                        var c = window.didomiConfig.user;
+                        var s = c.country;
+                        var d = c.region;
+                        if (s) {
+                            a += "&country=" + s;
+                            if (d) {
+                                a += "&region=" + d;
+                            }
+                        }
+                    }
+
+                    t.href = "https://sdk.privacy-center.org/";
+                    n.href = "https://sdk.privacy-center.org/";
+                    i.href = a;
+                    o.src = a;
+
+                    var p = document.getElementsByTagName("script")[0];
+                    p.parentNode.insertBefore(t, p);
+                    p.parentNode.insertBefore(n, p);
+                    p.parentNode.insertBefore(i, p);
+                    p.parentNode.insertBefore(o, p);
+                })("f93cfeed-d62f-4357-bfe9-f9f6887f69fb", token);
+            })();
+        }
+
+
+        /*
+        * main function
+        */
+        function initializeDidomi(){
+
+            // set default parameters
+            setSiteConfig();
+
+            // if didomi is active at site level
+            if(configDidomi && applyDidomiToChildren && activateDidomi){
+
+                //reset variables for child/parent configs
+                configDidomi = false;
+
+                setChildParentConfig();
+                setToken();
+
+
+                if(true){
+                    setSDKConfigs(lang, showDidomi);
+                    loadSDK(bannerToken);
+                }else{
+                    loadJS(scriptUrl, true, lang, bannerToken, showDidomi);
+                }
+            }
+            // else didomi should not appear on the page
+        }
+
+
+        // PARAMETERS
+        let lang = "";
+        let bannerToken = "";
+        let siteToken = "";
+        let configDidomi = false;
+        let applyDidomiToChildren = false;
+        let activateDidomi = false;
+        let showDidomi = false;
+        let foundParentConfig = false;
+        let childToken = "";
+        let scriptUrl = "";
+
+        initializeDidomi();
+    </script>
+
+
+    
+        
+
+
+<script type="text/javascript" async src="//assets.adobedtm.com/launch-ENce80544c76a04686ae546c50bbd9979e.min.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+    function getCookie5958(e){let n=e+"=",i=decodeURIComponent(document.cookie).split(";");for(let e=0;e<i.length;e++){let r=i[e];for(;" "==r.charAt(0);)r=r.substring(1);if(0==r.indexOf(n))return r.substring(n.length,r.length)}return""}function findTargetDidomi(){var e=getCookie5958("didomi_token");if(e)var n=atob(e);if("string"==typeof n)var i=JSON.parse(n);if(i&&i.vendors&&i.vendors.enabled)var r=i.vendors.enabled.join(";");if(!(i&&i.purposes&&i.purposes.enabled))return!1;var t=i.purposes.enabled.join(";");return!!(r&&t&&t.indexOf("measuring-improving-experience")>-1&&r.indexOf("c:adobe-target")>-1)}!function(e,n,i,r){var t=e.head;if(t){if(n)return;var o=e.createElement("style");o.id="alloy-prehiding",o.innerText="body { opacity: 0 !important }",t.appendChild(o),setTimeout((function(){o.parentNode&&o.parentNode.removeChild(o)}),3e3)}}(document,!1===findTargetDidomi());
+</script>
+
+
+
+
+    
+
+    
+    
+    
+
+    
+    <meta name="description" content="We apologize but the page you are looking for is not available.">
+
+
+
+
+    <link rel="canonical" href="https://www.nbc.ca/error/404.html"/>
+    <link rel="alternate" hreflang="en_CA" href="https://www.nbc.ca/error/404.html"/>
+    <link rel="alternate" hreflang="en_CA-ca" href="https://www.nbc.ca/error/404.html"/>
+
+    
+    <link rel="alternate" hreflang="fr" href="https://www.bnc.ca/error/404.html"/>
+    <link rel="alternate" hreflang="fr-ca" href="https://www.bnc.ca/error/404.html"/>
+    
+    <link rel="alternate" hreflang="x-default" href="https://www.nbc.ca/error/404.html"/>
+    
+
+
+
+
+
+
+
+    <meta name="robots" content="noindex">
+
+
+    <meta name="robots" content="nofollow">
+
+
+    
+    <title>Page not found | National Bank</title>
+
+    
+    <link rel="icon" type="image/ico" href="/content/dam/global/logo/favicon.ico"/>
+
+    
+    
+    <script src="/etc.clientlibs/web-sites/clientlibs/vendor/jquery/base.min.3f56e989e786c643b30d5668a97daa52.js"></script>
+
+    <script src="/etc.clientlibs/web-sites/clientlibs/vendor/bootstrap.min.244345ec60db61ff779d9a217dc973d7.js"></script>
+
+    <script src="/etc.clientlibs/web-sites/clientlibs/vendor/modernizr.min.fc55eb320ebd5c41c925cba27a0fbe8c.js"></script>
+
+    <script src="/etc.clientlibs/web-sites/clientlibs/core/websites.min.afe369e2daa031e232e9e25e1415ac64.js"></script>
+
+    <script src="/etc.clientlibs/web-sites/clientlibs/core/component.min.047d4d7858d9ff4849ffebffd22e5c10.js"></script>
+
+    <script src="/etc.clientlibs/web-sites/clientlibs/core/deviceSpecificAction.min.1695f4fb150f0ba647779230659f236f.js"></script>
+
+    <script src="/etc.clientlibs/web-sites/clientlibs/core/eventBus.min.a44abd6c87783f6f6189d223ad8b1b05.js"></script>
+
+    <script src="/etc.clientlibs/web-sites/clientlibs/core/events.min.16e5209efa2702100afd766ec89fcae0.js"></script>
+
+    <script src="/etc.clientlibs/web-sites/components/product/clientlibs/core/site.min.ccd3dc81f660dae8910afc4ad72ff240.js"></script>
+
+    <script src="/etc.clientlibs/web-sites/clientlibs/core/dataLayer.min.bb151da6cddfb1aa78316cc5dbef60db.js"></script>
+
+    <script src="/etc.clientlibs/web-sites-toolkit/components/content/staticFooter/clientlibs.min.45ad76f31352c347554825e250a74963.js"></script>
+
+
+    
+    <script src="/etc.clientlibs/web-sites/clientlibs/core/aemFrame.min.1f7a53bd6d37a8ec55c6e7a2496646f3.js"></script>
+
+
+    
+
+
+
+
+
+<link rel="stylesheet" href="/etc.clientlibs/web-sites-bncr/clientlibs/clientlib-site/theme.min.088b0040784f488f5ba8f374e2680914.css" type="text/css">
+
+<link rel="stylesheet" href="/etc.clientlibs/web-sites-toolkit/components/content/floatingButton/clientlib.min.c33302044a1df954a70d507954c808a3.css" type="text/css">
+<script src="/etc.clientlibs/web-sites-toolkit/components/content/floatingButton/clientlib.min.ddde3b744b65decdb2ee1bd690c07f0d.js"></script>
+
+<link rel="stylesheet" href="/etc.clientlibs/web-sites-toolkit/components/content/staticFooter/clientlibs.min.56d0cad8fb312fb999e0715679433926.css" type="text/css">
+
+
+
+
+    
+    
+    
+                                    <link type="text/css" rel="stylesheet" href="/content/dam/css/patchBncResponsive.css">
+                                
+    
+
+
+
+    
+
+
+
+<script>
+    var dataLayerDefinitionFile = '/content/dam/dataLayerConfig/rules-bnc.json';
+    var dtmEventSource = 'nbc';
+    var dataLayerPagePayload = JSON.parse('[{"elementName":"loB","elementValue":"nbc"}, {"elementName":"technicalError","elementValue":"404 page not found"}]');
+    var responseStatus = 404;
+
+    // Old payload
+    var elements = [];
+    
+
+    Websites.DataLayer.init(dtmEventSource, dataLayerPagePayload, dataLayerDefinitionFile, responseStatus);
+
+</script>
+
+
+
+    <!-- Schema.org Page informations  -->
+    
+
+    <script src="/etc.clientlibs/web-sites/components/schema/clientlibs/site.min.4b09f04e1a826488d175b2c5abe2e622.js"></script>
+
+    
+    
+
+    <script>
+
+        var cqtags = [];
+        
+
+        Websites.Schema.createPageTag (
+            {
+                jcrPageTitle: "Page not found",
+                jcrDescription: "We apologize but the page you are looking for is not available.",
+                schemaTags: {}
+            });
+    </script>
+
+
+
+
+    
+
+
+
+    <!-- Load some clientlibs in defer -->
+    <!--<sly data-sly-use.clientLibAsync="/apps/clientlib-async/sightly/templates/clientlib.html"-->
+<!--     data-sly-call=""-->
+<!--     data-sly-unwrap/>-->
+
+<!--TODO: check if we still need dotdotdot library-->
+
+<script src="/etc.clientlibs/web-sites/clientlibs/vendor/jquery/dotdotdot.498a5bd9acb942b7f73fed550179e3e7.js" defer></script>
+
+
+
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="167x167" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-167x167.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-167x167-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-152x152-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-144x144-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-120x120-precomposed.png"/>
+    <link rel="apple-touch-icon" sizes="any" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-48x48.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="any" href="/etc.clientlibs/web-sites-toolkit/clientlibs/clientlib-static/resources/apple-touch-icon-48x48-precomposed.png"/>
+
+
+
+
+
+
+</head>
+            
+
+
+
+
+<body>
+    <div class="products-dictionary">
+		
+
+
+
+    </div>
+		
+	<main>
+
+<div class="container-fluid">
+    <div class="parsys"><div class="panelContainer section">
+
+
+<div class="cq-placeholder" data-emptytext="web-sites.panelContainer.jcrTitle.label"></div>
+
+
+
+    <div>
+
+<script src="/etc.clientlibs/web-sites/clientlibs/vendor/jquery/jquery-sticky-1-0-4.min.b245ebc9b251955a08c1cf747a222d10.js"></script>
+<script src="/etc.clientlibs/web-sites/clientlibs/core/stickyBehavior.min.81a4b9df09c15476124998587316faed.js"></script>
+<script src="/etc.clientlibs/web-sites-toolkit/core/wcm/components/genericPanel/v1/genericPanel/clientlibs/site.min.8bd3357c8782030bd34e3822ff5765c2.js"></script>
+
+<script src="/etc.clientlibs/web-sites/clientlibs/core/eventListenerHandlers.min.6da5ec95ff88986fe5a678195fb73f2e.js"></script>
+<script src="/etc.clientlibs/web-sites/clientlibs/core/basepage.min.3097d244e3acdaa1cc46cbe27a844341.js"></script>
+<script src="/etc.clientlibs/web-sites/clientlibs/core/sticky.min.f7421d1f70d92b9a74fb9655256bba54.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panelContainer         "
+    
+    
+    data-websites-component="/components/panelContainer.v1"
+    data-panel-container-lg-mg=""
+    data-panel-container-lg-pd="35px 0 25px 0"
+    data-panel-container-lg-ht=""
+    data-panel-container-md-mg=""
+    data-panel-container-md-pd="35px 0 25px 0"
+    data-panel-container-md-ht=""
+    data-panel-container-sm-mg=""
+    data-panel-container-sm-pd="35px 0 25px 0"
+    data-panel-container-sm-ht=""
+    data-panel-container-xs-mg=""
+    data-panel-container-xs-pd="25px 0 25px 10vw"
+    data-panel-container-xs-ht=""
+    data-panel-container-limit="">
+	<div class="parsys"><div class="columns parbase section">
+
+
+
+<script src="/etc.clientlibs/web-sites/components/columns/clientlibs/site.min.105741b41766cc59fef14e6b39edcf68.js"></script>
+
+<div data-emptytext="Responsive Columns" class="cq-placeholder"></div>
+
+
+
+
+	
+		
+			
+			
+		
+		
+			
+			
+		
+		<div style=""
+			class="columns-row row  "
+		
+			data-style-lg="" data-height-lg=""
+			data-width-lg=""
+			data-background-color-lg=""
+			data-background-color-xs="">
+			<div style=""
+				class="col-xs-12 col-sm-12 columns-title "
+				data-height="" data-width=""
+				data-style-xs="" data-height-xs=""
+				data-width-xs="">
+				
+			</div>
+
+			
+
+			
+				<div class="col-xs-12 col-sm-2 column  col-first  ">
+					<div class="parsys1 parsys">
+</div>
+
+				</div>
+			
+				<div class="col-xs-12 col-sm-8 column    ">
+					<div class="parsys2 parsys"><div class="textandimage parbase section">
+
+
+<script src="/etc.clientlibs/web-sites/clientlibs/core/textandimage.min.9c820de2cd8bf947380bedee97d56688.js"></script>
+
+<link rel="stylesheet" href="/etc.clientlibs/web-sites/clientlibs/core/lightbox.min.52a11ac88f03e7666b3215ec7235efb2.css" type="text/css">
+<script src="/etc.clientlibs/web-sites/clientlibs/core/lightbox.min.247e04eae056fe5567a1503aa2fe6b77.js"></script>
+
+<link rel="stylesheet" href="/etc.clientlibs/web-sites/clientlibs/core/modal.min.9457654facd5992c898d0b9d071341f8.css" type="text/css">
+<script src="/etc.clientlibs/web-sites/clientlibs/core/modal.min.ec1acb2c245793c9aca006b573a1c26e.js"></script>
+
+
+
+
+
+
+    
+    
+    
+
+
+    <div id="37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_panelcontainer_parsys_columns_parsys2_textandimage" class="text-image-container " 
+    data-text-image-container-right-left="false">
+    
+        
+        
+            
+        
+    
+    
+        
+            
+    <div class="row text-image-row"
+		data-websites-component="/components/textandimage/rowcontainer"
+
+    	data-text-image-rowcontainer-bg-type-lg="none"
+    	
+
+
+	
+
+        data-text-image-rowcontainer-height-lg="0"
+        data-text-image-rowcontainer-width-lg="0"
+        data-text-image-rowcontainer-class-lg="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-md="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-md="0"
+        data-text-image-rowcontainer-width-md="0"
+        data-text-image-rowcontainer-class-md="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-sm="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-sm="0"
+        data-text-image-rowcontainer-width-sm="0"
+        data-text-image-rowcontainer-class-sm="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-xs="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-xs="0"
+        data-text-image-rowcontainer-width-xs="0"
+        data-text-image-rowcontainer-class-xs="backgroundColor1">
+		
+			
+	           	
+					
+					    
+	
+	
+	
+	
+		
+	
+			
+
+
+    <div class="col-xs-12 text-image-image-container" >
+
+	
+		<a href="https://www.nbc.ca/personal.html" target='_self'>
+		
+
+    <div>
+    
+        
+
+
+
+
+	<picture>
+		
+			  
+		    
+
+
+
+    
+    
+    
+    	  	
+    		
+				
+				    
+					    <source srcset="/content/dam/bnc/commun/logo/logo-nbc-155x50.svg" media="(max-width: 767px)">	
+				    
+				    
+				            
+				    		
+    		
+    			
+			
+    
+
+		    
+		
+			
+		    
+
+
+
+    
+    
+    
+    	  	
+    		
+				
+				    
+				    
+						<source srcset="/content/dam/bnc/commun/logo/logo-nbc-155x50.svg" media="(max-width: 991px)">	
+				    
+				            
+				    		
+    		
+    			
+			
+    
+
+		 
+		
+			
+	    	
+
+
+
+    
+    
+    
+    	  	
+    		
+				
+				    
+				    
+				    
+						<source srcset="/content/dam/bnc/commun/logo/logo-nbc-155x50.svg" media="(max-width: 1199px)">
+				            
+				    		
+    		
+    			
+			
+    
+
+		
+		
+		    
+
+
+
+    
+		<source srcset="/content/dam/bnc/commun/logo/logo-nbc-155x50.svg" media="(min-width: 1200px)">
+    
+    
+
+		
+	    	<img src='/content/dam/bnc/commun/logo/logo-nbc-155x50.svg' srcset='/content/dam/bnc/commun/logo/logo-nbc-155x50.svg' data-websites-component="/components/textandimage/image" alt="National Bank logo" data-picture-alttext-lg="National Bank logo" data-picture-alttext-md="National Bank logo" data-picture-alttext-sm="National Bank logo" data-picture-alttext-xs="National Bank logo" class="pull-left image-responsive">
+	</picture>
+
+	
+	
+		<script type="text/javascript">
+		
+			var Websites = Websites || {};
+			Websites.FragmentPicture = Websites.FragmentPicture || {
+				init: function(viewport) {
+					Websites.FragmentPicture.loadAlternativeText(viewport);
+				},
+	
+		    	loadAlternativeText: function(viewport) {
+		        	$('[data-websites-component="/components/textandimage/image"]').each(function(){
+		    			if(viewport.is("xs") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-xs"));
+		    			} else if(viewport.is("sm") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-sm"));
+		    			} else if(viewport.is("md") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-md"));
+		    			} else if(viewport.is("lg") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-lg"));
+		            	}
+		        	});
+		    	}
+			};
+	
+			$(document).ready(function(){
+                Websites.FragmentPicture.loadAlternativeText(ResponsiveBootstrapToolkit);
+			});
+
+            Websites.Events.onBreakpointChanged(function(){
+                Websites.FragmentPicture.loadAlternativeText(ResponsiveBootstrapToolkit);
+            });
+		</script>
+	
+	
+	
+   
+        	      
+    </div>
+
+	
+			
+
+			<script>
+                (function(){
+                    var eventInfo = {'dtmTracking' : [''], 'eventName' : '', 'elements' : [] };
+                    
+                    Websites.DataLayer.setLinkPayload(JSON.stringify(eventInfo));
+                })();
+			</script>
+
+		</a>
+		
+	
+</div>
+<div 
+	class="col-xs-12 text-image-text-container  "
+    
+	data-websites-component="/components/textandimage/text"
+	data-text-image-text-container-style-xs="{'padding-top': '0px'}" 
+	data-text-image-text-container-style-sm="{'padding-top': '0px'}"
+	data-text-image-text-container-style-md="{'padding-top': '0px'}"
+	data-text-image-text-container-style-lg="{'padding-top': '0px'}"></div>
+
+					
+					
+					
+					
+				
+	    	
+	    	
+		
+	</div>
+        
+        
+        
+    
+    
+
+    
+
+    
+
+            
+
+        <script>
+
+        (function(){
+
+        var dataLayerViewEventName = '' || '';
+        var dataLayerViewLayerProperties = [];
+        var $el;
+
+        
+
+        if(dataLayerViewEventName.trim().length) {
+
+        var obj = {
+        dataLayerViewEventName: dataLayerViewEventName,
+        componentId: "37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_panelcontainer_parsys_columns_parsys2_textandimage" ,
+        dataLayerViewLayerProperties: dataLayerViewLayerProperties
+        };
+
+        // IE11 trick (because IE11 don't know document.currentScript):
+        https://stackoverflow.com/questions/403967/how-may-i-reference-the-script-tag-that-loaded-the-currently-executing-script
+        if(document.currentScript){
+        $el = document.currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        } else {
+        var scripts = document.getElementsByTagName( 'script' );
+        var currentScript = scripts[scripts.length - 1];
+        $el = currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        }
+
+        $el.setAttribute('data-dataLayerViewEventJson', JSON.stringify(
+        Websites.DataLayer.cleanViewEventJSON(obj)));
+        $el.setAttribute("data-dataLayerViewEvent", 'true');
+
+        Websites.DataLayer.updateDataLayerViewEventElementsArray();
+
+        }
+
+        })();
+
+        </script>
+    
+</div>
+
+		<script>
+
+		/**
+		* clickEventDownloadHandler()
+		* Is used to handle download image action selected as an opening mode
+		*
+		*/
+
+		var firstDownload = true;
+
+		function clickEventDownloadHandler() {
+
+		var link = this;
+		var filename = link.dataset.linkpath;
+		var newFile = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+		var fn = filename.substring(filename.lastIndexOf('/')+1);
+
+		if (newFile) {
+
+		if (firstDownload) {
+		firstDownload = false;
+		this.href = link.href.slice(0, link.href.lastIndexOf('.'));
+		} else {
+		this.href = link.href;
+		}
+
+		this.download = fn;
+
+		} else {
+		this.download = fn + ".html";
+		}
+		}
+
+		</script></div>
+
+</div>
+
+				</div>
+			
+				<div class="col-xs-12 col-sm-2 column   col-last ">
+					<div class="parsys3 parsys">
+</div>
+
+				</div>
+			
+		</div>
+	
+	
+
+</div>
+
+</div>
+
+</div>
+    
+
+
+<!--/*  Initialize Js */-->
+<script id="37b847ee-1acf-4789-9838-d5c3b8e8f45c/parsys/panelcontainer">
+    if(""){
+        new Websites.Sticky({
+            nodePath: "37b847ee-1acf-4789-9838-d5c3b8e8f45c/parsys/panelcontainer",
+            breakpoint: {
+                lg: {
+                    to: ""
+                },
+                md: {
+                    to: ""
+                },
+                sm: {
+                    to: "",
+                },
+                xs: {
+                    to: ""
+                }
+            }
+        });
+    }
+</script>
+
+</div>
+</div>
+<div class="panelContainer section">
+
+
+<div class="cq-placeholder" data-emptytext="web-sites.panelContainer.jcrTitle.label"></div>
+
+
+
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panelContainer         plainhtmlcode-referent"
+    
+    
+    data-websites-component="/components/panelContainer.v1"
+    data-panel-container-lg-mg=""
+    data-panel-container-lg-pd=""
+    data-panel-container-lg-ht=""
+    data-panel-container-md-mg=""
+    data-panel-container-md-pd=""
+    data-panel-container-md-ht=""
+    data-panel-container-sm-mg=""
+    data-panel-container-sm-pd=""
+    data-panel-container-sm-ht=""
+    data-panel-container-xs-mg=""
+    data-panel-container-xs-pd=""
+    data-panel-container-xs-ht=""
+    data-panel-container-limit="">
+	<div class="parsys"><div class="textandimage parbase section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+    <div id="37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_panelcontainer_25344863_parsys_textandimage" class="text-image-container bncr-banner" 
+    data-text-image-container-right-left="false">
+    
+        
+        
+            
+        
+    
+    
+        
+        
+                <div class="row text-image-row"
+		data-websites-component="/components/textandimage/rowcontainer"
+
+    	data-text-image-rowcontainer-bg-type-lg="image"
+    	
+
+
+
+	
+	    
+	    	data-text-image-rowcontainer-style-lg="url('/content/dam/bnc/commun/ban/ban-page-404.png')"
+	    
+	    
+	
+	
+
+        data-text-image-rowcontainer-height-lg="377"
+        data-text-image-rowcontainer-width-lg="1100"
+        data-text-image-rowcontainer-class-lg="backgroundColorEFEFEF"
+
+        data-text-image-rowcontainer-bg-type-md="image"
+        
+
+
+
+	
+	    
+	    
+    		  	
+	    		
+					
+					    
+					    
+					    
+							data-text-image-rowcontainer-style-md="url('/content/dam/bnc/commun/ban/ban-page-404.png')"
+					            
+					   		
+	    		
+    				
+    		    
+	    
+	
+	
+
+        data-text-image-rowcontainer-height-md="377"
+        data-text-image-rowcontainer-width-md="1100"
+        data-text-image-rowcontainer-class-md="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-sm="image"
+        
+
+
+
+	
+	    
+	    
+    		  	
+	    		
+					
+					    
+					    
+							data-text-image-rowcontainer-style-sm="url('/content/dam/bnc/commun/ban/ban-page-404.png')"
+					    
+					            
+					   		
+	    		
+    				
+    		    
+	    
+	
+	
+
+        data-text-image-rowcontainer-height-sm="377"
+        data-text-image-rowcontainer-width-sm="1100"
+        data-text-image-rowcontainer-class-sm="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-xs="image"
+        
+
+
+
+	
+	    
+	    
+    		  	
+	    		
+					
+					    
+					    	data-text-image-rowcontainer-style-xs="url('/content/dam/bnc/commun/ban/ban-page-404.png')"
+					    
+					    
+					            
+					   		
+	    		
+    				
+    		    
+	    
+	
+	
+
+        data-text-image-rowcontainer-height-xs="377"
+        data-text-image-rowcontainer-width-xs="1100"
+        data-text-image-rowcontainer-class-xs="backgroundColor1">
+
+        <div class="col-xs-12 text-image-text-container " ></div>
+	</div>
+        
+        
+    
+    
+
+    
+
+    
+
+            
+
+        <script>
+
+        (function(){
+
+        var dataLayerViewEventName = '' || '';
+        var dataLayerViewLayerProperties = [];
+        var $el;
+
+        
+
+        if(dataLayerViewEventName.trim().length) {
+
+        var obj = {
+        dataLayerViewEventName: dataLayerViewEventName,
+        componentId: "37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_panelcontainer_25344863_parsys_textandimage" ,
+        dataLayerViewLayerProperties: dataLayerViewLayerProperties
+        };
+
+        // IE11 trick (because IE11 don't know document.currentScript):
+        https://stackoverflow.com/questions/403967/how-may-i-reference-the-script-tag-that-loaded-the-currently-executing-script
+        if(document.currentScript){
+        $el = document.currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        } else {
+        var scripts = document.getElementsByTagName( 'script' );
+        var currentScript = scripts[scripts.length - 1];
+        $el = currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        }
+
+        $el.setAttribute('data-dataLayerViewEventJson', JSON.stringify(
+        Websites.DataLayer.cleanViewEventJSON(obj)));
+        $el.setAttribute("data-dataLayerViewEvent", 'true');
+
+        Websites.DataLayer.updateDataLayerViewEventElementsArray();
+
+        }
+
+        })();
+
+        </script>
+    
+</div>
+
+		<script>
+
+		/**
+		* clickEventDownloadHandler()
+		* Is used to handle download image action selected as an opening mode
+		*
+		*/
+
+		var firstDownload = true;
+
+		function clickEventDownloadHandler() {
+
+		var link = this;
+		var filename = link.dataset.linkpath;
+		var newFile = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+		var fn = filename.substring(filename.lastIndexOf('/')+1);
+
+		if (newFile) {
+
+		if (firstDownload) {
+		firstDownload = false;
+		this.href = link.href.slice(0, link.href.lastIndexOf('.'));
+		} else {
+		this.href = link.href;
+		}
+
+		this.download = fn;
+
+		} else {
+		this.download = fn + ".html";
+		}
+		}
+
+		</script></div>
+<div class="plainhtmlcode section">
+<div data-emptytext="HTML Component" class="cq-placeholder"></div>
+<h1 class="h1variant5">Oops!</h1>
+<p class="chapeau4">The page you are looking for has been moved or deleted.</p>
+<p class="chapeau3">Visit our homepage and explore our services.</p>
+<p><a class="btnRTE3 btn-arrow btn" href="/personal.html" target="_self">Go to homepage</a></p>
+
+<style>
+.bncr-banner .text-image-row {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background: url(/content/dam/bnc/commun/ban/ban-page-404.png) no-repeat, #efefef;
+    background-position: center top;
+}
+
+.plainhtmlcode-referent { position:relative;}
+.plainhtmlcode.section {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    height: 100%;
+    left: 50%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 997px) {
+.plainhtmlcode p.chapeau3,
+.plainhtmlcode p.chapeau4 {
+      text-shadow: 0px 0px 5px #efefef;
+}
+a.btnRTE3, .a[rel=btnRTE3] {
+    font-size: 0.9em;
+}
+}
+
+@media (max-width: 767px) {
+.plainhtmlcode.section {
+    justify-items: center;
+    text-align: center;
+    left: 35px;
+    right: 35px;
+    margin: auto;
+}
+.plainhtmlcode.section p,
+.text-image-row p {
+    text-align: center;
+}
+a.btnRTE3.btn-arrow.btn {
+    margin-bottom: 18px;
+}
+}
+</style>
+</div>
+
+</div>
+
+</div>
+    
+
+
+<!--/*  Initialize Js */-->
+<script id="37b847ee-1acf-4789-9838-d5c3b8e8f45c/parsys/panelcontainer_25344863">
+    if(""){
+        new Websites.Sticky({
+            nodePath: "37b847ee-1acf-4789-9838-d5c3b8e8f45c/parsys/panelcontainer_25344863",
+            breakpoint: {
+                lg: {
+                    to: ""
+                },
+                md: {
+                    to: ""
+                },
+                sm: {
+                    to: "",
+                },
+                xs: {
+                    to: ""
+                }
+            }
+        });
+    }
+</script>
+
+</div>
+</div>
+<div class="columns parbase section">
+
+
+
+
+<div data-emptytext="Responsive Columns" class="cq-placeholder"></div>
+
+
+
+
+	
+		
+			
+			
+		
+		
+			
+			
+		
+		<div style=""
+			class="columns-row row  "
+		
+			data-style-lg="" data-height-lg=""
+			data-width-lg=""
+			data-background-color-lg=""
+			data-background-color-xs="">
+			<div style=""
+				class="col-xs-12 col-sm-12 columns-title "
+				data-height="" data-width=""
+				data-style-xs="" data-height-xs=""
+				data-width-xs="">
+				
+			</div>
+
+			
+
+			
+				<div class="col-xs-12 col-sm-2 column  col-first  ">
+					<div class="parsys1 parsys">
+</div>
+
+				</div>
+			
+				<div class="col-xs-12 col-sm-8 column    ">
+					<div class="parsys2 parsys"><div class="textandimage parbase section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+    <div id="37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_columns_parsys2_textandimage_328804144" class="text-image-container " 
+    data-text-image-container-right-left="false">
+    
+        
+        
+            
+        
+    
+    
+        
+        
+                <div class="row text-image-row"
+		data-websites-component="/components/textandimage/rowcontainer"
+
+    	data-text-image-rowcontainer-bg-type-lg="none"
+    	
+
+
+	
+
+        data-text-image-rowcontainer-height-lg="0"
+        data-text-image-rowcontainer-width-lg="0"
+        data-text-image-rowcontainer-class-lg="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-md="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-md="0"
+        data-text-image-rowcontainer-width-md="0"
+        data-text-image-rowcontainer-class-md="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-sm="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-sm="0"
+        data-text-image-rowcontainer-width-sm="0"
+        data-text-image-rowcontainer-class-sm="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-xs="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-xs="0"
+        data-text-image-rowcontainer-width-xs="0"
+        data-text-image-rowcontainer-class-xs="backgroundColor1">
+
+        <div class="col-xs-12 text-image-text-container " ><p>&nbsp;</p>
+<p class="chapeau3"><b>Can we point you in the right direction?</b><br>
+</p>
+<p>&nbsp;</p>
+</div>
+	</div>
+        
+        
+    
+    
+
+    
+
+    
+
+            
+
+        <script>
+
+        (function(){
+
+        var dataLayerViewEventName = '' || '';
+        var dataLayerViewLayerProperties = [];
+        var $el;
+
+        
+
+        if(dataLayerViewEventName.trim().length) {
+
+        var obj = {
+        dataLayerViewEventName: dataLayerViewEventName,
+        componentId: "37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_columns_parsys2_textandimage_328804144" ,
+        dataLayerViewLayerProperties: dataLayerViewLayerProperties
+        };
+
+        // IE11 trick (because IE11 don't know document.currentScript):
+        https://stackoverflow.com/questions/403967/how-may-i-reference-the-script-tag-that-loaded-the-currently-executing-script
+        if(document.currentScript){
+        $el = document.currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        } else {
+        var scripts = document.getElementsByTagName( 'script' );
+        var currentScript = scripts[scripts.length - 1];
+        $el = currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        }
+
+        $el.setAttribute('data-dataLayerViewEventJson', JSON.stringify(
+        Websites.DataLayer.cleanViewEventJSON(obj)));
+        $el.setAttribute("data-dataLayerViewEvent", 'true');
+
+        Websites.DataLayer.updateDataLayerViewEventElementsArray();
+
+        }
+
+        })();
+
+        </script>
+    
+</div>
+
+		<script>
+
+		/**
+		* clickEventDownloadHandler()
+		* Is used to handle download image action selected as an opening mode
+		*
+		*/
+
+		var firstDownload = true;
+
+		function clickEventDownloadHandler() {
+
+		var link = this;
+		var filename = link.dataset.linkpath;
+		var newFile = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+		var fn = filename.substring(filename.lastIndexOf('/')+1);
+
+		if (newFile) {
+
+		if (firstDownload) {
+		firstDownload = false;
+		this.href = link.href.slice(0, link.href.lastIndexOf('.'));
+		} else {
+		this.href = link.href;
+		}
+
+		this.download = fn;
+
+		} else {
+		this.download = fn + ".html";
+		}
+		}
+
+		</script></div>
+<div class="columns parbase section">
+
+
+
+
+<div data-emptytext="Responsive Columns" class="cq-placeholder"></div>
+
+
+
+
+	
+		
+			
+			
+		
+		
+			
+			
+		
+		<div style=""
+			class="columns-row row   row-eq-height"
+		
+			data-style-lg="" data-height-lg=""
+			data-width-lg=""
+			data-background-color-lg=""
+			data-background-color-xs="">
+			<div style=""
+				class="col-xs-12 col-sm-12 columns-title "
+				data-height="" data-width=""
+				data-style-xs="" data-height-xs=""
+				data-width-xs="">
+				
+			</div>
+
+			
+
+			
+				<div class="col-xs-12 col-sm-6 column  col-first  ">
+					<div class="parsys1 parsys"><div class="columns parbase section">
+
+
+
+
+<div data-emptytext="Responsive Columns" class="cq-placeholder"></div>
+
+
+
+
+	
+		
+			
+			
+		
+		
+			
+			
+		
+		<div style=""
+			class="columns-row row  "
+		
+			data-style-lg="" data-height-lg=""
+			data-width-lg=""
+			data-background-color-lg=""
+			data-background-color-xs="">
+			<div style=""
+				class="col-xs-12 col-sm-12 columns-title "
+				data-height="" data-width=""
+				data-style-xs="" data-height-xs=""
+				data-width-xs="">
+				
+			</div>
+
+			
+
+			
+				<div class="col-xs-12 col-sm-3 column  col-first  ">
+					<div class="parsys1 parsys"><div class="textandimage parbase section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+    <div id="37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_columns_parsys2_columns_parsys1_columns_parsys1_textandimage" class="text-image-container " 
+    data-text-image-container-right-left="false">
+    
+        
+        
+            
+        
+    
+    
+        
+            
+    <div class="row text-image-row"
+		data-websites-component="/components/textandimage/rowcontainer"
+
+    	data-text-image-rowcontainer-bg-type-lg="none"
+    	
+
+
+	
+
+        data-text-image-rowcontainer-height-lg="0"
+        data-text-image-rowcontainer-width-lg="0"
+        data-text-image-rowcontainer-class-lg="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-md="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-md="0"
+        data-text-image-rowcontainer-width-md="0"
+        data-text-image-rowcontainer-class-md="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-sm="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-sm="0"
+        data-text-image-rowcontainer-width-sm="0"
+        data-text-image-rowcontainer-class-sm="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-xs="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-xs="0"
+        data-text-image-rowcontainer-width-xs="0"
+        data-text-image-rowcontainer-class-xs="backgroundColor1">
+		
+			
+	           	
+					
+					    
+	
+	
+	
+		
+	
+	
+			
+
+
+    <div class="col-xs-12 text-image-image-container" >
+
+		
+
+    <div>
+    
+        
+
+
+
+
+	<picture>
+		
+			  
+		    
+
+
+
+    
+    
+    
+    	  	
+    		
+				
+				    
+					    <source srcset="/content/dam/bnc/commun/picto/picto-recherche-70x70.png" media="(max-width: 767px)">	
+				    
+				    
+				            
+				    		
+    		
+    			
+			
+    
+
+		    
+		
+			
+		    
+
+
+
+    
+    
+    
+    	  	
+    		
+				
+				    
+				    
+						<source srcset="/content/dam/bnc/commun/picto/picto-recherche-70x70.png" media="(max-width: 991px)">	
+				    
+				            
+				    		
+    		
+    			
+			
+    
+
+		 
+		
+			
+	    	
+
+
+
+    
+    
+    
+    	  	
+    		
+				
+				    
+				    
+				    
+						<source srcset="/content/dam/bnc/commun/picto/picto-recherche-70x70.png" media="(max-width: 1199px)">
+				            
+				    		
+    		
+    			
+			
+    
+
+		
+		
+		    
+
+
+
+    
+		<source srcset="/content/dam/bnc/commun/picto/picto-recherche-70x70.png" media="(min-width: 1200px)">
+    
+    
+
+		
+	    	<img src='/content/dam/bnc/commun/picto/picto-recherche-70x70.png' srcset='/content/dam/bnc/commun/picto/picto-recherche-70x70.png' data-websites-component="/components/textandimage/image" alt="picto de recherche" data-picture-alttext-lg="picto de recherche" data-picture-alttext-md="picto de recherche" data-picture-alttext-sm="picto de recherche" data-picture-alttext-xs="picto de recherche" class="center-block image-responsive">
+	</picture>
+
+	
+	
+		<script type="text/javascript">
+		
+			var Websites = Websites || {};
+			Websites.FragmentPicture = Websites.FragmentPicture || {
+				init: function(viewport) {
+					Websites.FragmentPicture.loadAlternativeText(viewport);
+				},
+	
+		    	loadAlternativeText: function(viewport) {
+		        	$('[data-websites-component="/components/textandimage/image"]').each(function(){
+		    			if(viewport.is("xs") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-xs"));
+		    			} else if(viewport.is("sm") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-sm"));
+		    			} else if(viewport.is("md") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-md"));
+		    			} else if(viewport.is("lg") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-lg"));
+		            	}
+		        	});
+		    	}
+			};
+	
+			$(document).ready(function(){
+                Websites.FragmentPicture.loadAlternativeText(ResponsiveBootstrapToolkit);
+			});
+
+            Websites.Events.onBreakpointChanged(function(){
+                Websites.FragmentPicture.loadAlternativeText(ResponsiveBootstrapToolkit);
+            });
+		</script>
+	
+	
+	
+   
+        	      
+    </div>
+
+		
+	
+</div>
+<div 
+	class="col-xs-12 text-image-text-container  "
+    
+	data-websites-component="/components/textandimage/text"
+	data-text-image-text-container-style-xs="{'padding-top': '0px'}" 
+	data-text-image-text-container-style-sm="{'padding-top': '0px'}"
+	data-text-image-text-container-style-md="{'padding-top': '0px'}"
+	data-text-image-text-container-style-lg="{'padding-top': '0px'}"></div>
+
+					
+					
+					
+					
+				
+	    	
+	    	
+		
+	</div>
+        
+        
+        
+    
+    
+
+    
+
+    
+
+            
+
+        <script>
+
+        (function(){
+
+        var dataLayerViewEventName = '' || '';
+        var dataLayerViewLayerProperties = [];
+        var $el;
+
+        
+
+        if(dataLayerViewEventName.trim().length) {
+
+        var obj = {
+        dataLayerViewEventName: dataLayerViewEventName,
+        componentId: "37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_columns_parsys2_columns_parsys1_columns_parsys1_textandimage" ,
+        dataLayerViewLayerProperties: dataLayerViewLayerProperties
+        };
+
+        // IE11 trick (because IE11 don't know document.currentScript):
+        https://stackoverflow.com/questions/403967/how-may-i-reference-the-script-tag-that-loaded-the-currently-executing-script
+        if(document.currentScript){
+        $el = document.currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        } else {
+        var scripts = document.getElementsByTagName( 'script' );
+        var currentScript = scripts[scripts.length - 1];
+        $el = currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        }
+
+        $el.setAttribute('data-dataLayerViewEventJson', JSON.stringify(
+        Websites.DataLayer.cleanViewEventJSON(obj)));
+        $el.setAttribute("data-dataLayerViewEvent", 'true');
+
+        Websites.DataLayer.updateDataLayerViewEventElementsArray();
+
+        }
+
+        })();
+
+        </script>
+    
+</div>
+
+		<script>
+
+		/**
+		* clickEventDownloadHandler()
+		* Is used to handle download image action selected as an opening mode
+		*
+		*/
+
+		var firstDownload = true;
+
+		function clickEventDownloadHandler() {
+
+		var link = this;
+		var filename = link.dataset.linkpath;
+		var newFile = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+		var fn = filename.substring(filename.lastIndexOf('/')+1);
+
+		if (newFile) {
+
+		if (firstDownload) {
+		firstDownload = false;
+		this.href = link.href.slice(0, link.href.lastIndexOf('.'));
+		} else {
+		this.href = link.href;
+		}
+
+		this.download = fn;
+
+		} else {
+		this.download = fn + ".html";
+		}
+		}
+
+		</script></div>
+
+</div>
+
+				</div>
+			
+				<div class="col-xs-12 col-sm-9 column   col-last ">
+					<div class="parsys2 parsys"><div class="textandimage parbase section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+    <div id="37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_columns_parsys2_columns_parsys1_columns_parsys2_textandimage" class="text-image-container " 
+    data-text-image-container-right-left="false">
+    
+        
+        
+            
+        
+    
+    
+        
+        
+                <div class="row text-image-row"
+		data-websites-component="/components/textandimage/rowcontainer"
+
+    	data-text-image-rowcontainer-bg-type-lg="none"
+    	
+
+
+	
+
+        data-text-image-rowcontainer-height-lg="0"
+        data-text-image-rowcontainer-width-lg="0"
+        data-text-image-rowcontainer-class-lg="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-md="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-md="0"
+        data-text-image-rowcontainer-width-md="0"
+        data-text-image-rowcontainer-class-md="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-sm="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-sm="0"
+        data-text-image-rowcontainer-width-sm="0"
+        data-text-image-rowcontainer-class-sm="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-xs="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-xs="0"
+        data-text-image-rowcontainer-width-xs="0"
+        data-text-image-rowcontainer-class-xs="backgroundColor1">
+
+        <div class="col-xs-12 text-image-text-container " ><p class="chapeau3"><b>Search</b></p>
+<p class="chapeau3"><a class="btnRTE3 btn-arrow btn" href="/personal/help-centre.html" target="_self" hrefnoextension="false" role="button" tabindex="0" onkeyup="if(event.key === ' ') this.click();">Go</a></p>
+</div>
+	</div>
+        
+        
+    
+    
+
+    
+
+    
+
+            
+
+        <script>
+
+        (function(){
+
+        var dataLayerViewEventName = '' || '';
+        var dataLayerViewLayerProperties = [];
+        var $el;
+
+        
+
+        if(dataLayerViewEventName.trim().length) {
+
+        var obj = {
+        dataLayerViewEventName: dataLayerViewEventName,
+        componentId: "37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_columns_parsys2_columns_parsys1_columns_parsys2_textandimage" ,
+        dataLayerViewLayerProperties: dataLayerViewLayerProperties
+        };
+
+        // IE11 trick (because IE11 don't know document.currentScript):
+        https://stackoverflow.com/questions/403967/how-may-i-reference-the-script-tag-that-loaded-the-currently-executing-script
+        if(document.currentScript){
+        $el = document.currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        } else {
+        var scripts = document.getElementsByTagName( 'script' );
+        var currentScript = scripts[scripts.length - 1];
+        $el = currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        }
+
+        $el.setAttribute('data-dataLayerViewEventJson', JSON.stringify(
+        Websites.DataLayer.cleanViewEventJSON(obj)));
+        $el.setAttribute("data-dataLayerViewEvent", 'true');
+
+        Websites.DataLayer.updateDataLayerViewEventElementsArray();
+
+        }
+
+        })();
+
+        </script>
+    
+</div>
+
+		<script>
+
+		/**
+		* clickEventDownloadHandler()
+		* Is used to handle download image action selected as an opening mode
+		*
+		*/
+
+		var firstDownload = true;
+
+		function clickEventDownloadHandler() {
+
+		var link = this;
+		var filename = link.dataset.linkpath;
+		var newFile = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+		var fn = filename.substring(filename.lastIndexOf('/')+1);
+
+		if (newFile) {
+
+		if (firstDownload) {
+		firstDownload = false;
+		this.href = link.href.slice(0, link.href.lastIndexOf('.'));
+		} else {
+		this.href = link.href;
+		}
+
+		this.download = fn;
+
+		} else {
+		this.download = fn + ".html";
+		}
+		}
+
+		</script></div>
+
+</div>
+
+				</div>
+			
+		</div>
+	
+	
+
+</div>
+
+</div>
+
+				</div>
+			
+				<div class="col-xs-12 col-sm-6 column   col-last ">
+					<div class="parsys2 parsys"><div class="columns parbase section">
+
+
+
+
+<div data-emptytext="Responsive Columns" class="cq-placeholder"></div>
+
+
+
+
+	
+		
+			
+			
+		
+		
+			
+			
+		
+		<div style=""
+			class="columns-row row  "
+		
+			data-style-lg="" data-height-lg=""
+			data-width-lg=""
+			data-background-color-lg=""
+			data-background-color-xs="">
+			<div style=""
+				class="col-xs-12 col-sm-12 columns-title "
+				data-height="" data-width=""
+				data-style-xs="" data-height-xs=""
+				data-width-xs="">
+				
+			</div>
+
+			
+
+			
+				<div class="col-xs-12 col-sm-3 column  col-first  ">
+					<div class="parsys1 parsys"><div class="textandimage parbase section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+    <div id="37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_columns_parsys2_columns_parsys2_columns_parsys1_textandimage" class="text-image-container " 
+    data-text-image-container-right-left="false">
+    
+        
+        
+            
+        
+    
+    
+        
+            
+    <div class="row text-image-row"
+		data-websites-component="/components/textandimage/rowcontainer"
+
+    	data-text-image-rowcontainer-bg-type-lg="none"
+    	
+
+
+	
+
+        data-text-image-rowcontainer-height-lg="0"
+        data-text-image-rowcontainer-width-lg="0"
+        data-text-image-rowcontainer-class-lg="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-md="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-md="0"
+        data-text-image-rowcontainer-width-md="0"
+        data-text-image-rowcontainer-class-md="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-sm="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-sm="0"
+        data-text-image-rowcontainer-width-sm="0"
+        data-text-image-rowcontainer-class-sm="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-xs="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-xs="0"
+        data-text-image-rowcontainer-width-xs="0"
+        data-text-image-rowcontainer-class-xs="backgroundColor1">
+		
+			
+	           	
+					
+					    
+	
+	
+	
+		
+	
+	
+			
+
+
+    <div class="col-xs-12 text-image-image-container" >
+
+		
+
+    <div>
+    
+        
+
+
+
+
+	<picture>
+		
+			  
+		    
+
+
+
+    
+    
+    
+    	  	
+    		
+				
+				    
+					    <source srcset="/content/dam/bnc/commun/picto/picto-contact-70x70.png" media="(max-width: 767px)">	
+				    
+				    
+				            
+				    		
+    		
+    			
+			
+    
+
+		    
+		
+			
+		    
+
+
+
+    
+    
+    
+    	  	
+    		
+				
+				    
+				    
+						<source srcset="/content/dam/bnc/commun/picto/picto-contact-70x70.png" media="(max-width: 991px)">	
+				    
+				            
+				    		
+    		
+    			
+			
+    
+
+		 
+		
+			
+	    	
+
+
+
+    
+    
+    
+    	  	
+    		
+				
+				    
+				    
+				    
+						<source srcset="/content/dam/bnc/commun/picto/picto-contact-70x70.png" media="(max-width: 1199px)">
+				            
+				    		
+    		
+    			
+			
+    
+
+		
+		
+		    
+
+
+
+    
+		<source srcset="/content/dam/bnc/commun/picto/picto-contact-70x70.png" media="(min-width: 1200px)">
+    
+    
+
+		
+	    	<img src='/content/dam/bnc/commun/picto/picto-contact-70x70.png' srcset='/content/dam/bnc/commun/picto/picto-contact-70x70.png' data-websites-component="/components/textandimage/image" alt="picto de recherche" data-picture-alttext-lg="picto de recherche" data-picture-alttext-md="picto de recherche" data-picture-alttext-sm="picto de recherche" data-picture-alttext-xs="picto de recherche" class="center-block image-responsive">
+	</picture>
+
+	
+	
+		<script type="text/javascript">
+		
+			var Websites = Websites || {};
+			Websites.FragmentPicture = Websites.FragmentPicture || {
+				init: function(viewport) {
+					Websites.FragmentPicture.loadAlternativeText(viewport);
+				},
+	
+		    	loadAlternativeText: function(viewport) {
+		        	$('[data-websites-component="/components/textandimage/image"]').each(function(){
+		    			if(viewport.is("xs") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-xs"));
+		    			} else if(viewport.is("sm") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-sm"));
+		    			} else if(viewport.is("md") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-md"));
+		    			} else if(viewport.is("lg") ) {
+		    				$(this).attr("alt", $(this).data("picture-alttext-lg"));
+		            	}
+		        	});
+		    	}
+			};
+	
+			$(document).ready(function(){
+                Websites.FragmentPicture.loadAlternativeText(ResponsiveBootstrapToolkit);
+			});
+
+            Websites.Events.onBreakpointChanged(function(){
+                Websites.FragmentPicture.loadAlternativeText(ResponsiveBootstrapToolkit);
+            });
+		</script>
+	
+	
+	
+   
+        	      
+    </div>
+
+		
+	
+</div>
+<div 
+	class="col-xs-12 text-image-text-container  "
+    
+	data-websites-component="/components/textandimage/text"
+	data-text-image-text-container-style-xs="{'padding-top': '0px'}" 
+	data-text-image-text-container-style-sm="{'padding-top': '0px'}"
+	data-text-image-text-container-style-md="{'padding-top': '0px'}"
+	data-text-image-text-container-style-lg="{'padding-top': '0px'}"></div>
+
+					
+					
+					
+					
+				
+	    	
+	    	
+		
+	</div>
+        
+        
+        
+    
+    
+
+    
+
+    
+
+            
+
+        <script>
+
+        (function(){
+
+        var dataLayerViewEventName = '' || '';
+        var dataLayerViewLayerProperties = [];
+        var $el;
+
+        
+
+        if(dataLayerViewEventName.trim().length) {
+
+        var obj = {
+        dataLayerViewEventName: dataLayerViewEventName,
+        componentId: "37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_columns_parsys2_columns_parsys2_columns_parsys1_textandimage" ,
+        dataLayerViewLayerProperties: dataLayerViewLayerProperties
+        };
+
+        // IE11 trick (because IE11 don't know document.currentScript):
+        https://stackoverflow.com/questions/403967/how-may-i-reference-the-script-tag-that-loaded-the-currently-executing-script
+        if(document.currentScript){
+        $el = document.currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        } else {
+        var scripts = document.getElementsByTagName( 'script' );
+        var currentScript = scripts[scripts.length - 1];
+        $el = currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        }
+
+        $el.setAttribute('data-dataLayerViewEventJson', JSON.stringify(
+        Websites.DataLayer.cleanViewEventJSON(obj)));
+        $el.setAttribute("data-dataLayerViewEvent", 'true');
+
+        Websites.DataLayer.updateDataLayerViewEventElementsArray();
+
+        }
+
+        })();
+
+        </script>
+    
+</div>
+
+		<script>
+
+		/**
+		* clickEventDownloadHandler()
+		* Is used to handle download image action selected as an opening mode
+		*
+		*/
+
+		var firstDownload = true;
+
+		function clickEventDownloadHandler() {
+
+		var link = this;
+		var filename = link.dataset.linkpath;
+		var newFile = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+		var fn = filename.substring(filename.lastIndexOf('/')+1);
+
+		if (newFile) {
+
+		if (firstDownload) {
+		firstDownload = false;
+		this.href = link.href.slice(0, link.href.lastIndexOf('.'));
+		} else {
+		this.href = link.href;
+		}
+
+		this.download = fn;
+
+		} else {
+		this.download = fn + ".html";
+		}
+		}
+
+		</script></div>
+
+</div>
+
+				</div>
+			
+				<div class="col-xs-12 col-sm-9 column   col-last ">
+					<div class="parsys2 parsys"><div class="textandimage parbase section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+    <div id="37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_columns_parsys2_columns_parsys2_columns_parsys2_textandimage" class="text-image-container " 
+    data-text-image-container-right-left="false">
+    
+        
+        
+            
+        
+    
+    
+        
+        
+                <div class="row text-image-row"
+		data-websites-component="/components/textandimage/rowcontainer"
+
+    	data-text-image-rowcontainer-bg-type-lg="none"
+    	
+
+
+	
+
+        data-text-image-rowcontainer-height-lg="0"
+        data-text-image-rowcontainer-width-lg="0"
+        data-text-image-rowcontainer-class-lg="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-md="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-md="0"
+        data-text-image-rowcontainer-width-md="0"
+        data-text-image-rowcontainer-class-md="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-sm="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-sm="0"
+        data-text-image-rowcontainer-width-sm="0"
+        data-text-image-rowcontainer-class-sm="backgroundColor1"
+
+        data-text-image-rowcontainer-bg-type-xs="none"
+        
+
+
+	
+
+        data-text-image-rowcontainer-height-xs="0"
+        data-text-image-rowcontainer-width-xs="0"
+        data-text-image-rowcontainer-class-xs="backgroundColor1">
+
+        <div class="col-xs-12 text-image-text-container " ><p class="chapeau3"><b>Need help?</b></p>
+<p class="chapeau3"><a class="btnRTE3 btn-arrow btn" href="/contact-us.html" target="_self">Contact us</a></p>
+</div>
+	</div>
+        
+        
+    
+    
+
+    
+
+    
+
+            
+
+        <script>
+
+        (function(){
+
+        var dataLayerViewEventName = '' || '';
+        var dataLayerViewLayerProperties = [];
+        var $el;
+
+        
+
+        if(dataLayerViewEventName.trim().length) {
+
+        var obj = {
+        dataLayerViewEventName: dataLayerViewEventName,
+        componentId: "37b847ee-1acf-4789-9838-d5c3b8e8f45c_parsys_columns_parsys2_columns_parsys2_columns_parsys2_textandimage" ,
+        dataLayerViewLayerProperties: dataLayerViewLayerProperties
+        };
+
+        // IE11 trick (because IE11 don't know document.currentScript):
+        https://stackoverflow.com/questions/403967/how-may-i-reference-the-script-tag-that-loaded-the-currently-executing-script
+        if(document.currentScript){
+        $el = document.currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        } else {
+        var scripts = document.getElementsByTagName( 'script' );
+        var currentScript = scripts[scripts.length - 1];
+        $el = currentScript.parentNode.getElementsByClassName('text-image-text-container')[0];
+        }
+
+        $el.setAttribute('data-dataLayerViewEventJson', JSON.stringify(
+        Websites.DataLayer.cleanViewEventJSON(obj)));
+        $el.setAttribute("data-dataLayerViewEvent", 'true');
+
+        Websites.DataLayer.updateDataLayerViewEventElementsArray();
+
+        }
+
+        })();
+
+        </script>
+    
+</div>
+
+		<script>
+
+		/**
+		* clickEventDownloadHandler()
+		* Is used to handle download image action selected as an opening mode
+		*
+		*/
+
+		var firstDownload = true;
+
+		function clickEventDownloadHandler() {
+
+		var link = this;
+		var filename = link.dataset.linkpath;
+		var newFile = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+		var fn = filename.substring(filename.lastIndexOf('/')+1);
+
+		if (newFile) {
+
+		if (firstDownload) {
+		firstDownload = false;
+		this.href = link.href.slice(0, link.href.lastIndexOf('.'));
+		} else {
+		this.href = link.href;
+		}
+
+		this.download = fn;
+
+		} else {
+		this.download = fn + ".html";
+		}
+		}
+
+		</script></div>
+
+</div>
+
+				</div>
+			
+		</div>
+	
+	
+
+</div>
+
+</div>
+
+				</div>
+			
+		</div>
+	
+	
+
+</div>
+
+</div>
+
+				</div>
+			
+				<div class="col-xs-12 col-sm-2 column   col-last ">
+					<div class="parsys3 parsys">
+</div>
+
+				</div>
+			
+		</div>
+	
+	
+
+</div>
+
+</div>
+
+</div>
+</main>
+	
+	
+
+
+
+
+    
+        <div id="base-xs" class="device-xs visible-xs visible-xs-block"></div>
+        <div id="base-sm" class="device-sm visible-sm visible-sm-block"></div>
+        <div id="base-md" class="device-md visible-md visible-md-block"></div>
+        <div id="base-lg" class="device-lg visible-lg visible-lg-block"></div>
+        <script src="/etc.clientlibs/web-sites/clientlibs/core/responsiveBootstrapToolkit.min.afc2afb52200829364788f6cc6d3a5ec.js"></script>
+
+	
+	
+  	<!-- this include need to be at the end of the body -->
+	<!--[if lt IE 10]>
+	<script src="/etc.clientlibs/web-sites/clientlibs/author/placeholders.min.js"></script>
+
+	<![endif]-->
+    
+
+    
+        
+    
+    <div class="chatbot">
+</div>
+
+
+</body>
+        </html>
+    
+
+
+
+			

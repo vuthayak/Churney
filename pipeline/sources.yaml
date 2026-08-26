@@ -1,0 +1,132 @@
+# Churney scraper source registry (docs/04 §9.2, §9.5).
+# A source may only be scraped when `allowed: true` AND `tos_reviewed_at` is set.
+# `fetch_mode: httpx | playwright`.
+#
+# Compliance note (2026-08-23): the owner delegated automated pre-checks to the
+# pipeline agent. For each allowed source we fetched and read robots.txt (card
+# pages permitted) and reviewed reachable ToS pages for anti-scraping language.
+# Re-verify manually before production/commercial use.
+
+sources:
+  amex_ca:
+    issuer_slug: amex_ca
+    display_name: American Express Canada
+    allowed: true
+    tos_reviewed_at: 2026-08-23   # human-reviewed by owner before first crawl
+    cadence: weekly
+    fetch_mode: playwright        # listing + card pages are JS-rendered (SPA)
+    entry_urls:
+      - https://www.americanexpress.com/en-ca/credit-cards/all-cards/
+      - https://www.americanexpress.com/en-ca/credit-cards/all-cards/business/
+
+  td:
+    issuer_slug: td
+    display_name: TD Canada Trust
+    allowed: true
+    tos_reviewed_at: 2026-08-23   # robots.txt: Allow: / ; no anti-scraping ToS clause found
+    cadence: weekly
+    fetch_mode: httpx
+    link_pattern: '^/ca/en/personal-banking/products/credit-cards/(?!browse-all|business)([a-z0-9-]+)/([a-z0-9-]+)$'
+    entry_urls:
+      - https://www.td.com/ca/en/personal-banking/products/credit-cards
+
+  cibc:
+    issuer_slug: cibc
+    display_name: CIBC
+    allowed: true
+    tos_reviewed_at: 2026-08-23   # robots.txt permits card pages; standard terms
+    cadence: weekly
+    fetch_mode: httpx
+    link_pattern: '^/en/personal-banking/credit-cards/all-credit-cards/([a-z0-9-]+)\.html$'
+    entry_urls:
+      - https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards.html
+
+  scotiabank:
+    issuer_slug: scotiabank
+    display_name: Scotiabank
+    allowed: true
+    tos_reviewed_at: 2026-08-23   # robots.txt blocks only internal paths; sitemaps offered
+    cadence: weekly
+    fetch_mode: httpx
+    link_pattern: '^/ca/en/personal/credit-cards/(visa|american-express)/([a-z0-9-]+)\.html$'
+    entry_urls:
+      - https://www.scotiabank.com/ca/en/personal/credit-cards.html
+
+  tangerine:
+    issuer_slug: tangerine
+    display_name: Tangerine
+    allowed: true
+    tos_reviewed_at: 2026-08-23   # robots.txt blocks only assets/datafiles; card pages allowed
+    cadence: monthly
+    fetch_mode: httpx
+    link_pattern: '^/en/personal/spend/credit-cards/[a-z0-9-]+$'
+    card_urls:                    # tiny lineup; direct URLs beat their redirecting listing
+      - https://www.tangerine.ca/en/personal/spend/credit-cards/money-back-credit-card
+      - https://www.tangerine.ca/en/personal/spend/credit-cards/world-credit-card
+      - https://www.tangerine.ca/en/personal/spend/credit-cards/world-elite-mastercard
+
+  simplii:
+    issuer_slug: simplii
+    display_name: Simplii Financial
+    allowed: true
+    tos_reviewed_at: 2026-08-23   # robots.txt blocks only internal content paths
+    cadence: monthly
+    fetch_mode: httpx
+    card_urls:                    # single-card issuer
+      - https://www.simplii.com/en/credit-cards/cash-back-visa.html
+
+  # ── Pending / backed off (docs/04 §2: permanent backoff on blocks) ──────────
+  bmo:
+    issuer_slug: bmo
+    display_name: BMO
+    allowed: false
+    tos_reviewed_at: null
+    notes: >-
+      BACKED OFF 2026-08-23: TCP-level connection drops from our network for both
+      httpx and headless Chromium (bot-mitigation edge). Requires manual page saves
+      or a different egress IP before retrying. Do not re-add without owner sign-off.
+
+  rbcroyalbank:
+    issuer_slug: rbcroyalbank
+    display_name: RBC Royal Bank
+    allowed: false
+    tos_reviewed_at: null
+    notes: >-
+      PENDING 2026-08-23: listing pages are JS-driven with no static detail links;
+      detail URL taxonomy unconfirmed. Needs a Playwright discovery pass or manual
+      URL list before scraping can start.
+
+  nbc:
+    issuer_slug: nbc
+    display_name: National Bank of Canada
+    allowed: false
+    tos_reviewed_at: null
+    notes: >-
+      PENDING 2026-08-23: guessed listing paths returned 404; correct card-page
+      taxonomy needs confirmation from nbc.ca navigation/sitemap.
+
+  neo:
+    issuer_slug: neo
+    display_name: Neo Financial
+    allowed: false
+    tos_reviewed_at: null
+    notes: >-
+      PENDING 2026-08-23: card data is client-rendered (no fee/earn copy in static
+      HTML). Needs Playwright rendering pass; detail URLs known (/credit-cards/neo-mastercard etc.).
+
+  brim:
+    issuer_slug: brim
+    display_name: Brim Financial
+    allowed: false
+    tos_reviewed_at: null
+    notes: >-
+      PENDING 2026-08-23: JS-heavy site; needs Playwright pass and per-card URL list.
+
+  desjardins:
+    issuer_slug: desjardins
+    display_name: Desjardins
+    allowed: false
+    tos_reviewed_at: null
+    notes: >-
+      PENDING 2026-08-23: robots allows all but card-page URLs and EBO (BONUSDOLLARS)
+      page structure not yet mapped. Lower priority (English pages only per docs/04 §9.1).

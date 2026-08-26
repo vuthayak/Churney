@@ -1,0 +1,28 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-bizline-visa-card",
+    "issuer_slug": "cibc",
+    "name": "CIBC bizline Visa Card",
+    "network": "visa",
+    "program_slug": "none",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/bizline-visa-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/bizline-visa-card.html"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% per CIBC standard [VERIFY]"
+    }
+  ],
+  "content_hash": "ddfe8b9f728297eaf929c0f04543444d8103a66946e128c48a777292832edbfa"
+}

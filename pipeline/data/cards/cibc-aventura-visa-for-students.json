@@ -1,0 +1,75 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-aventura-visa-for-students",
+    "issuer_slug": "cibc",
+    "name": "CIBC Aventura Visa Card for Students",
+    "network": "visa",
+    "program_slug": "aventura",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-for-students.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-for-students.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-for-students.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-for-students.html"
+    },
+    {
+      "category_slug": "drugstore",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-for-students.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-for-students.html"
+    },
+    {
+      "rate": 0.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "1 point for every $2 spent using your card",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-for-students.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 12,500 points",
+      "reward_points": 12500,
+      "eligibility_notes": "[FILL fill_2026-08-24]: Activity-based offer: 2,500 pts per completed activity (five activities within 60 days of account approval), up to 12,500 pts total; no single MSR stated",
+      "alternate_offers": [],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-for-students.html",
+      "verified_at": "2026-08-26T05:19:06.473058Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "purchase_apr",
+      "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+    }
+  ],
+  "content_hash": "9910ede46d40075024f12fc9fd49b26f62a5a1385c917c3e58b00cd9ce40bdf3"
+}

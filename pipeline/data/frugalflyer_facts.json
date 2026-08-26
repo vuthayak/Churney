@@ -1,0 +1,186 @@
+{
+ "amex-ca-aeroplan-business-reserve-card": {
+  "url": "https://frugalflyer.ca/credit-card/american-express-aeroplan-business-reserve/",
+  "annual_fee": "599",
+  "fx_fee": "2.50",
+  "purchase_apr": "21.99",
+  "cash_apr": "21.99"
+ },
+ "amex-ca-aeroplan-reserve": {
+  "url": "https://frugalflyer.ca/credit-card/american-express-aeroplan-business-reserve/",
+  "annual_fee": "599",
+  "fx_fee": "2.50",
+  "purchase_apr": "21.99",
+  "cash_apr": "21.99"
+ },
+ "amex-ca-marriott-bonvoy-business-card": {
+  "url": "https://frugalflyer.ca/credit-card/american-express-marriott-bonvoy-business/",
+  "annual_fee": "150",
+  "fx_fee": "2.50",
+  "purchase_apr": "21.99",
+  "cash_apr": "21.99"
+ },
+ "amex-ca-marriott-bonvoy-card": {
+  "url": "https://frugalflyer.ca/credit-card/american-express-marriott-bonvoy/",
+  "annual_fee": "120",
+  "fx_fee": "2.50",
+  "purchase_apr": "21.99",
+  "cash_apr": "21.99"
+ },
+ "amex-ca-simply-cash": {
+  "url": "https://frugalflyer.ca/credit-card/american-express-simplycash/",
+  "annual_fee": "0",
+  "fx_fee": "2.50",
+  "purchase_apr": "21.99",
+  "cash_apr": "21.99"
+ },
+ "amex-ca-small-business-gold-card": {
+  "url": "https://frugalflyer.ca/credit-card/american-express-business-gold/",
+  "annual_fee": "199",
+  "fx_fee": "2.50"
+ },
+ "amex-ca-small-business-platinum-card": {
+  "url": "https://frugalflyer.ca/credit-card/american-express-business-platinum/",
+  "annual_fee": "799",
+  "fx_fee": "2.50"
+ },
+ "amex-ca-the-platinum-card": {
+  "url": "https://frugalflyer.ca/credit-card/american-express-business-platinum/",
+  "annual_fee": "799",
+  "fx_fee": "2.50"
+ },
+ "cibc-aerogold-visa-card-business": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-aeroplan-visa-business-plus/",
+  "annual_fee": "120",
+  "fx_fee": "2.50"
+ },
+ "cibc-aeroplan-visa-infinite-privilege-card": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-aeroplan-visa-infinite-privilege/",
+  "annual_fee": "599",
+  "fx_fee": "2.50"
+ },
+ "cibc-aventura-gold-visa-card": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-aventura-gold-visa/",
+  "annual_fee": "139",
+  "fx_fee": "2.50"
+ },
+ "cibc-aventura-plus-visa": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-aventura-gold-visa/",
+  "annual_fee": "139",
+  "fx_fee": "2.50"
+ },
+ "cibc-aventura-visa-infinite-card": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-aventura-visa-infinite-privilege/",
+  "annual_fee": "499",
+  "fx_fee": "2.50"
+ },
+ "cibc-aventura-visa-infinite-privilege-card": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-aventura-visa-infinite-privilege/",
+  "annual_fee": "499",
+  "fx_fee": "2.50"
+ },
+ "cibc-costco-mastercard": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-costco-business-mastercard/",
+  "annual_fee": "0",
+  "fx_fee": "2.50"
+ },
+ "cibc-costco-mastercard-business": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-costco-business-mastercard/",
+  "annual_fee": "0",
+  "fx_fee": "2.50"
+ },
+ "cibc-dividend-visa-infinite-card": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-dividend-visa-infinite/",
+  "annual_fee": "120",
+  "fx_fee": "2.50"
+ },
+ "cibc-dividend-visa-platinum-card": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-dividend-visa-infinite/",
+  "annual_fee": "120",
+  "fx_fee": "2.50"
+ },
+ "cibc-select-visa-card": {
+  "url": "https://frugalflyer.ca/credit-card/cibc-select-visa/",
+  "annual_fee": "29",
+  "fx_fee": "2.50",
+  "purchase_apr": "13.99",
+  "cash_apr": "13.99"
+ },
+ "scotiabank-gold-card": {
+  "url": "https://frugalflyer.ca/credit-card/scotiabank-gold-american-express/",
+  "annual_fee": "120",
+  "fx_fee": "0.00",
+  "purchase_apr": "21.99",
+  "cash_apr": "22.99"
+ },
+ "scotiabank-no-fee-amex-card": {
+  "url": "https://frugalflyer.ca/credit-card/scotiabank-american-express/",
+  "annual_fee": "0",
+  "fx_fee": "2.50",
+  "purchase_apr": "21.99",
+  "cash_apr": "22.99"
+ },
+ "scotiabank-platinum-card": {
+  "url": "https://frugalflyer.ca/credit-card/scotiabank-platinum-american-express/",
+  "annual_fee": "399",
+  "fx_fee": "0.00",
+  "purchase_apr": "9.99",
+  "cash_apr": "9.99"
+ },
+ "scotiabank-scene-card": {
+  "url": "https://frugalflyer.ca/credit-card/scotiabank-scene-visa/",
+  "annual_fee": "0",
+  "fx_fee": "2.50",
+  "purchase_apr": "20.99",
+  "cash_apr": "22.99"
+ },
+ "scotiabank-scene-student-card": {
+  "url": "https://frugalflyer.ca/credit-card/scotiabank-scene-visa/",
+  "annual_fee": "0",
+  "fx_fee": "2.50",
+  "purchase_apr": "20.99",
+  "cash_apr": "22.99"
+ },
+ "simplii-cash-back-visa": {
+  "url": "https://frugalflyer.ca/credit-card/simplii-financial-cash-back-visa/",
+  "annual_fee": "0",
+  "fx_fee": "2.50",
+  "purchase_apr": "20.99",
+  "cash_apr": "22.99"
+ },
+ "tangerine-money-back-credit-card": {
+  "url": "https://frugalflyer.ca/credit-card/tangerine-money-back-mastercard/",
+  "annual_fee": "0",
+  "fx_fee": "2.50",
+  "purchase_apr": "20.95",
+  "cash_apr": "22.95"
+ },
+ "tangerine-world-credit-card": {
+  "url": "https://frugalflyer.ca/credit-card/tangerine-money-back-mastercard/",
+  "annual_fee": "0",
+  "fx_fee": "2.50",
+  "purchase_apr": "20.95",
+  "cash_apr": "22.95"
+ },
+ "tangerine-world-elite-mastercard": {
+  "url": "https://frugalflyer.ca/credit-card/tangerine-rewards-world-elite-mastercard/",
+  "annual_fee": "120",
+  "fx_fee": "2.50",
+  "purchase_apr": "20.95",
+  "cash_apr": "22.95"
+ },
+ "td-cash-back-visa-infinite-card": {
+  "url": "https://frugalflyer.ca/credit-card/td-cash-back-visa-infinite/",
+  "annual_fee": "139",
+  "fx_fee": "2.50",
+  "purchase_apr": "21.99",
+  "cash_apr": "22.99"
+ },
+ "td-first-class-travel-visa-infinite-card": {
+  "url": "https://frugalflyer.ca/credit-card/td-first-class-travel-visa-infinite/",
+  "annual_fee": "139",
+  "fx_fee": "2.50",
+  "purchase_apr": "21.99",
+  "cash_apr": "22.99"
+ }
+}

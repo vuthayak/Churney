@@ -1,0 +1,30 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "amex-ca-essential-credit-card",
+    "issuer_slug": "amex_ca",
+    "name": "EssentialTMCredit Card",
+    "network": "amex",
+    "program_slug": "none",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.americanexpress.com/en-ca/credit-cards/essential-credit-card/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 2500,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 12.99,
+    "cash_apr": 12.99,
+    "source_url": "https://www.americanexpress.com/en-ca/credit-cards/essential-credit-card/"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% from external knowledge [VERIFY]; Amex card pages do not state FX fee"
+    }
+  ],
+  "content_hash": "208233cae1e3fda1780e98d685e6277d610317a13320ccd549fe1a60a5ce345e"
+}

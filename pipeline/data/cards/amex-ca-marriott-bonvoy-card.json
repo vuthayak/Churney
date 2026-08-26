@@ -1,0 +1,65 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "amex-ca-marriott-bonvoy-card",
+    "issuer_slug": "amex_ca",
+    "name": "Marriott Bonvoy American Express Card",
+    "network": "amex",
+    "program_slug": "marriott_bonvoy",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-card/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 12000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 21.99,
+    "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-card/"
+  },
+  "earn_rates": [
+    {
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "2X Points per $1 on everything else",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-card/"
+    },
+    {
+      "category_slug": "travel_hotel",
+      "rate": 5.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "5X at participating Marriott Bonvoy hotels",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-card/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 80,000 points",
+      "min_spend_minor": 600000,
+      "deadline_days": 180,
+      "reward_points": 80000,
+      "eligibility_notes": "deadline stated as 6 months on page Current or former Cardmembers with this Card are not eligible for these offers.",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 30,000 points",
+          "channel": "later_spend",
+          "reward_points": 30000,
+          "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-card/",
+          "seen_on": "2026-08-26"
+        }
+      ],
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-card/",
+      "verified_at": "2026-08-26T05:19:04.843335Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% from external knowledge [VERIFY]"
+    }
+  ],
+  "content_hash": "3d2649bade4bbb8f89cee265c1e856d2da3a07770e467be95ad6b96a6f3ff37a"
+}

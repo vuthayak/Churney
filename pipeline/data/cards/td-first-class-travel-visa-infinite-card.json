@@ -1,0 +1,98 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "td-first-class-travel-visa-infinite-card",
+    "issuer_slug": "td",
+    "name": "TD First Class Travel Visa Infinite Card",
+    "network": "visa",
+    "program_slug": "td_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 13900,
+    "extra_card_fee_minor": 5000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+  },
+  "earn_rates": [
+    {
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "Base Earn Rate: 2 pts/$1 on all other purchases",
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 6.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "first $25,000 annual net purchases",
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 6.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "first $25,000 annual net purchases",
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 6.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "public transit incl ferries (MCC 4111); first $25k annual net purchases",
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 4.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "recurring bill payments; first $25k annual net purchases",
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+    },
+    {
+      "category_slug": "streaming_subs",
+      "rate": 4.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "streaming, digital gaming & media; first $25k annual net purchases",
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 8.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "bookings through Expedia For TD",
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn up to $1,300 in value including up to 146,000 TD Rewards Points",
+      "min_spend_minor": 750000,
+      "deadline_days": 180,
+      "reward_points": 146000,
+      "eligibility_notes": "deadline stated as 180 days on page Account must be in Good Standing at the time the Welcome Bonus points and Additional Bonus points are awarded. [FILL fill_research_2026-08-24]: Components: 20,000 pts first Purchase; additional 126,000 pts when $7,500 spent within 180 days of Account opening",
+      "alternate_offers": [],
+      "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/travel-rewards/first-class-travel-visa-infinite-card",
+      "verified_at": "2026-08-26T05:19:09.427436Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% TD standard [VERIFY]; not stated on cached card page"
+    }
+  ],
+  "content_hash": "ab1d455b784388e0098c640b97feec3ddaa948ec5551ccb3f7cce9ff3eedac27"
+}

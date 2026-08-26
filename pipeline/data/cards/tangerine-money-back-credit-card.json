@@ -1,0 +1,55 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "tangerine-money-back-credit-card",
+    "issuer_slug": "tangerine",
+    "name": "Money-Back Credit Card",
+    "network": "visa",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.tangerine.ca/en/personal/spend/credit-cards/money-back-credit-card"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "income_req_household": 250000,
+    "purchase_apr": 20.95,
+    "cash_apr": 22.95,
+    "source_url": "https://www.tangerine.ca/en/personal/spend/credit-cards/money-back-credit-card"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.tangerine.ca/en/personal/spend/credit-cards/money-back-credit-card"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.tangerine.ca/en/personal/spend/credit-cards/money-back-credit-card"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 10% cash back for your first 2 months (up to $100)",
+      "deadline_days": 60,
+      "reward_cashback_minor": 10000,
+      "eligibility_notes": "percent-based welcome promo [FILL fill_2026-08-24]: No minimum spend: 10% cash back promo for first 2 months, up to $100 total [FILL fill_research_2026-08-24]: Issuer-stated cap stored as value per policy: 10% of all spend during first 2 months, up to $100; no minimum spend. Expected value is spend-dependent - ranking surfaces may personalize from trailing velocity, capped at $100.",
+      "alternate_offers": [],
+      "source_url": "https://www.tangerine.ca/en/personal/spend/credit-cards/money-back-credit-card",
+      "verified_at": "2026-08-26T05:19:08.852519Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "purchase_apr",
+      "reason": "corrected from issuer page: purchases 20.95%, cash advances 22.95%"
+    }
+  ],
+  "content_hash": "4f3b163aa673accf896877943ebfc0a96f4a945729094b190f6e6b3e0c215116"
+}

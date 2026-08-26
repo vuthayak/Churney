@@ -1,0 +1,113 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "scotiabank-gold-card",
+    "issuer_slug": "scotiabank",
+    "name": "Scotiabank Gold American Express Card",
+    "network": "visa",
+    "program_slug": "scene_plus",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 12000,
+    "extra_card_fee_minor": 2900,
+    "fx_fee_pct": 0.0,
+    "income_req_personal": 12000,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 6.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "6 pts/$1 at Sobeys, Safeway, FreshCo, Foodland and more; 5 pts/$1 other eligible grocery",
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 5.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "incl food delivery, food subscriptions",
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    },
+    {
+      "category_slug": "entertainment",
+      "rate": 5.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "incl rideshare, buses, taxis",
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    },
+    {
+      "category_slug": "streaming_subs",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    },
+    {
+      "category_slug": "travel_air",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "+ extra 3 pts/$1 CAD hotels & car rentals via Scene+ Travel (Expedia)",
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    },
+    {
+      "category_slug": "travel_hotel",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    },
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "1 pt/$1 CAD on eligible purchases in Canada",
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 30,000 points",
+      "min_spend_minor": 200000,
+      "deadline_days": 90,
+      "reward_points": 30000,
+      "eligibility_notes": "deadline stated as 3 months on page not eligible for this offer.",
+      "alternate_offers": [],
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/gold-card.html",
+      "verified_at": "2026-08-26T05:19:08.144667Z"
+    }
+  ],
+  "needs_manual_review": [],
+  "content_hash": "05aebe1ededc82aaf4ccad41ed850971a540ce2a471ffb20e83563bee82265c6"
+}

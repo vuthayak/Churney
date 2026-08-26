@@ -1,0 +1,91 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-dividend-visa-infinite-card",
+    "issuer_slug": "cibc",
+    "name": "CIBC Dividend Visa Infinite Card",
+    "network": "visa",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 12000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 0.04,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 0.04,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Join and earn up to $350 in value including annual fee rebate",
+      "min_spend_minor": 200000,
+      "deadline_days": 120,
+      "reward_cashback_minor": 25000,
+      "eligibility_notes": "Components: 10% cash back welcome bonus up to $200 on net purchases up to $2,000 in first 4 statements; $50 CB bonus for setting up one pre-authorized payment in first 4 monthly statements; first-year annual fee rebate ($120)",
+      "first_year_free": true,
+      "alternate_offers": [],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/dividend-visa-infinite-card.html",
+      "verified_at": "2026-08-26T05:19:09.815575Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "purchase_apr",
+      "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+    }
+  ],
+  "content_hash": "6f1f6026fc90c2d108d81533a7fa36b3d6629bf307f42584cb5d74af7b4067cc"
+}

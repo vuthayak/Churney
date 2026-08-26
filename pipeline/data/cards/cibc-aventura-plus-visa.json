@@ -1,0 +1,89 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-aventura-plus-visa",
+    "issuer_slug": "cibc",
+    "name": "CIBC Aventura Visa Card for BusinessPlus",
+    "network": "visa",
+    "program_slug": "aventura",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-plus-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 12000,
+    "extra_card_fee_minor": 30000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-plus-visa.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "all other purchases",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-plus-visa.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "eligible gas + EV charging",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-plus-visa.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "commuter transport, ferries, railways, limos, cabs, parking and tolls",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-plus-visa.html"
+    },
+    {
+      "category_slug": "travel_air",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "airlines, cruise lines, tour operators",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-plus-visa.html"
+    },
+    {
+      "category_slug": "travel_hotel",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "hotels",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-plus-visa.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "car rentals, vacation bookings; 2x when booked through CIBC Rewards Centre",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-plus-visa.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 70,000 points",
+      "min_spend_minor": 4000000,
+      "deadline_days": 360,
+      "reward_points": 70000,
+      "eligibility_notes": "[FILL fill_2026-08-24]: Components: welcome bonus 20,000 pts on first purchase; 50,000 pts when $40,000+ spent in first 12 monthly statement periods",
+      "alternate_offers": [],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-plus-visa.html",
+      "verified_at": "2026-08-26T05:19:06.032511Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "annual_fee_minor",
+      "reason": "$120 - frugalflyer.ca cibc-aventura-visa-business-plus [cross-check]"
+    }
+  ],
+  "content_hash": "f26c756e96991c897e1d749d5d7c1a6220ed1c592f1e750f1218e72021ccd6de"
+}

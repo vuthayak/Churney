@@ -1,0 +1,83 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-aeroplan-visa-infinite-card",
+    "issuer_slug": "cibc",
+    "name": "CIBC Aeroplan Visa Infinite Card",
+    "network": "visa",
+    "program_slug": "aeroplan",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 13900,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "travel_air",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+    },
+    {
+      "category_slug": "travel_hotel",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 50,000 points",
+      "min_spend_minor": 600000,
+      "deadline_days": 180,
+      "reward_points": 50000,
+      "eligibility_notes": "[FILL fill_2026-08-24]: Components: 10,000 pts first purchase; 15,000 pts when $6,000+ spent during first 6 monthly statement periods; 25,000 pts anniversary bonus if $12,000+ net purchases in first 12 monthly statement periods",
+      "alternate_offers": [],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html",
+      "verified_at": "2026-08-26T05:19:05.663322Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "purchase_apr",
+      "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+    }
+  ],
+  "content_hash": "6a7ce512ec29a5836446be8bb21806828f34f47dcf85f370b3271b36c31f18cf"
+}

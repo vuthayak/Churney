@@ -1,0 +1,77 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "amex-ca-the-platinum-card",
+    "issuer_slug": "amex_ca",
+    "name": "The Platinum Card",
+    "network": "amex",
+    "program_slug": "amex_mr",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 79900,
+    "extra_card_fee_minor": 25000,
+    "fx_fee_pct": 2.5,
+    "source_url": "https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card/"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card/"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card/"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 70,000 points",
+      "min_spend_minor": 1000000,
+      "deadline_days": 90,
+      "reward_points": 70000,
+      "eligibility_notes": "deadline stated as 3 months on page Current or former Cardmembers with this Card are not eligible for these offers.",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 30,000 points",
+          "channel": "later_spend",
+          "reward_points": 30000,
+          "source_url": "https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card/",
+          "seen_on": "2026-08-26"
+        }
+      ],
+      "source_url": "https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card/",
+      "verified_at": "2026-08-26T05:19:04.500072Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% from external knowledge [VERIFY]"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "charge card - no purchase APR applicable"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "charge card - no purchase APR (pay-in-full product) ($799 fee confirmed on page)"
+    }
+  ],
+  "content_hash": "13324817a003ef267b45eb112e65c27cfa148a2c56b8bf9310b7184ec7c53ee1"
+}

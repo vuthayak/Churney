@@ -1,0 +1,62 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-adapta-mastercard-for-students",
+    "issuer_slug": "cibc",
+    "name": "CIBC Adapta Mastercard for Students",
+    "network": "mastercard",
+    "program_slug": "adapta",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard-for-students.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard-for-students.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "1 pt/$1 all other purchases; PLUS automatically earns 1.5 pts/$1 in your top 3 spend categories each month (dynamic categorization across ~12 categories incl grocery+drug stores, dining, gas+EV, transit+parking, entertainment, subscriptions) - not modeled per-category",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard-for-students.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "eligible travel booked through CIBC by Expedia",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard-for-students.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 9,000 points",
+      "min_spend_minor": 100000,
+      "deadline_days": 120,
+      "reward_points": 9000,
+      "eligibility_notes": "deadline stated as 4 months on page",
+      "alternate_offers": [],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard-for-students.html",
+      "verified_at": "2026-08-26T05:19:05.025870Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% per CIBC standard [VERIFY]"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+    }
+  ],
+  "content_hash": "8289fa7d3b236b127b1f02d168a28c12033073c12fd9e6b08b8b931d99fad9e6"
+}

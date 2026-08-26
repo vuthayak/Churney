@@ -1,0 +1,31 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "td-us-dollar-visa-card",
+    "issuer_slug": "td",
+    "name": "TD U.S. Dollar Visa Card",
+    "network": "visa",
+    "program_slug": "unknown",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/us-dollar/us-dollar-visa-card"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 3900,
+    "extra_card_fee_minor": 0,
+    "fx_fee_pct": 0.0,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/us-dollar/us-dollar-visa-card"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "program_slug",
+      "reason": "no rewards program: TD page shows no earn structure anywhere; value prop is FX-free USD spending (0% FX fee verified on page)"
+    }
+  ],
+  "content_hash": "b4be1a6ae4f62e1d7733c40fdf47cd3bfc3649be059bcc5715b8c3102825ce11"
+}

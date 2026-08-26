@@ -1,0 +1,82 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "amex-ca-small-business-gold-card",
+    "issuer_slug": "amex_ca",
+    "name": "Business Gold Rewards Card",
+    "network": "amex",
+    "program_slug": "amex_mr",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-gold-card/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 19900,
+    "fx_fee_pct": 2.5,
+    "source_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-gold-card/"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "1X the points on everything; +10,000 bonus points each calendar quarter with $20,000 spend",
+      "source_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-gold-card/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 50,000 points",
+      "min_spend_minor": 750000,
+      "deadline_days": 90,
+      "reward_points": 50000,
+      "eligibility_notes": "deadline stated as 3 months on page Current or former Cardmembers with this Card are not eligible for these offers.",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 20,000 points",
+          "channel": "later_spend",
+          "reward_points": 20000,
+          "source_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-gold-card/",
+          "seen_on": "2026-08-26"
+        },
+        {
+          "headline": "Additional earn component: 10,000 points",
+          "channel": "later_spend",
+          "reward_points": 10000,
+          "source_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-gold-card/",
+          "seen_on": "2026-08-26"
+        }
+      ],
+      "source_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-gold-card/",
+      "verified_at": "2026-08-26T05:19:04.415861Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "annual_fee_minor",
+      "reason": "fee pattern not found"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "unmapped earn-tile title skipped (never-guess): 'everything'"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "unmapped earn-tile title skipped (never-guess): 'everything for every $1 in Card purchases 5 Featured Benefits Item 1 of 7 Up to $100 in statement credits annually with Dell. Until December 31,2026, shop with Dell and earn up to $50 in statement cre'"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% from external knowledge [VERIFY]"
+    },
+    {
+      "field": "annual_fee_minor",
+      "reason": "$199 VERIFIED on amex.ca page (\"Annual Fees $199\"); was mis-parsed as $0"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "charge card - no purchase APR (pay-in-full product)"
+    }
+  ],
+  "content_hash": "9d3741846cad3f7c3b55333f6b5f7d632922662b4eb1c63fba7259d746baed44"
+}

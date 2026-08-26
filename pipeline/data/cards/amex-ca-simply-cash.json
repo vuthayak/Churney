@@ -1,0 +1,63 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "amex-ca-simply-cash",
+    "issuer_slug": "amex_ca",
+    "name": "SimplyCash Card from American Express",
+    "network": "amex",
+    "program_slug": "simplycash",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 21.99,
+    "source_url": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash/"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.0125,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash/"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 0.02,
+      "kind": "cashback",
+      "cap_amount_minor": 30000,
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash/"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn up to $100 in bonus cash back",
+      "min_spend_minor": 200000,
+      "deadline_days": 90,
+      "reward_cashback_minor": 10000,
+      "eligibility_notes": "Bonus 5% cash back on all purchases, up to $2,000 in purchases, first 3 months",
+      "alternate_offers": [],
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/simply-cash/",
+      "verified_at": "2026-08-26T05:19:09.815575Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% from external knowledge [VERIFY]"
+    }
+  ],
+  "content_hash": "f4af4aca4ba8eac4cc9a8dc088a9645db164e9a5118505099f10be5a0945d105"
+}

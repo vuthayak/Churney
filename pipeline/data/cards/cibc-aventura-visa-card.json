@@ -1,0 +1,67 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-aventura-visa-card",
+    "issuer_slug": "cibc",
+    "name": "CIBC Aventura Visa Card",
+    "network": "visa",
+    "program_slug": "aventura",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-card.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-card.html"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-card.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-card.html"
+    },
+    {
+      "category_slug": "drugstore",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-card.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 12,500 points",
+      "reward_points": 12500,
+      "eligibility_notes": "[FILL fill_2026-08-24]: Activity-based offer: 2,500 pts per completed activity (five activities within 60 days of account approval), up to 12,500 pts total; no single MSR stated",
+      "alternate_offers": [],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aventura-visa-card.html",
+      "verified_at": "2026-08-26T05:19:06.320003Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "purchase_apr",
+      "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+    }
+  ],
+  "content_hash": "b7bff52c81166057b00206063f5a5da2e8a19750929e479454afbf3f7e5fd56c"
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "cibc-adapta-mastercard",
+    "issuer_slug": "cibc",
+    "name": "CIBC Adapta Mastercard",
+    "network": "mastercard",
+    "program_slug": "adapta",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "income_req_household": 15000,
+    "purchase_apr": 21.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "1 pt/$1 all other purchases; PLUS automatically earns 1.5 pts/$1 in your top 3 spend categories each month (dynamic categorization across ~12 categories incl grocery+drug stores, dining, gas+EV, transit+parking, entertainment, subscriptions) - not modeled per-category",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "eligible travel booked through CIBC by Expedia",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 15,000 points",
+      "min_spend_minor": 100000,
+      "deadline_days": 120,
+      "reward_points": 15000,
+      "eligibility_notes": "deadline stated as 4 months on page",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 9,000 points",
+          "channel": "later_spend",
+          "min_spend_minor": 100000,
+          "deadline_days": 120,
+          "reward_points": 9000,
+          "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard.html",
+          "seen_on": "2026-08-26"
+        }
+      ],
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/adapta-mastercard.html",
+      "verified_at": "2026-08-26T05:19:05.128538Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% per CIBC standard [VERIFY]"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+    }
+  ],
+  "content_hash": "4533fa50f1a893f8f5674aae461f5ae3cbdcf2d53a8596fb850049f4d37aa4c1"
+}

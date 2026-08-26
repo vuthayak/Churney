@@ -1,0 +1,98 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "amex-ca-gold-rewards-card",
+    "issuer_slug": "amex_ca",
+    "name": "Gold Rewards Card",
+    "network": "amex",
+    "program_slug": "amex_mr",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 25000,
+    "extra_card_fee_minor": 100,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 21.99,
+    "source_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "1 pt/$1 if merchant code not in eligible category; also e-wallet and third-party purchases earn 1x",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "stand-alone gasoline stations in Canada only",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/"
+    },
+    {
+      "category_slug": "drugstore",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "stand-alone drugstores in Canada",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "stand-alone grocery stores; superstores/wholesale clubs excluded",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/"
+    },
+    {
+      "category_slug": "travel_air",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "travel services incl air transport",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/"
+    },
+    {
+      "category_slug": "travel_hotel",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "lodging",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "water/rail/road transport, tour operators; local & commuter transport excluded",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 60,000 points",
+      "min_spend_minor": 100000,
+      "deadline_days": 365,
+      "reward_points": 60000,
+      "eligibility_notes": "Current or former Cardmembers with this Card are not eligible for this offer. [FILL fill_2026-08-24]: Structure: earn 5,000 MR points per monthly billing period in which $1,000 is spent, within first year",
+      "alternate_offers": [],
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/gold-rewards-card/",
+      "verified_at": "2026-08-26T05:19:04.716058Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% from external knowledge [VERIFY]; Amex card pages do not state FX fee"
+    }
+  ],
+  "content_hash": "d203a6fac5a6652365e5a966f9c9e4863418cad8d76373098154c029d33cd10e"
+}

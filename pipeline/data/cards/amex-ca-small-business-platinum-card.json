@@ -1,0 +1,82 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "amex-ca-small-business-platinum-card",
+    "issuer_slug": "amex_ca",
+    "name": "Business Platinum Card from American Express",
+    "network": "amex",
+    "program_slug": "amex_mr",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-platinum-card/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 79900,
+    "fx_fee_pct": 2.5,
+    "source_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-platinum-card/"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "travel_other",
+      "rate": 1.25,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-platinum-card/"
+    },
+    {
+      "rate": 1.25,
+      "kind": "points",
+      "excluded": false,
+      "notes": "1.25 points for every $1 in Card purchases",
+      "source_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-platinum-card/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 80,000 points",
+      "min_spend_minor": 1500000,
+      "deadline_days": 90,
+      "reward_points": 80000,
+      "eligibility_notes": "deadline stated as 3 months on page Current or former Cardmembers with this Card are not eligible.",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 40,000 points",
+          "channel": "later_spend",
+          "reward_points": 40000,
+          "source_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-platinum-card/",
+          "seen_on": "2026-08-26"
+        }
+      ],
+      "source_url": "https://www.americanexpress.com/en-ca/charge-cards/small-business-platinum-card/",
+      "verified_at": "2026-08-26T05:19:04.458140Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "annual_fee_minor",
+      "reason": "fee pattern not found"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "unmapped earn-tile title skipped (never-guess): 'everything'"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "unmapped earn-tile title skipped (never-guess): 'everything for every $1 in Card purchases 3 Featured Benefits Item 1 of 4 Enjoy financial flexibility that offers you more control Your Card comes equipped with business sized purchasing power that ad'"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% from external knowledge [VERIFY]"
+    },
+    {
+      "field": "annual_fee_minor",
+      "reason": "$799 VERIFIED on amex.ca page; was mis-parsed as $0"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "charge card - no purchase APR (pay-in-full product)"
+    }
+  ],
+  "content_hash": "87095012ca1f2801b71a505fbc2771f66f3d0b2faa53f30ac03b043515304f81"
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "amex-ca-marriott-bonvoy-business-card",
+    "issuer_slug": "amex_ca",
+    "name": "Marriott Bonvoy Business American Express Card",
+    "network": "amex",
+    "program_slug": "marriott_bonvoy",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 15000,
+    "extra_card_fee_minor": 5000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 21.99,
+    "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card/"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "travel_hotel",
+      "rate": 5.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card/"
+    },
+    {
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "2X per $1 on everything else",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card/"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "notes": "3X per $1 on eligible gas, dining & travel",
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card/"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card/"
+    },
+    {
+      "category_slug": "travel_air",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 80,000 points",
+      "min_spend_minor": 1000000,
+      "deadline_days": 180,
+      "reward_points": 80000,
+      "eligibility_notes": "deadline stated as 6 months on page Current or former Cardmembers with this Card are not eligible for these offers.",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 30,000 points",
+          "channel": "later_spend",
+          "reward_points": 30000,
+          "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card/",
+          "seen_on": "2026-08-26"
+        }
+      ],
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/marriott-bonvoy-business-card/",
+      "verified_at": "2026-08-26T05:19:04.799919Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% from external knowledge [VERIFY]"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "21.99% purchases & cash advances - frugalflyer.ca american-express-marriott-bonvoy-business [cross-check]"
+    }
+  ],
+  "content_hash": "d5867b28013b82af2d26c6a5ed253d7954c6e38b8068fd0c30dc85167072f277"
+}

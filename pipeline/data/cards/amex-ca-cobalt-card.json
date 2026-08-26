@@ -1,0 +1,71 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "amex-ca-cobalt-card",
+    "issuer_slug": "amex_ca",
+    "name": "Cobalt Card",
+    "network": "amex",
+    "program_slug": "amex_mr",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-26",
+    "annual_fee_minor": 19188,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "cash_apr": 21.99,
+    "source_url": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card/"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card/"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 5.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card/"
+    },
+    {
+      "category_slug": "streaming_subs",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card/"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn up to 15,000 points",
+      "reward_points": 15000,
+      "eligibility_notes": "Current or former Cardmembers with this Card are not eligible for this offer.",
+      "alternate_offers": [],
+      "source_url": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card/",
+      "verified_at": "2026-08-26T05:19:04.635878Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "annual_fee_minor",
+      "reason": "monthly-billed card ($15.99/month); stored annualized as 19188 minor units"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "set 2.5% from external knowledge [VERIFY]; Amex card pages do not state FX fee"
+    }
+  ],
+  "content_hash": "dcb7e8968124183abe5c298bd447b4341f7f72328d1185a17f7e51cfddca4fec"
+}

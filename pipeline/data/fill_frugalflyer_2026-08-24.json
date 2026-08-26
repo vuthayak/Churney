@@ -1,0 +1,206 @@
+{
+  "_meta": {
+    "date": "2026-08-24",
+    "note": "Frugal Flyer cross-check fill for FX/APR gaps. Secondary source; wrong-product matches excluded; APR conflicts resolved against issuer pages (issuer wins)."
+  },
+  "amex-ca-aeroplan-business-reserve-card": {
+    "review_resolve": [],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% sourced from frugalflyer.ca (secondary) [VERIFY]"
+      }
+    ],
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    }
+  },
+  "amex-ca-aeroplan-reserve": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "amex-ca-marriott-bonvoy-business-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "amex-ca-marriott-bonvoy-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "amex-ca-simply-cash": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "amex-ca-small-business-gold-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "amex-ca-small-business-platinum-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "amex-ca-the-platinum-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-aerogold-visa-card-business": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-aeroplan-visa-infinite-privilege-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-aventura-gold-visa-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-aventura-plus-visa": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-aventura-visa-infinite-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-aventura-visa-infinite-privilege-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-costco-mastercard": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-costco-mastercard-business": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-dividend-visa-infinite-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-dividend-visa-platinum-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "cibc-select-visa-card": {
+    "review_resolve": [],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "13.99% sourced from frugalflyer.ca (secondary) [VERIFY]"
+      },
+      {
+        "field": "cash_apr",
+        "reason": "13.99% sourced from frugalflyer.ca (secondary) [VERIFY]"
+      }
+    ],
+    "version_patch": {
+      "purchase_apr": 13.99,
+      "cash_apr": 13.99
+    }
+  },
+  "scotiabank-gold-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "scotiabank-no-fee-amex-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "scotiabank-platinum-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "scotiabank-scene-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "scotiabank-scene-student-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "simplii-cash-back-visa": {
+    "review_resolve": [],
+    "review_add": [
+      {
+        "field": "cash_apr",
+        "reason": "22.99% sourced from frugalflyer.ca (secondary) [VERIFY]"
+      }
+    ],
+    "version_patch": {
+      "cash_apr": 22.99
+    }
+  },
+  "tangerine-money-back-credit-card": {
+    "review_resolve": [],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "corrected from issuer page: purchases 20.95%, cash advances 22.95%"
+      }
+    ],
+    "version_patch": {
+      "purchase_apr": 20.95,
+      "cash_apr": 22.95
+    }
+  },
+  "tangerine-world-credit-card": {
+    "review_resolve": [],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "corrected from issuer page: purchases 20.95%, cash advances 22.95%"
+      }
+    ],
+    "version_patch": {
+      "purchase_apr": 20.95,
+      "cash_apr": 22.95
+    }
+  },
+  "tangerine-world-elite-mastercard": {
+    "review_resolve": [],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "corrected from issuer page: purchases 20.95%, cash advances 22.95%"
+      }
+    ],
+    "version_patch": {
+      "purchase_apr": 20.95,
+      "cash_apr": 22.95
+    }
+  },
+  "td-cash-back-visa-infinite-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  },
+  "td-first-class-travel-visa-infinite-card": {
+    "review_resolve": [],
+    "review_add": [],
+    "version_patch": {}
+  }
+}

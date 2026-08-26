@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Churney — Card Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <span class="logo">▚</span> Churney <span class="sub">card explorer</span>
+    </div>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search cards…" autocomplete="off" />
+      <select id="issuer"><option value="">All issuers</option></select>
+      <select id="program"><option value="">All programs</option></select>
+      <select id="type">
+        <option value="">Personal + business</option>
+        <option value="personal">Personal</option>
+        <option value="business">Business</option>
+      </select>
+      <select id="sort">
+        <option value="fee-asc">Fee ↑</option>
+        <option value="fee-desc">Fee ↓</option>
+        <option value="name">Name A–Z</option>
+      </select>
+    </div>
+    <div id="meta" class="meta"></div>
+  </header>
+
+  <main>
+    <aside id="list"></aside>
+    <section id="detail"><div class="empty">Select a card to see its breakdown.</div></section>
+  </main>
+
+  <script src="cards.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
