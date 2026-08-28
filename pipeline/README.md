@@ -34,10 +34,10 @@ alternate offers, review items, source links).
 | Amex CA | ✅ active | playwright (SPA) | 14 |
 | TD | ✅ active | httpx | 4 |
 | CIBC | ✅ active | httpx | 27 |
-| Scotiabank | ✅ active | httpx | 8 |
+| Scotiabank | ✅ active | httpx | 12 |
 | Tangerine | ✅ active | httpx | 3 |
 | Simplii | ✅ active | httpx | 1 |
-| RBC Royal Bank | ⏸ pending | — | JS-only discovery; needs Playwright pass or manual URL list |
+| RBC Royal Bank | ✅ active | httpx | 15 |
 | NBC | ⏸ pending | — | card-page taxonomy unconfirmed |
 | Neo Financial | ⏸ pending | — | client-rendered; needs Playwright |
 | Brim | ⏸ pending | — | JS-heavy; needs Playwright + URL list |
@@ -94,6 +94,10 @@ uv run python scripts/reparse_cache.py       # offline reparse through current p
 uv run python scripts/apply_fill.py data/fill_2026-08-24.json
 uv run python scripts/apply_fill.py data/fill_frugalflyer_2026-08-24.json
 uv run python scripts/apply_fill.py data/fill_research_2026-08-24.json
+uv run python scripts/apply_fill.py data/fill_cibc_verify_2026-08-28.json
+uv run python scripts/apply_fill.py data/fill_issuer_verify_2026-08-28.json
+uv run python scripts/apply_fill.py data/fill_scotiabank_momentum_2026-08-28.json
+uv run python scripts/apply_fill.py data/fill_amex_gaps_2026-08-28.json
 uv run python scripts/review_hygiene.py      # drop review items contradicted by data
 uv run python -m churney build-ui && uv run python -m churney verify-report
 uv run pytest

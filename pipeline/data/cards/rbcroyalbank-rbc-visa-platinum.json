@@ -1,0 +1,42 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-rbc-visa-platinum",
+    "issuer_slug": "rbcroyalbank",
+    "name": "RBC Visa Platinum",
+    "network": "visa",
+    "program_slug": "unknown",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/no-fee/rbc-visa-platinum.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/no-fee/rbc-visa-platinum.html"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "program_slug",
+      "reason": "could not infer from name 'RBC Visa Platinum'"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "no earn patterns found on page"
+    },
+    {
+      "field": "offers",
+      "reason": "no welcome-bonus pattern found"
+    }
+  ],
+  "content_hash": "7439fa753e5245a1a561bd431fac2e4f0909524e635a4771739f916f93cfcb99"
+}

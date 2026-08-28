@@ -1,0 +1,57 @@
+{
+  "https://www.rbcroyalbank.com/credit-cards/index.html": {
+    "hash": "3eb9e3e2b4471acdea0c6faff11af4364c4291635842e5c183a37f6536dbf82f",
+    "body": ".cache/www.rbcroyalbank.com/3eb9e3e2b4471acdea0c6faff11af4364c4291635842e5c183a37f6536dbf82f.html",
+    "fetched_at": "2026-08-28T23:14:28.902721+00:00"
+  },
+  "https://www.rbcroyalbank.com/credit-cards/all-credit-cards.html": {
+    "hash": "b835d8d81b550aa3894aed439065e6132a3787ed158af1f4f3fc26fea91bdf87",
+    "body": ".cache/www.rbcroyalbank.com/b835d8d81b550aa3894aed439065e6132a3787ed158af1f4f3fc26fea91bdf87.html",
+    "fetched_at": "2026-08-28T23:13:18.397198+00:00"
+  },
+  "https://www.rbcroyalbank.com/credit-cards/travel.html": {
+    "hash": "b5cc93fcec04976fa1acac6a6d5a006596e48145448a22a6dc72e6c7bf161e95",
+    "body": ".cache/www.rbcroyalbank.com/b5cc93fcec04976fa1acac6a6d5a006596e48145448a22a6dc72e6c7bf161e95.html",
+    "fetched_at": "2026-08-28T23:13:23.382594+00:00"
+  },
+  "https://www.rbcroyalbank.com/credit-cards/rewards.html": {
+    "hash": "d447678818a52ad8929909d1c84a4501ff44a620152459c1ff6de45f9f8d7e8f",
+    "body": ".cache/www.rbcroyalbank.com/d447678818a52ad8929909d1c84a4501ff44a620152459c1ff6de45f9f8d7e8f.html",
+    "fetched_at": "2026-08-28T23:13:28.410230+00:00"
+  },
+  "https://www.rbcroyalbank.com/credit-cards/cash-back.html": {
+    "hash": "3657e9e13592990bd317387b3c17d4d14d273b92565b4f161fbca2ba5a918a2c",
+    "body": ".cache/www.rbcroyalbank.com/3657e9e13592990bd317387b3c17d4d14d273b92565b4f161fbca2ba5a918a2c.html",
+    "fetched_at": "2026-08-28T23:13:33.397671+00:00"
+  },
+  "https://www.rbcroyalbank.com/credit-cards/low-interest.html": {
+    "hash": "2798e50163219a843db9ab78990cb4ac3100dfcefa797855b6b6cf2ae0fd008c",
+    "body": ".cache/www.rbcroyalbank.com/2798e50163219a843db9ab78990cb4ac3100dfcefa797855b6b6cf2ae0fd008c.html",
+    "fetched_at": "2026-08-28T23:13:39.284777+00:00"
+  },
+  "https://www.rbcroyalbank.com/credit-cards/no-fee.html": {
+    "hash": "aac4549ecf94325cb1ca65b1647569ac10990145bb6fc97610db22d11a3bc45d",
+    "body": ".cache/www.rbcroyalbank.com/aac4549ecf94325cb1ca65b1647569ac10990145bb6fc97610db22d11a3bc45d.html",
+    "fetched_at": "2026-08-28T23:13:44.577077+00:00"
+  },
+  "https://www.rbcroyalbank.com/credit-cards/student.html": {
+    "hash": "38c4f85972d6f2e0881694cda5ac834b45a615a40ce5d5a008a0b110187c94cb",
+    "body": ".cache/www.rbcroyalbank.com/38c4f85972d6f2e0881694cda5ac834b45a615a40ce5d5a008a0b110187c94cb.html",
+    "fetched_at": "2026-08-28T23:13:48.445188+00:00"
+  },
+  "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite.html": {
+    "hash": "4c734ffd40b5ae3be6ce1b3620489e08cc766ab37b9f41c931777a3b745deba9",
+    "body": ".cache/www.rbcroyalbank.com/4c734ffd40b5ae3be6ce1b3620489e08cc766ab37b9f41c931777a3b745deba9.html",
+    "fetched_at": "2026-08-28T23:14:33.932100+00:00"
+  },
+  "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html": {
+    "hash": "5b55d41094fe5643577e625aa5392eb44361034e97f2e7f83f94ff33e7c9a54e",
+    "body": ".cache/www.rbcroyalbank.com/5b55d41094fe5643577e625aa5392eb44361034e97f2e7f83f94ff33e7c9a54e.html",
+    "fetched_at": "2026-08-28T23:14:41.613563+00:00"
+  },
+  "https://www.rbcroyalbank.com/credit-cards/cash-back/rbc-cashback-mastercard.html": {
+    "hash": "3cb2a8ae0b8905f282a411325c5d8aca09862750747e28f0a0e03ff431e18abf",
+    "body": ".cache/www.rbcroyalbank.com/3cb2a8ae0b8905f282a411325c5d8aca09862750747e28f0a0e03ff431e18abf.html",
+    "fetched_at": "2026-08-28T23:14:43.916167+00:00"
+  }
+}

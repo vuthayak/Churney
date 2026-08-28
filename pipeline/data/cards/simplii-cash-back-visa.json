@@ -82,7 +82,11 @@
   "needs_manual_review": [
     {
       "field": "cash_apr",
-      "reason": "22.99% sourced from frugalflyer.ca (secondary) [VERIFY]"
+      "reason": "22.99% - VERIFIED: simplii.com/en/rates/cash-back-visa-rates.html (Cash Advances and Balance Transfers rate)"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: simplii.com rates page ('plus a fee of 2.5% of the converted amount')"
     }
   ],
   "content_hash": "58c7c555e5955c0c2b085e5a6358dea2d88af8add4c1a3d072328e147f4ec46e"

@@ -54,28 +54,16 @@
   ],
   "needs_manual_review": [
     {
-      "field": "annual_fee_minor",
-      "reason": "fee pattern not found"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "unmapped earn-tile title skipped (never-guess): 'everything'"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "unmapped earn-tile title skipped (never-guess): 'everything for every $1 in Card purchases 3 Featured Benefits Item 1 of 4 Enjoy financial flexibility that offers you more control Your Card comes equipped with business sized purchasing power that ad'"
+      "field": "purchase_apr",
+      "reason": "charge card - no purchase APR (pay-in-full product)"
     },
     {
       "field": "fx_fee_pct",
-      "reason": "set 2.5% from external knowledge [VERIFY]"
+      "reason": "2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)"
     },
     {
       "field": "annual_fee_minor",
       "reason": "$799 VERIFIED on amex.ca page; was mis-parsed as $0"
-    },
-    {
-      "field": "purchase_apr",
-      "reason": "charge card - no purchase APR (pay-in-full product)"
     }
   ],
   "content_hash": "87095012ca1f2801b71a505fbc2771f66f3d0b2faa53f30ac03b043515304f81"

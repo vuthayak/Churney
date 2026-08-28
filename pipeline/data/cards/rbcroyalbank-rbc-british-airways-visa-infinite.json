@@ -1,0 +1,38 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-rbc-british-airways-visa-infinite",
+    "issuer_slug": "rbcroyalbank",
+    "name": "RBC British Airways Visa Infinite",
+    "network": "visa",
+    "program_slug": "british_airways",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-british-airways-visa-infinite.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 16500,
+    "extra_card_fee_minor": 7500,
+    "purchase_apr": 20.5,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-british-airways-visa-infinite.html"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "no earn patterns found on page"
+    },
+    {
+      "field": "offers",
+      "reason": "no welcome-bonus pattern found"
+    }
+  ],
+  "content_hash": "a1eda0ec933f8b6fe26fd122f4b42e75b30e670c280607ef56a5608707f89bcb"
+}

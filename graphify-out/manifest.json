@@ -1,0 +1,884 @@
+{
+  "db/seeds/churn_rules.sql": {
+    "mtime": 1787947514.4153595,
+    "seen": 1787948067.987807,
+    "ast_hash": "5cd96ee5830785980b6ea4a55926f9df",
+    "semantic_hash": "5cd96ee5830785980b6ea4a55926f9df"
+  },
+  "pipeline/churney/__init__.py": {
+    "mtime": 1787947514.4192352,
+    "seen": 1787948067.987809,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "pipeline/churney/__main__.py": {
+    "mtime": 1787947514.41937,
+    "seen": 1787948067.9878101,
+    "ast_hash": "100e1385fa420e90192cf5076b11ddbd",
+    "semantic_hash": "100e1385fa420e90192cf5076b11ddbd"
+  },
+  "pipeline/churney/build_ui.py": {
+    "mtime": 1787947514.4194586,
+    "seen": 1787948067.9878101,
+    "ast_hash": "79e56ed15eb99e6e935663a23e0df9d3",
+    "semantic_hash": "79e56ed15eb99e6e935663a23e0df9d3"
+  },
+  "pipeline/churney/config.py": {
+    "mtime": 1787947514.419534,
+    "seen": 1787948067.987811,
+    "ast_hash": "1ab345126b67a592e4749a78098e9876",
+    "semantic_hash": "1ab345126b67a592e4749a78098e9876"
+  },
+  "pipeline/churney/emit.py": {
+    "mtime": 1787947514.419602,
+    "seen": 1787948067.987811,
+    "ast_hash": "d149f091af96b59077958774dfbe4757",
+    "semantic_hash": "d149f091af96b59077958774dfbe4757"
+  },
+  "pipeline/churney/fetch.py": {
+    "mtime": 1787947514.4197469,
+    "seen": 1787948067.987811,
+    "ast_hash": "5fa8b0b0c5274fcb0744ddf525cbcebb",
+    "semantic_hash": "5fa8b0b0c5274fcb0744ddf525cbcebb"
+  },
+  "pipeline/churney/models.py": {
+    "mtime": 1787947514.4198809,
+    "seen": 1787948067.987812,
+    "ast_hash": "aa72b086f3266181f6bf3bf837fa4bbc",
+    "semantic_hash": "aa72b086f3266181f6bf3bf837fa4bbc"
+  },
+  "pipeline/churney/playwright_fetch.py": {
+    "mtime": 1787947514.4199526,
+    "seen": 1787948067.987812,
+    "ast_hash": "ac40f0b31acd1bcdcc8aa64fc438f8bd",
+    "semantic_hash": "ac40f0b31acd1bcdcc8aa64fc438f8bd"
+  },
+  "pipeline/churney/report.py": {
+    "mtime": 1787947514.4200335,
+    "seen": 1787948067.987812,
+    "ast_hash": "d593eaebb2ee97e65bea7fb5aa504424",
+    "semantic_hash": "d593eaebb2ee97e65bea7fb5aa504424"
+  },
+  "pipeline/churney/verify_report.py": {
+    "mtime": 1787947514.4201615,
+    "seen": 1787948067.9878132,
+    "ast_hash": "952b37fe354641244f116f3bb1211d0a",
+    "semantic_hash": "952b37fe354641244f116f3bb1211d0a"
+  },
+  "pipeline/data/cards/amex-ca-aeroplan-business-reserve-card.json": {
+    "mtime": 1787947514.4203365,
+    "seen": 1787948067.9878132,
+    "ast_hash": "2a4b4594c7d74a205ac12f3420fdef6f",
+    "semantic_hash": "2a4b4594c7d74a205ac12f3420fdef6f"
+  },
+  "pipeline/data/cards/amex-ca-aeroplan-card.json": {
+    "mtime": 1787947514.4204443,
+    "seen": 1787948067.9878132,
+    "ast_hash": "1532da334e4e89ace5a239d90942d2b4",
+    "semantic_hash": "1532da334e4e89ace5a239d90942d2b4"
+  },
+  "pipeline/data/cards/amex-ca-aeroplan-reserve.json": {
+    "mtime": 1787947514.4205346,
+    "seen": 1787948067.987814,
+    "ast_hash": "e0560c20ec1791ef5acd5a53d26452bc",
+    "semantic_hash": "e0560c20ec1791ef5acd5a53d26452bc"
+  },
+  "pipeline/data/cards/amex-ca-cobalt-card.json": {
+    "mtime": 1787947514.42062,
+    "seen": 1787948067.987814,
+    "ast_hash": "e118fe4742e595bb5d76c9157c901e50",
+    "semantic_hash": "e118fe4742e595bb5d76c9157c901e50"
+  },
+  "pipeline/data/cards/amex-ca-essential-credit-card.json": {
+    "mtime": 1787947514.4206913,
+    "seen": 1787948067.987814,
+    "ast_hash": "dab21d141dbb7887671c8c2a5af821d4",
+    "semantic_hash": "dab21d141dbb7887671c8c2a5af821d4"
+  },
+  "pipeline/data/cards/amex-ca-gold-rewards-card.json": {
+    "mtime": 1787947514.4208455,
+    "seen": 1787948067.987815,
+    "ast_hash": "98a6725be5589aac1deccee606c4e156",
+    "semantic_hash": "98a6725be5589aac1deccee606c4e156"
+  },
+  "pipeline/data/cards/amex-ca-green-card.json": {
+    "mtime": 1787947514.4209237,
+    "seen": 1787948067.987815,
+    "ast_hash": "0ecadf0c7293002f782106bf091de090",
+    "semantic_hash": "0ecadf0c7293002f782106bf091de090"
+  },
+  "pipeline/data/cards/amex-ca-marriott-bonvoy-business-card.json": {
+    "mtime": 1787947514.4210005,
+    "seen": 1787948067.987815,
+    "ast_hash": "c46e512a71173601fed786155bbdd5b4",
+    "semantic_hash": "c46e512a71173601fed786155bbdd5b4"
+  },
+  "pipeline/data/cards/amex-ca-marriott-bonvoy-card.json": {
+    "mtime": 1787947514.421065,
+    "seen": 1787948067.9878159,
+    "ast_hash": "53387507c3c930f67d17f89a27d8d9b8",
+    "semantic_hash": "53387507c3c930f67d17f89a27d8d9b8"
+  },
+  "pipeline/data/cards/amex-ca-simply-cash-preferred.json": {
+    "mtime": 1787947514.4211335,
+    "seen": 1787948067.9878159,
+    "ast_hash": "aa23b127fd933e5f00484ec8670e82da",
+    "semantic_hash": "aa23b127fd933e5f00484ec8670e82da"
+  },
+  "pipeline/data/cards/amex-ca-simply-cash.json": {
+    "mtime": 1787947514.4211984,
+    "seen": 1787948067.9878159,
+    "ast_hash": "37670da5f9915ae7bcbd349c3e47b41a",
+    "semantic_hash": "37670da5f9915ae7bcbd349c3e47b41a"
+  },
+  "pipeline/data/cards/amex-ca-small-business-gold-card.json": {
+    "mtime": 1787947514.4212708,
+    "seen": 1787948067.987817,
+    "ast_hash": "b8fc7feebc8b63fc4b202607a1d10140",
+    "semantic_hash": "b8fc7feebc8b63fc4b202607a1d10140"
+  },
+  "pipeline/data/cards/amex-ca-small-business-platinum-card.json": {
+    "mtime": 1787947514.4213343,
+    "seen": 1787948067.987817,
+    "ast_hash": "99bfe73c61ca547d4c05bbbad231c069",
+    "semantic_hash": "99bfe73c61ca547d4c05bbbad231c069"
+  },
+  "pipeline/data/cards/amex-ca-the-platinum-card.json": {
+    "mtime": 1787947514.4214015,
+    "seen": 1787948067.987817,
+    "ast_hash": "0afeb7957c641f27c46a00f02229c86f",
+    "semantic_hash": "0afeb7957c641f27c46a00f02229c86f"
+  },
+  "pipeline/data/cards/cibc-adapta-mastercard-for-students.json": {
+    "mtime": 1787947514.4214942,
+    "seen": 1787948067.987818,
+    "ast_hash": "f8fd67ffdd013c267454cce4e1d5ef92",
+    "semantic_hash": "f8fd67ffdd013c267454cce4e1d5ef92"
+  },
+  "pipeline/data/cards/cibc-adapta-mastercard.json": {
+    "mtime": 1787947514.4215686,
+    "seen": 1787948067.987818,
+    "ast_hash": "cb272b64cd96eda6c795d25bdd5d122c",
+    "semantic_hash": "cb272b64cd96eda6c795d25bdd5d122c"
+  },
+  "pipeline/data/cards/cibc-aerogold-plus-visa.json": {
+    "mtime": 1787947514.4216554,
+    "seen": 1787948067.987818,
+    "ast_hash": "193cb20592a6570fbd8c6d826485d6ca",
+    "semantic_hash": "193cb20592a6570fbd8c6d826485d6ca"
+  },
+  "pipeline/data/cards/cibc-aerogold-visa-card-business.json": {
+    "mtime": 1787947514.4217308,
+    "seen": 1787948067.987819,
+    "ast_hash": "4142faa5df33a5ad2f6c51aae828f5ea",
+    "semantic_hash": "4142faa5df33a5ad2f6c51aae828f5ea"
+  },
+  "pipeline/data/cards/cibc-aeroplan-visa-card.json": {
+    "mtime": 1787947514.4217987,
+    "seen": 1787948067.987819,
+    "ast_hash": "90b7e1b6d8bae670c8e07258111bdee6",
+    "semantic_hash": "90b7e1b6d8bae670c8e07258111bdee6"
+  },
+  "pipeline/data/cards/cibc-aeroplan-visa-for-students.json": {
+    "mtime": 1787947514.4218645,
+    "seen": 1787948067.987819,
+    "ast_hash": "cf74228dd9196b50560897736dbf11b6",
+    "semantic_hash": "cf74228dd9196b50560897736dbf11b6"
+  },
+  "pipeline/data/cards/cibc-aeroplan-visa-infinite-card.json": {
+    "mtime": 1787947514.4219415,
+    "seen": 1787948067.987819,
+    "ast_hash": "b620dea6e99a23a1ffcb08a650c59c22",
+    "semantic_hash": "b620dea6e99a23a1ffcb08a650c59c22"
+  },
+  "pipeline/data/cards/cibc-aeroplan-visa-infinite-privilege-card.json": {
+    "mtime": 1787947514.4220018,
+    "seen": 1787948067.9878201,
+    "ast_hash": "5409471d4d897a4f675ca18bdc67a1be",
+    "semantic_hash": "5409471d4d897a4f675ca18bdc67a1be"
+  },
+  "pipeline/data/cards/cibc-aventura-gold-visa-card.json": {
+    "mtime": 1787947514.4220686,
+    "seen": 1787948067.9878201,
+    "ast_hash": "16353a90c1150281dfdd4234c8ae6220",
+    "semantic_hash": "16353a90c1150281dfdd4234c8ae6220"
+  },
+  "pipeline/data/cards/cibc-aventura-plus-visa.json": {
+    "mtime": 1787947514.422149,
+    "seen": 1787948067.9878201,
+    "ast_hash": "bcaea44f1070ba114e4827be02c899fd",
+    "semantic_hash": "bcaea44f1070ba114e4827be02c899fd"
+  },
+  "pipeline/data/cards/cibc-aventura-visa-card-business.json": {
+    "mtime": 1787947514.4222255,
+    "seen": 1787948067.987821,
+    "ast_hash": "aff4644be720dbb1dedc7f65c0e5720e",
+    "semantic_hash": "aff4644be720dbb1dedc7f65c0e5720e"
+  },
+  "pipeline/data/cards/cibc-aventura-visa-card.json": {
+    "mtime": 1787947514.4222934,
+    "seen": 1787948067.987821,
+    "ast_hash": "7eac4e88fa45bc4404717c148318a440",
+    "semantic_hash": "7eac4e88fa45bc4404717c148318a440"
+  },
+  "pipeline/data/cards/cibc-aventura-visa-for-students.json": {
+    "mtime": 1787947514.4223537,
+    "seen": 1787948067.987821,
+    "ast_hash": "a5b7f170a223ceb7409dae31f485a2a4",
+    "semantic_hash": "a5b7f170a223ceb7409dae31f485a2a4"
+  },
+  "pipeline/data/cards/cibc-aventura-visa-infinite-card.json": {
+    "mtime": 1787947514.4224234,
+    "seen": 1787948067.987822,
+    "ast_hash": "107de2f7d03e180ef1a05a0040e85b0c",
+    "semantic_hash": "107de2f7d03e180ef1a05a0040e85b0c"
+  },
+  "pipeline/data/cards/cibc-aventura-visa-infinite-privilege-card.json": {
+    "mtime": 1787947514.4225001,
+    "seen": 1787948067.987822,
+    "ast_hash": "a9c48dfc597343850156dcad379c6189",
+    "semantic_hash": "a9c48dfc597343850156dcad379c6189"
+  },
+  "pipeline/data/cards/cibc-bizline-visa-card.json": {
+    "mtime": 1787947514.4225838,
+    "seen": 1787948067.987822,
+    "ast_hash": "9d334dde7056579c854c74a647616ffc",
+    "semantic_hash": "9d334dde7056579c854c74a647616ffc"
+  },
+  "pipeline/data/cards/cibc-classic-visa-card.json": {
+    "mtime": 1787947514.4226549,
+    "seen": 1787948067.987823,
+    "ast_hash": "56321c96e51e0249fd7f23636e068c19",
+    "semantic_hash": "56321c96e51e0249fd7f23636e068c19"
+  },
+  "pipeline/data/cards/cibc-classic-visa-for-students.json": {
+    "mtime": 1787947514.4227185,
+    "seen": 1787948067.987823,
+    "ast_hash": "eae14f2576fe96e01cf24a12f7500c5c",
+    "semantic_hash": "eae14f2576fe96e01cf24a12f7500c5c"
+  },
+  "pipeline/data/cards/cibc-corporate-classic-plus-visa.json": {
+    "mtime": 1787947514.4227936,
+    "seen": 1787948067.987823,
+    "ast_hash": "342eb00711708765d0f2ecd0d680af80",
+    "semantic_hash": "342eb00711708765d0f2ecd0d680af80"
+  },
+  "pipeline/data/cards/cibc-costco-mastercard-business.json": {
+    "mtime": 1787947514.4228795,
+    "seen": 1787948067.9878242,
+    "ast_hash": "87917ce001e9d4ee3df081c621b02415",
+    "semantic_hash": "87917ce001e9d4ee3df081c621b02415"
+  },
+  "pipeline/data/cards/cibc-costco-mastercard.json": {
+    "mtime": 1787947514.4229674,
+    "seen": 1787948067.9878242,
+    "ast_hash": "6dcf097a0b3fea35cfe3f514e0bc0a9b",
+    "semantic_hash": "6dcf097a0b3fea35cfe3f514e0bc0a9b"
+  },
+  "pipeline/data/cards/cibc-dividend-visa-card.json": {
+    "mtime": 1787947514.4230335,
+    "seen": 1787948067.9878242,
+    "ast_hash": "81ae9f061e3a3c22f4f5e1ba298d5903",
+    "semantic_hash": "81ae9f061e3a3c22f4f5e1ba298d5903"
+  },
+  "pipeline/data/cards/cibc-dividend-visa-for-students.json": {
+    "mtime": 1787947514.4231176,
+    "seen": 1787948067.987825,
+    "ast_hash": "f44131c458a5a2b496671ccf51914362",
+    "semantic_hash": "f44131c458a5a2b496671ccf51914362"
+  },
+  "pipeline/data/cards/cibc-dividend-visa-infinite-card.json": {
+    "mtime": 1787947514.4231877,
+    "seen": 1787948067.987825,
+    "ast_hash": "10f5668b5b0f250eee1a5969bc37d90e",
+    "semantic_hash": "10f5668b5b0f250eee1a5969bc37d90e"
+  },
+  "pipeline/data/cards/cibc-dividend-visa-platinum-card.json": {
+    "mtime": 1787947514.4232605,
+    "seen": 1787948067.987825,
+    "ast_hash": "a2822bf98f59a08d807b9490fac99564",
+    "semantic_hash": "a2822bf98f59a08d807b9490fac99564"
+  },
+  "pipeline/data/cards/cibc-select-visa-card.json": {
+    "mtime": 1787947514.4233327,
+    "seen": 1787948067.987825,
+    "ast_hash": "4bcfc97389437967835a04805937bc1e",
+    "semantic_hash": "4bcfc97389437967835a04805937bc1e"
+  },
+  "pipeline/data/cards/cibc-us-dollar-aventura-gold-visa-card.json": {
+    "mtime": 1787947514.4234128,
+    "seen": 1787948067.9878259,
+    "ast_hash": "0b67cf89718a187096b288c64b51a0b1",
+    "semantic_hash": "0b67cf89718a187096b288c64b51a0b1"
+  },
+  "pipeline/data/cards/scotiabank-gold-card.json": {
+    "mtime": 1787947514.423491,
+    "seen": 1787948067.9878259,
+    "ast_hash": "d16b42f9c57e839843c65fc2d7a237ba",
+    "semantic_hash": "d16b42f9c57e839843c65fc2d7a237ba"
+  },
+  "pipeline/data/cards/scotiabank-no-fee-amex-card.json": {
+    "mtime": 1787947514.4235582,
+    "seen": 1787948067.9878259,
+    "ast_hash": "eeee5b5a762f34297db0c98aa07210d7",
+    "semantic_hash": "eeee5b5a762f34297db0c98aa07210d7"
+  },
+  "pipeline/data/cards/scotiabank-passport-infinite-card.json": {
+    "mtime": 1787947514.4236443,
+    "seen": 1787948067.987827,
+    "ast_hash": "dbf67f403b21361792aae7435af9c484",
+    "semantic_hash": "dbf67f403b21361792aae7435af9c484"
+  },
+  "pipeline/data/cards/scotiabank-platinum-card.json": {
+    "mtime": 1787947514.4237115,
+    "seen": 1787948067.987827,
+    "ast_hash": "ed3a112cd418964a8a321f2d2b3e3860",
+    "semantic_hash": "ed3a112cd418964a8a321f2d2b3e3860"
+  },
+  "pipeline/data/cards/scotiabank-scene-card.json": {
+    "mtime": 1787947514.423769,
+    "seen": 1787948067.987827,
+    "ast_hash": "06bac63078b4eef1eb36116714674b90",
+    "semantic_hash": "06bac63078b4eef1eb36116714674b90"
+  },
+  "pipeline/data/cards/scotiabank-scene-student-card.json": {
+    "mtime": 1787947514.4238389,
+    "seen": 1787948067.987828,
+    "ast_hash": "6dd17dd0fec99d0f781d492bd2e6f7db",
+    "semantic_hash": "6dd17dd0fec99d0f781d492bd2e6f7db"
+  },
+  "pipeline/data/cards/scotiabank-scotiagold-passport-card.json": {
+    "mtime": 1787947514.423912,
+    "seen": 1787948067.987828,
+    "ast_hash": "bd4ac96fb80ab3ff0071ae0eabeb8929",
+    "semantic_hash": "bd4ac96fb80ab3ff0071ae0eabeb8929"
+  },
+  "pipeline/data/cards/simplii-cash-back-visa.json": {
+    "mtime": 1787947514.42399,
+    "seen": 1787948067.987828,
+    "ast_hash": "92dad83200c80c4520f97eddbd769b34",
+    "semantic_hash": "92dad83200c80c4520f97eddbd769b34"
+  },
+  "pipeline/data/cards/tangerine-money-back-credit-card.json": {
+    "mtime": 1787947514.4240587,
+    "seen": 1787948067.987828,
+    "ast_hash": "cba0022d995ce89de391e511bbf8f2b5",
+    "semantic_hash": "cba0022d995ce89de391e511bbf8f2b5"
+  },
+  "pipeline/data/cards/tangerine-world-credit-card.json": {
+    "mtime": 1787947514.4241173,
+    "seen": 1787948067.987829,
+    "ast_hash": "b63348d7cfb67935d2c71c11b661b9d6",
+    "semantic_hash": "b63348d7cfb67935d2c71c11b661b9d6"
+  },
+  "pipeline/data/cards/tangerine-world-elite-mastercard.json": {
+    "mtime": 1787947514.4241827,
+    "seen": 1787948067.987829,
+    "ast_hash": "7245f55da0bef34b3476ffc48aa6805e",
+    "semantic_hash": "7245f55da0bef34b3476ffc48aa6805e"
+  },
+  "pipeline/data/cards/td-aeroplan-visa-infinite-card.json": {
+    "mtime": 1787947514.4242535,
+    "seen": 1787948067.987829,
+    "ast_hash": "862ebaed84fcbf6870f51f430cf217c3",
+    "semantic_hash": "862ebaed84fcbf6870f51f430cf217c3"
+  },
+  "pipeline/data/cards/td-cash-back-visa-infinite-card.json": {
+    "mtime": 1787947514.424331,
+    "seen": 1787948067.98783,
+    "ast_hash": "703e768b65939cb1b808e80a20a8092e",
+    "semantic_hash": "703e768b65939cb1b808e80a20a8092e"
+  },
+  "pipeline/data/cards/td-first-class-travel-visa-infinite-card.json": {
+    "mtime": 1787947514.4243906,
+    "seen": 1787948067.98783,
+    "ast_hash": "dbdcdef474c86e6f396af595da157c9a",
+    "semantic_hash": "dbdcdef474c86e6f396af595da157c9a"
+  },
+  "pipeline/data/cards/td-us-dollar-visa-card.json": {
+    "mtime": 1787947514.424458,
+    "seen": 1787948067.98783,
+    "ast_hash": "92f05d7fcd26598c11a9c405fb862fc8",
+    "semantic_hash": "92f05d7fcd26598c11a9c405fb862fc8"
+  },
+  "pipeline/data/cibc_rate_pdfs.json": {
+    "mtime": 1787947514.424525,
+    "seen": 1787948067.987831,
+    "ast_hash": "01fb3638476b6871c926d44cdf3ae2a7",
+    "semantic_hash": "01fb3638476b6871c926d44cdf3ae2a7"
+  },
+  "pipeline/data/fill_2026-08-24.json": {
+    "mtime": 1787947514.4250953,
+    "seen": 1787948067.987831,
+    "ast_hash": "b68500dc933f3e3c62f5ff8bdfd14f8f",
+    "semantic_hash": "b68500dc933f3e3c62f5ff8bdfd14f8f"
+  },
+  "pipeline/data/fill_frugalflyer_2026-08-24.json": {
+    "mtime": 1787947514.4253263,
+    "seen": 1787948067.987831,
+    "ast_hash": "d940258579a69e757e1417f4d9d08aa6",
+    "semantic_hash": "d940258579a69e757e1417f4d9d08aa6"
+  },
+  "pipeline/data/fill_research_2026-08-24.json": {
+    "mtime": 1787947514.425401,
+    "seen": 1787948067.987832,
+    "ast_hash": "f06bd41cc28b121a19cf136d8189ed0f",
+    "semantic_hash": "f06bd41cc28b121a19cf136d8189ed0f"
+  },
+  "pipeline/data/frugalflyer_facts.json": {
+    "mtime": 1787947514.4255397,
+    "seen": 1787948067.987832,
+    "ast_hash": "5c6e0c69d390a393b55e112e09221f47",
+    "semantic_hash": "5c6e0c69d390a393b55e112e09221f47"
+  },
+  "pipeline/data/frugalflyer_map.json": {
+    "mtime": 1787947514.4256778,
+    "seen": 1787948067.987832,
+    "ast_hash": "548c8cd43a8cfca26a227b66c7ccddd7",
+    "semantic_hash": "548c8cd43a8cfca26a227b66c7ccddd7"
+  },
+  "pipeline/data/frugalflyer_urls.json": {
+    "mtime": 1787947514.4258034,
+    "seen": 1787948067.987832,
+    "ast_hash": "15451298a46f527206cfbfca208564e8",
+    "semantic_hash": "15451298a46f527206cfbfca208564e8"
+  },
+  "pipeline/data/milesopedia_urls.json": {
+    "mtime": 1787947514.426,
+    "seen": 1787948067.987833,
+    "ast_hash": "982bf9e6fe05ba2af33cb958607e4765",
+    "semantic_hash": "982bf9e6fe05ba2af33cb958607e4765"
+  },
+  "pipeline/pyproject.toml": {
+    "mtime": 1787947514.426167,
+    "seen": 1787948067.987833,
+    "ast_hash": "67c7884b2110f5ed901a1cc821dd4c95",
+    "semantic_hash": "67c7884b2110f5ed901a1cc821dd4c95"
+  },
+  "pipeline/scrapers/__init__.py": {
+    "mtime": 1787947514.4262762,
+    "seen": 1787948067.987833,
+    "ast_hash": "694f9245fbb8c28d459437c2483fec94",
+    "semantic_hash": "694f9245fbb8c28d459437c2483fec94"
+  },
+  "pipeline/scrapers/amex_ca.py": {
+    "mtime": 1787947514.4264064,
+    "seen": 1787948067.9878342,
+    "ast_hash": "6ce61a7df91432c980541378ff0168a4",
+    "semantic_hash": "6ce61a7df91432c980541378ff0168a4"
+  },
+  "pipeline/scrapers/base.py": {
+    "mtime": 1787947514.426476,
+    "seen": 1787948067.9878342,
+    "ast_hash": "909591a446e5fe75002b4ece8a33a1e2",
+    "semantic_hash": "909591a446e5fe75002b4ece8a33a1e2"
+  },
+  "pipeline/scrapers/common.py": {
+    "mtime": 1787947514.4265747,
+    "seen": 1787948067.9878342,
+    "ast_hash": "c34969b03b5f8b3d2b5944af66b2bab9",
+    "semantic_hash": "c34969b03b5f8b3d2b5944af66b2bab9"
+  },
+  "pipeline/scrapers/generic.py": {
+    "mtime": 1787947514.4266322,
+    "seen": 1787948067.987835,
+    "ast_hash": "6bb6debb53437518e104a676f04e5006",
+    "semantic_hash": "6bb6debb53437518e104a676f04e5006"
+  },
+  "pipeline/scrapers/simple_cashback.py": {
+    "mtime": 1787947514.4267,
+    "seen": 1787948067.987835,
+    "ast_hash": "c6a53e1448e14653ab4afba93efdb105",
+    "semantic_hash": "c6a53e1448e14653ab4afba93efdb105"
+  },
+  "pipeline/scripts/apply_fill.py": {
+    "mtime": 1787947514.4268558,
+    "seen": 1787948067.987835,
+    "ast_hash": "5185e482394981b59c20b648fc453492",
+    "semantic_hash": "5185e482394981b59c20b648fc453492"
+  },
+  "pipeline/scripts/build_research_fill.py": {
+    "mtime": 1787947514.4269521,
+    "seen": 1787948067.987836,
+    "ast_hash": "53fe2e4023a64a648e962f0b2ae8670c",
+    "semantic_hash": "53fe2e4023a64a648e962f0b2ae8670c"
+  },
+  "pipeline/scripts/fetch_frugalflyer.py": {
+    "mtime": 1787947514.4270127,
+    "seen": 1787948067.987836,
+    "ast_hash": "2adacb456aa4017fb2befc161651e2a9",
+    "semantic_hash": "2adacb456aa4017fb2befc161651e2a9"
+  },
+  "pipeline/scripts/llm_digest.py": {
+    "mtime": 1787947514.4271247,
+    "seen": 1787948067.987836,
+    "ast_hash": "d1f87be2f92ece696bc49a307d71cb09",
+    "semantic_hash": "d1f87be2f92ece696bc49a307d71cb09"
+  },
+  "pipeline/scripts/reparse_cache.py": {
+    "mtime": 1787947514.4272363,
+    "seen": 1787948067.9878368,
+    "ast_hash": "24172fb04513b349a5dd92d5b47563b6",
+    "semantic_hash": "24172fb04513b349a5dd92d5b47563b6"
+  },
+  "pipeline/scripts/review_hygiene.py": {
+    "mtime": 1787947514.4273007,
+    "seen": 1787948067.9878368,
+    "ast_hash": "be071f83226d1b85db715c36fcdeb70b",
+    "semantic_hash": "be071f83226d1b85db715c36fcdeb70b"
+  },
+  "pipeline/scripts/summarize.py": {
+    "mtime": 1787947514.4273574,
+    "seen": 1787948067.987838,
+    "ast_hash": "1ce894de90ce0573b6994d9348708a61",
+    "semantic_hash": "1ce894de90ce0573b6994d9348708a61"
+  },
+  "pipeline/scripts/ui_smoke.py": {
+    "mtime": 1787947514.4274204,
+    "seen": 1787948067.987838,
+    "ast_hash": "1720b61fdd23cc52f3d2d0ae8aae7413",
+    "semantic_hash": "1720b61fdd23cc52f3d2d0ae8aae7413"
+  },
+  "pipeline/spot_check.py": {
+    "mtime": 1787947514.4275906,
+    "seen": 1787948067.987838,
+    "ast_hash": "e958dc4507b68778125cc9025bbbf874",
+    "semantic_hash": "e958dc4507b68778125cc9025bbbf874"
+  },
+  "pipeline/tests/conftest.py": {
+    "mtime": 1787947514.4276812,
+    "seen": 1787948067.987839,
+    "ast_hash": "80d3d8529a83b932a292025e21e0082f",
+    "semantic_hash": "80d3d8529a83b932a292025e21e0082f"
+  },
+  "pipeline/tests/test_amex_ca.py": {
+    "mtime": 1787947514.435721,
+    "seen": 1787948067.987839,
+    "ast_hash": "07bec32a9f7accc633612328f2b15049",
+    "semantic_hash": "07bec32a9f7accc633612328f2b15049"
+  },
+  "pipeline/tests/test_fetch.py": {
+    "mtime": 1787947514.435833,
+    "seen": 1787948067.987839,
+    "ast_hash": "797a64d3c4040faf4f5da2d940b01895",
+    "semantic_hash": "797a64d3c4040faf4f5da2d940b01895"
+  },
+  "pipeline/tests/test_generic.py": {
+    "mtime": 1787947514.4359775,
+    "seen": 1787948067.987839,
+    "ast_hash": "4bf65275f88fcd26a8614ee0d74e77d0",
+    "semantic_hash": "4bf65275f88fcd26a8614ee0d74e77d0"
+  },
+  "pipeline/ui/app.js": {
+    "mtime": 1787947514.4361851,
+    "seen": 1787948067.98784,
+    "ast_hash": "e04d6009c9304e954d55e2a7ccf23188",
+    "semantic_hash": "e04d6009c9304e954d55e2a7ccf23188"
+  },
+  "pipeline/ui/cards.js": {
+    "mtime": 1787947514.4363794,
+    "seen": 1787948067.98784,
+    "ast_hash": "8f3f9ffa5b8abe0bc67a06cb7f0fd748",
+    "semantic_hash": "8f3f9ffa5b8abe0bc67a06cb7f0fd748"
+  },
+  "docs/00-vision.md": {
+    "mtime": 1787947514.4157188,
+    "seen": 1787948067.98784,
+    "ast_hash": "96728d46e5d8d55c934454e1bc782ed1",
+    "semantic_hash": "96728d46e5d8d55c934454e1bc782ed1"
+  },
+  "docs/01-product-overview.md": {
+    "mtime": 1787947514.4158945,
+    "seen": 1787948067.9878411,
+    "ast_hash": "b2585b861c9ed6218db25e05cfc9ccce",
+    "semantic_hash": "b2585b861c9ed6218db25e05cfc9ccce"
+  },
+  "docs/02-architecture.md": {
+    "mtime": 1787947514.4160454,
+    "seen": 1787948067.9878411,
+    "ast_hash": "b9fc14805e1e0d0e06d90e91b90227a4",
+    "semantic_hash": "b9fc14805e1e0d0e06d90e91b90227a4"
+  },
+  "docs/03-data-model.md": {
+    "mtime": 1787947514.4161642,
+    "seen": 1787948067.9878411,
+    "ast_hash": "6c4b5f118e8e310fbb8fb1036eb13081",
+    "semantic_hash": "6c4b5f118e8e310fbb8fb1036eb13081"
+  },
+  "docs/04-data-sourcing.md": {
+    "mtime": 1787947514.416347,
+    "seen": 1787948067.987842,
+    "ast_hash": "7898c1ac789ce941ec0ed62118264490",
+    "semantic_hash": "7898c1ac789ce941ec0ed62118264490"
+  },
+  "docs/05-roadmap.md": {
+    "mtime": 1787947514.4164968,
+    "seen": 1787948067.987842,
+    "ast_hash": "b6a12186e48bf22041226348c000470d",
+    "semantic_hash": "b6a12186e48bf22041226348c000470d"
+  },
+  "docs/README.md": {
+    "mtime": 1787947514.4165854,
+    "seen": 1787948067.987842,
+    "ast_hash": "44c621bb79605439f9a8e133e0079aea",
+    "semantic_hash": "44c621bb79605439f9a8e133e0079aea"
+  },
+  "docs/research/01-churning-fundamentals.md": {
+    "mtime": 1787947514.416793,
+    "seen": 1787948067.987843,
+    "ast_hash": "b6815574e6c11188529e9cd5d6a22311",
+    "semantic_hash": "b6815574e6c11188529e9cd5d6a22311"
+  },
+  "docs/research/02-issuer-rules-canada.md": {
+    "mtime": 1787947514.416923,
+    "seen": 1787948067.987843,
+    "ast_hash": "c9c19bad55e99106ab6bedbca80a0318",
+    "semantic_hash": "c9c19bad55e99106ab6bedbca80a0318"
+  },
+  "docs/research/03-programs-and-transfers.md": {
+    "mtime": 1787947514.4170644,
+    "seen": 1787948067.987843,
+    "ast_hash": "9dd23ac8cf3355a5641de3869e3a4e2f",
+    "semantic_hash": "9dd23ac8cf3355a5641de3869e3a4e2f"
+  },
+  "docs/research/04-risks-and-compliance.md": {
+    "mtime": 1787947514.417208,
+    "seen": 1787948067.987844,
+    "ast_hash": "6ba8c88dbdac56f5a1f9f0f8daf3facc",
+    "semantic_hash": "6ba8c88dbdac56f5a1f9f0f8daf3facc"
+  },
+  "docs/research/05-tactics-playbook.md": {
+    "mtime": 1787947514.4173532,
+    "seen": 1787948067.987844,
+    "ast_hash": "54b56d8836633b1d46e467ef6498d4c4",
+    "semantic_hash": "54b56d8836633b1d46e467ef6498d4c4"
+  },
+  "docs/research/06-competitive-analysis.md": {
+    "mtime": 1787947514.417499,
+    "seen": 1787948067.987844,
+    "ast_hash": "c95ac30d58ee46f7b0d7dafc7e6dbdf0",
+    "semantic_hash": "c95ac30d58ee46f7b0d7dafc7e6dbdf0"
+  },
+  "docs/research/README.md": {
+    "mtime": 1787947514.4175825,
+    "seen": 1787948067.9878452,
+    "ast_hash": "f232d3e788515ade01d8478ed40595df",
+    "semantic_hash": "f232d3e788515ade01d8478ed40595df"
+  },
+  "docs/specs/01-spend-tracking.md": {
+    "mtime": 1787947514.4177642,
+    "seen": 1787948067.9878452,
+    "ast_hash": "43567d0cd02b706ac5f50e45f94becc4",
+    "semantic_hash": "43567d0cd02b706ac5f50e45f94becc4"
+  },
+  "docs/specs/02-reward-engine.md": {
+    "mtime": 1787947514.4179516,
+    "seen": 1787948067.9878452,
+    "ast_hash": "2092c342fc7c2106dcd7fa2f05ca3560",
+    "semantic_hash": "2092c342fc7c2106dcd7fa2f05ca3560"
+  },
+  "docs/specs/03-card-comparison.md": {
+    "mtime": 1787947514.4181623,
+    "seen": 1787948067.9878452,
+    "ast_hash": "c9507c22f370974ff9db8e0da7d44d66",
+    "semantic_hash": "c9507c22f370974ff9db8e0da7d44d66"
+  },
+  "docs/specs/04-program-comparison.md": {
+    "mtime": 1787947514.4184105,
+    "seen": 1787948067.987846,
+    "ast_hash": "ce3ef417dd706f1d394faf5873b705c2",
+    "semantic_hash": "ce3ef417dd706f1d394faf5873b705c2"
+  },
+  "docs/specs/05-rotation-planner.md": {
+    "mtime": 1787947514.418616,
+    "seen": 1787948067.987846,
+    "ast_hash": "e46cd65631756bf8a6a1ac41c43efa86",
+    "semantic_hash": "e46cd65631756bf8a6a1ac41c43efa86"
+  },
+  "docs/specs/06-churn-engine.md": {
+    "mtime": 1787947514.41892,
+    "seen": 1787948067.987846,
+    "ast_hash": "4d430d55e457fd0b59f5ebc49c68d37f",
+    "semantic_hash": "4d430d55e457fd0b59f5ebc49c68d37f"
+  },
+  "pipeline/README.md": {
+    "mtime": 1787947514.4191437,
+    "seen": 1787948067.9878469,
+    "ast_hash": "c1b2fbb7347338915c5f83873671c677",
+    "semantic_hash": "c1b2fbb7347338915c5f83873671c677"
+  },
+  "pipeline/data/cibc_rates_pdf.txt": {
+    "mtime": 1787947514.4249988,
+    "seen": 1787948067.9878469,
+    "ast_hash": "ff2b63f6e6883af2dd0802448bf0550c",
+    "semantic_hash": "ff2b63f6e6883af2dd0802448bf0550c"
+  },
+  "pipeline/data/llm_digest.md": {
+    "mtime": 1787947514.4259171,
+    "seen": 1787948067.9878469,
+    "ast_hash": "0912a3a01dfa698cd65995328ccc6552",
+    "semantic_hash": "0912a3a01dfa698cd65995328ccc6552"
+  },
+  "pipeline/data/verification-checklist.md": {
+    "mtime": 1787947514.4260962,
+    "seen": 1787948067.987848,
+    "ast_hash": "95a68667a371398057d02548760134d8",
+    "semantic_hash": "95a68667a371398057d02548760134d8"
+  },
+  "pipeline/sources.yaml": {
+    "mtime": 1787947514.4275324,
+    "seen": 1787948067.987848,
+    "ast_hash": "93997bdf3a9fd3d37573cd51bebd1869",
+    "semantic_hash": "93997bdf3a9fd3d37573cd51bebd1869"
+  },
+  "pipeline/tests/fixtures/amex_ca/aeroplan-reserve.html": {
+    "mtime": 1787947514.4278114,
+    "seen": 1787948067.987848,
+    "ast_hash": "fdbcd001f1de7c4913d466bf9428c403",
+    "semantic_hash": "fdbcd001f1de7c4913d466bf9428c403"
+  },
+  "pipeline/tests/fixtures/amex_ca/gold-rewards-card.html": {
+    "mtime": 1787947514.4278715,
+    "seen": 1787948067.987849,
+    "ast_hash": "845c8186f387478d4ba2e6beda21bfd4",
+    "semantic_hash": "845c8186f387478d4ba2e6beda21bfd4"
+  },
+  "pipeline/tests/fixtures/amex_ca/listing.html": {
+    "mtime": 1787947514.4279275,
+    "seen": 1787948067.987849,
+    "ast_hash": "02f91981649af3644b9bd38396ca3728",
+    "semantic_hash": "02f91981649af3644b9bd38396ca3728"
+  },
+  "pipeline/tests/fixtures/amex_ca/robots.txt": {
+    "mtime": 1787947514.4279795,
+    "seen": 1787948067.987849,
+    "ast_hash": "a6b6cdb79027c13defe0a9f54cef8d22",
+    "semantic_hash": "a6b6cdb79027c13defe0a9f54cef8d22"
+  },
+  "pipeline/tests/fixtures/amex_ca/simplycash-preferred-card.html": {
+    "mtime": 1787947514.4280484,
+    "seen": 1787948067.987849,
+    "ast_hash": "4a5d13972582126370d681c6e16700ab",
+    "semantic_hash": "4a5d13972582126370d681c6e16700ab"
+  },
+  "pipeline/tests/fixtures/brim/live-listing.html": {
+    "mtime": 1787947514.4286134,
+    "seen": 1787948067.98785,
+    "ast_hash": "98a19e265b395427d9d213e95442bb52",
+    "semantic_hash": "98a19e265b395427d9d213e95442bb52"
+  },
+  "pipeline/tests/fixtures/cibc/aventura-visa-infinite-card.html": {
+    "mtime": 1787947514.4292712,
+    "seen": 1787948067.98785,
+    "ast_hash": "c3a6a1ca7cd9eadf8fc545738909a39d",
+    "semantic_hash": "c3a6a1ca7cd9eadf8fc545738909a39d"
+  },
+  "pipeline/tests/fixtures/cibc/live-detail.html": {
+    "mtime": 1787947514.429762,
+    "seen": 1787948067.98785,
+    "ast_hash": "6c58d592e9229adbdc77b6ba7e34f0ab",
+    "semantic_hash": "6c58d592e9229adbdc77b6ba7e34f0ab"
+  },
+  "pipeline/tests/fixtures/cibc/live-listing.html": {
+    "mtime": 1787947514.4304585,
+    "seen": 1787948067.987851,
+    "ast_hash": "9db2c74e4ed89e6c5a393f233c789590",
+    "semantic_hash": "9db2c74e4ed89e6c5a393f233c789590"
+  },
+  "pipeline/tests/fixtures/nbc/live-listing.html": {
+    "mtime": 1787947514.4306319,
+    "seen": 1787948067.987851,
+    "ast_hash": "fc250e82885424b62ade0844d7ae4830",
+    "semantic_hash": "fc250e82885424b62ade0844d7ae4830"
+  },
+  "pipeline/tests/fixtures/neo/live-detail.html": {
+    "mtime": 1787947514.4310617,
+    "seen": 1787948067.987851,
+    "ast_hash": "01eace985287394c6627a405ac70856f",
+    "semantic_hash": "01eace985287394c6627a405ac70856f"
+  },
+  "pipeline/tests/fixtures/neo/live-listing.html": {
+    "mtime": 1787947514.4313776,
+    "seen": 1787948067.987852,
+    "ast_hash": "82bfc08df44e1631d529fd64f2f8395b",
+    "semantic_hash": "82bfc08df44e1631d529fd64f2f8395b"
+  },
+  "pipeline/tests/fixtures/rbc/live-listing.html": {
+    "mtime": 1787947514.431696,
+    "seen": 1787948067.987852,
+    "ast_hash": "cc4a9e68ad4b485ad1e7820bd5a659fc",
+    "semantic_hash": "cc4a9e68ad4b485ad1e7820bd5a659fc"
+  },
+  "pipeline/tests/fixtures/rbcroyalbank/live-detail.html": {
+    "mtime": 1787947514.431929,
+    "seen": 1787948067.987852,
+    "ast_hash": "30f320a6515dcbc36070a4d6b0cec4f4",
+    "semantic_hash": "30f320a6515dcbc36070a4d6b0cec4f4"
+  },
+  "pipeline/tests/fixtures/rbcroyalbank/live-listing.html": {
+    "mtime": 1787947514.4321945,
+    "seen": 1787948067.987852,
+    "ast_hash": "d9fdbd590667b147f38aad52e0681ab3",
+    "semantic_hash": "d9fdbd590667b147f38aad52e0681ab3"
+  },
+  "pipeline/tests/fixtures/scotiabank/live-detail.html": {
+    "mtime": 1787947514.4324782,
+    "seen": 1787948067.987853,
+    "ast_hash": "ba3fe6060478ce6613a54db47863dc3d",
+    "semantic_hash": "ba3fe6060478ce6613a54db47863dc3d"
+  },
+  "pipeline/tests/fixtures/scotiabank/live-listing.html": {
+    "mtime": 1787947514.4329424,
+    "seen": 1787948067.987853,
+    "ast_hash": "3c1ace4580980ded9bd43ec29e212dd6",
+    "semantic_hash": "3c1ace4580980ded9bd43ec29e212dd6"
+  },
+  "pipeline/tests/fixtures/simplii/live-detail.html": {
+    "mtime": 1787947514.4333298,
+    "seen": 1787948067.987853,
+    "ast_hash": "94ee98527b35b426c4bbf115c457f8d5",
+    "semantic_hash": "94ee98527b35b426c4bbf115c457f8d5"
+  },
+  "pipeline/tests/fixtures/simplii/live-listing.html": {
+    "mtime": 1787947514.4336438,
+    "seen": 1787948067.987854,
+    "ast_hash": "345cce11c2e62234253d8908dd694cd5",
+    "semantic_hash": "345cce11c2e62234253d8908dd694cd5"
+  },
+  "pipeline/tests/fixtures/tangerine/live-detail.html": {
+    "mtime": 1787947514.4341886,
+    "seen": 1787948067.987854,
+    "ast_hash": "b4cc996d45f1190b18a3410efc22639b",
+    "semantic_hash": "b4cc996d45f1190b18a3410efc22639b"
+  },
+  "pipeline/tests/fixtures/tangerine/live-listing.html": {
+    "mtime": 1787947514.4344828,
+    "seen": 1787948067.9878552,
+    "ast_hash": "94fbad337379c72a45bf34cfdae5e3a4",
+    "semantic_hash": "94fbad337379c72a45bf34cfdae5e3a4"
+  },
+  "pipeline/tests/fixtures/td/live-detail.html": {
+    "mtime": 1787947514.4351313,
+    "seen": 1787948067.9878552,
+    "ast_hash": "8dc07b3e730a8c416bfd06c68ea66707",
+    "semantic_hash": "8dc07b3e730a8c416bfd06c68ea66707"
+  },
+  "pipeline/tests/fixtures/td/live-listing.html": {
+    "mtime": 1787947514.4356081,
+    "seen": 1787948067.9878552,
+    "ast_hash": "870d4b775a7b6899d6210d10596de19b",
+    "semantic_hash": "870d4b775a7b6899d6210d10596de19b"
+  },
+  "pipeline/ui/index.html": {
+    "mtime": 1787947514.436472,
+    "seen": 1787948067.9878552,
+    "ast_hash": "43ac3885b1db3ed40f68c7967dbe2280",
+    "semantic_hash": "43ac3885b1db3ed40f68c7967dbe2280"
+  },
+  "pipeline/data/cibc_rates.pdf": {
+    "mtime": 1787947514.424868,
+    "seen": 1787948067.987856,
+    "ast_hash": "75e5036a17b34b22111bea7cd1b59502",
+    "semantic_hash": "75e5036a17b34b22111bea7cd1b59502"
+  }
+}

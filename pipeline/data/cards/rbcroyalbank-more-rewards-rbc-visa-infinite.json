@@ -1,0 +1,38 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-more-rewards-rbc-visa-infinite",
+    "issuer_slug": "rbcroyalbank",
+    "name": "More Rewards RBC Visa Infinite",
+    "network": "visa",
+    "program_slug": "rbc_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "no earn patterns found on page"
+    },
+    {
+      "field": "offers",
+      "reason": "no welcome-bonus pattern found"
+    }
+  ],
+  "content_hash": "5f7fcac48ca1d0ce9b4a3bb3049f5ca87a751fc74d25e9140af098f3a5eb0685"
+}

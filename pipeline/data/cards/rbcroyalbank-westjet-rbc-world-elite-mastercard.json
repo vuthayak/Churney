@@ -1,0 +1,46 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-westjet-rbc-world-elite-mastercard",
+    "issuer_slug": "rbcroyalbank",
+    "name": "WestJet RBC World Elite Mastercard",
+    "network": "mastercard",
+    "program_slug": "westjet",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 13900,
+    "extra_card_fee_minor": 5900,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html"
+  },
+  "earn_rates": [],
+  "offers": [
+    {
+      "headline": "Earn 70,000 points",
+      "reward_points": 70000,
+      "alternate_offers": [],
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html",
+      "verified_at": "2026-08-28T23:17:28.496092Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "no earn patterns found on page"
+    },
+    {
+      "field": "offer.min_spend",
+      "reason": "min-spend/deadline pattern not found"
+    }
+  ],
+  "content_hash": "e83d63627b49490ba38e08200098b52c308e49939de880e8a622ef22165cecaf"
+}

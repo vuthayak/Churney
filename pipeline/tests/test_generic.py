@@ -106,6 +106,37 @@ class TestParseDividendVisaInfinite:
         assert cf.card.program_slug == "cashback"
 
 
+class TestDiscoverAbsoluteUrls:
+    def test_absolute_href_matches_link_pattern(self):
+        """Listing pages sometimes use full https:// hrefs instead of relative paths."""
+        from urllib.parse import urlparse
+
+        from bs4 import BeautifulSoup
+
+        from scrapers import ScotiabankScraper
+
+        html = (
+            '<a href="https://www.scotiabank.com/ca/en/personal/credit-cards/'
+            'visa/momentum-infinite-card.html">Momentum</a>'
+        )
+        scraper = ScotiabankScraper(
+            None,
+            make_source(issuer_slug="scotiabank", name="scotiabank", link_pattern=(
+                "^/ca/en/personal/credit-cards/(visa|american-express)/([a-z0-9-]+)\\.html$"
+            )),
+            Path("."),
+        )
+        soup = BeautifulSoup(html, "lxml")
+        paths = []
+        for a in soup.find_all("a", href=True):
+            path = a["href"].split("?")[0].split("#")[0]
+            if path.startswith("http"):
+                path = urlparse(path).path
+            if scraper._keep_link(path):
+                paths.append(path)
+        assert paths == ["/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"]
+
+
 class TestNumberNormalization:
     def test_split_number_rejoined(self):
         """DOM-split '35 ,000' must become '35,000' before regex extraction."""

@@ -1,0 +1,46 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-westjet-rbc-mastercard",
+    "issuer_slug": "rbcroyalbank",
+    "name": "WestJet RBC Mastercard",
+    "network": "mastercard",
+    "program_slug": "westjet",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 3900,
+    "extra_card_fee_minor": 1900,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
+  },
+  "earn_rates": [],
+  "offers": [
+    {
+      "headline": "Earn 15,000 points",
+      "reward_points": 15000,
+      "alternate_offers": [],
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html",
+      "verified_at": "2026-08-28T23:17:35.171658Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "no earn patterns found on page"
+    },
+    {
+      "field": "offer.min_spend",
+      "reason": "min-spend/deadline pattern not found"
+    }
+  ],
+  "content_hash": "bdf09d71dbff9899b283b352903c0780a9f67dbf41719fa66da88e8b707c7077"
+}

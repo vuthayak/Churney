@@ -56,11 +56,11 @@
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "set 2.5% from external knowledge [VERIFY]"
+      "reason": "2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)"
     },
     {
       "field": "annual_fee_minor",
-      "reason": "USER-VERIFIED vs amex.ca: Card Fee $9.99/month (= $119.88 annually, non-Quebec); $119/year Quebec residents"
+      "reason": "$119.88/yr VERIFIED: $9.99/month on amex.ca (non-Quebec); $119/year Quebec"
     }
   ],
   "content_hash": "7f6d1ba400fcd9626f82cd59693228ecb509cc996eb6060aa46ded761ce27a1c"

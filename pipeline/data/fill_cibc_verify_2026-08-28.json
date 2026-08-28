@@ -1,0 +1,213 @@
+{
+  "_meta": {
+    "date": "2026-08-28",
+    "note": "CIBC verification pass: FX fee from official rates PDF; triage remaining actionable review items."
+  },
+  "cibc-adapta-mastercard": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-adapta-mastercard-for-students": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aeroplan-visa-infinite-privilege-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aventura-gold-visa-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aventura-visa-infinite-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-aventura-visa-infinite-privilege-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-bizline-visa-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-classic-visa-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-classic-visa-for-students": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-corporate-classic-plus-visa": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct",
+      "annual_fee_minor"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      },
+      {
+        "field": "annual_fee_minor",
+        "reason": "$20 VERIFIED on cibc.com corporate card page (annual fee $20)"
+      }
+    ]
+  },
+  "cibc-costco-mastercard": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-dividend-visa-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      }
+    ]
+  },
+  "cibc-select-visa-card": {
+    "version_patch": {
+      "fx_fee_pct": 2.5
+    },
+    "review_resolve": [
+      "fx_fee_pct",
+      "program_slug"
+    ],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+      },
+      {
+        "field": "program_slug",
+        "reason": "no rewards program - VERIFIED: low-rate card (13.99% APR); earn_rates empty; CIBC Select Visa product category"
+      }
+    ],
+    "program_slug": "none"
+  },
+  "cibc-aventura-plus-visa": {
+    "version_patch": {
+      "annual_fee_minor": 12000
+    },
+    "review_resolve": [
+      "annual_fee_minor"
+    ],
+    "review_add": [
+      {
+        "field": "annual_fee_minor",
+        "reason": "$120 VERIFIED: cibc.com aventura-plus-visa page (annual fee $120) + frugalflyer.ca cross-check"
+      }
+    ]
+  }
+}

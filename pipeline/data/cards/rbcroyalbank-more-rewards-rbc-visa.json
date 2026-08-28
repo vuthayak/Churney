@@ -1,0 +1,38 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-more-rewards-rbc-visa",
+    "issuer_slug": "rbcroyalbank",
+    "name": "More Rewards RBC Visa",
+    "network": "visa",
+    "program_slug": "rbc_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa.html"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "no earn patterns found on page"
+    },
+    {
+      "field": "offers",
+      "reason": "no welcome-bonus pattern found"
+    }
+  ],
+  "content_hash": "33ff71173cdf55ab80a8fc0886af8bc071a4df477879ecf26dcd95d340202ebb"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-moi-rbc-visa",
+    "issuer_slug": "rbcroyalbank",
+    "name": "moi RBC Visa",
+    "network": "visa",
+    "program_slug": "rbc_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html"
+  },
+  "earn_rates": [],
+  "offers": [
+    {
+      "headline": "Earn 5,000 points",
+      "reward_points": 5000,
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 3,000 points",
+          "channel": "later_spend",
+          "reward_points": 3000,
+          "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html",
+          "seen_on": "2026-08-28"
+        },
+        {
+          "headline": "Additional earn component: 2,000 points",
+          "channel": "later_spend",
+          "reward_points": 2000,
+          "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html",
+          "seen_on": "2026-08-28"
+        }
+      ],
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html",
+      "verified_at": "2026-08-28T23:17:55.739882Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "no earn patterns found on page"
+    },
+    {
+      "field": "offer.min_spend",
+      "reason": "min-spend/deadline pattern not found"
+    }
+  ],
+  "content_hash": "b28a26eac08835bb556c1591c3a15d117084eabde16ad014475c2214b444de35"
+}

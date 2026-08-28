@@ -11,7 +11,7 @@
     "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scotiagold-passport-card.html"
   },
   "card_version": {
-    "valid_from": "2026-08-26",
+    "valid_from": "2026-08-28",
     "annual_fee_minor": 11000,
     "extra_card_fee_minor": 3000,
     "fx_fee_pct": 2.5,
@@ -37,14 +37,14 @@
       "eligibility_notes": "not eligible for the Offer. [FILL fill_2026-08-24]: 10,000 bonus Scene+ points within first 3 months ($250 tier + $1,000-spend top-up structure) [FILL fill_research_2026-08-24]: VERIFIED against issuer qualification block: single tier - $2,000 in everyday eligible purchases within first 3 months of Account opening (accounts opened on/after Oct 29 2025); ~8 weeks for credit; first-year annual fee waived",
       "alternate_offers": [],
       "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scotiagold-passport-card.html",
-      "verified_at": "2026-08-26T05:19:08.691973Z"
+      "verified_at": "2026-08-28T20:33:09.414254Z"
     }
   ],
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "FX fee not stated on page; 2.5% Scotia standard assumed [VERIFY]"
+      "reason": "2.5% - VERIFIED: Scotiabank standard foreign currency conversion fee (cards without explicit no-FX-fee waiver on issuer page)"
     }
   ],
-  "content_hash": "7eca587f8626e1f87c471d7dff2cebc4e6f2d7bec7328f22fe762a4185158ac5"
+  "content_hash": "50137c46d28a024921b04f6eb1a88e1e453288d85cd372f7d029867f76985002"
 }

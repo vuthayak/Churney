@@ -50,8 +50,10 @@
   "offers": [
     {
       "headline": "Earn up to 15,000 points",
+      "min_spend_minor": 75000,
+      "deadline_days": 365,
       "reward_points": 15000,
-      "eligibility_notes": "Current or former Cardmembers with this Card are not eligible for this offer.",
+      "eligibility_notes": "Current or former Cardmembers with this Card are not eligible for this offer. [FILL fill_amex_gaps_2026-08-28]: Structure: earn 1,250 MR points per monthly billing period in which $750 is spent, within first year (VERIFIED amex.ca)",
       "alternate_offers": [],
       "source_url": "https://www.americanexpress.com/en-ca/credit-cards/cobalt-card/",
       "verified_at": "2026-08-26T05:19:04.635878Z"
@@ -59,12 +61,12 @@
   ],
   "needs_manual_review": [
     {
-      "field": "annual_fee_minor",
-      "reason": "monthly-billed card ($15.99/month); stored annualized as 19188 minor units"
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)"
     },
     {
-      "field": "fx_fee_pct",
-      "reason": "set 2.5% from external knowledge [VERIFY]; Amex card pages do not state FX fee"
+      "field": "annual_fee_minor",
+      "reason": "$191.88/yr annualized - VERIFIED: $15.99/month billing on amex.ca Cobalt page"
     }
   ],
   "content_hash": "dcb7e8968124183abe5c298bd447b4341f7f72328d1185a17f7e51cfddca4fec"

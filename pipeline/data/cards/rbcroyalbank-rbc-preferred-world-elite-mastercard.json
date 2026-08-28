@@ -1,0 +1,41 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-rbc-preferred-world-elite-mastercard",
+    "issuer_slug": "rbcroyalbank",
+    "name": "RBC Cash Back Preferred World Elite Mastercard",
+    "network": "mastercard",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/cash-back/rbc-preferred-world-elite-mastercard.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 9900,
+    "extra_card_fee_minor": 0,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/cash-back/rbc-preferred-world-elite-mastercard.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.015,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/cash-back/rbc-preferred-world-elite-mastercard.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+    },
+    {
+      "field": "offers",
+      "reason": "no welcome-bonus pattern found"
+    }
+  ],
+  "content_hash": "1c0d12997d6605ccc05f5836b0081884b92a6794c42c8a9f8059549d59417005"
+}

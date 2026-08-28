@@ -5,7 +5,7 @@
     "issuer_slug": "td",
     "name": "TD U.S. Dollar Visa Card",
     "network": "visa",
-    "program_slug": "unknown",
+    "program_slug": "none",
     "card_type": "personal",
     "status": "live",
     "page_url": "https://www.td.com/ca/en/personal-banking/products/credit-cards/us-dollar/us-dollar-visa-card"
@@ -21,11 +21,6 @@
   },
   "earn_rates": [],
   "offers": [],
-  "needs_manual_review": [
-    {
-      "field": "program_slug",
-      "reason": "no rewards program: TD page shows no earn structure anywhere; value prop is FX-free USD spending (0% FX fee verified on page)"
-    }
-  ],
+  "needs_manual_review": [],
   "content_hash": "b4be1a6ae4f62e1d7733c40fdf47cd3bfc3649be059bcc5715b8c3102825ce11"
 }

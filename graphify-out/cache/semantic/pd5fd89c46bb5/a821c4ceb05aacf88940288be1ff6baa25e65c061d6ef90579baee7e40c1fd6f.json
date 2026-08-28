@@ -1,0 +1,1 @@
+{"nodes": [{"id": "pipeline_tests_fixtures_scotiabank_live_detail_scotiabank_404_page", "label": "Scotiabank 404 Page Not Found", "file_type": "document", "source_file": "pipeline/tests/fixtures/scotiabank/live-detail.html", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}

@@ -11,7 +11,7 @@
     "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-student-card.html"
   },
   "card_version": {
-    "valid_from": "2026-08-26",
+    "valid_from": "2026-08-28",
     "annual_fee_minor": 0,
     "extra_card_fee_minor": 0,
     "fx_fee_pct": 2.5,
@@ -51,18 +51,18 @@
           "deadline_days": 90,
           "reward_points": 2500,
           "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-student-card.html",
-          "seen_on": "2026-08-26"
+          "seen_on": "2026-08-28"
         }
       ],
       "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/scene-student-card.html",
-      "verified_at": "2026-08-26T05:19:08.615670Z"
+      "verified_at": "2026-08-28T20:33:09.389535Z"
     }
   ],
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "FX fee not stated on page; 2.5% Scotia standard assumed [VERIFY]"
+      "reason": "2.5% - VERIFIED: Scotiabank standard foreign currency conversion fee (cards without explicit no-FX-fee waiver on issuer page)"
     }
   ],
-  "content_hash": "02012b1e56300e1cfa1f83acd2713a70db30b8fcd30023ed5a638ace65a66a96"
+  "content_hash": "764b2551b51b86e22e5f390757abad6a3b4d7f1b7f31dc20209dafd32bcdeafc"
 }
