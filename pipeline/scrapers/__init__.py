@@ -8,8 +8,10 @@ from __future__ import annotations
 
 from scrapers.amex_ca import AmexCaScraper
 from scrapers.brim import BrimScraper
+from scrapers.desjardins import DesjardinsScraper
 from scrapers.generic import GenericIssuerScraper
 from scrapers.nbc import NbcScraper
+from scrapers.neo import NeoScraper
 from scrapers.rbcroyalbank import RbcRoyalBankScraper
 from scrapers.simple_cashback import SimpleCashbackScraper
 
@@ -78,5 +80,7 @@ SCRAPER_REGISTRY = {
     "simplii": SimpliiScraper,
     "rbcroyalbank": RbcScraper,
     "nbc": NbcScraper,
+    "neo": NeoScraper,
     "brim": BrimScraper,
+    "desjardins": DesjardinsScraper,
 }

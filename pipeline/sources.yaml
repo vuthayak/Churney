@@ -124,11 +124,14 @@ sources:
   neo:
     issuer_slug: neo
     display_name: Neo Financial
-    allowed: false
-    tos_reviewed_at: null
-    notes: >-
-      PENDING 2026-08-23: card data is client-rendered (no fee/earn copy in static
-      HTML). Needs Playwright rendering pass; detail URLs known (/credit-cards/neo-mastercard etc.).
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt permits card pages; fees/APR in FAQ RSC copy
+    cadence: weekly
+    fetch_mode: playwright
+    card_urls:                    # Next.js SPA; sitemap-confirmed product detail paths
+      - https://www.neofinancial.com/credit-cards/neo-mastercard
+      - https://www.neofinancial.com/credit-cards/neo-world-elite-mastercard
+      - https://www.neofinancial.com/credit-cards/neo-united-mastercard
 
   brim:
     issuer_slug: brim

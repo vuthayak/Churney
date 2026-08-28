@@ -1,0 +1,65 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "desjardins-cash-back-mastercard",
+    "issuer_slug": "desjardins",
+    "name": "Cash Back Mastercard Credit Card",
+    "network": "mastercard",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.9,
+    "cash_apr": 21.9,
+    "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "dining",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html"
+    },
+    {
+      "category_slug": "entertainment",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html"
+    },
+    {
+      "rate": 0.005,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+    }
+  ],
+  "content_hash": "f28bcc0dde43fc2f19b7d25889d7a0e160803be7a6eebcac785fe20a813e60d1"
+}

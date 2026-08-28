@@ -1,0 +1,126 @@
+{
+  "_meta": {
+    "date": "2026-08-28",
+    "note": "Desjardins bootstrap verification: FX from standard CA disclosure; BONUSDOLLARS tier caps documented; signup MSRs deferred."
+  },
+  "desjardins-flexi-visa": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "earn_rates"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "Flexi Visa is a low-rate card with no rewards program - VERIFIED desjardins.com page"
+      }
+    ]
+  },
+  "desjardins-cash-back-visa": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+      }
+    ]
+  },
+  "desjardins-cash-back-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+      }
+    ]
+  },
+  "desjardins-bonus-visa": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer in page metadata at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "desjardins-cash-back-world-elite-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+      },
+      {
+        "field": "offer.min_spend",
+        "reason": "$100 WB in page metadata; MSR in legal footnotes not yet parsed - [VERIFY]"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "boosted grocery/dining rates have annual spend caps per desjardins.com legal footnotes - [VERIFY]"
+      }
+    ]
+  },
+  "desjardins-odyssey-gold-visa": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+      },
+      {
+        "field": "offer.min_spend",
+        "reason": "110 BONUSDOLLARS signup in page metadata; MSR in legal footnotes not yet parsed - [VERIFY]"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "BONUSDOLLARS boosted categories have annual spend caps (e.g. 2% travel up to $20k/yr) per legal footnotes - [VERIFY]"
+      }
+    ]
+  },
+  "desjardins-odyssey-world-elite-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+      },
+      {
+        "field": "offer.min_spend",
+        "reason": "130 BONUSDOLLARS signup in page metadata; MSR in legal footnotes not yet parsed - [VERIFY]"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "BONUSDOLLARS 3% grocery/restaurant rates capped at $10k/$6k annual spend per legal footnotes - [VERIFY]"
+      }
+    ]
+  },
+  "desjardins-odyssey-visa-infinite-privilege": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer in page metadata at scrape time - VERIFIED"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "BONUSDOLLARS boosted categories have annual spend caps per legal footnotes - [VERIFY]"
+      }
+    ]
+  }
+}

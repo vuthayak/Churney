@@ -27,7 +27,7 @@ Rebuild the bundle with `build-ui` after each scrape. Features: search, issuer/p
 type filters, fee sorting, full breakdowns (costs, earn structure, welcome offer incl.
 alternate offers, review items, source links).
 
-## Issuer status (2026-08-23)
+## Issuer status (2026-08-28)
 
 | Issuer | Status | Mode | Cards |
 |---|---|---|---|
@@ -40,9 +40,9 @@ alternate offers, review items, source links).
 | RBC Royal Bank | ✅ active | httpx | 20 |
 | NBC | ✅ active | httpx | 8 |
 | Brim | ✅ active | httpx | 2 |
+| Desjardins | ✅ active | httpx | 8 |
 | Neo Financial | ⏸ pending | — | client-rendered; needs Playwright |
 | BMO | 🚫 backed off | — | TCP-level block from this network (docs/04 §2); needs different egress/manual saves |
-| Desjardins | ⏸ pending | — | URLs unmapped; lower priority (English-only v1) |
 
 See `sources.yaml` notes for details.
 
@@ -101,6 +101,7 @@ uv run python scripts/apply_fill.py data/fill_amex_gaps_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_rbc_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_nbc_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_brim_verify_2026-08-28.json
+uv run python scripts/apply_fill.py data/fill_desjardins_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_rbc_business_2026-08-28.json
 uv run python scripts/review_hygiene.py      # drop review items contradicted by data
 uv run python -m churney build-ui && uv run python -m churney verify-report

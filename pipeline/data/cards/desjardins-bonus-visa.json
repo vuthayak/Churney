@@ -1,0 +1,69 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "desjardins-bonus-visa",
+    "issuer_slug": "desjardins",
+    "name": "Bonus Visa Credit Card",
+    "network": "visa",
+    "program_slug": "bonusdollars",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.desjardins.com/en/credit-cards/bonus-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.9,
+    "cash_apr": 21.9,
+    "source_url": "https://www.desjardins.com/en/credit-cards/bonus-visa.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "dining",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/bonus-visa.html"
+    },
+    {
+      "category_slug": "entertainment",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/bonus-visa.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/bonus-visa.html"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/bonus-visa.html"
+    },
+    {
+      "rate": 0.005,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/bonus-visa.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer in page metadata at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "2accaf87fb4feb380c8a8887dc5644b5e45c59e47c1c3190a40b8b01a07d205e"
+}
