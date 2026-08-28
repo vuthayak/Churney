@@ -107,11 +107,19 @@ sources:
   nbc:
     issuer_slug: nbc
     display_name: National Bank of Canada
-    allowed: false
-    tos_reviewed_at: null
-    notes: >-
-      PENDING 2026-08-23: guessed listing paths returned 404; correct card-page
-      taxonomy needs confirmation from nbc.ca navigation/sitemap.
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt permits card pages; fees/APR in embedded product map
+    cadence: weekly
+    fetch_mode: httpx
+    card_urls:                    # SPA listing; sitemap-confirmed detail paths
+      - https://www.nbc.ca/personal/mastercard-credit-cards/world-elite.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/world.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/platinum.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/syncro.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/echo.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/allure.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/mc1.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/my-credit.html
 
   neo:
     issuer_slug: neo
