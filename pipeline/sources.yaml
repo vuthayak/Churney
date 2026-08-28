@@ -133,10 +133,13 @@ sources:
   brim:
     issuer_slug: brim
     display_name: Brim Financial
-    allowed: false
-    tos_reviewed_at: null
-    notes: >-
-      PENDING 2026-08-23: JS-heavy site; needs Playwright pass and per-card URL list.
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt permits site; card copy on shared listing page
+    cadence: monthly
+    fetch_mode: httpx             # listing is server-rendered; Playwright not required
+    card_urls:                    # single listing page; fragment IDs select product tiles
+      - https://brimfinancial.com/credit-cards#brim-mastercard
+      - https://brimfinancial.com/credit-cards#brim-world-elite-mastercard
 
   desjardins:
     issuer_slug: desjardins

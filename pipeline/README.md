@@ -39,8 +39,8 @@ alternate offers, review items, source links).
 | Simplii | ✅ active | httpx | 1 |
 | RBC Royal Bank | ✅ active | httpx | 20 |
 | NBC | ✅ active | httpx | 8 |
+| Brim | ✅ active | httpx | 2 |
 | Neo Financial | ⏸ pending | — | client-rendered; needs Playwright |
-| Brim | ⏸ pending | — | JS-heavy; needs Playwright + URL list |
 | BMO | 🚫 backed off | — | TCP-level block from this network (docs/04 §2); needs different egress/manual saves |
 | Desjardins | ⏸ pending | — | URLs unmapped; lower priority (English-only v1) |
 
@@ -100,6 +100,7 @@ uv run python scripts/apply_fill.py data/fill_scotiabank_momentum_2026-08-28.jso
 uv run python scripts/apply_fill.py data/fill_amex_gaps_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_rbc_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_nbc_verify_2026-08-28.json
+uv run python scripts/apply_fill.py data/fill_brim_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_rbc_business_2026-08-28.json
 uv run python scripts/review_hygiene.py      # drop review items contradicted by data
 uv run python -m churney build-ui && uv run python -m churney verify-report

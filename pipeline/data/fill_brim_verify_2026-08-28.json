@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "date": "2026-08-28",
+    "note": "Brim bootstrap verification: FX and earn from brimfinancial.com/credit-cards comparison tiles; APRs not published on listing page."
+  },
+  "brim-mastercard": {
+    "version_patch": { "fx_fee_pct": 1.5 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr", "cash_apr", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "1.5% - VERIFIED: Brim foreign transaction fee (brimfinancial.com/credit-cards comparison chart)"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "purchase APR not published on brimfinancial.com listing page at scrape time - VERIFIED"
+      },
+      {
+        "field": "cash_apr",
+        "reason": "cash advance APR not published on brimfinancial.com listing page at scrape time - VERIFIED"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on brimfinancial.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "brim-world-elite-mastercard": {
+    "version_patch": { "fx_fee_pct": 1.5 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr", "cash_apr", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "1.5% - VERIFIED: Brim foreign transaction fee (brimfinancial.com/credit-cards comparison chart)"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "purchase APR not published on brimfinancial.com listing page at scrape time - VERIFIED"
+      },
+      {
+        "field": "cash_apr",
+        "reason": "cash advance APR not published on brimfinancial.com listing page at scrape time - VERIFIED"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on brimfinancial.com page at scrape time - VERIFIED"
+      }
+    ]
+  }
+}
