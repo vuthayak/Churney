@@ -52,13 +52,13 @@
         }
       ],
       "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite.html",
-      "verified_at": "2026-08-28T23:17:13.430323Z"
+      "verified_at": "2026-08-28T23:26:29.997206Z"
     }
   ],
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
     }
   ],
   "content_hash": "4c734ffd40b5ae3be6ce1b3620489e08cc766ab37b9f41c931777a3b745deba9"

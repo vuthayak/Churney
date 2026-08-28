@@ -98,6 +98,7 @@ uv run python scripts/apply_fill.py data/fill_cibc_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_issuer_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_scotiabank_momentum_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_amex_gaps_2026-08-28.json
+uv run python scripts/apply_fill.py data/fill_rbc_verify_2026-08-28.json
 uv run python scripts/review_hygiene.py      # drop review items contradicted by data
 uv run python -m churney build-ui && uv run python -m churney verify-report
 uv run pytest

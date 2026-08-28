@@ -124,3 +124,20 @@ class TestParseCashbackMastercard:
       rates = {(r.category_slug, r.rate) for r in cf.earn_rates}
       assert ("grocery", 0.02) in rates
       assert (None, 0.01) in rates
+
+
+class TestParseWestJetWorldElite:
+    URL = (
+        "https://www.rbcroyalbank.com/credit-cards/travel/"
+        "westjet-rbc-world-elite-mastercard.html"
+    )
+
+    def test_westjet_earn_structure(self):
+        html = (FIXTURES / "westjet-rbc-world-elite-mastercard.html").read_text(encoding="utf-8")
+        cf = make_scraper().parse_card(html, self.URL)
+        assert cf.card.program_slug == "westjet"
+        rates = {(r.category_slug, r.rate) for r in cf.earn_rates}
+        assert ("travel_air", 2.0) in rates
+        assert ("grocery", 2.0) in rates
+        assert (None, 1.5) in rates
+        assert cf.offers[0].reward_points == 70000

@@ -18,20 +18,37 @@
     "cash_apr": 22.99,
     "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-british-airways-visa-infinite.html"
   },
-  "earn_rates": [],
+  "earn_rates": [
+    {
+      "category_slug": "travel_air",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-british-airways-visa-infinite.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-british-airways-visa-infinite.html"
+    },
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-british-airways-visa-infinite.html"
+    }
+  ],
   "offers": [],
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
     },
     {
-      "field": "earn_rates",
-      "reason": "no earn patterns found on page"
-    },
-    {
-      "field": "offers",
-      "reason": "no welcome-bonus pattern found"
+      "field": "offer.min_spend",
+      "reason": "60k Avios WB present on page but MSR only in legal HTML - manual verify"
     }
   ],
   "content_hash": "a1eda0ec933f8b6fe26fd122f4b42e75b30e670c280607ef56a5608707f89bcb"

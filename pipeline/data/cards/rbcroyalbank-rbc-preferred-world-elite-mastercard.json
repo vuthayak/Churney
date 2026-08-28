@@ -30,11 +30,11 @@
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
     },
     {
       "field": "offers",
-      "reason": "no welcome-bonus pattern found"
+      "reason": "12% intro cashback promo only; no stable points WB - VERIFIED page copy"
     }
   ],
   "content_hash": "1c0d12997d6605ccc05f5836b0081884b92a6794c42c8a9f8059549d59417005"

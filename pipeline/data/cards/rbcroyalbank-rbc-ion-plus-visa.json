@@ -27,6 +27,13 @@
       "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-plus-visa.html"
     },
     {
+      "category_slug": "gas",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-plus-visa.html"
+    },
+    {
       "category_slug": "dining",
       "rate": 3.0,
       "kind": "points",
@@ -73,13 +80,13 @@
         }
       ],
       "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-plus-visa.html",
-      "verified_at": "2026-08-28T23:17:48.488812Z"
+      "verified_at": "2026-08-28T23:27:05.298017Z"
     }
   ],
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
     }
   ],
   "content_hash": "cde15cd8466764c3de75b437da351d7b4d5c8616230aa14d63f9b316845ecc8a"

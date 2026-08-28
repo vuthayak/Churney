@@ -18,11 +18,49 @@
     "cash_apr": 22.99,
     "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html"
   },
-  "earn_rates": [],
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html"
+    },
+    {
+      "category_slug": "drugstore",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html"
+    },
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html"
+    }
+  ],
   "offers": [
     {
       "headline": "Earn 5,000 points",
+      "min_spend_minor": 50000,
+      "deadline_days": 90,
       "reward_points": 5000,
+      "eligibility_notes": "[FILL fill_rbc_verify_2026-08-28]: 5,000 bonus Moi points: $500 spend in first 3 months (VERIFIED rbcroyalbank.com legal copy)",
       "alternate_offers": [
         {
           "headline": "Additional earn component: 3,000 points",
@@ -40,21 +78,13 @@
         }
       ],
       "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html",
-      "verified_at": "2026-08-28T23:17:55.739882Z"
+      "verified_at": "2026-08-28T23:27:10.284466Z"
     }
   ],
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "no earn patterns found on page"
-    },
-    {
-      "field": "offer.min_spend",
-      "reason": "min-spend/deadline pattern not found"
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
     }
   ],
   "content_hash": "b28a26eac08835bb556c1591c3a15d117084eabde16ad014475c2214b444de35"

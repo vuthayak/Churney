@@ -18,28 +18,58 @@
     "cash_apr": 22.99,
     "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html"
   },
-  "earn_rates": [],
+  "earn_rates": [
+    {
+      "category_slug": "travel_air",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html"
+    },
+    {
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html"
+    }
+  ],
   "offers": [
     {
       "headline": "Earn 70,000 points",
+      "min_spend_minor": 500000,
+      "deadline_days": 90,
       "reward_points": 70000,
+      "eligibility_notes": "[FILL fill_rbc_verify_2026-08-28]: 70,000 WestJet points: $5,000 spend in first 3 months (VERIFIED rbcroyalbank.com legal copy)",
       "alternate_offers": [],
       "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elite-mastercard.html",
-      "verified_at": "2026-08-28T23:17:28.496092Z"
+      "verified_at": "2026-08-28T23:26:45.358746Z"
     }
   ],
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "no earn patterns found on page"
-    },
-    {
-      "field": "offer.min_spend",
-      "reason": "min-spend/deadline pattern not found"
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
     }
   ],
   "content_hash": "e83d63627b49490ba38e08200098b52c308e49939de880e8a622ef22165cecaf"

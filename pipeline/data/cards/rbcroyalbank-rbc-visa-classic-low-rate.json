@@ -5,7 +5,7 @@
     "issuer_slug": "rbcroyalbank",
     "name": "RBC Visa Classic Low Rate Option",
     "network": "visa",
-    "program_slug": "avion",
+    "program_slug": "none",
     "card_type": "personal",
     "status": "live",
     "page_url": "https://www.rbcroyalbank.com/credit-cards/low-interest/rbc-visa-classic-low-rate.html"
@@ -23,15 +23,7 @@
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "no earn patterns found on page"
-    },
-    {
-      "field": "offers",
-      "reason": "no welcome-bonus pattern found"
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
     }
   ],
   "content_hash": "fe22bdf3813f354f046639d6657ffece4d2eea2c03dad169d77b52ca280972b8"

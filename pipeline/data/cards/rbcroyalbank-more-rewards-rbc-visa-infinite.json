@@ -18,20 +18,51 @@
     "cash_apr": 22.99,
     "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
   },
-  "earn_rates": [],
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 8.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+    },
+    {
+      "category_slug": "drugstore",
+      "rate": 8.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 8.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 8.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+    },
+    {
+      "rate": 4.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+    }
+  ],
   "offers": [],
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "per-card FX fee not stated; most CA cards 2.5% [VERIFY]"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "no earn patterns found on page"
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
     },
     {
       "field": "offers",
-      "reason": "no welcome-bonus pattern found"
+      "reason": "no public welcome-bonus offer on rbcroyalbank.com page at scrape time - VERIFIED"
     }
   ],
   "content_hash": "5f7fcac48ca1d0ce9b4a3bb3049f5ca87a751fc74d25e9140af098f3a5eb0685"

@@ -31,6 +31,7 @@ RBC_BASE_CTX = (
     "everything else",
     "qualifying purchases",
     "other eligible",
+    "everywhere else",
 )
 
 RBC_FEE_RE = re.compile(r"Annual Fee\s*\$([\d,]+(?:\.\d{2})?)", re.I)
@@ -48,11 +49,32 @@ RBC_CATEGORY_CASHBACK_RE = re.compile(
     r"(?=\s+\d|\s+and\s+up\s+to|\s+apply|\s+annual|\s+for\s+the|\s+unlock|$)",
     re.I,
 )
+# WestJet / More Rewards / MOI: "Earn 2 points for every dollar you spend on ..."
+RBC_DOLLAR_EARN_RE = re.compile(
+    r"Earn\s+(\d+(?:\.\d+)?)\s+(?:westjet\s+|moi\s+)?points?\s+for every\s+dollar\s+you\s+spend\s+"
+    r"(?:on|at)\s+"
+    r"([^.]{3,120}?)(?=\s+\d+\s|\s+Earn\s+\d|\s+Annual|\s+Apply|\s+Get|\s+New!|\s+Use|\s+\.|$)",
+    re.I,
+)
+# MOI / More Rewards: "Earn 5 points for every $1 spent at/on ..."
+RBC_DOLLAR_ONE_EARN_RE = re.compile(
+    r"Earn\s+(\d+(?:\.\d+)?)\s+(?:moi\s+)?points?\s+for every\s+\$1\s+"
+    r"(?:in purchases(?:\s+when[^.]{0,80})?|spent(?:\s+at|\s+on))\s+([^.]{3,120}?)"
+    r"(?=\.|\s+Earn\s+\d|\s+Annual|\s+Apply|\s+Get|\s+A value|\s+Even|$)",
+    re.I,
+)
+RBC_AVIOS_EARN_RE = re.compile(
+    r"Earn\s+(\d+(?:\.\d+)?)\s+Avios\s+for every\s+dollar\s+you\s+spend\s+on\s+"
+    r"([^.]{3,80}?)(?=\s+\d+\s+Avios|\s+Earn\s+\d|\s+Annual|\s+Apply|\s+Take|\s+\.|$)",
+    re.I,
+)
 
 
 class RbcRoyalBankScraper(GenericIssuerScraper):
     issuer_slug = "rbcroyalbank"
     program_tokens = (
+        ("classic low rate", "none"),
+        ("visa platinum", "none"),
         ("british airways", "british_airways"),
         ("westjet", "westjet"),
         ("avion", "avion"),
@@ -64,6 +86,7 @@ class RbcRoyalBankScraper(GenericIssuerScraper):
         ("cashback", "cashback"),
         ("low rate", "cashback"),
     )
+    default_program = "avion"  # most RBC consumer cards earn Avion-branded points
     excluded_families = {
         "avion-rbc-credit-cards",
         "westjet_rbc_credit-cards",
@@ -112,7 +135,7 @@ class RbcRoyalBankScraper(GenericIssuerScraper):
         reviews: list[ReviewItem] = []
         seen: set[tuple[str | None, float]] = set()
 
-        def add(category, value: float, kind: RewardKind) -> None:
+        def add(category, value: float, kind: RewardKind = RewardKind.POINTS) -> None:
             key = (category, value)
             if key in seen:
                 return
@@ -121,31 +144,55 @@ class RbcRoyalBankScraper(GenericIssuerScraper):
                 EarnRate(category_slug=category, rate=value, kind=kind, source_url=url)
             )
 
-        for m in RBC_EARN_BLOCK_RE.finditer(text):
-            rate = float(m.group(2))
-            ctx = m.group(3).strip().lower()
-            if any(token in ctx for token in RBC_BASE_CTX):
-                add(None, rate, RewardKind.POINTS)
-                continue
-            cats = match_all_categories(ctx)
+        def ingest(ctx: str, rate: float) -> None:
+            lowered = ctx.strip().lower()
+            if any(token in lowered for token in RBC_BASE_CTX) or "everywhere else" in lowered:
+                add(None, rate)
+                return
+            if "british airways" in lowered:
+                add("travel_air", rate)
+                return
+            if "westjet" in lowered or "sunwing" in lowered:
+                add("travel_air", rate)
+                return
+            if "partner locations" in lowered or "grocery, pharmacy" in lowered:
+                for cat in ("grocery", "drugstore"):
+                    add(cat, rate)
+                return
+            if "metro" in lowered or "brunet" in lowered or "super c" in lowered:
+                for cat in ("grocery", "drugstore"):
+                    add(cat, rate)
+                return
+            cats = match_all_categories(lowered)
             if not cats:
                 reviews.append(
                     ReviewItem(
                         field="earn_rates",
-                        reason=f"RBC earn context not matched: {ctx[:90]!r}",
+                        reason=f"RBC earn context not matched: {lowered[:90]!r}",
                     )
                 )
-                continue
+                return
             for cat in cats:
-                add(cat, rate, RewardKind.POINTS)
+                add(cat, rate)
+
+        for pattern in (RBC_EARN_BLOCK_RE, RBC_AVIOS_EARN_RE, RBC_DOLLAR_EARN_RE, RBC_DOLLAR_ONE_EARN_RE):
+            for m in pattern.finditer(text):
+                if pattern is RBC_EARN_BLOCK_RE:
+                    ingest(m.group(3), float(m.group(2)))
+                else:
+                    ingest(m.group(2), float(m.group(1)))
 
         if rates:
             if not any(r.category_slug is None for r in rates):
                 reviews.append(ReviewItem(field="earn_rates", reason="no base-rate pattern found"))
             return rates, reviews
 
-        if "cash back" in text.lower() or "cashback" in text.lower():
+        if "/cash-back/" in url:
             return self._extract_cashback_rates(text, url)
+
+        if "/no-fee/" in url or "/low-interest/" in url:
+            reviews.append(ReviewItem(field="earn_rates", reason="no earn patterns found on page"))
+            return [], reviews
 
         return super()._extract_earn_rates(text, url)
 
