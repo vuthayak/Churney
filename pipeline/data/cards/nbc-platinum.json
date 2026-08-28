@@ -1,0 +1,63 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "nbc-platinum",
+    "issuer_slug": "nbc",
+    "name": "Platinum Mastercard",
+    "network": "mastercard",
+    "program_slug": "nbc_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.nbc.ca/personal/mastercard-credit-cards/platinum.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 7000,
+    "extra_card_fee_minor": 3500,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.49,
+    "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/platinum.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "gas",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/platinum.html"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/platinum.html"
+    },
+    {
+      "rate": 0.6666666666666666,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/platinum.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 35,000 points",
+      "min_spend_minor": 250000,
+      "deadline_days": 90,
+      "reward_points": 35000,
+      "eligibility_notes": "not eligible for this promotion. [FILL fill_nbc_verify_2026-08-28]: Tiered WB (VERIFIED nbc.ca legal table): 10k insurance enrollment + 10k for $2,500 in 3 months + 15k for $10,000 in 12 months; FYF primary AF",
+      "alternate_offers": [],
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/platinum.html",
+      "verified_at": "2026-08-28T23:38:38.544208Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+    }
+  ],
+  "content_hash": "28771a4c2b97593b6b11b7b0de7c069e299334c2d5ea30eaf53bd266a69b747a"
+}

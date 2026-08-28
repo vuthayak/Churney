@@ -1,0 +1,56 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "nbc-world-elite",
+    "issuer_slug": "nbc",
+    "name": "World Elite Mastercard",
+    "network": "mastercard",
+    "program_slug": "nbc_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world-elite.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 15000,
+    "extra_card_fee_minor": 5000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.49,
+    "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world-elite.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "gas",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world-elite.html"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world-elite.html"
+    },
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world-elite.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "a8bcca60749febd1b582b0359e82c85652d2257853c7fe96ec1c0a64ee0b5c98"
+}
