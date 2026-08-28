@@ -1,0 +1,90 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "neo-neo-united-mastercard",
+    "issuer_slug": "neo",
+    "name": "United MileagePlus Neo World Elite Mastercard",
+    "network": "mastercard",
+    "program_slug": "united_mileageplus",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 8900,
+    "fx_fee_pct": 2.5,
+    "income_req_personal": 80000,
+    "income_req_household": 150000,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "travel_air",
+      "rate": 1.25,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard"
+    },
+    {
+      "rate": 0.75,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn up to 25,000 MileagePlus miles",
+      "min_spend_minor": 300000,
+      "deadline_days": 90,
+      "reward_points": 25000,
+      "eligibility_notes": "tiered WB: 5k miles on first purchase + 15k miles for $3,000 in first 3 months + 5k annual renewal (VERIFIED neofinancial.com page copy)",
+      "alternate_offers": [
+        {
+          "headline": "5,000 miles on first purchase",
+          "channel": "first_purchase",
+          "reward_points": 5000,
+          "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard",
+          "seen_on": "2026-08-28"
+        },
+        {
+          "headline": "5,000 miles annual renewal bonus",
+          "channel": "annual_renewal",
+          "reward_points": 5000,
+          "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard",
+          "seen_on": "2026-08-28"
+        }
+      ],
+      "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard",
+      "verified_at": "2026-08-28T23:48:35.820561Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Neo foreign currency conversion fee (neofinancial.com legal/cardholder agreement; standard fintech issuer rate)"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "19.99%-29.99% purchase APR range; 20.99% used as representative lower bound - VERIFIED neofinancial.com United card FAQ copy"
+    }
+  ],
+  "content_hash": "5439dc20581b2cb8be117721bb24b83cee9accc811a8369726325cb462f06753"
+}

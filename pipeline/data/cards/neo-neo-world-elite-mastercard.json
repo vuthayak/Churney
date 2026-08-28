@@ -1,0 +1,63 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "neo-neo-world-elite-mastercard",
+    "issuer_slug": "neo",
+    "name": "Neo World Elite Mastercard",
+    "network": "mastercard",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.neofinancial.com/credit-cards/neo-world-elite-mastercard"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 14900,
+    "fx_fee_pct": 2.5,
+    "income_req_personal": 80000,
+    "income_req_household": 150000,
+    "purchase_apr": 19.99,
+    "source_url": "https://www.neofinancial.com/credit-cards/neo-world-elite-mastercard"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 0.05,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.neofinancial.com/credit-cards/neo-world-elite-mastercard"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 0.04,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.neofinancial.com/credit-cards/neo-world-elite-mastercard"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 0.03,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.neofinancial.com/credit-cards/neo-world-elite-mastercard"
+    },
+    {
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.neofinancial.com/credit-cards/neo-world-elite-mastercard"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Neo foreign currency conversion fee (neofinancial.com legal/cardholder agreement; standard fintech issuer rate)"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on neofinancial.com page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "a464f650ea245d3387bef239569777cd04980fc483daefff1593ea47ebdfe32f"
+}

@@ -41,7 +41,7 @@ alternate offers, review items, source links).
 | NBC | ✅ active | httpx | 8 |
 | Brim | ✅ active | httpx | 2 |
 | Desjardins | ✅ active | httpx | 8 |
-| Neo Financial | ⏸ pending | — | client-rendered; needs Playwright |
+| Neo Financial | ✅ active | playwright (SPA) | 3 |
 | BMO | 🚫 backed off | — | TCP-level block from this network (docs/04 §2); needs different egress/manual saves |
 
 See `sources.yaml` notes for details.
@@ -102,6 +102,7 @@ uv run python scripts/apply_fill.py data/fill_rbc_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_nbc_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_brim_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_desjardins_verify_2026-08-28.json
+uv run python scripts/apply_fill.py data/fill_neo_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_rbc_business_2026-08-28.json
 uv run python scripts/review_hygiene.py      # drop review items contradicted by data
 uv run python -m churney build-ui && uv run python -m churney verify-report
