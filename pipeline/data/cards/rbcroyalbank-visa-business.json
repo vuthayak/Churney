@@ -1,0 +1,30 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-visa-business",
+    "issuer_slug": "rbcroyalbank",
+    "name": "Visa Business Card",
+    "network": "visa",
+    "program_slug": "none",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/visa-business.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 1200,
+    "extra_card_fee_minor": 1200,
+    "purchase_apr": 19.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/visa-business.html"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+    }
+  ],
+  "content_hash": "d99617299d753c96bf330df43f1a890ad43a8beb0dbaa43ef13856d9685b7ede"
+}

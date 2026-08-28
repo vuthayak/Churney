@@ -37,7 +37,7 @@ alternate offers, review items, source links).
 | Scotiabank | ✅ active | httpx | 12 |
 | Tangerine | ✅ active | httpx | 3 |
 | Simplii | ✅ active | httpx | 1 |
-| RBC Royal Bank | ✅ active | httpx | 15 |
+| RBC Royal Bank | ✅ active | httpx | 20 |
 | NBC | ⏸ pending | — | card-page taxonomy unconfirmed |
 | Neo Financial | ⏸ pending | — | client-rendered; needs Playwright |
 | Brim | ⏸ pending | — | JS-heavy; needs Playwright + URL list |
@@ -99,6 +99,7 @@ uv run python scripts/apply_fill.py data/fill_issuer_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_scotiabank_momentum_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_amex_gaps_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_rbc_verify_2026-08-28.json
+uv run python scripts/apply_fill.py data/fill_rbc_business_2026-08-28.json
 uv run python scripts/review_hygiene.py      # drop review items contradicted by data
 uv run python -m churney build-ui && uv run python -m churney verify-report
 uv run pytest

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-visa-business-platinum-avion",
+    "issuer_slug": "rbcroyalbank",
+    "name": "The RBC Avion Visa Business Credit Card",
+    "network": "visa",
+    "program_slug": "avion",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/visa-business-platinum-avion.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 12000,
+    "extra_card_fee_minor": 5000,
+    "purchase_apr": 19.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/visa-business-platinum-avion.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/visa-business-platinum-avion.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Get up to 35,000 Avion points",
+      "reward_points": 35000,
+      "eligibility_notes": "not eligible for this offer. [FILL fill_rbc_business_2026-08-28]: 35k Avion WB on page; MSR not stated in marketing copy (VERIFIED rbcroyalbank.com)",
+      "alternate_offers": [],
+      "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/visa-business-platinum-avion.html",
+      "verified_at": "2026-08-28T23:37:58.464492Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+    },
+    {
+      "field": "offer.min_spend",
+      "reason": "35k Avion WB present but MSR not in marketing copy - VERIFIED absent on page"
+    }
+  ],
+  "content_hash": "4f88a4119fd4ab918863c0fca01be4d2311d5a7de1bd629d57973181a3078030"
+}

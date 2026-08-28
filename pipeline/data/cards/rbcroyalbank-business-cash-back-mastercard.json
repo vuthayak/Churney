@@ -1,0 +1,45 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-business-cash-back-mastercard",
+    "issuer_slug": "rbcroyalbank",
+    "name": "RBC Business Cash Back Mastercard",
+    "network": "mastercard",
+    "program_slug": "cashback",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/business-cash-back-mastercard.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "purchase_apr": 19.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/business-cash-back-mastercard.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/business-cash-back-mastercard.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+    },
+    {
+      "field": "offers",
+      "reason": "2% intro cashback first 3 months only; no stable WB - VERIFIED page copy"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "ongoing 1% base; 2% intro first 3 months - VERIFIED page copy"
+    }
+  ],
+  "content_hash": "7870c590b80ecade957d96e397eb56d02ff9273cf5e496b1f2a69260a92e3867"
+}

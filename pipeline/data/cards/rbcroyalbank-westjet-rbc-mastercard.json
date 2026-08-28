@@ -20,6 +20,12 @@
   },
   "earn_rates": [
     {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
+    },
+    {
       "category_slug": "travel_air",
       "rate": 1.5,
       "kind": "points",
@@ -39,12 +45,6 @@
       "kind": "points",
       "excluded": false,
       "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
-    },
-    {
-      "rate": 1.0,
-      "kind": "points",
-      "excluded": false,
-      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
     }
   ],
   "offers": [
@@ -56,7 +56,7 @@
       "eligibility_notes": "[FILL fill_rbc_verify_2026-08-28]: 15,000 WestJet points: $1,000 spend in first 3 months (VERIFIED rbcroyalbank.com legal copy)",
       "alternate_offers": [],
       "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html",
-      "verified_at": "2026-08-28T23:26:50.301871Z"
+      "verified_at": "2026-08-28T23:36:53.382561Z"
     }
   ],
   "needs_manual_review": [

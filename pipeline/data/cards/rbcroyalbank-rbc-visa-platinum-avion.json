@@ -5,7 +5,7 @@
     "issuer_slug": "rbcroyalbank",
     "name": "RBC Avion Visa Platinum",
     "network": "visa",
-    "program_slug": "none",
+    "program_slug": "avion",
     "card_type": "personal",
     "status": "live",
     "page_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-visa-platinum-avion.html"
@@ -52,7 +52,7 @@
         }
       ],
       "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-visa-platinum-avion.html",
-      "verified_at": "2026-08-28T23:26:40.287413Z"
+      "verified_at": "2026-08-28T23:36:46.873308Z"
     }
   ],
   "needs_manual_review": [

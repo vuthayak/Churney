@@ -93,7 +93,7 @@ sources:
     tos_reviewed_at: 2026-08-28   # robots.txt permits card pages; nav links are static HTML
     cadence: weekly
     fetch_mode: httpx
-    link_pattern: '^/credit-cards/(travel|rewards|cash-back|low-interest|no-fee|student)/([a-z0-9_-]+)\.html$'
+    link_pattern: '^/(?:credit-cards/(travel|rewards|cash-back|low-interest|no-fee|student)|business/credit-cards/small-business-credit-cards)/([a-z0-9_-]+)\.html$'
     entry_urls:
       - https://www.rbcroyalbank.com/credit-cards/index.html
       - https://www.rbcroyalbank.com/credit-cards/travel.html
@@ -102,6 +102,7 @@ sources:
       - https://www.rbcroyalbank.com/credit-cards/low-interest.html
       - https://www.rbcroyalbank.com/credit-cards/no-fee.html
       - https://www.rbcroyalbank.com/credit-cards/student.html
+      - https://www.rbcroyalbank.com/business/credit-cards/small-business.html
 
   nbc:
     issuer_slug: nbc

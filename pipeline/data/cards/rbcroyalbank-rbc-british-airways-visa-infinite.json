@@ -40,15 +40,26 @@
       "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-british-airways-visa-infinite.html"
     }
   ],
-  "offers": [],
+  "offers": [
+    {
+      "headline": "Get up to 60,000 bonus Avios",
+      "min_spend_minor": 1000000,
+      "deadline_days": 180,
+      "reward_points": 60000,
+      "eligibility_notes": "Tiered Avios WB: 30k for $5k in first 90 days + 30k for $5k in days 91-180 (VERIFIED rbcroyalbank.com legal copy)",
+      "alternate_offers": [],
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-british-airways-visa-infinite.html",
+      "verified_at": "2026-08-28T23:37:01.166957Z"
+    }
+  ],
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
       "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
     },
     {
-      "field": "offer.min_spend",
-      "reason": "60k Avios WB present on page but MSR only in legal HTML - manual verify"
+      "field": "offers",
+      "reason": "60k Avios tiered WB ($10k total / 180 days) VERIFIED from rbcroyalbank.com legal copy"
     }
   ],
   "content_hash": "a1eda0ec933f8b6fe26fd122f4b42e75b30e670c280607ef56a5608707f89bcb"

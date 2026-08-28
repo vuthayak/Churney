@@ -1,0 +1,86 @@
+{
+  "_meta": {
+    "date": "2026-08-28",
+    "note": "RBC business card verification: FX 2.5% standard; tiered MSRs from page copy; LOC excluded."
+  },
+  "rbcroyalbank-avion-visa-infinite-business": {
+    "offer_patch": {
+      "headline": "Get up to 100,000 Avion points",
+      "eligibility_notes_append": "Tiered WB: 25k on approval + 20k on first purchase + 20k/$5k/3mo + 35k/$15k/6mo (VERIFIED rbcroyalbank.com)",
+      "alternate_offers": []
+    },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      }
+    ]
+  },
+  "rbcroyalbank-westjet-rbc-world-elite-mastercard-business": {
+    "offer_patch": {
+      "headline": "Get up to 100,000 WestJet points",
+      "eligibility_notes_append": "Tiered WB: 20k/$5k/3mo + 25k/$15k/6mo + additional components on page (VERIFIED rbcroyalbank.com)",
+      "alternate_offers": []
+    },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      }
+    ]
+  },
+  "rbcroyalbank-visa-business-platinum-avion": {
+    "offer_patch": {
+      "headline": "Get up to 35,000 Avion points",
+      "eligibility_notes_append": "35k Avion WB on page; MSR not stated in marketing copy (VERIFIED rbcroyalbank.com)"
+    },
+    "review_resolve": ["fx_fee_pct", "offer.min_spend"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      },
+      {
+        "field": "offer.min_spend",
+        "reason": "35k Avion WB present but MSR not in marketing copy - VERIFIED absent on page"
+      }
+    ]
+  },
+  "rbcroyalbank-visa-business": {
+    "program_slug": "none",
+    "review_resolve": ["fx_fee_pct", "earn_rates", "offers", "program_slug"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "no rewards earn program; partner perks only - VERIFIED"
+      },
+      {
+        "field": "offers",
+        "reason": "no welcome-bonus offer - VERIFIED"
+      }
+    ]
+  },
+  "rbcroyalbank-business-cash-back-mastercard": {
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      },
+      {
+        "field": "offers",
+        "reason": "2% intro cashback first 3 months only; no stable WB - VERIFIED page copy"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "ongoing 1% base; 2% intro first 3 months - VERIFIED page copy"
+      }
+    ]
+  }
+}
