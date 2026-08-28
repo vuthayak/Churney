@@ -75,17 +75,39 @@ sources:
     card_urls:                    # single-card issuer
       - https://www.simplii.com/en/credit-cards/cash-back-visa.html
 
-  # ── Pending / backed off (docs/04 §2: permanent backoff on blocks) ──────────
   bmo:
     issuer_slug: bmo
     display_name: BMO
-    allowed: false
-    tos_reviewed_at: null
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt permits card pages; standard terms
+    cadence: weekly
+    fetch_mode: httpx            # Playwright hits ERR_HTTP2_PROTOCOL_ERROR; static HTML suffices
+    card_urls:                    # SPA listing; sitemap-confirmed detail paths (en-CA + /main/)
+      - https://www.bmo.com/main/personal/credit-cards/bmo-eclipse-visa-infinite/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-visa-infinite-privilege/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/
+      - https://www.bmo.com/main/personal/credit-cards/bmo-cashback-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-world-elite-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-ascend-world-elite-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-world-elite-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/preferred-rate-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/student-bmo-cashback-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/us-dollar-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/prepaid-credit-cards/
+      - https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-business-mastercard/
+      - https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-world-elite-business-mastercard/
+      - https://www.bmo.com/main/business/credit-cards/bmo-cashback-business-mastercard/
+      - https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/
     notes: >-
-      BACKED OFF 2026-08-23: TCP-level connection drops from our network for both
-      httpx and headless Chromium (bot-mitigation edge). Requires manual page saves
-      or a different egress IP before retrying. Do not re-add without owner sign-off.
+      RETRY OK 2026-08-28: httpx/curl reach bmo.com (200, ~0.3–4s/card). Prior backoff
+      was wrong URL paths (/eclipse-visa-infinite/ 404) plus httpx ReadTimeout on
+      dead paths; Playwright still fails ERR_HTTP2_PROTOCOL_ERROR. Card data in static
+      HTML (schema.org Product JSON-LD + embedded price/APR JSON).
 
+  # ── Pending / backed off (docs/04 §2: permanent backoff on blocks) ──────────
   rbcroyalbank:
     issuer_slug: rbcroyalbank
     display_name: RBC Royal Bank

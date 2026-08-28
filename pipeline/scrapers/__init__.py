@@ -7,6 +7,7 @@ program tokens, network default, and site quirks.
 from __future__ import annotations
 
 from scrapers.amex_ca import AmexCaScraper
+from scrapers.bmo import BmoScraper
 from scrapers.brim import BrimScraper
 from scrapers.desjardins import DesjardinsScraper
 from scrapers.generic import GenericIssuerScraper
@@ -80,6 +81,7 @@ SCRAPER_REGISTRY = {
     "simplii": SimpliiScraper,
     "rbcroyalbank": RbcScraper,
     "nbc": NbcScraper,
+    "bmo": BmoScraper,
     "neo": NeoScraper,
     "brim": BrimScraper,
     "desjardins": DesjardinsScraper,

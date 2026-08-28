@@ -27,6 +27,7 @@ HOST_TO_SOURCE = {
     "www.simplii.com": "simplii",
     "www.rbcroyalbank.com": "rbcroyalbank",
     "www.nbc.ca": "nbc",
+    "www.bmo.com": "bmo",
 }
 
 
