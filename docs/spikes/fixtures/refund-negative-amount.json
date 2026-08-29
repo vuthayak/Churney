@@ -1,0 +1,16 @@
+{
+  "idempotency_key": "e5f6a7b8-c9d0-1234-ef01-345678901234",
+  "device_token": "churney_dtk_spike_dev_only",
+  "card_ref": {
+    "match_hint": "scotia_momentum"
+  },
+  "merchant": "SHOPIFY *STORE",
+  "amount_minor": -2499,
+  "currency": "CAD",
+  "occurred_at": "2026-08-19T11:20:00Z",
+  "client_meta": {
+    "shortcut_version": "0.1.0-spike",
+    "locale": "en_CA",
+    "notes": "Refund; Wallet may report positive amount — normalize server-side per Spec 01 §2.1"
+  }
+}

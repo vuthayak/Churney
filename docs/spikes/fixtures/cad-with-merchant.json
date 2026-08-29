@@ -1,0 +1,15 @@
+{
+  "idempotency_key": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "device_token": "churney_dtk_spike_dev_only",
+  "card_ref": {
+    "match_hint": "amex_gold"
+  },
+  "merchant": "TIM HORTONS #4421",
+  "amount_minor": 485,
+  "currency": "CAD",
+  "occurred_at": "2026-08-22T14:31:02Z",
+  "client_meta": {
+    "shortcut_version": "0.1.0-spike",
+    "locale": "en_CA"
+  }
+}

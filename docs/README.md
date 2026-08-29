@@ -13,6 +13,12 @@ Canadian credit card spend tracking, reward optimization, and card churning plat
 | [04-data-sourcing.md](./04-data-sourcing.md) | Card data strategy, scraping rules, LLM ingest pipeline (deferred), FX sourcing, **§9 scraper implementation design (v1)** | Engineering + Ops |
 | [05-roadmap.md](./05-roadmap.md) | Phased delivery plan, acceptance criteria, risk register | Everyone |
 
+## Spikes (`docs/spikes/`)
+
+| Spike | Purpose |
+|---|---|
+| [spikes/0.1-ios-shortcut.md](./spikes/0.1-ios-shortcut.md) | iOS Shortcut Transaction trigger → stub ingest harness (Phase 0.1) |
+
 ## Domain Research (`docs/research/`)
 
 | Doc | Purpose | Audience |
