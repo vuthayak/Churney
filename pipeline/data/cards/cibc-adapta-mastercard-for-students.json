@@ -50,12 +50,12 @@
   ],
   "needs_manual_review": [
     {
-      "field": "purchase_apr",
-      "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
-    },
-    {
       "field": "fx_fee_pct",
       "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
     }
   ],
   "content_hash": "8289fa7d3b236b127b1f02d168a28c12033073c12fd9e6b08b8b931d99fad9e6"

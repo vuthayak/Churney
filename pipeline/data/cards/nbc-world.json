@@ -11,7 +11,7 @@
     "page_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world.html"
   },
   "card_version": {
-    "valid_from": "2026-08-28",
+    "valid_from": "2026-08-29",
     "annual_fee_minor": 11500,
     "extra_card_fee_minor": 3500,
     "fx_fee_pct": 2.5,
@@ -40,11 +40,11 @@
           "channel": "later_spend",
           "reward_points": 20000,
           "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world.html",
-          "seen_on": "2026-08-28"
+          "seen_on": "2026-08-29"
         }
       ],
       "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world.html",
-      "verified_at": "2026-08-28T23:38:33.292461Z"
+      "verified_at": "2026-08-29T00:35:12.035097Z"
     }
   ],
   "needs_manual_review": [

@@ -172,8 +172,19 @@ sources:
   desjardins:
     issuer_slug: desjardins
     display_name: Desjardins
-    allowed: false
-    tos_reviewed_at: null
-    notes: >-
-      PENDING 2026-08-23: robots allows all but card-page URLs and EBO (BONUSDOLLARS)
-      page structure not yet mapped. Lower priority (English pages only per docs/04 §9.1).
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt allows all; English consumer card pages server-rendered
+    cadence: monthly
+    fetch_mode: httpx
+    link_pattern: '^/en/credit-cards/([a-z0-9-]+)\.html$'
+    card_urls:                    # 8 consumer cards; listing page also discoverable
+      - https://www.desjardins.com/en/credit-cards/bonus-visa.html
+      - https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html
+      - https://www.desjardins.com/en/credit-cards/cash-back-visa.html
+      - https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html
+      - https://www.desjardins.com/en/credit-cards/flexi-visa.html
+      - https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html
+      - https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html
+      - https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html
+    entry_urls:
+      - https://www.desjardins.com/en/credit-cards.html

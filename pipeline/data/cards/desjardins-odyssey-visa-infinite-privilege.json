@@ -11,7 +11,7 @@
     "page_url": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
   },
   "card_version": {
-    "valid_from": "2026-08-28",
+    "valid_from": "2026-08-29",
     "annual_fee_minor": 29500,
     "fx_fee_pct": 2.5,
     "purchase_apr": 11.9,
@@ -51,6 +51,8 @@
       "category_slug": "travel_other",
       "rate": 0.03,
       "kind": "bonus_dollars",
+      "cap_amount_minor": 2500000,
+      "cap_period": "annual",
       "excluded": false,
       "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
     },
@@ -70,10 +72,6 @@
     {
       "field": "offers",
       "reason": "no public welcome-bonus offer in page metadata at scrape time - VERIFIED"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "BONUSDOLLARS boosted categories have annual spend caps per legal footnotes - [VERIFY]"
     }
   ],
   "content_hash": "2079f0afc7c077176c8c8ed81648119be2563b75214f1f287553181a3845c0b9"

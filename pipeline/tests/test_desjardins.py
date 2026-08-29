@@ -115,6 +115,15 @@ class TestParseOdysseyWorldElite:
         assert "130" in cf.offers[0].headline
         assert cf.offers[0].reward_cashback_minor == 13000
 
+    def test_annual_earn_caps(self):
+        cf = self.parse_once()
+        by_cat = {r.category_slug: r for r in cf.earn_rates}
+        assert by_cat["grocery"].cap_amount_minor == 1_000_000
+        assert by_cat["grocery"].cap_period == "annual"
+        assert by_cat["dining"].cap_amount_minor == 600_000
+        assert by_cat["dining"].cap_period == "annual"
+        assert by_cat["travel_other"].cap_amount_minor == 2_000_000
+
 
 class TestParseFlexi:
     URL = "https://www.desjardins.com/en/credit-cards/flexi-visa.html"

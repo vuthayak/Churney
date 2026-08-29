@@ -54,16 +54,16 @@
   ],
   "needs_manual_review": [
     {
-      "field": "purchase_apr",
-      "reason": "charge card - no purchase APR (pay-in-full product)"
+      "field": "annual_fee_minor",
+      "reason": "$199 VERIFIED on amex.ca page (\"Annual Fees $199\"); was mis-parsed as $0"
     },
     {
       "field": "fx_fee_pct",
       "reason": "2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)"
     },
     {
-      "field": "annual_fee_minor",
-      "reason": "$199 VERIFIED on amex.ca page (Annual Fees $199); was mis-parsed as $0"
+      "field": "purchase_apr",
+      "reason": "charge card - no purchase APR (pay-in-full product)"
     }
   ],
   "content_hash": "9d3741846cad3f7c3b55333f6b5f7d632922662b4eb1c63fba7259d746baed44"

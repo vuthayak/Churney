@@ -11,7 +11,7 @@
     "page_url": "https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html"
   },
   "card_version": {
-    "valid_from": "2026-08-28",
+    "valid_from": "2026-08-29",
     "annual_fee_minor": 0,
     "fx_fee_pct": 2.5,
     "purchase_apr": 20.9,
@@ -23,6 +23,8 @@
       "category_slug": "dining",
       "rate": 0.02,
       "kind": "cashback",
+      "cap_amount_minor": 360000,
+      "cap_period": "annual",
       "excluded": false,
       "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html"
     },

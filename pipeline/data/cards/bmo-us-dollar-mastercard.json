@@ -27,14 +27,6 @@
     {
       "field": "purchase_apr",
       "reason": "20.99% - VERIFIED: embedded APR JSON on bmo.com page"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "no rewards program on USD card - VERIFIED"
-    },
-    {
-      "field": "offers",
-      "reason": "no welcome-bonus offer on bmo.com page - VERIFIED"
     }
   ],
   "content_hash": "6339354edc07d858aca86c480572f7cc0eedf8c1018753562e20580426f121cf"

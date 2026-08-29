@@ -11,7 +11,7 @@
     "page_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
   },
   "card_version": {
-    "valid_from": "2026-08-28",
+    "valid_from": "2026-08-29",
     "annual_fee_minor": 11000,
     "fx_fee_pct": 2.5,
     "purchase_apr": 20.9,
@@ -23,6 +23,8 @@
       "category_slug": "dining",
       "rate": 0.02,
       "kind": "bonus_dollars",
+      "cap_amount_minor": 600000,
+      "cap_period": "annual",
       "excluded": false,
       "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
     },
@@ -51,11 +53,13 @@
       "category_slug": "travel_other",
       "rate": 0.02,
       "kind": "bonus_dollars",
+      "cap_amount_minor": 1500000,
+      "cap_period": "annual",
       "excluded": false,
       "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
     },
     {
-      "rate": 0.006500000000000001,
+      "rate": 0.0065,
       "kind": "bonus_dollars",
       "excluded": false,
       "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
@@ -68,25 +72,17 @@
       "eligibility_notes": "1 BONUSDOLLAR = $1 redeem per desjardins.com program rules",
       "alternate_offers": [],
       "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html",
-      "verified_at": "2026-08-28T23:46:07.718509Z"
+      "verified_at": "2026-08-29T00:35:04.975709Z"
     }
   ],
   "needs_manual_review": [
-    {
-      "field": "offer.min_spend",
-      "reason": "BONUSDOLLARS signup amount in page metadata; MSR not parsed from legal copy"
-    },
     {
       "field": "fx_fee_pct",
       "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
     },
     {
       "field": "offer.min_spend",
-      "reason": "110 BONUSDOLLARS signup in page metadata; MSR in legal footnotes not yet parsed - [VERIFY]"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "BONUSDOLLARS boosted categories have annual spend caps (e.g. 2% travel up to $20k/yr) per legal footnotes - [VERIFY]"
+      "reason": "signup bonus amount from page metadata; no minimum spend stated on desjardins.com card page - VERIFIED"
     }
   ],
   "content_hash": "600a9e59c809d2e26de5ee8d1829b2e89c94b109305b7339065644fbef8169f3"

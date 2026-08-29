@@ -28,6 +28,9 @@ HOST_TO_SOURCE = {
     "www.rbcroyalbank.com": "rbcroyalbank",
     "www.nbc.ca": "nbc",
     "www.bmo.com": "bmo",
+    "www.desjardins.com": "desjardins",
+    "www.neofinancial.com": "neo",
+    "brimfinancial.com": "brim",
 }
 
 

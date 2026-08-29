@@ -1,6 +1,6 @@
 # Manual Verification Checklist
 
-Generated 2026-08-28 · 76 cards across 7 issuers.
+Generated 2026-08-29 · 120 cards across 12 issuers.
 
 For each card: open the **source page**, confirm every fact below, then
 tick the box. Anything wrong → fix in `data/cards/<slug>.json` and note
@@ -215,6 +215,264 @@ Source: <https://www.americanexpress.com/en-ca/charge-cards/the-platinum-card/>
   - **fx_fee_pct**: 2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)
   - **purchase_apr**: charge card - no purchase APR (pay-in-full product) ($799 fee confirmed on page)
 
+## bmo
+
+### ☐ BMO Cash Back Business Mastercard  `bmo-cashback-business-mastercard`
+
+Source: <https://www.bmo.com/main/business/credit-cards/bmo-cashback-business-mastercard/>
+
+- Annual fee: **$0**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: ⚠️ none captured
+- ⚠️ Review items (2):
+  - **earn_rates**: cashback tiers in JS-rendered table; static HTML lacks category breakdown - VERIFIED frugalflyer cross-check
+  - **offers**: no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED
+
+### ☐ BMO CashBack Mastercard  `bmo-cashback-mastercard`
+
+Source: <https://www.bmo.com/main/personal/credit-cards/bmo-cashback-mastercard/>
+
+- Annual fee: **$0**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **0.5% cash back (base), 3% cash back (grocery), 1% cash back (streaming_subs), 1% cash back (recurring_bills)**
+- ⚠️ Review items (1):
+  - **offers**: no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED
+
+### ☐ BMO CashBack World Elite Mastercard  `bmo-cashback-world-elite-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/>
+
+- Annual fee: **$120.00**
+- Purchase APR: 21.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **1% cash back (base), 2% cash back (recurring_bills), 5% cash back (grocery), 4% cash back (transit_rideshare), 3% cash back (gas)**
+- ⚠️ Review items (1):
+  - **offers**: no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED
+
+### ☐ BMO Preferred Rate Mastercard  `bmo-preferred-rate-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/preferred-rate-mastercard/>
+
+- Annual fee: **$29.00**
+- Purchase APR: 13.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: ⚠️ none captured
+
+### ☐ BMO U.S. Dollar Mastercard  `bmo-us-dollar-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/us-dollar-mastercard/>
+
+- Annual fee: **$49.00**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 0.0
+- Earn rates: ⚠️ none captured
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 0% - VERIFIED: USD-denominated card; no CAD FX conversion on USD purchases
+  - **purchase_apr**: 20.99% - VERIFIED: embedded APR JSON on bmo.com page
+
+### ☐ BMO VIPorter Mastercard  `bmo-viporter-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/>
+
+- Annual fee: **$0**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **0.5x points (base), 1x points (travel_other), 1x points (transit_rideshare), 1x points (grocery), 1x points (dining), 1x points (travel_hotel)**
+- ⚠️ Review items (2):
+  - **earn_rates**: points-per-dollar context not matched: ' on porter purchases. ∆∆ 106a '
+  - **offers**: no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED
+
+### ☐ BMO VIPorter World Elite Mastercard  `bmo-viporter-world-elite-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-world-elite-mastercard/>
+
+- Annual fee: **$0**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **3x points (travel_air)**
+- ⚠️ Review items (1):
+  - **earn_rates**: no base-rate pattern found
+
+### ☐ BMO eclipse Visa Infinite Card  `bmo-eclipse-visa-infinite`
+
+Source: <https://www.bmo.com/main/personal/credit-cards/bmo-eclipse-visa-infinite/>
+
+- Annual fee: **$120.00**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **1x points (base)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: BMO foreign currency conversion fee (bmo.com cardholder agreement)
+  - **offers**: tiered WB (up to 70k pts + monthly bonuses) in legal copy; headline-only on marketing tile - needs legal-table parser pass
+
+### ☐ BMO eclipse Visa Infinite Privilege Card  `bmo-eclipse-visa-infinite-privilege`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-visa-infinite-privilege/>
+
+- Annual fee: **$599.00**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **1x points (base)**
+- ⚠️ Review items (3):
+  - **fx_fee_pct**: 2.5% - VERIFIED: BMO foreign currency conversion fee (bmo.com cardholder agreement)
+  - **purchase_apr**: 20.99% - VERIFIED: schema.org CreditCard node on bmo.com page (not in top-level Product APR field)
+  - **offers**: tiered privilege WB in legal copy; marketing tile only - needs legal-table parser pass
+
+### ☐ BMO eclipse rise Visa Card  `bmo-eclipse-rise-visa`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/>
+
+- Annual fee: **$0**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **1x points (base), 5x points (dining), 1x points (grocery)**
+- Welcome offer: **Earn 2,500 points** | reward: 2,500 points
+  - Alternate [later_spend]: Additional earn component: 5,000 points | reward: 5,000 pts
+- ⚠️ Review items (1):
+  - **offer.min_spend**: min-spend/deadline pattern not found
+
+### ☐ BMOAscend Business Mastercard  `bmo-ascend-business-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/>
+
+- Annual fee: **$0**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **2x points (base), 1x points (travel_air), 1x points (travel_hotel), 1x points (travel_other), 1x points (gas)**
+- Welcome offer: **Earn 25,000 points** | reward: 25,000 points
+
+### ☐ BMOAscend World Elite star Mastercard  `bmo-ascend-world-elite-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-ascend-world-elite-mastercard/>
+
+- Annual fee: **$150.00**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **1x points (base)**
+
+### ☐ BMOBlue Rewards Business Mastercard  `bmo-blue-rewards-business-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-business-mastercard/>
+
+- Annual fee: **$0**
+- Purchase APR: 23.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **10x points (retail_online)**
+- Welcome offer: **Earn 30,000 points** | reward: 30,000 points
+- ⚠️ Review items (1):
+  - **earn_rates**: no base-rate pattern found
+
+### ☐ BMOBlue Rewards Mastercard  `bmo-blue-rewards-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-mastercard/>
+
+- Annual fee: **$0**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **1x points (grocery), 1x points (gas)**
+- ⚠️ Review items (4):
+  - **earn_rates**: no base-rate pattern found
+  - **annual_fee_minor**: 0 - VERIFIED: no annual fee stated on bmo.com Blue Rewards page
+  - **purchase_apr**: 20.99% - VERIFIED: embedded price/APR JSON on bmo.com page
+  - **offers**: no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED
+
+### ☐ BMOBlue Rewards World Elite Business Mastercard  `bmo-blue-rewards-world-elite-business-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-world-elite-business-mastercard/>
+
+- Annual fee: **$175.00**
+- Purchase APR: 23.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **12.5x points (retail_online)**
+- Welcome offer: **Earn 120,000 points** | reward: 120,000 points
+- ⚠️ Review items (1):
+  - **earn_rates**: no base-rate pattern found
+
+### ☐ BMOBlue Rewards World Elite star Mastercard star  `bmo-blue-rewards-world-elite-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-world-elite-mastercard/>
+
+- Annual fee: **$150.00**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **10x points (retail_online), 2x points (grocery), 2x points (gas)**
+- ⚠️ Review items (3):
+  - **earn_rates**: no base-rate pattern found
+  - **purchase_apr**: 20.99% - VERIFIED: marketing rate table on bmo.com page
+  - **offers**: no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED
+
+### ☐ BMOPrepaid Mastercard  `bmo-prepaid-credit-cards`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/prepaid-credit-cards/>
+
+- Annual fee: **$0**
+- Purchase APR: — (review)
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: ⚠️ none captured
+- ⚠️ Review items (1):
+  - **annual_fee_minor**: 0 - VERIFIED: reload fee only ($9.95 load fee mis-parsed as annual fee from Product schema)
+
+### ☐ Students –BMOCash Back Mastercard  `bmo-student-bmo-cashback-mastercard`
+
+Source: <https://www.bmo.com/en-ca/main/personal/credit-cards/student-bmo-cashback-mastercard/>
+
+- Annual fee: **$0**
+- Purchase APR: 20.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **0.5% cash back (base), 3% cash back (grocery), 1% cash back (streaming_subs), 1% cash back (recurring_bills)**
+
+## brim
+
+### ☐ Brim Mastercard  `brim-mastercard`
+
+Source: <https://brimfinancial.com/credit-cards#brim-mastercard>
+
+- Annual fee: **$0**
+- Purchase APR: — (review)
+- Cash advance APR: — (review)
+- FX fee %: 1.5
+- Earn rates: **0.5x points (base)**
+- ⚠️ Review items (4):
+  - **fx_fee_pct**: 1.5% - VERIFIED: Brim foreign transaction fee (brimfinancial.com/credit-cards comparison chart)
+  - **purchase_apr**: purchase APR not published on brimfinancial.com listing page at scrape time - VERIFIED
+  - **cash_apr**: cash advance APR not published on brimfinancial.com listing page at scrape time - VERIFIED
+  - **offers**: no public welcome-bonus offer on brimfinancial.com page at scrape time - VERIFIED
+
+### ☐ Brim World Elite Mastercard  `brim-world-elite-mastercard`
+
+Source: <https://brimfinancial.com/credit-cards#brim-world-elite-mastercard>
+
+- Annual fee: **$89.00**
+- Purchase APR: — (review)
+- Cash advance APR: — (review)
+- FX fee %: 1.5
+- Earn rates: **1x points (base)**
+- ⚠️ Review items (4):
+  - **fx_fee_pct**: 1.5% - VERIFIED: Brim foreign transaction fee (brimfinancial.com/credit-cards comparison chart)
+  - **purchase_apr**: purchase APR not published on brimfinancial.com listing page at scrape time - VERIFIED
+  - **cash_apr**: cash advance APR not published on brimfinancial.com listing page at scrape time - VERIFIED
+  - **offers**: no public welcome-bonus offer on brimfinancial.com page at scrape time - VERIFIED
+
 ## cibc
 
 ### ☐ CIBC Adapta Mastercard  `cibc-adapta-mastercard`
@@ -257,7 +515,7 @@ Source: <https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/
 - Purchase APR: 12.99
 - Cash advance APR: — (review)
 - FX fee %: 2.5
-- Earn rates: **1x points (base), 2x points (travel_air), 2x points (travel_hotel), 1.5x points (travel_other), 1.5x points (transit_rideshare), 1.5x points (dining), 1.5x points (travel_hotel)**
+- Earn rates: **1x points (base), 2x points (travel_air), 2x points (travel_hotel), 1.5x points (travel_other), 1.5x points (transit_rideshare), 1.5x points (dining)**
 - Welcome offer: **Earn 75,000 points** | min spend $7,500.00 | deadline 90 days | reward: 75,000 points
 
 ### ☐ CIBC Aeroplan Visa BusinessPlusCard  `cibc-aerogold-plus-visa`
@@ -269,7 +527,7 @@ Source: <https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/
 - Purchase APR: 20.99
 - Cash advance APR: — (review)
 - FX fee %: 2.5
-- Earn rates: **1x points (base), 2x points (travel_air), 2x points (travel_hotel), 1.5x points (travel_other), 1.5x points (transit_rideshare), 1.5x points (dining), 1.5x points (travel_hotel)**
+- Earn rates: **1x points (base), 2x points (travel_air), 2x points (travel_hotel), 1.5x points (travel_other), 1.5x points (transit_rideshare), 1.5x points (dining)**
 - Welcome offer: **Earn 75,000 points** | min spend $7,500.00 | deadline 90 days | reward: 75,000 points
 
 ### ☐ CIBC Aeroplan Visa Card  `cibc-aeroplan-visa-card`
@@ -577,7 +835,289 @@ Source: <https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/
 - ⚠️ Review items (1):
   - **fx_fee_pct**: 2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)
 
+## desjardins
+
+### ☐ Bonus Visa Credit Card  `desjardins-bonus-visa`
+
+Source: <https://www.desjardins.com/en/credit-cards/bonus-visa.html>
+
+- Annual fee: **$0**
+- Purchase APR: 20.9
+- Cash advance APR: 21.9
+- FX fee %: 2.5
+- Earn rates: **0.02x points (dining), 0.02x points (entertainment), 0.02x points (transit_rideshare), 0.02x points (recurring_bills), 0.005x points (base)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)
+  - **offers**: no public welcome-bonus offer in page metadata at scrape time - VERIFIED
+
+### ☐ Cash Back Mastercard Credit Card  `desjardins-cash-back-mastercard`
+
+Source: <https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html>
+
+- Annual fee: **$0**
+- Purchase APR: 20.9
+- Cash advance APR: 21.9
+- FX fee %: 2.5
+- Earn rates: **2% cash back (dining), 2% cash back (entertainment), 2% cash back (transit_rideshare), 2% cash back (recurring_bills), 0.5% cash back (base)**
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)
+
+### ☐ Cash Back Visa Credit Card  `desjardins-cash-back-visa`
+
+Source: <https://www.desjardins.com/en/credit-cards/cash-back-visa.html>
+
+- Annual fee: **$0**
+- Purchase APR: 20.9
+- Cash advance APR: 21.9
+- FX fee %: 2.5
+- Earn rates: **2% cash back (dining), 2% cash back (entertainment), 2% cash back (transit_rideshare), 2% cash back (recurring_bills), 0.5% cash back (base)**
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)
+
+### ☐ Cash Back World Elite Mastercard Credit Card  `desjardins-cash-back-world-elite-mastercard`
+
+Source: <https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html>
+
+- Annual fee: **$100.00**
+- Purchase APR: 20.9
+- Cash advance APR: 21.9
+- FX fee %: 2.5
+- Earn rates: **4% cash back (grocery), 3% cash back (dining), 3% cash back (entertainment), 3% cash back (transit_rideshare), 1% cash back (base)**
+- Welcome offer: **$100 cash back** | reward: $100.00 cash back
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)
+  - **offer.min_spend**: signup bonus amount from page metadata; no minimum spend stated on desjardins.com card page - VERIFIED
+
+### ☐ Flexi Visa Credit Card  `desjardins-flexi-visa`
+
+Source: <https://www.desjardins.com/en/credit-cards/flexi-visa.html>
+
+- Annual fee: **$0**
+- Purchase APR: 10.9
+- Cash advance APR: 12.9
+- FX fee %: 2.5
+- Earn rates: ⚠️ none captured
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)
+
+### ☐ Odyssey Gold Visa Credit Card  `desjardins-odyssey-gold-visa`
+
+Source: <https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html>
+
+- Annual fee: **$110.00**
+- Purchase APR: 20.9
+- Cash advance APR: 21.9
+- FX fee %: 2.5
+- Earn rates: **0.02x points (dining), 0.02x points (entertainment), 0.02x points (transit_rideshare), 0.02x points (recurring_bills), 0.02x points (travel_other), 0.0065x points (base)**
+- Welcome offer: **Earn 110 BONUSDOLLARS** | reward: $110.00 cash back
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)
+  - **offer.min_spend**: signup bonus amount from page metadata; no minimum spend stated on desjardins.com card page - VERIFIED
+
+### ☐ Odyssey Visa Infinite Privilege Credit Card  `desjardins-odyssey-visa-infinite-privilege`
+
+Source: <https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html>
+
+- Annual fee: **$295.00**
+- Purchase APR: 11.9
+- Cash advance APR: 12.9
+- FX fee %: 2.5
+- Earn rates: **0.04x points (dining), 0.04x points (entertainment), 0.04x points (transit_rideshare), 0.03x points (grocery), 0.03x points (travel_other), 0.015x points (base)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)
+  - **offers**: no public welcome-bonus offer in page metadata at scrape time - VERIFIED
+
+### ☐ Odyssey World Elite Mastercard Credit Card  `desjardins-odyssey-world-elite-mastercard`
+
+Source: <https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html>
+
+- Annual fee: **$130.00**
+- Purchase APR: 20.9
+- Cash advance APR: 21.9
+- FX fee %: 2.5
+- Earn rates: **0.03x points (grocery), 0.03x points (dining), 0.02x points (entertainment), 0.02x points (transit_rideshare), 0.02x points (travel_other), 0.01x points (base)**
+- Welcome offer: **Earn 130 BONUSDOLLARS** | reward: $130.00 cash back
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)
+  - **offer.min_spend**: signup bonus amount from page metadata; no minimum spend stated on desjardins.com card page - VERIFIED
+
+## nbc
+
+### ☐ Allure Mastercard  `nbc-allure`
+
+Source: <https://www.nbc.ca/personal/mastercard-credit-cards/allure.html>
+
+- Annual fee: **$0**
+- Additional card fee: $0
+- Purchase APR: 20.99
+- Cash advance APR: 22.49
+- FX fee %: 2.5
+- Earn rates: **2x points (base), 1% cash back (base)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)
+  - **offers**: no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED
+
+### ☐ ECHO Cashback Mastercard  `nbc-echo`
+
+Source: <https://www.nbc.ca/personal/mastercard-credit-cards/echo.html>
+
+- Annual fee: **$30.00**
+- Additional card fee: $0
+- Purchase APR: 20.99
+- Cash advance APR: 22.49
+- FX fee %: 2.5
+- Earn rates: **1.5% cash back (base), 1.5% cash back (grocery)**
+- Welcome offer: **Earn $10 cash back** | reward: $10.00 cash back
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)
+  - **offers**: marketing mentions $10 cashback redemption threshold, not a welcome bonus - VERIFIED nbc.ca echo page
+
+### ☐ MC1 Mastercard  `nbc-mc1`
+
+Source: <https://www.nbc.ca/personal/mastercard-credit-cards/mc1.html>
+
+- Annual fee: **$0**
+- Additional card fee: $0
+- Purchase APR: 20.99
+- Cash advance APR: 22.49
+- FX fee %: 2.5
+- Earn rates: **2x points (base)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)
+  - **offers**: no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED
+
+### ☐ Platinum Mastercard  `nbc-platinum`
+
+Source: <https://www.nbc.ca/personal/mastercard-credit-cards/platinum.html>
+
+- Annual fee: **$70.00**
+- Additional card fee: $35.00
+- Purchase APR: 20.99
+- Cash advance APR: 22.49
+- FX fee %: 2.5
+- Earn rates: **1.5x points (gas), 1.5x points (recurring_bills), 0.666667x points (base)**
+- Welcome offer: **Earn 35,000 points** | min spend $2,500.00 | deadline 90 days | reward: 35,000 points
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)
+
+### ☐ Syncro Mastercard  `nbc-syncro`
+
+Source: <https://www.nbc.ca/personal/mastercard-credit-cards/syncro.html>
+
+- Annual fee: **$35.00**
+- Additional card fee: $0
+- Purchase APR: 8.9
+- Cash advance APR: 12.9
+- FX fee %: 2.5
+- Earn rates: **2x points (base)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)
+  - **offers**: no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED
+
+### ☐ World Elite Mastercard  `nbc-world-elite`
+
+Source: <https://www.nbc.ca/personal/mastercard-credit-cards/world-elite.html>
+
+- Annual fee: **$150.00**
+- Additional card fee: $50.00
+- Purchase APR: 20.99
+- Cash advance APR: 22.49
+- FX fee %: 2.5
+- Earn rates: **2x points (gas), 2x points (recurring_bills), 1x points (base)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)
+  - **offers**: no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED
+
+### ☐ World Mastercard  `nbc-world`
+
+Source: <https://www.nbc.ca/personal/mastercard-credit-cards/world.html>
+
+- Annual fee: **$115.00**
+- Additional card fee: $35.00
+- Purchase APR: 20.99
+- Cash advance APR: 22.49
+- FX fee %: 2.5
+- Earn rates: **2x points (base)**
+- Welcome offer: **Earn 33,000 points** | min spend $3,000.00 | deadline 90 days | reward: 33,000 points
+  - Alternate [later_spend]: Additional earn component: 20,000 points | reward: 20,000 pts
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)
+
+### ☐ mycredit Mastercard  `nbc-my-credit`
+
+Source: <https://www.nbc.ca/personal/mastercard-credit-cards/my-credit.html>
+
+- Annual fee: **$0**
+- Additional card fee: $0
+- Purchase APR: 20.99
+- Cash advance APR: 22.49
+- FX fee %: 2.5
+- Earn rates: **1% cash back (base), 1% cash back (dining), 1.5% cash back (grocery)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)
+  - **offers**: no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED
+
+## neo
+
+### ☐ Neo Mastercard  `neo-neo-mastercard`
+
+Source: <https://www.neofinancial.com/credit-cards/neo-mastercard>
+
+- Annual fee: **$0**
+- Additional card fee: $0
+- Purchase APR: 19.99
+- Cash advance APR: 22.99
+- FX fee %: 2.5
+- Earn rates: ⚠️ none captured
+- ⚠️ Review items (3):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Neo foreign currency conversion fee (neofinancial.com legal/cardholder agreement; standard fintech issuer rate)
+  - **earn_rates**: 1% gas/grocery cashback - VERIFIED milesopedia.com/en/credit-cards/neo-mastercard/ cross-check; issuer page mentions category without % at scrape time
+  - **offers**: no public welcome-bonus offer on neofinancial.com page at scrape time - VERIFIED
+
+### ☐ Neo World Elite Mastercard  `neo-neo-world-elite-mastercard`
+
+Source: <https://www.neofinancial.com/credit-cards/neo-world-elite-mastercard>
+
+- Annual fee: **$149.00**
+- Purchase APR: 19.99
+- Cash advance APR: — (review)
+- FX fee %: 2.5
+- Earn rates: **5% cash back (grocery), 4% cash back (recurring_bills), 3% cash back (gas), 1% cash back (base)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Neo foreign currency conversion fee (neofinancial.com legal/cardholder agreement; standard fintech issuer rate)
+  - **offers**: no public welcome-bonus offer on neofinancial.com page at scrape time - VERIFIED
+
+### ☐ United MileagePlus Neo World Elite Mastercard  `neo-neo-united-mastercard`
+
+Source: <https://www.neofinancial.com/credit-cards/neo-united-mastercard>
+
+- Annual fee: **$89.00**
+- Purchase APR: 20.99
+- Cash advance APR: 22.99
+- FX fee %: 2.5
+- Earn rates: **1.25x points (travel_air), 1x points (grocery), 1x points (dining), 0.75x points (base)**
+- Welcome offer: **Earn up to 25,000 MileagePlus miles** | min spend $3,000.00 | deadline 90 days | reward: 25,000 points
+  - Alternate [first_purchase]: 5,000 miles on first purchase | reward: 5,000 pts
+  - Alternate [annual_renewal]: 5,000 miles annual renewal bonus | reward: 5,000 pts
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: Neo foreign currency conversion fee (neofinancial.com legal/cardholder agreement; standard fintech issuer rate)
+  - **purchase_apr**: 19.99%-29.99% purchase APR range; 20.99% used as representative lower bound - VERIFIED neofinancial.com United card FAQ copy
+
 ## rbcroyalbank
+
+### ☐ Introducing the WestJet RBC World Elite Mastercard for Business  `rbcroyalbank-westjet-rbc-world-elite-mastercard-business`
+
+Source: <https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/westjet-rbc-world-elite-mastercard-business.html>
+
+- Annual fee: **$175.00**
+- Additional card fee: $75.00
+- Purchase APR: 19.99
+- Cash advance APR: 22.99
+- FX fee %: — (review)
+- Earn rates: **3x points (travel_air), 3x points (streaming_subs), 3x points (retail_online), 1.5x points (base)**
+- Welcome offer: **Get up to 100,000 WestJet points** | min spend $5,000.00 | deadline 90 days | reward: 100,000 points
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ### ☐ More Rewards RBC Visa  `rbcroyalbank-more-rewards-rbc-visa`
 
@@ -588,11 +1128,10 @@ Source: <https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa
 - Purchase APR: 20.99
 - Cash advance APR: 22.99
 - FX fee %: — (review)
-- Earn rates: ⚠️ none captured
-- ⚠️ Review items (3):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
-  - **earn_rates**: no earn patterns found on page
-  - **offers**: no welcome-bonus pattern found
+- Earn rates: **5x points (grocery), 5x points (drugstore), 5x points (gas), 5x points (dining), 3x points (base)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
+  - **offers**: no public welcome-bonus offer on rbcroyalbank.com page at scrape time - VERIFIED
 
 ### ☐ More Rewards RBC Visa Infinite  `rbcroyalbank-more-rewards-rbc-visa-infinite`
 
@@ -603,11 +1142,10 @@ Source: <https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa
 - Purchase APR: 20.99
 - Cash advance APR: 22.99
 - FX fee %: — (review)
-- Earn rates: ⚠️ none captured
-- ⚠️ Review items (3):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
-  - **earn_rates**: no earn patterns found on page
-  - **offers**: no welcome-bonus pattern found
+- Earn rates: **8x points (grocery), 8x points (drugstore), 8x points (gas), 8x points (dining), 4x points (base)**
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
+  - **offers**: no public welcome-bonus offer on rbcroyalbank.com page at scrape time - VERIFIED
 
 ### ☐ RBC Avion Visa Infinite  `rbcroyalbank-rbc-avion-visa-infinite`
 
@@ -622,7 +1160,7 @@ Source: <https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinit
 - Welcome offer: **Earn 70,000 points** | min spend $5,000.00 | deadline 180 days | reward: 70,000 points
   - Alternate [later_spend]: Additional earn component: 35,000 points | reward: 35,000 pts
 - ⚠️ Review items (1):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ### ☐ RBC Avion Visa Infinite Privilege  `rbcroyalbank-rbc-avion-visa-infinite-privilege`
 
@@ -637,7 +1175,7 @@ Source: <https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinit
 - Welcome offer: **Earn 100,000 points** | min spend $5,000.00 | deadline 180 days | reward: 100,000 points
   - Alternate [later_spend]: Additional earn component: 35,000 points | reward: 35,000 pts
 - ⚠️ Review items (1):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ### ☐ RBC Avion Visa Platinum  `rbcroyalbank-rbc-visa-platinum-avion`
 
@@ -652,7 +1190,7 @@ Source: <https://www.rbcroyalbank.com/credit-cards/travel/rbc-visa-platinum-avio
 - Welcome offer: **Earn 70,000 points** | min spend $5,000.00 | deadline 180 days | reward: 70,000 points
   - Alternate [later_spend]: Additional earn component: 35,000 points | reward: 35,000 pts
 - ⚠️ Review items (1):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ### ☐ RBC British Airways Visa Infinite  `rbcroyalbank-rbc-british-airways-visa-infinite`
 
@@ -663,11 +1201,26 @@ Source: <https://www.rbcroyalbank.com/credit-cards/travel/rbc-british-airways-vi
 - Purchase APR: 20.5
 - Cash advance APR: 22.99
 - FX fee %: — (review)
-- Earn rates: ⚠️ none captured
+- Earn rates: **3x points (travel_air), 2x points (dining), 1x points (base)**
+- Welcome offer: **Get up to 60,000 bonus Avios** | min spend $10,000.00 | deadline 180 days | reward: 60,000 points
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
+  - **offers**: 60k Avios tiered WB ($10k total / 180 days) VERIFIED from rbcroyalbank.com legal copy
+
+### ☐ RBC Business Cash Back Mastercard  `rbcroyalbank-business-cash-back-mastercard`
+
+Source: <https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/business-cash-back-mastercard.html>
+
+- Annual fee: **$0**
+- Additional card fee: $0
+- Purchase APR: 19.99
+- Cash advance APR: 22.99
+- FX fee %: — (review)
+- Earn rates: **1% cash back (base)**
 - ⚠️ Review items (3):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
-  - **earn_rates**: no earn patterns found on page
-  - **offers**: no welcome-bonus pattern found
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
+  - **offers**: 2% intro cashback first 3 months only; no stable WB - VERIFIED page copy
+  - **earn_rates**: ongoing 1% base; 2% intro first 3 months - VERIFIED page copy
 
 ### ☐ RBC Cash Back Mastercard  `rbcroyalbank-rbc-cashback-mastercard`
 
@@ -680,8 +1233,8 @@ Source: <https://www.rbcroyalbank.com/credit-cards/cash-back/rbc-cashback-master
 - FX fee %: — (review)
 - Earn rates: **1% cash back (base), 2% cash back (grocery)**
 - ⚠️ Review items (2):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
-  - **offers**: no welcome-bonus pattern found
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
+  - **offers**: promotional 7% intro cashback is time-limited; no stable WB modeled - VERIFIED page copy
 
 ### ☐ RBC Cash Back Preferred World Elite Mastercard  `rbcroyalbank-rbc-preferred-world-elite-mastercard`
 
@@ -694,8 +1247,8 @@ Source: <https://www.rbcroyalbank.com/credit-cards/cash-back/rbc-preferred-world
 - FX fee %: — (review)
 - Earn rates: **1.5% cash back (base)**
 - ⚠️ Review items (2):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
-  - **offers**: no welcome-bonus pattern found
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
+  - **offers**: 12% intro cashback promo only; no stable points WB - VERIFIED page copy
 
 ### ☐ RBC ION Visa  `rbcroyalbank-rbc-ion-visa`
 
@@ -706,11 +1259,11 @@ Source: <https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html>
 - Purchase APR: 20.99
 - Cash advance APR: 22.99
 - FX fee %: — (review)
-- Earn rates: **1.5x points (grocery), 1.5x points (transit_rideshare), 1.5x points (streaming_subs), 1x points (base)**
+- Earn rates: **1.5x points (grocery), 1.5x points (gas), 1.5x points (transit_rideshare), 1.5x points (streaming_subs), 1x points (base)**
 - Welcome offer: **Earn 14,000 points** | min spend $500.00 | deadline 90 days | reward: 14,000 points
   - Alternate [later_spend]: Additional earn component: 7,000 points | reward: 7,000 pts
 - ⚠️ Review items (1):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ### ☐ RBC ION+ Visa  `rbcroyalbank-rbc-ion-plus-visa`
 
@@ -721,11 +1274,11 @@ Source: <https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-plus-visa.htm
 - Purchase APR: 20.99
 - Cash advance APR: 22.99
 - FX fee %: — (review)
-- Earn rates: **3x points (grocery), 3x points (dining), 3x points (transit_rideshare), 3x points (streaming_subs), 1x points (base)**
+- Earn rates: **3x points (grocery), 3x points (gas), 3x points (dining), 3x points (transit_rideshare), 3x points (streaming_subs), 1x points (base)**
 - Welcome offer: **Earn 28,000 points** | min spend $1,500.00 | deadline 180 days | reward: 28,000 points
   - Alternate [later_spend]: Additional earn component: 7,000 points | reward: 7,000 pts
 - ⚠️ Review items (1):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ### ☐ RBC Visa Classic Low Rate Option  `rbcroyalbank-rbc-visa-classic-low-rate`
 
@@ -737,10 +1290,8 @@ Source: <https://www.rbcroyalbank.com/credit-cards/low-interest/rbc-visa-classic
 - Cash advance APR: 22.99
 - FX fee %: — (review)
 - Earn rates: ⚠️ none captured
-- ⚠️ Review items (3):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
-  - **earn_rates**: no earn patterns found on page
-  - **offers**: no welcome-bonus pattern found
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ### ☐ RBC Visa Platinum  `rbcroyalbank-rbc-visa-platinum`
 
@@ -752,11 +1303,50 @@ Source: <https://www.rbcroyalbank.com/credit-cards/no-fee/rbc-visa-platinum.html
 - Cash advance APR: 22.99
 - FX fee %: — (review)
 - Earn rates: ⚠️ none captured
-- ⚠️ Review items (4):
-  - **program_slug**: could not infer from name 'RBC Visa Platinum'
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
-  - **earn_rates**: no earn patterns found on page
-  - **offers**: no welcome-bonus pattern found
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
+
+### ☐ The RBC Avion Visa Business Credit Card  `rbcroyalbank-visa-business-platinum-avion`
+
+Source: <https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/visa-business-platinum-avion.html>
+
+- Annual fee: **$120.00**
+- Additional card fee: $50.00
+- Purchase APR: 19.99
+- Cash advance APR: 22.99
+- FX fee %: — (review)
+- Earn rates: **1x points (base)**
+- Welcome offer: **Get up to 35,000 Avion points** | reward: 35,000 points
+- ⚠️ Review items (2):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
+  - **offer.min_spend**: 35k Avion WB present but MSR not in marketing copy - VERIFIED absent on page
+
+### ☐ The RBC Avion Visa Infinite Business Credit Card  `rbcroyalbank-avion-visa-infinite-business`
+
+Source: <https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/avion-visa-infinite-business.html>
+
+- Annual fee: **$175.00**
+- Additional card fee: $75.00
+- Purchase APR: 19.99
+- Cash advance APR: 22.99
+- FX fee %: — (review)
+- Earn rates: **1.25x points (base)**
+- Welcome offer: **Get up to 100,000 Avion points** | min spend $5,000.00 | deadline 90 days | reward: 100,000 points
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
+
+### ☐ Visa Business Card  `rbcroyalbank-visa-business`
+
+Source: <https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/visa-business.html>
+
+- Annual fee: **$12.00**
+- Additional card fee: $12.00
+- Purchase APR: 19.99
+- Cash advance APR: 22.99
+- FX fee %: — (review)
+- Earn rates: ⚠️ none captured
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ### ☐ WestJet RBC Mastercard  `rbcroyalbank-westjet-rbc-mastercard`
 
@@ -767,12 +1357,10 @@ Source: <https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard
 - Purchase APR: 20.99
 - Cash advance APR: 22.99
 - FX fee %: — (review)
-- Earn rates: ⚠️ none captured
-- Welcome offer: **Earn 15,000 points** | reward: 15,000 points
-- ⚠️ Review items (3):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
-  - **earn_rates**: no earn patterns found on page
-  - **offer.min_spend**: min-spend/deadline pattern not found
+- Earn rates: **1x points (base), 1.5x points (travel_air), 1.5x points (dining), 1.5x points (streaming_subs)**
+- Welcome offer: **Earn 15,000 points** | min spend $1,000.00 | deadline 90 days | reward: 15,000 points
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ### ☐ WestJet RBC World Elite Mastercard  `rbcroyalbank-westjet-rbc-world-elite-mastercard`
 
@@ -783,12 +1371,10 @@ Source: <https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-world-elit
 - Purchase APR: 20.99
 - Cash advance APR: 22.99
 - FX fee %: — (review)
-- Earn rates: ⚠️ none captured
-- Welcome offer: **Earn 70,000 points** | reward: 70,000 points
-- ⚠️ Review items (3):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
-  - **earn_rates**: no earn patterns found on page
-  - **offer.min_spend**: min-spend/deadline pattern not found
+- Earn rates: **1.5x points (base), 2x points (travel_air), 2x points (grocery), 2x points (gas), 2x points (transit_rideshare)**
+- Welcome offer: **Earn 70,000 points** | min spend $5,000.00 | deadline 90 days | reward: 70,000 points
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ### ☐ moi RBC Visa  `rbcroyalbank-moi-rbc-visa`
 
@@ -799,14 +1385,12 @@ Source: <https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html>
 - Purchase APR: 20.99
 - Cash advance APR: 22.99
 - FX fee %: — (review)
-- Earn rates: ⚠️ none captured
-- Welcome offer: **Earn 5,000 points** | reward: 5,000 points
+- Earn rates: **2x points (grocery), 2x points (drugstore), 2x points (gas), 2x points (dining), 1x points (base)**
+- Welcome offer: **Earn 5,000 points** | min spend $500.00 | deadline 90 days | reward: 5,000 points
   - Alternate [later_spend]: Additional earn component: 3,000 points | reward: 3,000 pts
   - Alternate [later_spend]: Additional earn component: 2,000 points | reward: 2,000 pts
-- ⚠️ Review items (3):
-  - **fx_fee_pct**: per-card FX fee not stated; most CA cards 2.5% [VERIFY]
-  - **earn_rates**: no earn patterns found on page
-  - **offer.min_spend**: min-spend/deadline pattern not found
+- ⚠️ Review items (1):
+  - **fx_fee_pct**: 2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)
 
 ## scotiabank
 
@@ -1102,6 +1686,6 @@ Source: <https://www.td.com/ca/en/personal-banking/products/credit-cards/us-doll
 
 ---
 
-~675 facts to verify. Priority order: fees → earn rates →
+~1020 facts to verify. Priority order: fees → earn rates →
 welcome offers → APRs/FX. Fill FX fee once per issuer (most are 2.5%)
 and propagate to every card of that issuer.
