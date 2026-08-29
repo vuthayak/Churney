@@ -1,0 +1,17 @@
+{
+  "idempotency_key": "d4e5f6a7-b8c9-0123-def0-234567890123",
+  "device_token": "churney_dtk_spike_dev_only",
+  "card_ref": {
+    "match_hint": "cibc_aerogold"
+  },
+  "merchant": "UBER *TRIP",
+  "amount_minor": 1875,
+  "currency": "EUR",
+  "occurred_at": "2026-08-20T22:08:33Z",
+  "client_meta": {
+    "shortcut_version": "0.1.0-spike",
+    "locale": "en_CA",
+    "wallet_currency_code": "EUR",
+    "wallet_currency_amount": "18.75"
+  }
+}

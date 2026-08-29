@@ -1,0 +1,17 @@
+{
+  "idempotency_key": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+  "device_token": "churney_dtk_spike_dev_only",
+  "card_ref": {
+    "match_hint": "rbc_avion"
+  },
+  "merchant": "AMAZON.COM",
+  "amount_minor": 3500,
+  "currency": "USD",
+  "occurred_at": "2026-08-21T18:42:11Z",
+  "client_meta": {
+    "shortcut_version": "0.1.0-spike",
+    "locale": "en_CA",
+    "wallet_currency_code": "USD",
+    "wallet_currency_amount": "35.00"
+  }
+}

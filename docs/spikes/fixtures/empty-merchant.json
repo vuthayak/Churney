@@ -1,0 +1,16 @@
+{
+  "idempotency_key": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+  "device_token": "churney_dtk_spike_dev_only",
+  "card_ref": {
+    "match_hint": "td_visa_infinite"
+  },
+  "merchant": null,
+  "amount_minor": 1299,
+  "currency": "CAD",
+  "occurred_at": "2026-08-23T09:15:44Z",
+  "client_meta": {
+    "shortcut_version": "0.1.0-spike",
+    "locale": "en_CA",
+    "notes": "Observed on some transit/gas taps where Wallet omits merchant name"
+  }
+}
