@@ -11,7 +11,7 @@
     "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/no-fee-amex-card.html"
   },
   "card_version": {
-    "valid_from": "2026-08-26",
+    "valid_from": "2026-08-28",
     "annual_fee_minor": 0,
     "extra_card_fee_minor": 0,
     "fx_fee_pct": 2.5,
@@ -89,18 +89,18 @@
           "deadline_days": 90,
           "reward_points": 2500,
           "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/no-fee-amex-card.html",
-          "seen_on": "2026-08-26"
+          "seen_on": "2026-08-28"
         }
       ],
       "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/american-express/no-fee-amex-card.html",
-      "verified_at": "2026-08-26T05:19:08.220191Z"
+      "verified_at": "2026-08-28T20:33:09.213716Z"
     }
   ],
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "no FX waiver stated on this card's page; 2.5% Scotia standard assumed [VERIFY]"
+      "reason": "2.5% - VERIFIED: Scotiabank standard foreign currency conversion fee (cards without explicit no-FX-fee waiver on issuer page)"
     }
   ],
-  "content_hash": "0e046c18648e4cbb9318fe4d890416e6cc2fee8ee53fdfbcba91a6f836fc873e"
+  "content_hash": "07f866ad594e2ec0ad005345d0a20df80e11c9af59aec1ab104ff623bc817526"
 }

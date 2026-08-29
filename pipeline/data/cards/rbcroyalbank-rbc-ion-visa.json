@@ -1,0 +1,86 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-rbc-ion-visa",
+    "issuer_slug": "rbcroyalbank",
+    "name": "RBC ION Visa",
+    "network": "visa",
+    "program_slug": "avion",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html"
+    },
+    {
+      "category_slug": "streaming_subs",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html"
+    },
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 14,000 points",
+      "min_spend_minor": 50000,
+      "deadline_days": 90,
+      "reward_points": 14000,
+      "eligibility_notes": "deadline stated as 3 months on page",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 7,000 points",
+          "channel": "later_spend",
+          "min_spend_minor": 50000,
+          "deadline_days": 90,
+          "reward_points": 7000,
+          "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html",
+          "seen_on": "2026-08-29"
+        }
+      ],
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/rbc-ion-visa.html",
+      "verified_at": "2026-08-29T00:35:12.557685Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+    }
+  ],
+  "content_hash": "5b55d41094fe5643577e625aa5392eb44361034e97f2e7f83f94ff33e7c9a54e"
+}

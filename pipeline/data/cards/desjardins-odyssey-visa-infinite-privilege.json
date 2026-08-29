@@ -1,0 +1,78 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "desjardins-odyssey-visa-infinite-privilege",
+    "issuer_slug": "desjardins",
+    "name": "Odyssey Visa Infinite Privilege Credit Card",
+    "network": "visa",
+    "program_slug": "bonusdollars",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 29500,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 11.9,
+    "cash_apr": 12.9,
+    "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "dining",
+      "rate": 0.04,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
+    },
+    {
+      "category_slug": "entertainment",
+      "rate": 0.04,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 0.04,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 0.03,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 0.03,
+      "kind": "bonus_dollars",
+      "cap_amount_minor": 2500000,
+      "cap_period": "annual",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
+    },
+    {
+      "rate": 0.015,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer in page metadata at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "2079f0afc7c077176c8c8ed81648119be2563b75214f1f287553181a3845c0b9"
+}

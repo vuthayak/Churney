@@ -1,0 +1,48 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-avion-visa-infinite-business",
+    "issuer_slug": "rbcroyalbank",
+    "name": "The RBC Avion Visa Infinite Business Credit Card",
+    "network": "visa",
+    "program_slug": "avion",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/avion-visa-infinite-business.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 17500,
+    "extra_card_fee_minor": 7500,
+    "purchase_apr": 19.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/avion-visa-infinite-business.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.25,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/avion-visa-infinite-business.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Get up to 100,000 Avion points",
+      "min_spend_minor": 500000,
+      "deadline_days": 90,
+      "reward_points": 100000,
+      "eligibility_notes": "deadline stated as 3 months on page not eligible for this offer. [FILL fill_rbc_business_2026-08-28]: Tiered WB: 25k on approval + 20k on first purchase + 20k/$5k/3mo + 35k/$15k/6mo (VERIFIED rbcroyalbank.com)",
+      "alternate_offers": [],
+      "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/avion-visa-infinite-business.html",
+      "verified_at": "2026-08-29T00:35:12.172356Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+    }
+  ],
+  "content_hash": "2e5aa46007aef92a1aedeb60ec163c59f441897e55fd4dcce560630d068807a1"
+}

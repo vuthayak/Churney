@@ -56,7 +56,7 @@
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "set 2.5% from external knowledge [VERIFY]"
+      "reason": "2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)"
     },
     {
       "field": "annual_fee_minor",

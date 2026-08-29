@@ -1,0 +1,69 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-more-rewards-rbc-visa",
+    "issuer_slug": "rbcroyalbank",
+    "name": "More Rewards RBC Visa",
+    "network": "visa",
+    "program_slug": "rbc_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 5.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa.html"
+    },
+    {
+      "category_slug": "drugstore",
+      "rate": 5.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 5.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 5.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa.html"
+    },
+    {
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on rbcroyalbank.com page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "33ff71173cdf55ab80a8fc0886af8bc071a4df477879ecf26dcd95d340202ebb"
+}

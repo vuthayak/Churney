@@ -1,0 +1,64 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "scotiabank-momentum-cash-back-card",
+    "issuer_slug": "scotiabank",
+    "name": "Scotia Momentum Visa Card",
+    "network": "visa",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-cash-back-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 4900,
+    "extra_card_fee_minor": 1500,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-cash-back-card.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-cash-back-card.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-cash-back-card.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-cash-back-card.html"
+    },
+    {
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "notes": "1% cash back on all other purchases",
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-cash-back-card.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Scotiabank standard foreign currency conversion fee (cards without explicit no-FX-fee waiver on issuer page)"
+    },
+    {
+      "field": "offers",
+      "reason": "confirmed: no standing public welcome bonus on issuer page as of 2026-08-28"
+    }
+  ],
+  "content_hash": "76ee2945d2678c78f5d3721f573bac46dcd64d18a43a629dcd332b4023e3519f"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "scotiabank-student-scotia-momentum-no-fee-visa",
+    "issuer_slug": "scotiabank",
+    "name": "Scotia Momentum No-Fee Visa Card (for students)",
+    "network": "visa",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-scotia-momentum-no-fee-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-scotia-momentum-no-fee-visa.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.05,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-scotia-momentum-no-fee-visa.html"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-scotia-momentum-no-fee-visa.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-scotia-momentum-no-fee-visa.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/student-scotia-momentum-no-fee-visa.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Scotiabank standard foreign currency conversion fee (cards without explicit no-FX-fee waiver on issuer page)"
+    },
+    {
+      "field": "offers",
+      "reason": "confirmed: no standing public welcome bonus on issuer page as of 2026-08-28"
+    }
+  ],
+  "content_hash": "bb564dcaafa8fea5e38bf23cb861434c212669e1aa55b3fcd6553ea8af6605bf"
+}

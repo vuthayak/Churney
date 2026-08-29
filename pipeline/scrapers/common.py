@@ -128,7 +128,7 @@ PCT_BACK_RE = re.compile(
 
 CATEGORY_HINTS = {
     "grocery": ["grocery", "supermarket", "groceries"],
-    "gas": ["gas station", "fuel", "gas stations", "electric vehicle charging"],
+    "gas": ["gas station", "fuel", "gas stations", "electric vehicle charging", "ev charging", " gas,"],
     "dining": ["restaurant", "dining", "food delivery", "eats & drinks", "eats",
                "coffee shop", "bar ", "fast food"],
     "travel_air": ["airline", "air canada", "flight", "westjet", "air travel"],

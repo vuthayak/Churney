@@ -1,0 +1,59 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-blue-rewards-world-elite-mastercard",
+    "issuer_slug": "bmo",
+    "name": "BMOBlue Rewards World Elite star Mastercard star",
+    "network": "mastercard",
+    "program_slug": "bmo_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-world-elite-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 15000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-world-elite-mastercard/"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "retail_online",
+      "rate": 10.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-world-elite-mastercard/"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-world-elite-mastercard/"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-world-elite-mastercard/"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "earn_rates",
+      "reason": "no base-rate pattern found"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "20.99% - VERIFIED: marketing rate table on bmo.com page"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "a9c6fea5d2cc361d45178f5aef9d3fc9d6f99e9c5c2ff784dfedc972024695fb"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-westjet-rbc-mastercard",
+    "issuer_slug": "rbcroyalbank",
+    "name": "WestJet RBC Mastercard",
+    "network": "mastercard",
+    "program_slug": "westjet",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 3900,
+    "extra_card_fee_minor": 1900,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
+    },
+    {
+      "category_slug": "travel_air",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
+    },
+    {
+      "category_slug": "streaming_subs",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 15,000 points",
+      "min_spend_minor": 100000,
+      "deadline_days": 90,
+      "reward_points": 15000,
+      "eligibility_notes": "[FILL fill_rbc_verify_2026-08-28]: 15,000 WestJet points: $1,000 spend in first 3 months (VERIFIED rbcroyalbank.com legal copy)",
+      "alternate_offers": [],
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/westjet-rbc-mastercard.html",
+      "verified_at": "2026-08-29T00:35:12.747852Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+    }
+  ],
+  "content_hash": "bdf09d71dbff9899b283b352903c0780a9f67dbf41719fa66da88e8b707c7077"
+}

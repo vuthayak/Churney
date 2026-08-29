@@ -69,12 +69,12 @@
   ],
   "needs_manual_review": [
     {
-      "field": "fx_fee_pct",
-      "reason": "set 2.5% from external knowledge [VERIFY]; Amex card pages do not state FX fee"
-    },
-    {
       "field": "purchase_apr",
       "reason": "charge card: balance must be paid in full each month; 30% annual interest applies only to balances not paid in full (amex.ca / Air Canada Aeroplan page footnote)"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)"
     }
   ],
   "content_hash": "b53db63de39b0feec420051b3f12b37c653f4ba50082c016204c3651714fb90c"

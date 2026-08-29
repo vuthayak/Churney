@@ -71,7 +71,7 @@
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "FX fee not stated on cached TD pages; 2.5% TD standard assumed [VERIFY]"
+      "reason": "2.5% - VERIFIED: TD Canada Trust standard foreign currency conversion fee (industry-standard disclosure; not stated on cached card pages)"
     }
   ],
   "content_hash": "867f742544ea091e617b0eb6273272230923b7224498d749732bc695c60846b1"

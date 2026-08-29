@@ -1,0 +1,1 @@
+{"nodes": [{"id": "pipeline_tests_fixtures_rbcroyalbank_live_detail_rbc_404_page", "label": "RBC Royal Bank 404 Page Not Found", "file_type": "document", "source_file": "pipeline/tests/fixtures/rbcroyalbank/live-detail.html", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}

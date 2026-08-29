@@ -31,7 +31,7 @@
       "rate": 0.005,
       "kind": "cashback",
       "excluded": false,
-      "notes": "0.5% on all other purchases (2% in up to 3 chosen categories with savings account) [VERIFY]",
+      "notes": "0.5% on all other purchases; 2% in up to 3 chosen categories with savings account deposit - VERIFIED tangerine.ca",
       "source_url": "https://www.tangerine.ca/en/personal/spend/credit-cards/world-credit-card"
     }
   ],
@@ -48,12 +48,12 @@
   ],
   "needs_manual_review": [
     {
-      "field": "fx_fee_pct",
-      "reason": "page states foreign currency conversion fee of ~2.5%; exact figure truncated in capture [VERIFY]"
-    },
-    {
       "field": "purchase_apr",
       "reason": "corrected from issuer page: purchases 20.95%, cash advances 22.95%"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: tangerine.ca card page foreign currency conversion fee disclosure"
     }
   ],
   "content_hash": "a83ece3a42a88c65073cb7b8d8c166d1df3045743c99ce1369fff76ec4404b42"

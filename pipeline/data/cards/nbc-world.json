@@ -1,0 +1,57 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "nbc-world",
+    "issuer_slug": "nbc",
+    "name": "World Mastercard",
+    "network": "mastercard",
+    "program_slug": "nbc_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 11500,
+    "extra_card_fee_minor": 3500,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.49,
+    "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 33,000 points",
+      "min_spend_minor": 300000,
+      "deadline_days": 90,
+      "reward_points": 33000,
+      "eligibility_notes": "account must be in good standing at the time the annual fees are refunded and bonus rewards points are applied. [FILL fill_nbc_verify_2026-08-28]: Tiered WB (VERIFIED nbc.ca legal table): 20k pts for $3k in first 3 months + additional components to 33k total at higher spend thresholds",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 20,000 points",
+          "channel": "later_spend",
+          "reward_points": 20000,
+          "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world.html",
+          "seen_on": "2026-08-29"
+        }
+      ],
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/world.html",
+      "verified_at": "2026-08-29T00:35:12.035097Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+    }
+  ],
+  "content_hash": "698cabbbfae863c95481f3808eba8699b1a6737307911afc09305b6a812d319b"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-eclipse-visa-infinite-privilege",
+    "issuer_slug": "bmo",
+    "name": "BMO eclipse Visa Infinite Privilege Card",
+    "network": "visa",
+    "program_slug": "bmo_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-visa-infinite-privilege/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 59900,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-visa-infinite-privilege/"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-visa-infinite-privilege/"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: BMO foreign currency conversion fee (bmo.com cardholder agreement)"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "20.99% - VERIFIED: schema.org CreditCard node on bmo.com page (not in top-level Product APR field)"
+    },
+    {
+      "field": "offers",
+      "reason": "tiered privilege WB in legal copy; marketing tile only - needs legal-table parser pass"
+    }
+  ],
+  "content_hash": "48f4a8e7157f828a7c8f15d895305bd1922aa0b4565e4b34e190054efc3614ad"
+}

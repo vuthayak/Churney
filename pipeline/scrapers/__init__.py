@@ -7,7 +7,13 @@ program tokens, network default, and site quirks.
 from __future__ import annotations
 
 from scrapers.amex_ca import AmexCaScraper
+from scrapers.bmo import BmoScraper
+from scrapers.brim import BrimScraper
+from scrapers.desjardins import DesjardinsScraper
 from scrapers.generic import GenericIssuerScraper
+from scrapers.nbc import NbcScraper
+from scrapers.neo import NeoScraper
+from scrapers.rbcroyalbank import RbcRoyalBankScraper
 from scrapers.simple_cashback import SimpleCashbackScraper
 
 
@@ -36,6 +42,7 @@ class ScotiabankScraper(GenericIssuerScraper):
     issuer_slug = "scotiabank"
     default_program = "scene_plus"  # all Scotia consumer cards earn Scene+
     program_tokens = (
+        ("momentum", "cashback"),
         ("scene+", "scene_plus"),
         ("scene plus", "scene_plus"),
         ("scene", "scene_plus"),
@@ -61,6 +68,10 @@ class SimpliiScraper(SimpleCashbackScraper):
     issuer_slug = "simplii"
 
 
+class RbcScraper(RbcRoyalBankScraper):
+    """Registered alias; logic lives in scrapers/rbcroyalbank.py."""
+
+
 SCRAPER_REGISTRY = {
     "amex_ca": AmexCaScraper,
     "td": TdScraper,
@@ -68,4 +79,10 @@ SCRAPER_REGISTRY = {
     "scotiabank": ScotiabankScraper,
     "tangerine": TangerineScraper,
     "simplii": SimpliiScraper,
+    "rbcroyalbank": RbcScraper,
+    "nbc": NbcScraper,
+    "bmo": BmoScraper,
+    "neo": NeoScraper,
+    "brim": BrimScraper,
+    "desjardins": DesjardinsScraper,
 }

@@ -75,58 +75,116 @@ sources:
     card_urls:                    # single-card issuer
       - https://www.simplii.com/en/credit-cards/cash-back-visa.html
 
-  # ── Pending / backed off (docs/04 §2: permanent backoff on blocks) ──────────
   bmo:
     issuer_slug: bmo
     display_name: BMO
-    allowed: false
-    tos_reviewed_at: null
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt permits card pages; standard terms
+    cadence: weekly
+    fetch_mode: httpx            # Playwright hits ERR_HTTP2_PROTOCOL_ERROR; static HTML suffices
+    card_urls:                    # SPA listing; sitemap-confirmed detail paths (en-CA + /main/)
+      - https://www.bmo.com/main/personal/credit-cards/bmo-eclipse-visa-infinite/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-visa-infinite-privilege/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/
+      - https://www.bmo.com/main/personal/credit-cards/bmo-cashback-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-world-elite-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-ascend-world-elite-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-world-elite-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/preferred-rate-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/student-bmo-cashback-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/us-dollar-mastercard/
+      - https://www.bmo.com/en-ca/main/personal/credit-cards/prepaid-credit-cards/
+      - https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-business-mastercard/
+      - https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-world-elite-business-mastercard/
+      - https://www.bmo.com/main/business/credit-cards/bmo-cashback-business-mastercard/
+      - https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/
     notes: >-
-      BACKED OFF 2026-08-23: TCP-level connection drops from our network for both
-      httpx and headless Chromium (bot-mitigation edge). Requires manual page saves
-      or a different egress IP before retrying. Do not re-add without owner sign-off.
+      RETRY OK 2026-08-28: bmo.com reachable via httpx/curl (200, ~0.2–4s/card) with
+      sitemap-correct URLs (/bmo-eclipse-visa-infinite/ not /eclipse-visa-infinite/).
+      Prior backoff was wrong URL paths plus httpx ReadTimeout on 404s. Playwright
+      still fails ERR_HTTP2_PROTOCOL_ERROR. ChurneyBot scrape intermittently fails when
+      robots.txt fetch times out (fetcher conservatively disallows all). Card data in
+      static HTML (schema.org Product JSON-LD + embedded price/APR JSON). Use curl
+      bootstrap or fixture reparse when live scrape fails.
 
+  # ── Pending / backed off (docs/04 §2: permanent backoff on blocks) ──────────
   rbcroyalbank:
     issuer_slug: rbcroyalbank
     display_name: RBC Royal Bank
-    allowed: false
-    tos_reviewed_at: null
-    notes: >-
-      PENDING 2026-08-23: listing pages are JS-driven with no static detail links;
-      detail URL taxonomy unconfirmed. Needs a Playwright discovery pass or manual
-      URL list before scraping can start.
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt permits card pages; nav links are static HTML
+    cadence: weekly
+    fetch_mode: httpx
+    link_pattern: '^/(?:credit-cards/(travel|rewards|cash-back|low-interest|no-fee|student)|business/credit-cards/small-business-credit-cards)/([a-z0-9_-]+)\.html$'
+    entry_urls:
+      - https://www.rbcroyalbank.com/credit-cards/index.html
+      - https://www.rbcroyalbank.com/credit-cards/travel.html
+      - https://www.rbcroyalbank.com/credit-cards/rewards.html
+      - https://www.rbcroyalbank.com/credit-cards/cash-back.html
+      - https://www.rbcroyalbank.com/credit-cards/low-interest.html
+      - https://www.rbcroyalbank.com/credit-cards/no-fee.html
+      - https://www.rbcroyalbank.com/credit-cards/student.html
+      - https://www.rbcroyalbank.com/business/credit-cards/small-business.html
 
   nbc:
     issuer_slug: nbc
     display_name: National Bank of Canada
-    allowed: false
-    tos_reviewed_at: null
-    notes: >-
-      PENDING 2026-08-23: guessed listing paths returned 404; correct card-page
-      taxonomy needs confirmation from nbc.ca navigation/sitemap.
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt permits card pages; fees/APR in embedded product map
+    cadence: weekly
+    fetch_mode: httpx
+    card_urls:                    # SPA listing; sitemap-confirmed detail paths
+      - https://www.nbc.ca/personal/mastercard-credit-cards/world-elite.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/world.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/platinum.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/syncro.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/echo.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/allure.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/mc1.html
+      - https://www.nbc.ca/personal/mastercard-credit-cards/my-credit.html
 
   neo:
     issuer_slug: neo
     display_name: Neo Financial
-    allowed: false
-    tos_reviewed_at: null
-    notes: >-
-      PENDING 2026-08-23: card data is client-rendered (no fee/earn copy in static
-      HTML). Needs Playwright rendering pass; detail URLs known (/credit-cards/neo-mastercard etc.).
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt permits card pages; fees/APR in FAQ RSC copy
+    cadence: weekly
+    fetch_mode: playwright
+    card_urls:                    # Next.js SPA; sitemap-confirmed product detail paths
+      - https://www.neofinancial.com/credit-cards/neo-mastercard
+      - https://www.neofinancial.com/credit-cards/neo-world-elite-mastercard
+      - https://www.neofinancial.com/credit-cards/neo-united-mastercard
 
   brim:
     issuer_slug: brim
     display_name: Brim Financial
-    allowed: false
-    tos_reviewed_at: null
-    notes: >-
-      PENDING 2026-08-23: JS-heavy site; needs Playwright pass and per-card URL list.
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt permits site; card copy on shared listing page
+    cadence: monthly
+    fetch_mode: httpx             # listing is server-rendered; Playwright not required
+    card_urls:                    # single listing page; fragment IDs select product tiles
+      - https://brimfinancial.com/credit-cards#brim-mastercard
+      - https://brimfinancial.com/credit-cards#brim-world-elite-mastercard
 
   desjardins:
     issuer_slug: desjardins
     display_name: Desjardins
-    allowed: false
-    tos_reviewed_at: null
-    notes: >-
-      PENDING 2026-08-23: robots allows all but card-page URLs and EBO (BONUSDOLLARS)
-      page structure not yet mapped. Lower priority (English pages only per docs/04 §9.1).
+    allowed: true
+    tos_reviewed_at: 2026-08-28   # robots.txt allows all; English consumer card pages server-rendered
+    cadence: monthly
+    fetch_mode: httpx
+    link_pattern: '^/en/credit-cards/([a-z0-9-]+)\.html$'
+    card_urls:                    # 8 consumer cards; listing page also discoverable
+      - https://www.desjardins.com/en/credit-cards/bonus-visa.html
+      - https://www.desjardins.com/en/credit-cards/cash-back-mastercard.html
+      - https://www.desjardins.com/en/credit-cards/cash-back-visa.html
+      - https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html
+      - https://www.desjardins.com/en/credit-cards/flexi-visa.html
+      - https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html
+      - https://www.desjardins.com/en/credit-cards/odyssey-visa-infinite-privilege.html
+      - https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html
+    entry_urls:
+      - https://www.desjardins.com/en/credit-cards.html

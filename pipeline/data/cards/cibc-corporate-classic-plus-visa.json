@@ -26,7 +26,7 @@
     },
     {
       "field": "fx_fee_pct",
-      "reason": "set 2.5% per CIBC standard [VERIFY]"
+      "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
     },
     {
       "field": "annual_fee_minor",

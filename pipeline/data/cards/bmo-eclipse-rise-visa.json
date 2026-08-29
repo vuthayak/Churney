@@ -1,0 +1,66 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-eclipse-rise-visa",
+    "issuer_slug": "bmo",
+    "name": "BMO eclipse rise Visa Card",
+    "network": "visa",
+    "program_slug": "bmo_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 5.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 2,500 points",
+      "reward_points": 2500,
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 5,000 points",
+          "channel": "later_spend",
+          "reward_points": 5000,
+          "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/",
+          "seen_on": "2026-08-29"
+        }
+      ],
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-eclipse-rise-visa/",
+      "verified_at": "2026-08-29T00:20:32.818153Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "offer.min_spend",
+      "reason": "min-spend/deadline pattern not found"
+    }
+  ],
+  "content_hash": "87222af6e37d39259544f8904b070dea0e06a68c381fea881343ff9e4b323364"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-ascend-business-mastercard",
+    "issuer_slug": "bmo",
+    "name": "BMOAscend Business Mastercard",
+    "network": "mastercard",
+    "program_slug": "bmo_rewards",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/"
+  },
+  "earn_rates": [
+    {
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/"
+    },
+    {
+      "category_slug": "travel_air",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/"
+    },
+    {
+      "category_slug": "travel_hotel",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 25,000 points",
+      "reward_points": 25000,
+      "alternate_offers": [],
+      "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-ascend-business-mastercard/",
+      "verified_at": "2026-08-29T00:20:35.594443Z"
+    }
+  ],
+  "needs_manual_review": [],
+  "content_hash": "0ec8cb7571e8960144e14658a036cf6d6bc0baee1958efa98e9f3770e5041f97"
+}

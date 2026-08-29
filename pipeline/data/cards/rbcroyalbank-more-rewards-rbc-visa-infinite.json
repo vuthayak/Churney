@@ -1,0 +1,69 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-more-rewards-rbc-visa-infinite",
+    "issuer_slug": "rbcroyalbank",
+    "name": "More Rewards RBC Visa Infinite",
+    "network": "visa",
+    "program_slug": "rbc_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 8.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+    },
+    {
+      "category_slug": "drugstore",
+      "rate": 8.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 8.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 8.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+    },
+    {
+      "rate": 4.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/more-rewards-rbc-visa-infinite.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on rbcroyalbank.com page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "5f7fcac48ca1d0ce9b4a3bb3049f5ca87a751fc74d25e9140af098f3a5eb0685"
+}

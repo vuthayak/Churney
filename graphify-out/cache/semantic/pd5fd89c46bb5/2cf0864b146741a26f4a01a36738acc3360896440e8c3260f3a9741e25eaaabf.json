@@ -1,0 +1,1 @@
+{"nodes": [{"id": "pipeline_data_llm_digest", "label": "LLM Fill Digest", "file_type": "document", "source_file": "pipeline/data/llm_digest.md", "source_location": "L1", "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}

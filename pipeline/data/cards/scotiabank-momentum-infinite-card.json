@@ -1,0 +1,85 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "scotiabank-momentum-infinite-card",
+    "issuer_slug": "scotiabank",
+    "name": "Scotia Momentum Visa Infinite + Card",
+    "network": "visa",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 12000,
+    "extra_card_fee_minor": 5000,
+    "fx_fee_pct": 2.5,
+    "income_req_personal": 60000,
+    "income_req_household": 100000,
+    "purchase_apr": 15.0,
+    "cash_apr": 22.99,
+    "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.15,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+    },
+    {
+      "rate": 0.04,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 0.04,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 0.04,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 0.04,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Scotiabank standard foreign currency conversion fee (cards without explicit no-FX-fee waiver on issuer page)"
+    },
+    {
+      "field": "offers",
+      "reason": "confirmed: no standing public welcome bonus on issuer page as of 2026-08-28"
+    }
+  ],
+  "content_hash": "0c4a54c2bd8a47d5e4e46598a43c1dcbcf2ce898a345c862a6fda38038ad300c"
+}

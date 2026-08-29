@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "date": "2026-08-28",
+    "note": "Scotia Momentum family cards discovered after absolute-URL discovery fix. Document no-WB and add missing base earn rates."
+  },
+  "scotiabank-momentum-cash-back-card": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 0.01,
+        "kind": "cashback",
+        "notes": "1% cash back on all other purchases"
+      }
+    ],
+    "review_resolve": ["earn_rates", "offers"],
+    "review_add": [
+      {
+        "field": "offers",
+        "reason": "confirmed: no standing public welcome bonus on issuer page as of 2026-08-28"
+      }
+    ]
+  },
+  "scotiabank-student-momentum-cash-back-card": {
+    "rates_add": [
+      {
+        "category_slug": null,
+        "rate": 0.01,
+        "kind": "cashback",
+        "notes": "1% cash back on all other purchases"
+      }
+    ],
+    "review_resolve": ["earn_rates", "offers"],
+    "review_add": [
+      {
+        "field": "offers",
+        "reason": "confirmed: no standing public welcome bonus on issuer page as of 2026-08-28"
+      }
+    ]
+  },
+  "scotiabank-momentum-infinite-card": {
+    "review_resolve": ["offers"],
+    "review_add": [
+      {
+        "field": "offers",
+        "reason": "confirmed: no standing public welcome bonus on issuer page as of 2026-08-28"
+      }
+    ]
+  },
+  "scotiabank-momentum-no-fee-card": {
+    "review_resolve": ["offers"],
+    "review_add": [
+      {
+        "field": "offers",
+        "reason": "confirmed: no standing public welcome bonus on issuer page as of 2026-08-28"
+      }
+    ]
+  },
+  "scotiabank-student-scotia-momentum-no-fee-visa": {
+    "review_resolve": ["offers"],
+    "review_add": [
+      {
+        "field": "offers",
+        "reason": "confirmed: no standing public welcome bonus on issuer page as of 2026-08-28"
+      }
+    ]
+  }
+}

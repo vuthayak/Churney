@@ -1,0 +1,28 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-prepaid-credit-cards",
+    "issuer_slug": "bmo",
+    "name": "BMOPrepaid Mastercard",
+    "network": "mastercard",
+    "program_slug": "none",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/prepaid-credit-cards/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/prepaid-credit-cards/"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "annual_fee_minor",
+      "reason": "0 - VERIFIED: reload fee only ($9.95 load fee mis-parsed as annual fee from Product schema)"
+    }
+  ],
+  "content_hash": "5e1914e7830360adb40a80d5a467082211209b902504976654a42188a8a0b016"
+}

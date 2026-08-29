@@ -1,0 +1,65 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-rbc-avion-visa-infinite",
+    "issuer_slug": "rbcroyalbank",
+    "name": "RBC Avion Visa Infinite",
+    "network": "visa",
+    "program_slug": "avion",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 12000,
+    "extra_card_fee_minor": 5000,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "travel_other",
+      "rate": 1.25,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite.html"
+    },
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 70,000 points",
+      "min_spend_minor": 500000,
+      "deadline_days": 180,
+      "reward_points": 70000,
+      "eligibility_notes": "deadline stated as 6 months on page",
+      "alternate_offers": [
+        {
+          "headline": "Additional earn component: 35,000 points",
+          "channel": "later_spend",
+          "min_spend_minor": 500000,
+          "deadline_days": 180,
+          "reward_points": 35000,
+          "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite.html",
+          "seen_on": "2026-08-29"
+        }
+      ],
+      "source_url": "https://www.rbcroyalbank.com/credit-cards/travel/rbc-avion-visa-infinite.html",
+      "verified_at": "2026-08-29T00:35:12.645690Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+    }
+  ],
+  "content_hash": "4c734ffd40b5ae3be6ce1b3620489e08cc766ab37b9f41c931777a3b745deba9"
+}

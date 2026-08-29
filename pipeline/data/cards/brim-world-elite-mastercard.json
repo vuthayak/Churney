@@ -1,0 +1,47 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "brim-world-elite-mastercard",
+    "issuer_slug": "brim",
+    "name": "Brim World Elite Mastercard",
+    "network": "mastercard",
+    "program_slug": "brim_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://brimfinancial.com/credit-cards#brim-world-elite-mastercard"
+  },
+  "card_version": {
+    "valid_from": "2026-08-28",
+    "annual_fee_minor": 8900,
+    "fx_fee_pct": 1.5,
+    "source_url": "https://brimfinancial.com/credit-cards#brim-world-elite-mastercard"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://brimfinancial.com/credit-cards#brim-world-elite-mastercard"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "1.5% - VERIFIED: Brim foreign transaction fee (brimfinancial.com/credit-cards comparison chart)"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "purchase APR not published on brimfinancial.com listing page at scrape time - VERIFIED"
+    },
+    {
+      "field": "cash_apr",
+      "reason": "cash advance APR not published on brimfinancial.com listing page at scrape time - VERIFIED"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on brimfinancial.com page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "a9e251b16f430fedfdca98b0abe15e7c70904ae9f7e3d8e0eb3c7148a14ed62c"
+}

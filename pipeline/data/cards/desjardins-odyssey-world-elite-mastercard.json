@@ -1,0 +1,91 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "desjardins-odyssey-world-elite-mastercard",
+    "issuer_slug": "desjardins",
+    "name": "Odyssey World Elite Mastercard Credit Card",
+    "network": "mastercard",
+    "program_slug": "bonusdollars",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 13000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.9,
+    "cash_apr": 21.9,
+    "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 0.03,
+      "kind": "bonus_dollars",
+      "cap_amount_minor": 1000000,
+      "cap_period": "annual",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 0.03,
+      "kind": "bonus_dollars",
+      "cap_amount_minor": 600000,
+      "cap_period": "annual",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html"
+    },
+    {
+      "category_slug": "entertainment",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "cap_amount_minor": 2000000,
+      "cap_period": "annual",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html"
+    },
+    {
+      "rate": 0.01,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 130 BONUSDOLLARS",
+      "reward_cashback_minor": 13000,
+      "eligibility_notes": "1 BONUSDOLLAR = $1 redeem per desjardins.com program rules",
+      "alternate_offers": [],
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-world-elite-mastercard.html",
+      "verified_at": "2026-08-29T00:35:05.119434Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+    },
+    {
+      "field": "offer.min_spend",
+      "reason": "signup bonus amount from page metadata; no minimum spend stated on desjardins.com card page - VERIFIED"
+    }
+  ],
+  "content_hash": "93142ae42b6df9fab9d0355a260e49edc2c042ec0f42ae7a8f3d3ce3acf05596"
+}

@@ -65,6 +65,14 @@
       "excluded": false,
       "notes": "plus services such as shipping, internet, cable and phone",
       "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-visa-card-business.html"
+    },
+    {
+      "category_slug": "travel_hotel",
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "notes": "general travel spend (airlines, hotels, car rentals, cruise lines); Air Canada direct earns 2x",
+      "source_url": "https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aerogold-visa-card-business.html"
     }
   ],
   "offers": [

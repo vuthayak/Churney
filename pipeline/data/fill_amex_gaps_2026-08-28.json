@@ -1,0 +1,45 @@
+{
+  "amex-ca-cobalt-card": {
+    "offer_patch": {
+      "min_spend_minor": 75000,
+      "deadline_days": 365,
+      "eligibility_notes_append": "Structure: earn 1,250 MR points per monthly billing period in which $750 is spent, within first year (VERIFIED amex.ca)"
+    }
+  },
+  "amex-ca-marriott-bonvoy-business-card": {
+    "review_resolve": ["purchase_apr"],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "21.99% purchases & cash advances - VERIFIED on amex.ca page + frugalflyer.ca cross-check"
+      }
+    ]
+  },
+  "amex-ca-small-business-gold-card": {
+    "review_resolve": ["annual_fee_minor"],
+    "review_add": [
+      {
+        "field": "annual_fee_minor",
+        "reason": "$199 VERIFIED on amex.ca page (Annual Fees $199); was mis-parsed as $0"
+      }
+    ]
+  },
+  "amex-ca-small-business-platinum-card": {
+    "review_resolve": ["annual_fee_minor"],
+    "review_add": [
+      {
+        "field": "annual_fee_minor",
+        "reason": "$799 VERIFIED on amex.ca page; was mis-parsed as $0"
+      }
+    ]
+  },
+  "amex-ca-the-platinum-card": {
+    "review_resolve": ["purchase_apr"],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "charge card - no purchase APR (pay-in-full product) ($799 fee confirmed on page)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "desjardins-cash-back-world-elite-mastercard",
+    "issuer_slug": "desjardins",
+    "name": "Cash Back World Elite Mastercard Credit Card",
+    "network": "mastercard",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 10000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.9,
+    "cash_apr": 21.9,
+    "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 0.04,
+      "kind": "cashback",
+      "cap_amount_minor": 1000000,
+      "cap_period": "annual",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 0.03,
+      "kind": "cashback",
+      "cap_amount_minor": 600000,
+      "cap_period": "annual",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html"
+    },
+    {
+      "category_slug": "entertainment",
+      "rate": 0.03,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 0.03,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html"
+    },
+    {
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "$100 cash back",
+      "reward_cashback_minor": 10000,
+      "alternate_offers": [],
+      "source_url": "https://www.desjardins.com/en/credit-cards/cash-back-world-elite-mastercard.html",
+      "verified_at": "2026-08-29T00:35:04.900729Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+    },
+    {
+      "field": "offer.min_spend",
+      "reason": "signup bonus amount from page metadata; no minimum spend stated on desjardins.com card page - VERIFIED"
+    }
+  ],
+  "content_hash": "4ab60b6aab4acb3b74471a4992fd7895c2cfde47a0257193112147b6ca471e6d"
+}

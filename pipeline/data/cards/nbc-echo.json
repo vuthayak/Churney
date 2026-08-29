@@ -1,0 +1,57 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "nbc-echo",
+    "issuer_slug": "nbc",
+    "name": "ECHO Cashback Mastercard",
+    "network": "mastercard",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.nbc.ca/personal/mastercard-credit-cards/echo.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 3000,
+    "extra_card_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.49,
+    "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/echo.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.015,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/echo.html"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 0.015,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/echo.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn $10 cash back",
+      "reward_cashback_minor": 1000,
+      "alternate_offers": [],
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/echo.html",
+      "verified_at": "2026-08-29T00:35:06.677372Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+    },
+    {
+      "field": "offers",
+      "reason": "marketing mentions $10 cashback redemption threshold, not a welcome bonus - VERIFIED nbc.ca echo page"
+    }
+  ],
+  "content_hash": "e7685f00fd1deeacf66943e770c3813c8ec82dc31f2219e03a0c943e64ff8066"
+}

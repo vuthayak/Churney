@@ -1,0 +1,30 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "desjardins-flexi-visa",
+    "issuer_slug": "desjardins",
+    "name": "Flexi Visa Credit Card",
+    "network": "visa",
+    "program_slug": "none",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.desjardins.com/en/credit-cards/flexi-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 10.9,
+    "cash_apr": 12.9,
+    "source_url": "https://www.desjardins.com/en/credit-cards/flexi-visa.html"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+    }
+  ],
+  "content_hash": "0a76e2b9c38d65e50b58d5011a91155a060b997e122af74399186a15a515c5d6"
+}

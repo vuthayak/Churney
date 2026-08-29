@@ -1,0 +1,42 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "nbc-syncro",
+    "issuer_slug": "nbc",
+    "name": "Syncro Mastercard",
+    "network": "mastercard",
+    "program_slug": "nbc_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.nbc.ca/personal/mastercard-credit-cards/syncro.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 3500,
+    "extra_card_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 8.9,
+    "cash_apr": 12.9,
+    "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/syncro.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/syncro.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "5b6c5e16cd939b3273604f6882d6ea1bd4a480a835755a2ed65d37c324932980"
+}

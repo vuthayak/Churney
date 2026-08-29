@@ -49,6 +49,10 @@
     {
       "field": "purchase_apr",
       "reason": "corrected from issuer page: purchases 20.95%, cash advances 22.95%"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: tangerine.ca card page foreign currency conversion fee disclosure"
     }
   ],
   "content_hash": "4f3b163aa673accf896877943ebfc0a96f4a945729094b190f6e6b3e0c215116"

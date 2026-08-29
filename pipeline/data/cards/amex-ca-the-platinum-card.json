@@ -61,16 +61,12 @@
   ],
   "needs_manual_review": [
     {
-      "field": "fx_fee_pct",
-      "reason": "set 2.5% from external knowledge [VERIFY]"
-    },
-    {
-      "field": "purchase_apr",
-      "reason": "charge card - no purchase APR applicable"
-    },
-    {
       "field": "purchase_apr",
       "reason": "charge card - no purchase APR (pay-in-full product) ($799 fee confirmed on page)"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)"
     }
   ],
   "content_hash": "13324817a003ef267b45eb112e65c27cfa148a2c56b8bf9310b7184ec7c53ee1"

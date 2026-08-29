@@ -1,0 +1,40 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-eclipse-visa-infinite",
+    "issuer_slug": "bmo",
+    "name": "BMO eclipse Visa Infinite Card",
+    "network": "visa",
+    "program_slug": "bmo_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/main/personal/credit-cards/bmo-eclipse-visa-infinite/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 12000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.bmo.com/main/personal/credit-cards/bmo-eclipse-visa-infinite/"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/main/personal/credit-cards/bmo-eclipse-visa-infinite/"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: BMO foreign currency conversion fee (bmo.com cardholder agreement)"
+    },
+    {
+      "field": "offers",
+      "reason": "tiered WB (up to 70k pts + monthly bonuses) in legal copy; headline-only on marketing tile - needs legal-table parser pass"
+    }
+  ],
+  "content_hash": "28a3cad3b0aa1c8eeae5b6294f006bd7a95717a4393ab790f6f9b7d40986f2d4"
+}

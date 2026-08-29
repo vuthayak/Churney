@@ -1,0 +1,120 @@
+{
+  "_meta": {
+    "date": "2026-08-28",
+    "note": "NBC bootstrap verification: FX from nbc.ca help centre; tiered MSRs from legal promo tables; no-WB cards documented."
+  },
+  "nbc-world-elite": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "nbc-world": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "offer_patch": {
+      "min_spend_minor": 300000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "Tiered WB (VERIFIED nbc.ca legal table): 20k pts for $3k in first 3 months + additional components to 33k total at higher spend thresholds"
+    },
+    "review_resolve": ["fx_fee_pct", "offer.min_spend"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+      }
+    ]
+  },
+  "nbc-platinum": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "offer_patch": {
+      "min_spend_minor": 250000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "Tiered WB (VERIFIED nbc.ca legal table): 10k insurance enrollment + 10k for $2,500 in 3 months + 15k for $10,000 in 12 months; FYF primary AF"
+    },
+    "review_resolve": ["fx_fee_pct", "offer.min_spend"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+      }
+    ]
+  },
+  "nbc-syncro": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "nbc-echo": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offer.min_spend", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+      },
+      {
+        "field": "offers",
+        "reason": "marketing mentions $10 cashback redemption threshold, not a welcome bonus - VERIFIED nbc.ca echo page"
+      }
+    ]
+  },
+  "nbc-allure": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "nbc-mc1": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "nbc-my-credit": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED"
+      }
+    ]
+  }
+}

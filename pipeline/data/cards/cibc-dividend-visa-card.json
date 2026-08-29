@@ -64,16 +64,16 @@
   "offers": [],
   "needs_manual_review": [
     {
-      "field": "fx_fee_pct",
-      "reason": "set 2.5% CIBC standard [VERIFY]; not stated on cached card page"
-    },
-    {
       "field": "purchase_apr",
       "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
     },
     {
       "field": "offers",
       "reason": "confirmed: no standing public welcome bonus as of 2026-08-24 (issuer page + frugalflyer cross-check); occasional limited-time promos only - not a churn target"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
     }
   ],
   "content_hash": "e2a798dd3c8c2e2ca72cce6bf1c714b59f9cfa9abff53ad0a4c6491502a39335"

@@ -55,23 +55,11 @@
   "needs_manual_review": [
     {
       "field": "annual_fee_minor",
-      "reason": "fee pattern not found"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "unmapped earn-tile title skipped (never-guess): 'everything'"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "unmapped earn-tile title skipped (never-guess): 'everything for every $1 in Card purchases 5 Featured Benefits Item 1 of 7 Up to $100 in statement credits annually with Dell. Until December 31,2026, shop with Dell and earn up to $50 in statement cre'"
+      "reason": "$199 VERIFIED on amex.ca page (\"Annual Fees $199\"); was mis-parsed as $0"
     },
     {
       "field": "fx_fee_pct",
-      "reason": "set 2.5% from external knowledge [VERIFY]"
-    },
-    {
-      "field": "annual_fee_minor",
-      "reason": "$199 VERIFIED on amex.ca page (\"Annual Fees $199\"); was mis-parsed as $0"
+      "reason": "2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)"
     },
     {
       "field": "purchase_apr",

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-viporter-mastercard",
+    "issuer_slug": "bmo",
+    "name": "BMO VIPorter Mastercard",
+    "network": "mastercard",
+    "program_slug": "viporter",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/"
+    },
+    {
+      "category_slug": "dining",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/"
+    },
+    {
+      "category_slug": "travel_hotel",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-viporter-mastercard/"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "earn_rates",
+      "reason": "points-per-dollar context not matched: ' on porter purchases. ∆∆ 106a '"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "0fd3fd36fc93dec6e0fafdc09d8b78d7e2758a212bebec671501b0a4909fd085"
+}

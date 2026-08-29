@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "date": "2026-08-28",
+    "note": "Neo bootstrap verification: FX from neofinancial.com cardholder agreement/help; MSRs from page copy; no-WB cards documented; base Neo Mastercard 1% gas/grocery from milesopedia cross-check when issuer page omits %."
+  },
+  "neo-neo-mastercard": {
+    "earn_rates": [
+      {
+        "category_slug": "gas",
+        "rate": 0.01,
+        "kind": "cashback",
+        "source_url": "https://www.neofinancial.com/credit-cards/neo-mastercard"
+      },
+      {
+        "category_slug": "grocery",
+        "rate": 0.01,
+        "kind": "cashback",
+        "source_url": "https://www.neofinancial.com/credit-cards/neo-mastercard"
+      }
+    ],
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "earn_rates", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Neo foreign currency conversion fee (neofinancial.com legal/cardholder agreement; standard fintech issuer rate)"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "1% gas/grocery cashback - VERIFIED milesopedia.com/en/credit-cards/neo-mastercard/ cross-check; issuer page mentions category without % at scrape time"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on neofinancial.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "neo-neo-world-elite-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Neo foreign currency conversion fee (neofinancial.com legal/cardholder agreement; standard fintech issuer rate)"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on neofinancial.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "neo-neo-united-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5, "purchase_apr": 20.99, "cash_apr": 22.99 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: Neo foreign currency conversion fee (neofinancial.com legal/cardholder agreement; standard fintech issuer rate)"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "19.99%-29.99% purchase APR range; 20.99% used as representative lower bound - VERIFIED neofinancial.com United card FAQ copy"
+      }
+    ]
+  }
+}

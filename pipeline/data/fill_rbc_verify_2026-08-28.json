@@ -1,0 +1,194 @@
+{
+  "_meta": {
+    "date": "2026-08-28",
+    "note": "RBC verification pass: FX fee from issuer disclosure PDFs; MSRs from legal copy in page HTML; no-WB cards documented."
+  },
+  "rbcroyalbank-moi-rbc-visa": {
+    "offer_patch": {
+      "min_spend_minor": 50000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "5,000 bonus Moi points: $500 spend in first 3 months (VERIFIED rbcroyalbank.com legal copy)"
+    },
+    "review_resolve": ["fx_fee_pct", "offer.min_spend"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      }
+    ]
+  },
+  "rbcroyalbank-more-rewards-rbc-visa-infinite": {
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on rbcroyalbank.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "rbcroyalbank-more-rewards-rbc-visa": {
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on rbcroyalbank.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "rbcroyalbank-rbc-avion-visa-infinite-privilege": {
+    "review_resolve": ["fx_fee_pct"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      }
+    ]
+  },
+  "rbcroyalbank-rbc-avion-visa-infinite": {
+    "review_resolve": ["fx_fee_pct"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      }
+    ]
+  },
+  "rbcroyalbank-rbc-british-airways-visa-infinite": {
+    "review_resolve": ["fx_fee_pct", "offer.min_spend", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      },
+      {
+        "field": "offers",
+        "reason": "60k Avios tiered WB ($10k total / 180 days) VERIFIED from rbcroyalbank.com legal copy"
+      }
+    ]
+  },
+  "rbcroyalbank-rbc-cashback-mastercard": {
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      },
+      {
+        "field": "offers",
+        "reason": "promotional 7% intro cashback is time-limited; no stable WB modeled - VERIFIED page copy"
+      }
+    ]
+  },
+  "rbcroyalbank-rbc-ion-plus-visa": {
+    "review_resolve": ["fx_fee_pct"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      }
+    ]
+  },
+  "rbcroyalbank-rbc-ion-visa": {
+    "review_resolve": ["fx_fee_pct"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      }
+    ]
+  },
+  "rbcroyalbank-rbc-preferred-world-elite-mastercard": {
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      },
+      {
+        "field": "offers",
+        "reason": "12% intro cashback promo only; no stable points WB - VERIFIED page copy"
+      }
+    ]
+  },
+  "rbcroyalbank-rbc-visa-classic-low-rate": {
+    "program_slug": "none",
+    "review_resolve": ["fx_fee_pct", "earn_rates", "offers", "program_slug"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "low-rate card with no rewards program - VERIFIED"
+      },
+      {
+        "field": "offers",
+        "reason": "no welcome-bonus offer - VERIFIED"
+      }
+    ]
+  },
+  "rbcroyalbank-rbc-visa-platinum-avion": {
+    "review_resolve": ["fx_fee_pct"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      }
+    ]
+  },
+  "rbcroyalbank-rbc-visa-platinum": {
+    "program_slug": "none",
+    "review_resolve": ["fx_fee_pct", "earn_rates", "offers", "program_slug"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "no-fee card with no rewards earn structure - VERIFIED"
+      },
+      {
+        "field": "offers",
+        "reason": "no welcome-bonus offer - VERIFIED"
+      }
+    ]
+  },
+  "rbcroyalbank-westjet-rbc-mastercard": {
+    "offer_patch": {
+      "min_spend_minor": 100000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "15,000 WestJet points: $1,000 spend in first 3 months (VERIFIED rbcroyalbank.com legal copy)"
+    },
+    "review_resolve": ["fx_fee_pct", "offer.min_spend"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      }
+    ]
+  },
+  "rbcroyalbank-westjet-rbc-world-elite-mastercard": {
+    "offer_patch": {
+      "min_spend_minor": 500000,
+      "deadline_days": 90,
+      "eligibility_notes_append": "70,000 WestJet points: $5,000 spend in first 3 months (VERIFIED rbcroyalbank.com legal copy)"
+    },
+    "review_resolve": ["fx_fee_pct", "offer.min_spend"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+      }
+    ]
+  }
+}

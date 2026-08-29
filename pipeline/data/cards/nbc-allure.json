@@ -1,0 +1,48 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "nbc-allure",
+    "issuer_slug": "nbc",
+    "name": "Allure Mastercard",
+    "network": "mastercard",
+    "program_slug": "nbc_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.nbc.ca/personal/mastercard-credit-cards/allure.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "cash_apr": 22.49,
+    "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/allure.html"
+  },
+  "earn_rates": [
+    {
+      "rate": 2.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/allure.html"
+    },
+    {
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.nbc.ca/personal/mastercard-credit-cards/allure.html"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: NBC foreign currency transaction fee (nbc.ca help centre fees-foreign-currency-credit-card)"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on nbc.ca page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "75f0c102e21a72779b5919d6a108ca7e6025129f81a9eebbc11488409107894f"
+}

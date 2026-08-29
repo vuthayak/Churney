@@ -11,7 +11,7 @@
     "page_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html"
   },
   "card_version": {
-    "valid_from": "2026-08-26",
+    "valid_from": "2026-08-28",
     "annual_fee_minor": 15000,
     "extra_card_fee_minor": 0,
     "fx_fee_pct": 0.0,
@@ -44,20 +44,25 @@
           "deadline_days": 90,
           "reward_points": 10000,
           "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html",
-          "seen_on": "2026-08-26"
+          "seen_on": "2026-08-28"
         },
         {
           "headline": "Additional earn component: 2,000 points",
           "channel": "later_spend",
           "reward_points": 2000,
           "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html",
-          "seen_on": "2026-08-26"
+          "seen_on": "2026-08-28"
         }
       ],
       "source_url": "https://www.scotiabank.com/ca/en/personal/credit-cards/visa/passport-infinite-card.html",
-      "verified_at": "2026-08-26T05:19:08.399640Z"
+      "verified_at": "2026-08-28T20:33:09.339413Z"
     }
   ],
-  "needs_manual_review": [],
-  "content_hash": "af6c9b716ef924481f44aec437b528c4f481e9ae79334fec26b3bd49dbe8e66c"
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "0% - VERIFIED: issuer page states no foreign transaction fees (Scotiabank Gold / Platinum / Passport premium cards)"
+    }
+  ],
+  "content_hash": "3ab6d0fb22e033f3ff6b68d26cf98a1f97b51200726c8dc68c3f8280f7ca7cf6"
 }

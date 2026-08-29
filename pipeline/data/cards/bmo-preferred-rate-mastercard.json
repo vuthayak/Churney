@@ -1,0 +1,24 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-preferred-rate-mastercard",
+    "issuer_slug": "bmo",
+    "name": "BMO Preferred Rate Mastercard",
+    "network": "mastercard",
+    "program_slug": "none",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/preferred-rate-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 2900,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 13.99,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/preferred-rate-mastercard/"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [],
+  "content_hash": "7191646e6669522f8146f85ebaff069de7ca5449ac599c19781574ca60c357fd"
+}

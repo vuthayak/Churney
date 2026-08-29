@@ -42,12 +42,12 @@
   ],
   "needs_manual_review": [
     {
-      "field": "fx_fee_pct",
-      "reason": "page states foreign currency conversion fee of ~2.5%; exact figure truncated in capture [VERIFY]"
-    },
-    {
       "field": "purchase_apr",
       "reason": "corrected from issuer page: purchases 20.95%, cash advances 22.95%"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: tangerine.ca card page foreign currency conversion fee disclosure"
     }
   ],
   "content_hash": "4a9cee984f86fdce6c04594e05d8a5cfbda23d5be646a5ae645fa9b20aa72c6b"

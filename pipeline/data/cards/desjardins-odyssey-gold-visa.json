@@ -1,0 +1,89 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "desjardins-odyssey-gold-visa",
+    "issuer_slug": "desjardins",
+    "name": "Odyssey Gold Visa Credit Card",
+    "network": "visa",
+    "program_slug": "bonusdollars",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 11000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.9,
+    "cash_apr": 21.9,
+    "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "dining",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "cap_amount_minor": 600000,
+      "cap_period": "annual",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
+    },
+    {
+      "category_slug": "entertainment",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
+    },
+    {
+      "category_slug": "travel_other",
+      "rate": 0.02,
+      "kind": "bonus_dollars",
+      "cap_amount_minor": 1500000,
+      "cap_period": "annual",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
+    },
+    {
+      "rate": 0.0065,
+      "kind": "bonus_dollars",
+      "excluded": false,
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 110 BONUSDOLLARS",
+      "reward_cashback_minor": 11000,
+      "eligibility_notes": "1 BONUSDOLLAR = $1 redeem per desjardins.com program rules",
+      "alternate_offers": [],
+      "source_url": "https://www.desjardins.com/en/credit-cards/odyssey-gold-visa.html",
+      "verified_at": "2026-08-29T00:35:04.975709Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
+    },
+    {
+      "field": "offer.min_spend",
+      "reason": "signup bonus amount from page metadata; no minimum spend stated on desjardins.com card page - VERIFIED"
+    }
+  ],
+  "content_hash": "600a9e59c809d2e26de5ee8d1829b2e89c94b109305b7339065644fbef8169f3"
+}

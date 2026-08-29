@@ -68,12 +68,12 @@
   ],
   "needs_manual_review": [
     {
-      "field": "fx_fee_pct",
-      "reason": "set 2.5% CIBC standard [VERIFY]; not stated on cached card page"
-    },
-    {
       "field": "purchase_apr",
       "reason": "21.99%/22.99% purchases/cash - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, cibc.com)"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: CIBC Summary of Annual Interest Rates and Fees (doc 11995-2026/08, Foreign Currency Conversion section, cibc.com)"
     }
   ],
   "content_hash": "6a9e350a11c7449382b5d9048f8d546447d57d61e8a858b94f921e243126eaf8"

@@ -71,12 +71,12 @@
   ],
   "needs_manual_review": [
     {
-      "field": "fx_fee_pct",
-      "reason": "set 2.5% Amex CA standard [VERIFY]; not stated on cached card page"
-    },
-    {
       "field": "purchase_apr",
       "reason": "21.99% purchases & funds advances - VERIFIED on amex.ca page (\"Card Type Credit Card ... Annual Interest Rate 21.99%\")"
+    },
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)"
     }
   ],
   "content_hash": "b56dfaa6d09c9922d6a215f8403de07b73f2b250296f07456dacdcd7f7f66e5d"

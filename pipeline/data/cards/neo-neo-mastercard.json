@@ -1,0 +1,39 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "neo-neo-mastercard",
+    "issuer_slug": "neo",
+    "name": "Neo Mastercard",
+    "network": "mastercard",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.neofinancial.com/credit-cards/neo-mastercard"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "extra_card_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 19.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.neofinancial.com/credit-cards/neo-mastercard"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: Neo foreign currency conversion fee (neofinancial.com legal/cardholder agreement; standard fintech issuer rate)"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "1% gas/grocery cashback - VERIFIED milesopedia.com/en/credit-cards/neo-mastercard/ cross-check; issuer page mentions category without % at scrape time"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on neofinancial.com page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "067e0324770d7c08a96a90ecad1fce6ab63c53967c212ffde439808fed27901e"
+}

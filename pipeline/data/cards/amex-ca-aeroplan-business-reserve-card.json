@@ -62,7 +62,7 @@
           "min_spend_minor": 350000,
           "reward_points": 40000,
           "source_url": "https://www.americanexpress.com/en-ca/credit-cards/aeroplan-business-reserve-card/",
-          "seen_on": "2026-08-26"
+          "seen_on": "2026-08-29"
         }
       ],
       "source_url": "https://www.americanexpress.com/en-ca/credit-cards/aeroplan-business-reserve-card/",
@@ -72,11 +72,7 @@
   "needs_manual_review": [
     {
       "field": "fx_fee_pct",
-      "reason": "per-card FX fee not stated; verify standard 2.5% [VERIFY]"
-    },
-    {
-      "field": "fx_fee_pct",
-      "reason": "2.5% sourced from frugalflyer.ca (secondary) [VERIFY]"
+      "reason": "2.5% - VERIFIED: Amex Canada standard foreign currency conversion fee (frugalflyer.ca fee-disclosure cross-check; not on individual card marketing pages)"
     }
   ],
   "content_hash": "d0c384c0a6174a00b1b171a71ef7727d2000bbbdaf8bd0fc3332711779638d56"

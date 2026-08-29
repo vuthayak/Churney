@@ -1,0 +1,69 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "rbcroyalbank-westjet-rbc-world-elite-mastercard-business",
+    "issuer_slug": "rbcroyalbank",
+    "name": "Introducing the WestJet RBC World Elite Mastercard for Business",
+    "network": "mastercard",
+    "program_slug": "westjet",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/westjet-rbc-world-elite-mastercard-business.html"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 17500,
+    "extra_card_fee_minor": 7500,
+    "purchase_apr": 19.99,
+    "cash_apr": 22.99,
+    "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/westjet-rbc-world-elite-mastercard-business.html"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "travel_air",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/westjet-rbc-world-elite-mastercard-business.html"
+    },
+    {
+      "category_slug": "streaming_subs",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/westjet-rbc-world-elite-mastercard-business.html"
+    },
+    {
+      "category_slug": "retail_online",
+      "rate": 3.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/westjet-rbc-world-elite-mastercard-business.html"
+    },
+    {
+      "rate": 1.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/westjet-rbc-world-elite-mastercard-business.html"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Get up to 100,000 WestJet points",
+      "min_spend_minor": 500000,
+      "deadline_days": 90,
+      "reward_points": 100000,
+      "eligibility_notes": "deadline stated as 3 months on page not eligible for this offer. [FILL fill_rbc_business_2026-08-28]: Tiered WB: 20k/$5k/3mo + 25k/$15k/6mo + additional components on page (VERIFIED rbcroyalbank.com)",
+      "alternate_offers": [],
+      "source_url": "https://www.rbcroyalbank.com/business/credit-cards/small-business-credit-cards/westjet-rbc-world-elite-mastercard-business.html",
+      "verified_at": "2026-08-29T00:35:12.316748Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "2.5% - VERIFIED: RBC standard foreign currency conversion fee (rbcroyalbank.com card disclosure PDFs / documents.rbc.com)"
+    }
+  ],
+  "content_hash": "fffc3acf5060263ef10dabaeae9e747bfd54e1d9301ebd95a46cd4089c35a432"
+}

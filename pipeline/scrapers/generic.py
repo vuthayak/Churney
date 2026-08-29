@@ -105,6 +105,8 @@ class GenericIssuerScraper(IssuerScraper):
             soup = BeautifulSoup(page.html, "lxml")
             for a in soup.find_all("a", href=True):
                 path = a["href"].split("?")[0].split("#")[0]
+                if path.startswith("http"):
+                    path = urlparse(path).path
                 if not self._keep_link(path):
                     continue
                 url = path if path.startswith("http") else f"https://{netloc}{path}"
