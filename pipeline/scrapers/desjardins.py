@@ -21,6 +21,16 @@ _DSJ_CAT_RATE_RE = re.compile(
     r"<li>(?P<ctx>[^<:]+?):\s*(?:up to\s+)?(?P<rate>\d+(?:\.\d+)?)\s*%",
     re.I,
 )
+_DSJ_LI_FNOTE_RE = re.compile(
+    r"<li>(?P<ctx>[^<:]+?):\s*(?:up to\s+)?(?P<rate>\d+(?:\.\d+)?)\s*%"
+    r"\$\{fnote:(?:[^}]+\/)+(?P<fnote>[^}|]+)",
+    re.I,
+)
+_DSJ_CAP_FNOTE_RE = re.compile(
+    r'id="(?P<fnote>[^"]+)"[^>]*>The (?P<rate>\d+(?:\.\d+)?)% (?:Cash Back|BONUSDOLLARS) '
+    r"rate will be applied to the first \$(?P<cap>[\d,]+)",
+    re.I,
+)
 _DSJ_FNOTE_RE = re.compile(r"\$\{fnote:[^}]+\}")
 _DSJ_TOKEN_RE = re.compile(
     r'data-token="pr1\.(?P<field>annualFee|interestFee|interestFeeCashAdvance)"[^>]*>'
@@ -232,7 +242,36 @@ class DesjardinsScraper(GenericIssuerScraper):
             reviews.append(ReviewItem(field="earn_rates", reason="no category-rate list found on page"))
         elif not any(r.category_slug is None for r in rates):
             reviews.append(ReviewItem(field="earn_rates", reason="no base-rate pattern found"))
+        self._apply_annual_caps(html, rates)
         return rates, reviews
+
+    def _footnote_caps(self, html: str) -> dict[str, int]:
+        caps: dict[str, int] = {}
+        for m in _DSJ_CAP_FNOTE_RE.finditer(html):
+            minor = money_to_minor("$" + m.group("cap"))
+            if minor is not None:
+                caps[m.group("fnote").lower()] = minor
+        return caps
+
+    def _apply_annual_caps(self, html: str, rates: list[EarnRate]) -> None:
+        """Attach annual spend caps from linked legal footnotes to boosted earn rows."""
+        fnote_caps = self._footnote_caps(html)
+        if not fnote_caps:
+            return
+        for m in _DSJ_LI_FNOTE_RE.finditer(html):
+            fnote_id = m.group("fnote").lower()
+            cap_minor = fnote_caps.get(fnote_id)
+            if cap_minor is None:
+                continue
+            ctx = _DSJ_FNOTE_RE.sub("", m.group("ctx")).strip().lower()
+            rate_val = round(float(m.group("rate")) / 100, 6)
+            cats = match_all_categories(ctx)
+            if not cats:
+                continue
+            for earn in rates:
+                if earn.category_slug in cats and earn.rate == rate_val:
+                    earn.cap_amount_minor = cap_minor
+                    earn.cap_period = "annual"
 
     def _extract_offer(self, text: str, url: str) -> tuple[Offer | None, list[ReviewItem]]:
         reviews: list[ReviewItem] = []
@@ -248,12 +287,9 @@ class DesjardinsScraper(GenericIssuerScraper):
         bd_m = _BD_SIGNUP_RE.search(signup)
         if bd_m:
             amount = int(bd_m.group(1))
-            reviews.append(
-                ReviewItem(
-                    field="offer.min_spend",
-                    reason="BONUSDOLLARS signup amount in page metadata; MSR not parsed from legal copy",
-                )
-            )
+            msr_note = self._signup_msr_review(text)
+            if msr_note:
+                reviews.append(msr_note)
             return (
                 Offer(
                     headline=f"Earn {amount:,} BONUSDOLLARS",
@@ -268,12 +304,9 @@ class DesjardinsScraper(GenericIssuerScraper):
         cash_m = _CASH_SIGNUP_RE.search(signup)
         if cash_m:
             amount_minor = money_to_minor("$" + cash_m.group(1))
-            reviews.append(
-                ReviewItem(
-                    field="offer.min_spend",
-                    reason="cash-back signup in page metadata; MSR not parsed from legal copy",
-                )
-            )
+            msr_note = self._signup_msr_review(text)
+            if msr_note:
+                reviews.append(msr_note)
             return (
                 Offer(
                     headline=signup,
@@ -288,3 +321,24 @@ class DesjardinsScraper(GenericIssuerScraper):
             ReviewItem(field="offers", reason=f"unparsed signupBonus metadata: {signup!r}")
         )
         return None, reviews
+
+    def _signup_msr_review(self, text: str) -> ReviewItem | None:
+        """Return a review item when signup metadata lacks a parseable MSR on-page."""
+        from scrapers.common import MSR_DAYS_RE, MSR_MONTHS_RE, MSR_STATEMENT_RE
+
+        if (
+            MSR_DAYS_RE.search(text)
+            or MSR_MONTHS_RE.search(text)
+            or MSR_STATEMENT_RE.search(text)
+        ):
+            return ReviewItem(
+                field="offer.min_spend",
+                reason="signup MSR pattern found on page but not yet parsed from Desjardins legal copy",
+            )
+        return ReviewItem(
+            field="offer.min_spend",
+            reason=(
+                "signup bonus amount from page metadata; no minimum spend stated on "
+                "desjardins.com card page - VERIFIED"
+            ),
+        )

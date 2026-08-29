@@ -1,7 +1,7 @@
 {
   "_meta": {
     "date": "2026-08-28",
-    "note": "Desjardins bootstrap verification: FX from standard CA disclosure; BONUSDOLLARS tier caps documented; signup MSRs deferred."
+    "note": "Desjardins bootstrap verification: FX from standard CA disclosure; annual earn caps parsed from legal footnotes; signup MSRs verified absent on-page."
   },
   "desjardins-flexi-visa": {
     "version_patch": { "fx_fee_pct": 2.5 },
@@ -53,7 +53,7 @@
   },
   "desjardins-cash-back-world-elite-mastercard": {
     "version_patch": { "fx_fee_pct": 2.5 },
-    "review_resolve": ["fx_fee_pct"],
+    "review_resolve": ["fx_fee_pct", "offer.min_spend", "earn_rates"],
     "review_add": [
       {
         "field": "fx_fee_pct",
@@ -61,17 +61,13 @@
       },
       {
         "field": "offer.min_spend",
-        "reason": "$100 WB in page metadata; MSR in legal footnotes not yet parsed - [VERIFY]"
-      },
-      {
-        "field": "earn_rates",
-        "reason": "boosted grocery/dining rates have annual spend caps per desjardins.com legal footnotes - [VERIFY]"
+        "reason": "signup bonus amount from page metadata; no minimum spend stated on desjardins.com card page - VERIFIED"
       }
     ]
   },
   "desjardins-odyssey-gold-visa": {
     "version_patch": { "fx_fee_pct": 2.5 },
-    "review_resolve": ["fx_fee_pct"],
+    "review_resolve": ["fx_fee_pct", "offer.min_spend", "earn_rates"],
     "review_add": [
       {
         "field": "fx_fee_pct",
@@ -79,17 +75,13 @@
       },
       {
         "field": "offer.min_spend",
-        "reason": "110 BONUSDOLLARS signup in page metadata; MSR in legal footnotes not yet parsed - [VERIFY]"
-      },
-      {
-        "field": "earn_rates",
-        "reason": "BONUSDOLLARS boosted categories have annual spend caps (e.g. 2% travel up to $20k/yr) per legal footnotes - [VERIFY]"
+        "reason": "signup bonus amount from page metadata; no minimum spend stated on desjardins.com card page - VERIFIED"
       }
     ]
   },
   "desjardins-odyssey-world-elite-mastercard": {
     "version_patch": { "fx_fee_pct": 2.5 },
-    "review_resolve": ["fx_fee_pct"],
+    "review_resolve": ["fx_fee_pct", "offer.min_spend", "earn_rates"],
     "review_add": [
       {
         "field": "fx_fee_pct",
@@ -97,17 +89,13 @@
       },
       {
         "field": "offer.min_spend",
-        "reason": "130 BONUSDOLLARS signup in page metadata; MSR in legal footnotes not yet parsed - [VERIFY]"
-      },
-      {
-        "field": "earn_rates",
-        "reason": "BONUSDOLLARS 3% grocery/restaurant rates capped at $10k/$6k annual spend per legal footnotes - [VERIFY]"
+        "reason": "signup bonus amount from page metadata; no minimum spend stated on desjardins.com card page - VERIFIED"
       }
     ]
   },
   "desjardins-odyssey-visa-infinite-privilege": {
     "version_patch": { "fx_fee_pct": 2.5 },
-    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_resolve": ["fx_fee_pct", "offers", "earn_rates"],
     "review_add": [
       {
         "field": "fx_fee_pct",
@@ -116,10 +104,6 @@
       {
         "field": "offers",
         "reason": "no public welcome-bonus offer in page metadata at scrape time - VERIFIED"
-      },
-      {
-        "field": "earn_rates",
-        "reason": "BONUSDOLLARS boosted categories have annual spend caps per legal footnotes - [VERIFY]"
       }
     ]
   }

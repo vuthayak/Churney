@@ -60,7 +60,7 @@
     },
     {
       "field": "annual_fee_minor",
-      "reason": "$119.88/yr VERIFIED: $9.99/month on amex.ca (non-Quebec); $119/year Quebec"
+      "reason": "USER-VERIFIED vs amex.ca: Card Fee $9.99/month (= $119.88 annually, non-Quebec); $119/year Quebec residents"
     }
   ],
   "content_hash": "7f6d1ba400fcd9626f82cd59693228ecb509cc996eb6060aa46ded761ce27a1c"

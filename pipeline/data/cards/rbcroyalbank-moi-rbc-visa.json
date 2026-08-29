@@ -11,7 +11,7 @@
     "page_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html"
   },
   "card_version": {
-    "valid_from": "2026-08-28",
+    "valid_from": "2026-08-29",
     "annual_fee_minor": 0,
     "extra_card_fee_minor": 0,
     "purchase_apr": 20.99,
@@ -67,18 +67,18 @@
           "channel": "later_spend",
           "reward_points": 3000,
           "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html",
-          "seen_on": "2026-08-28"
+          "seen_on": "2026-08-29"
         },
         {
           "headline": "Additional earn component: 2,000 points",
           "channel": "later_spend",
           "reward_points": 2000,
           "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html",
-          "seen_on": "2026-08-28"
+          "seen_on": "2026-08-29"
         }
       ],
       "source_url": "https://www.rbcroyalbank.com/credit-cards/rewards/moi-rbc-visa.html",
-      "verified_at": "2026-08-28T23:37:13.473677Z"
+      "verified_at": "2026-08-29T00:35:12.441783Z"
     }
   ],
   "needs_manual_review": [

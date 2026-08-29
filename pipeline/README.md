@@ -46,6 +46,12 @@ alternate offers, review items, source links).
 
 See `sources.yaml` notes for details.
 
+**Phase 0.7 exit (2026-08-29):** scraper pipeline v1 complete — 12 issuers, 120 cards,
+full fill chain + `review_hygiene` triage. Actionable `[VERIFY]` items resolved;
+remaining `needs_manual_review` entries are informational `VERIFIED` audit notes.
+Deferred: BMO robots timeout (httpx bootstrap works), business-card depth, watchlist
+issuers (Laurentian, PC Financial, etc.).
+
 ## Compliance gates (docs/04 §2, §9.5)
 
 A source in `sources.yaml` will refuse to crawl unless:

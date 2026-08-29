@@ -11,7 +11,7 @@
     "page_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard"
   },
   "card_version": {
-    "valid_from": "2026-08-28",
+    "valid_from": "2026-08-29",
     "annual_fee_minor": 8900,
     "fx_fee_pct": 2.5,
     "income_req_personal": 80000,
@@ -62,18 +62,18 @@
           "channel": "first_purchase",
           "reward_points": 5000,
           "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard",
-          "seen_on": "2026-08-28"
+          "seen_on": "2026-08-29"
         },
         {
           "headline": "5,000 miles annual renewal bonus",
           "channel": "annual_renewal",
           "reward_points": 5000,
           "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard",
-          "seen_on": "2026-08-28"
+          "seen_on": "2026-08-29"
         }
       ],
       "source_url": "https://www.neofinancial.com/credit-cards/neo-united-mastercard",
-      "verified_at": "2026-08-28T23:48:35.820561Z"
+      "verified_at": "2026-08-29T00:35:12.109885Z"
     }
   ],
   "needs_manual_review": [

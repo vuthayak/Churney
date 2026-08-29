@@ -19,15 +19,6 @@
   },
   "earn_rates": [],
   "offers": [],
-  "needs_manual_review": [
-    {
-      "field": "earn_rates",
-      "reason": "no earn program on low-rate card - VERIFIED"
-    },
-    {
-      "field": "offers",
-      "reason": "no welcome-bonus offer on bmo.com page - VERIFIED"
-    }
-  ],
+  "needs_manual_review": [],
   "content_hash": "7191646e6669522f8146f85ebaff069de7ca5449ac599c19781574ca60c357fd"
 }

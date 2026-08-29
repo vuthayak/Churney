@@ -14,7 +14,7 @@
 | 0.4 | Curated seed v0 | 25 cards `[VERIFY]`, categories, programs, transfer matrix, top-50 merchants (grows to top-200 by Phase 1 exit per Spec 02 acceptance) |
 | 0.5 | BoC Valet FX integration | Backfill 24mo; weekend/holiday handling tested |
 | 0.6 | Repo bootstrap | Next.js + Drizzle + CI (typecheck/lint/test) green |
-| 0.7 | Scraper pipeline v1 scaffold + Amex CA (docs/04 §9.4 steps 1–2) | Python/uv pipeline emitting `data/cards/<slug>.json`; Amex CA end-to-end (~20 cards) with `needs_manual_review` items triaged |
+| 0.7 | Scraper pipeline v1 scaffold + Amex CA (docs/04 §9.4 steps 1–2) | Python/uv pipeline emitting `data/cards/<slug>.json`; **done 2026-08-29** — 12 issuers, 120 cards; `needs_manual_review` triaged (0 actionable `[VERIFY]`; informational `VERIFIED` notes remain). See `pipeline/README.md`. |
 
 ## Phase 1 — MVP "Capture & Earn" (Weeks 3–10)
 

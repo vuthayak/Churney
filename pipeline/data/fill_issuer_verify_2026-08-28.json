@@ -469,6 +469,19 @@
     ]
   },
   "tangerine-world-credit-card": {
+    "rates_replace": [
+      {
+        "category_slug": "gas",
+        "rate": 0.02,
+        "kind": "cashback"
+      },
+      {
+        "category_slug": null,
+        "rate": 0.005,
+        "kind": "cashback",
+        "notes": "0.5% on all other purchases; 2% in up to 3 chosen categories with savings account deposit - VERIFIED tangerine.ca"
+      }
+    ],
     "version_patch": {
       "fx_fee_pct": 2.5
     },

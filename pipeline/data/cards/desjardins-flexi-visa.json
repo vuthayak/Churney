@@ -11,7 +11,7 @@
     "page_url": "https://www.desjardins.com/en/credit-cards/flexi-visa.html"
   },
   "card_version": {
-    "valid_from": "2026-08-28",
+    "valid_from": "2026-08-29",
     "annual_fee_minor": 0,
     "fx_fee_pct": 2.5,
     "purchase_apr": 10.9,
@@ -24,10 +24,6 @@
     {
       "field": "fx_fee_pct",
       "reason": "2.5% - VERIFIED: Desjardins foreign currency conversion fee (desjardins.com credit-card terms PDF)"
-    },
-    {
-      "field": "earn_rates",
-      "reason": "Flexi Visa is a low-rate card with no rewards program - VERIFIED desjardins.com page"
     }
   ],
   "content_hash": "0a76e2b9c38d65e50b58d5011a91155a060b997e122af74399186a15a515c5d6"
