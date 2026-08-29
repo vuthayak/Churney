@@ -1,0 +1,56 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-blue-rewards-mastercard",
+    "issuer_slug": "bmo",
+    "name": "BMOBlue Rewards Mastercard",
+    "network": "mastercard",
+    "program_slug": "bmo_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-mastercard/"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "grocery",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-mastercard/"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-blue-rewards-mastercard/"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "earn_rates",
+      "reason": "no base-rate pattern found"
+    },
+    {
+      "field": "annual_fee_minor",
+      "reason": "0 - VERIFIED: no annual fee stated on bmo.com Blue Rewards page"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "20.99% - VERIFIED: embedded price/APR JSON on bmo.com page"
+    },
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "aa320a78d614c546a98de8d195429f6375cbe71b2367a221c786526053ad9dd2"
+}

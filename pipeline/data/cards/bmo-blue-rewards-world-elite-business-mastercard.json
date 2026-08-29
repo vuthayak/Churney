@@ -1,0 +1,45 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-blue-rewards-world-elite-business-mastercard",
+    "issuer_slug": "bmo",
+    "name": "BMOBlue Rewards World Elite Business Mastercard",
+    "network": "mastercard",
+    "program_slug": "bmo_rewards",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-world-elite-business-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 17500,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 23.99,
+    "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-world-elite-business-mastercard/"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "retail_online",
+      "rate": 12.5,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-world-elite-business-mastercard/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 120,000 points",
+      "reward_points": 120000,
+      "alternate_offers": [],
+      "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-world-elite-business-mastercard/",
+      "verified_at": "2026-08-29T00:20:35.373813Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "earn_rates",
+      "reason": "no base-rate pattern found"
+    }
+  ],
+  "content_hash": "c301efa139644352127041a3f66569374a2573d9eda8e228ac00a4d042c5e16d"
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-blue-rewards-business-mastercard",
+    "issuer_slug": "bmo",
+    "name": "BMOBlue Rewards Business Mastercard",
+    "network": "mastercard",
+    "program_slug": "bmo_rewards",
+    "card_type": "business",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-business-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 23.99,
+    "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-business-mastercard/"
+  },
+  "earn_rates": [
+    {
+      "category_slug": "retail_online",
+      "rate": 10.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-business-mastercard/"
+    }
+  ],
+  "offers": [
+    {
+      "headline": "Earn 30,000 points",
+      "reward_points": 30000,
+      "alternate_offers": [],
+      "source_url": "https://www.bmo.com/en-ca/main/business/credit-cards/bmo-blue-rewards-business-mastercard/",
+      "verified_at": "2026-08-29T00:20:35.239465Z"
+    }
+  ],
+  "needs_manual_review": [
+    {
+      "field": "earn_rates",
+      "reason": "no base-rate pattern found"
+    }
+  ],
+  "content_hash": "f250646c15d6b43607a1d837b09fcc9b7c1078f910743cee59188db192a78c21"
+}

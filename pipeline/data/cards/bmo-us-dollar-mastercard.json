@@ -1,0 +1,41 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-us-dollar-mastercard",
+    "issuer_slug": "bmo",
+    "name": "BMO U.S. Dollar Mastercard",
+    "network": "mastercard",
+    "program_slug": "none",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/us-dollar-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 4900,
+    "fx_fee_pct": 0.0,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/us-dollar-mastercard/"
+  },
+  "earn_rates": [],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "fx_fee_pct",
+      "reason": "0% - VERIFIED: USD-denominated card; no CAD FX conversion on USD purchases"
+    },
+    {
+      "field": "purchase_apr",
+      "reason": "20.99% - VERIFIED: embedded APR JSON on bmo.com page"
+    },
+    {
+      "field": "earn_rates",
+      "reason": "no rewards program on USD card - VERIFIED"
+    },
+    {
+      "field": "offers",
+      "reason": "no welcome-bonus offer on bmo.com page - VERIFIED"
+    }
+  ],
+  "content_hash": "6339354edc07d858aca86c480572f7cc0eedf8c1018753562e20580426f121cf"
+}

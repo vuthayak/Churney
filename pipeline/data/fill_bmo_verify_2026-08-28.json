@@ -1,0 +1,196 @@
+{
+  "_meta": {
+    "date": "2026-08-28",
+    "note": "BMO bootstrap verification: FX from BMO cardholder agreements; intermittent egress documented in sources.yaml."
+  },
+  "bmo-eclipse-visa-infinite": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: BMO foreign currency conversion fee (bmo.com cardholder agreement)"
+      },
+      {
+        "field": "offers",
+        "reason": "tiered WB (up to 70k pts + monthly bonuses) in legal copy; headline-only on marketing tile - needs legal-table parser pass"
+      }
+    ]
+  },
+  "bmo-eclipse-visa-infinite-privilege": {
+    "version_patch": { "fx_fee_pct": 2.5, "purchase_apr": 20.99 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "2.5% - VERIFIED: BMO foreign currency conversion fee (bmo.com cardholder agreement)"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "20.99% - VERIFIED: schema.org CreditCard node on bmo.com page (not in top-level Product APR field)"
+      },
+      {
+        "field": "offers",
+        "reason": "tiered privilege WB in legal copy; marketing tile only - needs legal-table parser pass"
+      }
+    ]
+  },
+  "bmo-eclipse-rise-visa": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct"]
+  },
+  "bmo-cashback-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "bmo-cashback-world-elite-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "bmo-blue-rewards-mastercard": {
+    "version_patch": { "annual_fee_minor": 0, "purchase_apr": 20.99, "fx_fee_pct": 2.5 },
+    "review_resolve": ["annual_fee_minor", "purchase_apr", "fx_fee_pct", "offers"],
+    "review_add": [
+      {
+        "field": "annual_fee_minor",
+        "reason": "0 - VERIFIED: no annual fee stated on bmo.com Blue Rewards page"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "20.99% - VERIFIED: embedded price/APR JSON on bmo.com page"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "bmo-blue-rewards-world-elite-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5, "purchase_apr": 20.99 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr", "offers"],
+    "review_add": [
+      {
+        "field": "purchase_apr",
+        "reason": "20.99% - VERIFIED: marketing rate table on bmo.com page"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "bmo-ascend-world-elite-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5, "purchase_apr": 20.99 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr", "offers"]
+  },
+  "bmo-viporter-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5, "purchase_apr": 20.99 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr", "offers"],
+    "review_add": [
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "bmo-viporter-world-elite-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5, "purchase_apr": 20.99 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr", "offers"]
+  },
+  "bmo-preferred-rate-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "earn_rates", "offers"],
+    "review_add": [
+      {
+        "field": "earn_rates",
+        "reason": "no earn program on low-rate card - VERIFIED"
+      },
+      {
+        "field": "offers",
+        "reason": "no welcome-bonus offer on bmo.com page - VERIFIED"
+      }
+    ]
+  },
+  "bmo-student-bmo-cashback-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offers"]
+  },
+  "bmo-us-dollar-mastercard": {
+    "version_patch": { "fx_fee_pct": 0, "purchase_apr": 20.99 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr", "earn_rates", "offers"],
+    "review_add": [
+      {
+        "field": "fx_fee_pct",
+        "reason": "0% - VERIFIED: USD-denominated card; no CAD FX conversion on USD purchases"
+      },
+      {
+        "field": "purchase_apr",
+        "reason": "20.99% - VERIFIED: embedded APR JSON on bmo.com page"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "no rewards program on USD card - VERIFIED"
+      },
+      {
+        "field": "offers",
+        "reason": "no welcome-bonus offer on bmo.com page - VERIFIED"
+      }
+    ]
+  },
+  "bmo-prepaid-credit-cards": {
+    "version_patch": { "annual_fee_minor": 0, "fx_fee_pct": 2.5 },
+    "review_resolve": ["annual_fee_minor", "fx_fee_pct", "purchase_apr", "earn_rates", "offers"],
+    "review_add": [
+      {
+        "field": "annual_fee_minor",
+        "reason": "0 - VERIFIED: reload fee only ($9.95 load fee mis-parsed as annual fee from Product schema)"
+      },
+      {
+        "field": "earn_rates",
+        "reason": "prepaid card; no earn program - VERIFIED"
+      },
+      {
+        "field": "offers",
+        "reason": "no welcome-bonus offer on prepaid product page - VERIFIED"
+      }
+    ]
+  },
+  "bmo-blue-rewards-business-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offer.min_spend"]
+  },
+  "bmo-blue-rewards-world-elite-business-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5 },
+    "review_resolve": ["fx_fee_pct", "offer.min_spend"]
+  },
+  "bmo-cashback-business-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5, "purchase_apr": 20.99 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr", "earn_rates", "offers"],
+    "review_add": [
+      {
+        "field": "earn_rates",
+        "reason": "cashback tiers in JS-rendered table; static HTML lacks category breakdown - VERIFIED frugalflyer cross-check"
+      },
+      {
+        "field": "offers",
+        "reason": "no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED"
+      }
+    ]
+  },
+  "bmo-ascend-business-mastercard": {
+    "version_patch": { "fx_fee_pct": 2.5, "purchase_apr": 20.99 },
+    "review_resolve": ["fx_fee_pct", "purchase_apr", "offer.min_spend"]
+  }
+}

@@ -85,12 +85,23 @@ class BmoScraper(GenericIssuerScraper):
                 return node
         return graph[0] if graph and isinstance(graph[0], dict) else {}
 
+    def _slug_from_url(self, url: str) -> str:
+        tail = url.rstrip("/").split("/")[-1].removesuffix(".html")
+        if tail.startswith("bmo-"):
+            tail = tail[4:]
+        return f"{self.issuer_slug.replace('_', '-')}-{tail.lower()}"
+
+    def _slug_for(self, url: str) -> str:
+        return self._slug_from_url(url)
+
     def _extract_name(self, soup: BeautifulSoup, url: str) -> str:
         product = self._product_ld(self._html_blob())
         if product and product.get("name"):
             return str(product["name"]).strip()
         raw = soup.find("h1")
         name = re.sub(r"\s+", " ", raw.get_text(strip=True) if raw else "")
+        if not name and soup.title and soup.title.string:
+            name = re.sub(r"\s*-\s*BMO.*$", "", soup.title.string, flags=re.I).strip()
         name = re.sub(r"([a-z])([A-Z])", r"\1 \2", name)
         name = re.sub(r"[®*™‡†]+", " ", name)
         name = re.sub(r"\s+", " ", name).strip()

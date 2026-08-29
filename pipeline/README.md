@@ -39,10 +39,10 @@ alternate offers, review items, source links).
 | Simplii | ✅ active | httpx | 1 |
 | RBC Royal Bank | ✅ active | httpx | 20 |
 | NBC | ✅ active | httpx | 8 |
+| BMO | ✅ active | httpx | 18 |
 | Brim | ✅ active | httpx | 2 |
 | Desjardins | ✅ active | httpx | 8 |
 | Neo Financial | ✅ active | playwright (SPA) | 3 |
-| BMO | 🚫 backed off | — | TCP-level block from this network (docs/04 §2); needs different egress/manual saves |
 
 See `sources.yaml` notes for details.
 
@@ -100,6 +100,7 @@ uv run python scripts/apply_fill.py data/fill_scotiabank_momentum_2026-08-28.jso
 uv run python scripts/apply_fill.py data/fill_amex_gaps_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_rbc_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_nbc_verify_2026-08-28.json
+uv run python scripts/apply_fill.py data/fill_bmo_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_brim_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_desjardins_verify_2026-08-28.json
 uv run python scripts/apply_fill.py data/fill_neo_verify_2026-08-28.json

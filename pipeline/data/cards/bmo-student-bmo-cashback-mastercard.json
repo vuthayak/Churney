@@ -1,0 +1,52 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-student-bmo-cashback-mastercard",
+    "issuer_slug": "bmo",
+    "name": "Students –BMOCash Back Mastercard",
+    "network": "mastercard",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/student-bmo-cashback-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 0,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/student-bmo-cashback-mastercard/"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.005,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/student-bmo-cashback-mastercard/"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 0.03,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/student-bmo-cashback-mastercard/"
+    },
+    {
+      "category_slug": "streaming_subs",
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/student-bmo-cashback-mastercard/"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/student-bmo-cashback-mastercard/"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [],
+  "content_hash": "8891295c6a7519462118a166f74b0c642337c3b0ea42ad83a3d51db0609e47df"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-cashback-world-elite-mastercard",
+    "issuer_slug": "bmo",
+    "name": "BMO CashBack World Elite Mastercard",
+    "network": "mastercard",
+    "program_slug": "cashback",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 12000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 21.99,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
+  },
+  "earn_rates": [
+    {
+      "rate": 0.01,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
+    },
+    {
+      "category_slug": "recurring_bills",
+      "rate": 0.02,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
+    },
+    {
+      "category_slug": "grocery",
+      "rate": 0.05,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
+    },
+    {
+      "category_slug": "transit_rideshare",
+      "rate": 0.04,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
+    },
+    {
+      "category_slug": "gas",
+      "rate": 0.03,
+      "kind": "cashback",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-cashback-world-elite-mastercard/"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [
+    {
+      "field": "offers",
+      "reason": "no public welcome-bonus offer on bmo.com page at scrape time - VERIFIED"
+    }
+  ],
+  "content_hash": "f1995a41cb11888b22de7d8aa7e03754a8f660897750d9871468cc47126452f4"
+}

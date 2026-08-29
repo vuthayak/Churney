@@ -1,0 +1,31 @@
+{
+  "schema_version": "1",
+  "card": {
+    "slug": "bmo-ascend-world-elite-mastercard",
+    "issuer_slug": "bmo",
+    "name": "BMOAscend World Elite star Mastercard",
+    "network": "mastercard",
+    "program_slug": "bmo_rewards",
+    "card_type": "personal",
+    "status": "live",
+    "page_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-ascend-world-elite-mastercard/"
+  },
+  "card_version": {
+    "valid_from": "2026-08-29",
+    "annual_fee_minor": 15000,
+    "fx_fee_pct": 2.5,
+    "purchase_apr": 20.99,
+    "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-ascend-world-elite-mastercard/"
+  },
+  "earn_rates": [
+    {
+      "rate": 1.0,
+      "kind": "points",
+      "excluded": false,
+      "source_url": "https://www.bmo.com/en-ca/main/personal/credit-cards/bmo-ascend-world-elite-mastercard/"
+    }
+  ],
+  "offers": [],
+  "needs_manual_review": [],
+  "content_hash": "9efa9ced0aaad8685ae30f4b68cbe005be754ff59ecf3fbfc4aedafb690b2c06"
+}
